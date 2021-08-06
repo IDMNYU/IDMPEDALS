@@ -1,0 +1,138 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 11,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 59.0, 104.0, 1088.0, 684.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 18.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "newtemplate",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"code" : "// Linkwitz-Riley 4th-order crossover - Trond Lossius via Tim Place, ported from:\r\n// https://cycling74.com/tutorials/crossover-filter-design-video-tutorial\r\n\r\nHistory x1, x2, x3, x4, ly1, ly2, ly3, ly4, hy1, hy2, hy3, hy4; // memory\r\nx = in1; // input sample\r\n\r\nfreq = in2; // input frequency in hertz\r\n\nrads = PI * 2.0 * freq; // frequency in radians\r\nk = rads / tan(PI * freq / SAMPLERATE); // k coefficient\nsq2 = sqrt(2.0); // square root of two\ntemp = 4 * pow(rads,2) * pow(k, 2)  + 2 * sq2 * pow(rads, 3) * k + pow(k, 4) + 2 * sq2 * rads * pow(k, 3) + pow(rads, 4);\n\r\n// lowpass feedforward:\nla0 = pow(rads, 4) / temp;\t\nla1 = 4 * pow(rads, 4) / temp;\nla2 = 6 * pow(rads, 4) / temp;\nla3 = la1;\nla4 = la0;\n\r\n// highpass feedforward:\nha0 = pow(k,4) / temp;\nha1 = -4 * pow(k,4) / temp;\nha2 = 6 * pow(k,4) / temp;\nha3 = ha1;\nha4 = ha0;\n\r\n// feedback:\nb1 = (\n\t\t4 * pow(rads,4)\n\t\t+ 4 * sq2 * pow(rads,3) * k\n\t\t- 4 * pow(k, 4)\n\t\t- 4 * sq2 * rads * pow(k,3)\n) / temp;\n\nb2 = (\n\t\t6 * pow(rads,4)\n\t\t- 8 * pow(rads,2) * pow(k,2)\n\t\t+ 6 * pow(k, 4)\n) /\ttemp;\n\nb3 = (\n\t\t-4 * sq2 * pow(rads,3) * k\n\t\t+ 4 * pow(rads, 4)\n\t\t+ 4 * sq2 * rads * pow(k,3)\n\t\t- 4 * pow(k, 4)\n) / temp;\n\nb4 = (\n\t\tpow(k,4)\n\t\t- 2 * sq2 * pow(rads, 3) * k\n\t\t+ pow(rads, 4)\n\t\t- 2 * sq2 * rads * pow(k,3)\n\t\t+ 4 * pow(rads,2) * pow(k,2)\n) / temp;\r\n\r\n// lowpass out:\r\nly = la0*x + la1*x1 + la2*x2 + la3*x3 + la4*x4 - b1*ly1 - b2*ly2 - b3*ly3 - b4*ly4;\r\n\r\n// highpass out:\r\nhy = ha0*x + ha1*x1 + ha2*x2 + ha3*x3 + ha4*x4 - b1*hy1 - b2*hy2 - b3*hy3 - b4*hy4;\r\n\r\n// shift:\r\nly4 = ly3;\r\nly3 = ly2;\r\nly2 = ly1;\r\nly1 = ly;\r\nhy4 = hy3;\r\nhy3 = hy2;\r\nhy2 = hy1;\r\nhy1 = hy;\r\nx4 = x3;\r\nx3 = x2;\r\nx2 = x1;\r\nx1 = x;\r\n\r\n// output:\r\nout1 = ly;\r\nout2 = hy;\r\n\r\n",
+					"fontface" : 0,
+					"fontname" : "Menlo Regular",
+					"fontsize" : 12.0,
+					"id" : "obj-38",
+					"maxclass" : "codebox",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 50.0, 100.0, 669.5, 470.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 700.5, 51.0, 207.0, 22.0 ],
+					"text" : "in 2 @comment crossover_frequency"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 40.0, 122.0, 22.0 ],
+					"text" : "in 1 @comment input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.0, 630.0, 147.0, 22.0 ],
+					"text" : "out 1 @comment lowpass"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 700.0, 630.0, 151.0, 22.0 ],
+					"text" : "out 2 @comment highpass"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 1 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-38", 1 ]
+				}
+
+			}
+ ]
+	}
+
+}
