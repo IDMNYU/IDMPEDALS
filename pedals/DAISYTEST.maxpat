@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -178,7 +178,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -494,14 +494,14 @@
  ]
 					}
 ,
-					"patching_rect" : [ 24.0, 261.0, 39.0, 22.0 ],
+					"patching_rect" : [ 24.0, 261.0, 135.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/audiolab/testpatches/",
-						"exportname" : "simple"
+						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
+						"exportname" : "DaisyTest"
 					}
 ,
-					"text" : "gen~",
-					"varname" : "simple"
+					"text" : "gen~ @title DaisyTest",
+					"varname" : "DaisyTest"
 				}
 
 			}
