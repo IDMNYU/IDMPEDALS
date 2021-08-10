@@ -74,22 +74,22 @@ typedef struct State {
 			return __exception;
 			
 		};
-		t_sample mul_7180 = (m_knob_2 * ((int)10));
+		t_sample mul_44567 = (m_knob_1 * ((int)10));
 		samples_to_seconds = (1 / samplerate);
-		t_sample mul_7183 = (m_knob_1 * ((int)10));
+		t_sample mul_44570 = (m_knob_2 * ((int)10));
 		// the main sample loop;
 		while ((__n--)) {
 			const t_sample in1 = (*(__in1++));
 			const t_sample in2 = (*(__in2++));
-			t_sample phasor_7181 = __m_phasor_3(mul_7180, samples_to_seconds);
-			t_sample phasor_7184 = __m_phasor_4(mul_7183, samples_to_seconds);
-			t_sample sah_7182 = __m_sah_5(phasor_7181, phasor_7184, ((t_sample)0.5));
-			t_sample mul_7177 = (sah_7182 * ((int)1000));
-			__m_cycle_6.freq(mul_7177);
-			t_sample cycle_7178 = __m_cycle_6(__sinedata);
-			t_sample cycleindex_7179 = __m_cycle_6.phase();
-			t_sample out2 = (in2 + cycle_7178);
-			t_sample out1 = (cycle_7178 + in1);
+			t_sample phasor_44568 = __m_phasor_3(mul_44567, samples_to_seconds);
+			t_sample phasor_44571 = __m_phasor_4(mul_44570, samples_to_seconds);
+			t_sample sah_44569 = __m_sah_5(phasor_44568, phasor_44571, ((t_sample)0.5));
+			t_sample mul_44564 = (sah_44569 * ((int)1000));
+			__m_cycle_6.freq(mul_44564);
+			t_sample cycle_44565 = __m_cycle_6(__sinedata);
+			t_sample cycleindex_44566 = __m_cycle_6.phase();
+			t_sample out1 = (cycle_44565 + in1);
+			t_sample out2 = (in2 + cycle_44565);
 			// assign results to output buffer;
 			(*(__out1++)) = out1;
 			(*(__out2++)) = out2;
@@ -98,10 +98,10 @@ typedef struct State {
 		return __exception;
 		
 	};
-	inline void set_knob4(t_param _value) {
+	inline void set_knob3(t_param _value) {
 		m_knob_1 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
-	inline void set_knob3(t_param _value) {
+	inline void set_knob4(t_param _value) {
 		m_knob_2 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
 	
@@ -157,8 +157,8 @@ void setparameter(CommonState *cself, long index, t_param value, void *ref) {
 void getparameter(CommonState *cself, long index, t_param *value) {
 	State *self = (State *)cself;
 	switch (index) {
-		case 0: *value = self->m_knob_2; break;
-		case 1: *value = self->m_knob_1; break;
+		case 0: *value = self->m_knob_1; break;
+		case 1: *value = self->m_knob_2; break;
 		
 		default: break;
 	}
@@ -241,11 +241,11 @@ void *create(t_param sr, long vs) {
 	self->__commonstate.vs = vs;
 	self->__commonstate.params = (ParamInfo *)genlib_sysmem_newptr(2 * sizeof(ParamInfo));
 	self->__commonstate.numparams = 2;
-	// initialize parameter 0 ("m_knob_2")
+	// initialize parameter 0 ("m_knob_1")
 	pi = self->__commonstate.params + 0;
 	pi->name = "knob3";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob_2;
+	pi->defaultvalue = self->m_knob_1;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -255,11 +255,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 1;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 1 ("m_knob_1")
+	// initialize parameter 1 ("m_knob_2")
 	pi = self->__commonstate.params + 1;
 	pi->name = "knob4";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob_1;
+	pi->defaultvalue = self->m_knob_2;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;

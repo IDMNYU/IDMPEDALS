@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 317.0, 139.0, 1073.0, 791.0 ],
+		"rect" : [ 317.0, 139.0, 748.0, 756.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,86 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-19",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 450.5, 352.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 447.666666666666629, 395.0, 83.0, 22.0 ],
+					"text" : "knob5_mix $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-18",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 363.0, 352.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-13",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 272.0, 353.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 360.166666666666629, 395.0, 84.0, 22.0 ],
+					"text" : "knob4_fine $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 584.0, 347.0, 112.0, 20.0 ],
+					"text" : "mode of calculation"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.5, 400.0, 47.0, 22.0 ],
+					"patching_rect" : [ 176.5, 395.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -58,7 +132,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 282.5, 353.0, 24.0, 24.0 ]
+					"patching_rect" : [ 177.5, 348.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -73,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 237.5, 536.0, 56.0, 22.0 ],
+					"patching_rect" : [ 240.900000000000006, 536.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -81,11 +155,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-138",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 262.0, 585.0, 184.0, 20.0 ],
-					"text" : "IDMPEDALS freq shift / ring mod"
+					"patching_rect" : [ 262.0, 585.0, 295.0, 47.0 ],
+					"text" : "IDMPEDALS freq shift / ring mod\nbased on the STKR example in Max/MSP forum: \nhttps://cycling74.com/forums/hilbert-or-freqshift-in-gen"
 				}
 
 			}
@@ -198,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.5, 400.0, 47.0, 22.0 ],
+					"patching_rect" : [ 551.5, 395.0, 47.0, 22.0 ],
 					"text" : "sw5 $1"
 				}
 
@@ -211,19 +286,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 466.5, 353.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 370.0, 357.0, 50.0, 22.0 ]
+					"patching_rect" : [ 552.5, 348.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -234,7 +297,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.166666666666629, 400.0, 85.0, 22.0 ],
+					"patching_rect" : [ 266.166666666666629, 395.0, 85.0, 22.0 ],
 					"text" : "knob3_freq $1"
 				}
 
@@ -257,7 +320,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 273.0, 284.0, 1188.0, 777.0 ],
+						"rect" : [ 149.0, 116.0, 958.0, 905.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -287,12 +350,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 88.25, 873.0, 35.0, 22.0 ],
+									"text" : "out 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 43.25, 873.0, 35.0, 22.0 ],
+									"text" : "out 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-138",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 375.0, 15.0, 184.0, 20.0 ],
-									"text" : "IDMPEDALS freq shift / ring mod"
+									"patching_rect" : [ 268.0, 105.0, 299.0, 47.0 ],
+									"text" : "IDMPEDALS freq shift / ring mod\nbased on the STKR example in Max/MSP forum: \nhttps://cycling74.com/forums/hilbert-or-freqshift-in-gen"
 								}
 
 							}
@@ -302,7 +390,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 780.5, 1024.5, 129.0, 20.0 ],
+									"patching_rect" : [ 642.5, 802.0, 129.0, 20.0 ],
 									"text" : "hold petal lights 2-4 off"
 								}
 
@@ -313,7 +401,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 897.5, 1064.5, 61.0, 22.0 ],
+									"patching_rect" : [ 759.5, 842.0, 61.0, 22.0 ],
 									"text" : "out 6 led4"
 								}
 
@@ -324,7 +412,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 825.5, 1064.5, 61.0, 22.0 ],
+									"patching_rect" : [ 687.5, 842.0, 61.0, 22.0 ],
 									"text" : "out 5 led3"
 								}
 
@@ -335,7 +423,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 756.5, 1064.5, 61.0, 22.0 ],
+									"patching_rect" : [ 618.5, 842.0, 61.0, 22.0 ],
 									"text" : "out 4 led2"
 								}
 
@@ -347,62 +435,66 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 756.5, 1024.5, 19.0, 22.0 ],
+									"patching_rect" : [ 618.5, 802.0, 19.0, 22.0 ],
 									"text" : "0"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.028541615232825, 0.250918865203857, 0.50196373462677, 1.0 ],
 									"id" : "obj-12",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 654.0, 874.0, 29.0, 22.0 ],
+									"patching_rect" : [ 708.0, 710.0, 29.0, 22.0 ],
 									"text" : "!- 1."
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"id" : "obj-11",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 866.0, 125.0, 29.5, 22.0 ],
+									"patching_rect" : [ 677.5, 142.0, 56.5, 22.0 ],
 									"text" : "+"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 882.0, 68.0, 215.0, 22.0 ],
+									"patching_rect" : [ 715.0, 105.0, 215.0, 22.0 ],
 									"text" : "param knob4_fine @min -50 @max 50"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.028541615232825, 0.250918865203857, 0.50196373462677, 1.0 ],
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 632.0, 834.0, 204.0, 22.0 ],
+									"patching_rect" : [ 708.0, 672.0, 204.0, 22.0 ],
 									"text" : "param knob5_mix @min 0. @max 1."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"code" : "// complex sine function\ncomplexSine(hz) {\n\r\n\tp = phasor(hz);\n\r\n\treal = cos(phasewrap(p * twopi));\n\timaginary = cos(phasewrap((p + -0.25) * twopi));\n\r\n\treturn real, imaginary, p; // 'p' is optional sync\n}\n\n// complex ring mod function\ncomplexRing(r, i, rmod, imod) {\n\r\n\tcosp = r * rmod;\n\tsinp = i * imod;\n\r\n\tuppersideband = cosp + sinp;\n\tlowersideband = cosp - sinp;\n\r\n\treturn uppersideband, lowersideband;\n}\r\n\r\n// two-pole, two-zero biquad filter (transposed direct form 2)\nbiquadTdf2(x, a0, a1, a2, b1, b2) {\n\r\n\tHistory x1(0), x2(0);\n\r\n\ty = (x * a0) + x2;\n\tx2 = ((x * a1) - (y * b1)) + x1;\n\tx1 = (x * a2) - (y * b2);\n\r\n\treturn y;\n}\r\n\r\n// hilbert quadrature filter\nhilbertBiquad(x0) {\n\n\tx1 = biquadTdf2(x0, 0.94657, -1.94632, 1., -1.94632, 0.94657);\n\tx2 = biquadTdf2(x1, 0.06338, -0.83774, 1., -0.83774, 0.06338);\n\r\n\ty1 = biquadTdf2(x0, -0.260502, 0.02569, 1., 0.02569, -0.260502);\n\ty2 = biquadTdf2(y1, 0.870686, -1.8685, 1., -1.8685, 0.870686);\n\n\treturn x2, y2; // real, imaginary\n}\r\n\n// polyphase IIR filter\npolyphaseIIR(y0) {\r\n\t// one sample delay\n\tHistory x0(0);\r\n\t// first phase allpass cascade\r\n\tx1 = biquadTdf2(x0, 0.479401,\t0., -1., 0.,\t-0.479401);\n\tx2 = biquadTdf2(x1, 0.876218,\t0., -1., 0.,\t-0.876218);\n\tx3 = biquadTdf2(x2, 0.976599,\t0., -1., 0.,\t-0.976599);\n\tx4 = biquadTdf2(x3, 0.9975,\t\t0., -1., 0.,\t-0.9975);\n\t// second phase allpass cascade\n\ty1 = biquadTdf2(y0, 0.161758,\t0., -1., 0.,\t-0.161758);\n\ty2 = biquadTdf2(y1, 0.733029,\t0., -1., 0.,\t-0.733029);\n\ty3 = biquadTdf2(y2, 0.94535,\t0., -1., 0.,\t-0.94535);\n\ty4 = biquadTdf2(y3, 0.990598,\t0., -1., 0.,\t-0.990598);\n\t// update\r\n\tx0 = y0;\r\n\t// real, imaginary\n\treturn x4, y4;\n}\r\n\r\n// Param mode (sw5) = use 4-pole hilbert or 8-pole polyphase IIR\r\nParam sw5(0, min=0, max=1);\r\nmd = int(sw5);\r\nx = in1;\t\t\t\t\t\t // audio in\r\n\r\nr, i = hilbertBiquad(x);\r\nif (md == 1) {\t\t\t\t\t // 1, polyphase IIR\r\n\tr, i = polyphaseIIR(x);\r\n} else {\t\t\t\t\t\t // 0, hilbert - default\r\n\tr, i = hilbertBiquad(x);\r\n}\r\n\r\nrm, ri, sync = complexSine(in2); // modulating frequency (Hz)\r\n\nout1, out2 = complexRing(r, i, rm, ri);\r\nout3 = sync;\r\n",
+									"code" : "// hilbert transform / frequency shifter\r\n// STKR example in Max/MSP forum: \n// https://cycling74.com/forums/hilbert-or-freqshift-in-gen\r\n\r\n// complex sine function\ncomplexSine(hz) {\n\r\n\tp = phasor(hz);\n\r\n\treal = cos(phasewrap(p * twopi));\n\timaginary = cos(phasewrap((p + -0.25) * twopi));\n\r\n\treturn real, imaginary, p; // 'p' is optional sync\n}\n\n// complex ring mod function\ncomplexRing(r, i, rmod, imod) {\n\r\n\tcosp = r * rmod;\n\tsinp = i * imod;\n\r\n\tuppersideband = cosp + sinp;\n\tlowersideband = cosp - sinp;\n\r\n\treturn uppersideband, lowersideband;\n}\r\n\r\n// two-pole, two-zero biquad filter (transposed direct form 2)\nbiquadTdf2(x, a0, a1, a2, b1, b2) {\n\r\n\tHistory x1(0), x2(0);\n\r\n\ty = (x * a0) + x2;\n\tx2 = ((x * a1) - (y * b1)) + x1;\n\tx1 = (x * a2) - (y * b2);\n\r\n\treturn y;\n}\r\n\r\n// hilbert quadrature filter\nhilbertBiquad(x0) {\n\n\tx1 = biquadTdf2(x0, 0.94657, -1.94632, 1., -1.94632, 0.94657);\n\tx2 = biquadTdf2(x1, 0.06338, -0.83774, 1., -0.83774, 0.06338);\n\r\n\ty1 = biquadTdf2(x0, -0.260502, 0.02569, 1., 0.02569, -0.260502);\n\ty2 = biquadTdf2(y1, 0.870686, -1.8685, 1., -1.8685, 0.870686);\n\n\treturn x2, y2; // real, imaginary\n}\r\n\n// polyphase IIR filter\npolyphaseIIR(y0) {\r\n\t// one sample delay\n\tHistory x0(0);\r\n\t// first phase allpass cascade\r\n\tx1 = biquadTdf2(x0, 0.479401,\t0., -1., 0.,\t-0.479401);\n\tx2 = biquadTdf2(x1, 0.876218,\t0., -1., 0.,\t-0.876218);\n\tx3 = biquadTdf2(x2, 0.976599,\t0., -1., 0.,\t-0.976599);\n\tx4 = biquadTdf2(x3, 0.9975,\t\t0., -1., 0.,\t-0.9975);\n\t// second phase allpass cascade\n\ty1 = biquadTdf2(y0, 0.161758,\t0., -1., 0.,\t-0.161758);\n\ty2 = biquadTdf2(y1, 0.733029,\t0., -1., 0.,\t-0.733029);\n\ty3 = biquadTdf2(y2, 0.94535,\t0., -1., 0.,\t-0.94535);\n\ty4 = biquadTdf2(y3, 0.990598,\t0., -1., 0.,\t-0.990598);\n\t// update\r\n\tx0 = y0;\r\n\t// real, imaginary\n\treturn x4, y4;\n}\r\n\r\n// Param sw5 = use 4-pole hilbert or 8-pole polyphase IIR\r\nParam sw5(0, min=0, max=1);\r\nmd = int(sw5); // mode\r\nx = in1;\t\t\t\t\t\t // audio in\r\n\r\nr, i = hilbertBiquad(x); // 0, hilbert = default\r\nif (md == 1) r, i = polyphaseIIR(x); // 1, polyphase IIR\r\n\r\nrm, ri, sync = complexSine(in2); // modulating frequency (Hz)\r\n\nout1, out2 = complexRing(r, i, rm, ri);\r\nout3 = sync;\r\n",
 									"fontface" : 0,
 									"fontname" : "Menlo Regular",
 									"fontsize" : 12.0,
@@ -411,18 +503,19 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 363.0, 62.0, 479.0, 743.0 ]
+									"patching_rect" : [ 116.0, 184.0, 580.5, 548.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 816.0, 15.0, 229.0, 22.0 ],
+									"patching_rect" : [ 677.5, 75.0, 229.0, 22.0 ],
 									"text" : "param knob3_freq @min 0.1 @max 5000"
 								}
 
@@ -433,7 +526,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 157.0, 1072.0, 49.0, 20.0 ],
+									"patching_rect" : [ 137.0, 842.0, 49.0, 20.0 ],
 									"text" : "< mono"
 								}
 
@@ -443,10 +536,11 @@
 									"fontsize" : 12.0,
 									"id" : "obj-78",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 108.25, 1102.0, 35.0, 22.0 ],
-									"text" : "out 2"
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.25, 842.0, 29.5, 22.0 ],
+									"text" : "+"
 								}
 
 							}
@@ -457,7 +551,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 5.0, 122.0, 42.0, 22.0 ],
+									"patching_rect" : [ 21.0, 142.0, 42.0, 22.0 ],
 									"text" : "gate 2"
 								}
 
@@ -468,7 +562,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 142.0, 89.0, 61.0, 22.0 ],
+									"patching_rect" : [ 52.0, 79.0, 61.0, 22.0 ],
 									"text" : "out 3 led1"
 								}
 
@@ -480,7 +574,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 111.0, 54.0, 56.0, 22.0 ],
+									"patching_rect" : [ 21.0, 44.0, 56.0, 22.0 ],
 									"text" : "swtoggle"
 								}
 
@@ -492,7 +586,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 111.0, 89.0, 26.0, 22.0 ],
+									"patching_rect" : [ 21.0, 79.0, 26.0, 22.0 ],
 									"text" : "+ 1"
 								}
 
@@ -504,7 +598,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 111.0, 15.0, 67.0, 22.0 ],
+									"patching_rect" : [ 21.0, 5.0, 67.0, 22.0 ],
 									"text" : "param sw1"
 								}
 
@@ -517,7 +611,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.0, 89.0, 28.0, 22.0 ],
+									"patching_rect" : [ 44.0, 109.0, 28.0, 22.0 ],
 									"text" : "in 1"
 								}
 
@@ -530,7 +624,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 378.25, 942.0, 262.0, 22.0 ],
+									"patching_rect" : [ 116.0, 757.0, 580.5, 22.0 ],
 									"text" : "mix"
 								}
 
@@ -540,10 +634,11 @@
 									"fontsize" : 12.0,
 									"id" : "obj-4",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 63.25, 1102.0, 35.0, 22.0 ],
-									"text" : "out 1"
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 43.25, 842.0, 29.5, 22.0 ],
+									"text" : "+"
 								}
 
 							}
@@ -557,6 +652,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"destination" : [ "obj-11", 1 ],
 									"source" : [ "obj-10", 0 ]
 								}
@@ -564,6 +660,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"destination" : [ "obj-6", 1 ],
 									"source" : [ "obj-11", 0 ]
 								}
@@ -571,6 +668,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.028541615232825, 0.250918865203857, 0.50196373462677, 1.0 ],
 									"destination" : [ "obj-3", 2 ],
 									"source" : [ "obj-12", 0 ]
 								}
@@ -578,7 +676,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-4", 1 ],
 									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
@@ -586,9 +684,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 0 ],
+									"destination" : [ "obj-78", 1 ],
 									"order" : 0,
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -618,6 +723,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-5", 0 ]
 								}
@@ -678,6 +784,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
+									"midpoints" : [ 53.5, 173.5, 125.5, 173.5 ],
 									"source" : [ "obj-77", 1 ]
 								}
 
@@ -692,6 +799,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-78", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.028541615232825, 0.250918865203857, 0.50196373462677, 1.0 ],
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-8", 0 ]
 								}
@@ -733,6 +848,20 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"midpoints" : [ 198.449999999999989, 685.5, 217.199999999999989, 685.5 ],
 					"source" : [ "obj-14", 1 ]
@@ -756,8 +885,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -815,13 +965,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-66", 0 ],
-					"source" : [ "obj-70", 0 ]
 				}
 
 			}

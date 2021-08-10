@@ -164,7 +164,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 568.0, 14.0, 266.0, 47.0 ],
+					"patching_rect" : [ 614.0, 18.0, 266.0, 47.0 ],
 					"text" : "IDMPEDALS compressor/limiter.\nbased on the tune4media lesson here:\nhttps://www.youtube.com/watch?v=ObBldvarun0"
 				}
 

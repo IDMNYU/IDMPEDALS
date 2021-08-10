@@ -47,7 +47,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 54.0, 211.0, 48.0, 136.0 ],
+					"patching_rect" : [ 49.0, 211.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -163,7 +163,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 54.0, 371.0, 45.0, 45.0 ]
+					"patching_rect" : [ 49.0, 371.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -185,7 +185,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 520.0, 300.0, 960.0, 603.0 ],
+						"rect" : [ 520.0, 300.0, 406.0, 378.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -220,7 +220,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.0, 333.333343267440796, 43.0, 22.0 ],
+									"patching_rect" : [ 153.0, 206.333343267440796, 43.0, 22.0 ],
 									"text" : "* 1000"
 								}
 
@@ -232,7 +232,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 164.0, 382.666678071022034, 36.0, 22.0 ],
+									"patching_rect" : [ 153.0, 255.666678071022034, 36.0, 22.0 ],
 									"text" : "cycle"
 								}
 
@@ -244,7 +244,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.0, 205.33333945274353, 33.0, 22.0 ],
+									"patching_rect" : [ 153.0, 78.33333945274353, 33.0, 22.0 ],
 									"text" : "* 10."
 								}
 
@@ -256,7 +256,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.0, 247.666667103767395, 45.0, 22.0 ],
+									"patching_rect" : [ 153.0, 120.666667103767395, 45.0, 22.0 ],
 									"text" : "phasor"
 								}
 
@@ -268,7 +268,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.0, 300.666675627231598, 126.0, 22.0 ],
+									"patching_rect" : [ 153.0, 173.666675627231598, 126.0, 22.0 ],
 									"text" : "sah 0.5"
 								}
 
@@ -280,7 +280,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 271.0, 205.33333945274353, 33.0, 22.0 ],
+									"patching_rect" : [ 260.0, 78.33333945274353, 33.0, 22.0 ],
 									"text" : "* 10."
 								}
 
@@ -292,7 +292,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 271.0, 247.666667103767395, 45.0, 22.0 ],
+									"patching_rect" : [ 260.0, 120.666667103767395, 45.0, 22.0 ],
 									"text" : "phasor"
 								}
 
@@ -304,7 +304,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 271.0, 163.0, 79.0, 22.0 ],
+									"patching_rect" : [ 260.0, 36.0, 79.0, 22.0 ],
 									"text" : "param knob4"
 								}
 
@@ -316,7 +316,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.0, 163.0, 79.0, 22.0 ],
+									"patching_rect" : [ 153.0, 36.0, 79.0, 22.0 ],
 									"text" : "param knob3"
 								}
 
@@ -327,7 +327,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 86.0, 452.000003099441528, 35.0, 22.0 ],
+									"patching_rect" : [ 75.0, 325.000003099441528, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -339,7 +339,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 163.0, 28.0, 22.0 ],
+									"patching_rect" : [ 28.0, 36.0, 28.0, 22.0 ],
 									"text" : "in 1"
 								}
 
@@ -351,7 +351,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 86.0, 163.0, 28.0, 22.0 ],
+									"patching_rect" : [ 75.0, 36.0, 28.0, 22.0 ],
 									"text" : "in 2"
 								}
 
@@ -362,7 +362,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 39.0, 452.000003099441528, 35.0, 22.0 ],
+									"patching_rect" : [ 28.0, 325.000003099441528, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
