@@ -643,8 +643,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1260.166748000000098, 608.0, 35.0, 22.0 ],
-									"text" : "* 0.5"
+									"patching_rect" : [ 1260.166748000000098, 608.0, 40.0, 22.0 ],
+									"text" : "* 0.9"
 								}
 
 							}
@@ -729,7 +729,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 123.928574000000026, 469.0, 123.0, 35.0 ],
+									"patching_rect" : [ 123.928574000000026, 469.0, 124.0, 35.0 ],
 									"text" : "param knob1_wetdry @min 0. @max 1."
 								}
 
@@ -1342,8 +1342,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 822.166747999999984, 470.0, 35.0, 22.0 ],
-									"text" : "* 0.5"
+									"patching_rect" : [ 822.166747999999984, 470.0, 33.0, 22.0 ],
+									"text" : "* 0.9"
 								}
 
 							}

@@ -664,7 +664,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 914.5, 71.0, 242.0, 22.0 ],
-									"text" : "param knob6_lowpass @min 42 @max 138"
+									"text" : "param knob6_lowpass @min 54 @max 138"
 								}
 
 							}
