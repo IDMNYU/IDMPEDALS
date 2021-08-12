@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 300.0, 223.0, 1073.0, 791.0 ],
+		"rect" : [ 300.0, 223.0, 779.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -174,7 +174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 736.0, 409.0, 47.0, 22.0 ],
+					"patching_rect" : [ 564.0, 365.0, 47.0, 22.0 ],
 					"text" : "sw5 $1"
 				}
 
@@ -187,7 +187,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 733.0, 368.0, 24.0, 24.0 ]
+					"patching_rect" : [ 561.0, 324.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -198,7 +198,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 658.0, 409.0, 47.0, 22.0 ],
+					"patching_rect" : [ 57.5, 365.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -211,7 +211,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 655.0, 368.0, 24.0, 24.0 ]
+					"patching_rect" : [ 54.5, 324.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1613,8 +1613,8 @@
 		"parameters" : 		{
 			"obj-14" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
-			"obj-83::obj-36" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-83::obj-4" : [ "live.menu[2]", "live.menu", 0 ],
+			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
+			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],
 			"parameterbanks" : 			{
 
 			}

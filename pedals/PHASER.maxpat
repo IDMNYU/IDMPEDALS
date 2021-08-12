@@ -7199,9 +7199,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-32" : [ "live.text[3]", "FILTER", 0 ],
-			"obj-5::obj-36" : [ "live.menu[3]", "live.menu", 0 ],
-			"obj-5::obj-4" : [ "live.menu[4]", "live.menu", 0 ],
+			"obj-5::obj-32" : [ "live.text[2]", "FILTER", 0 ],
+			"obj-5::obj-33" : [ "live.text[1]", "FILTER", 0 ],
+			"obj-5::obj-34" : [ "live.text[3]", "FILTER", 0 ],
 			"obj-6" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
@@ -7210,14 +7210,6 @@
 			"parameter_overrides" : 			{
 				"obj-5::obj-32" : 				{
 					"parameter_longname" : "live.text[3]"
-				}
-,
-				"obj-5::obj-36" : 				{
-					"parameter_longname" : "live.menu[3]"
-				}
-,
-				"obj-5::obj-4" : 				{
-					"parameter_longname" : "live.menu[4]"
 				}
 
 			}

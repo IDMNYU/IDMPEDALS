@@ -74,22 +74,22 @@ typedef struct State {
 			return __exception;
 			
 		};
-		t_sample mul_44567 = (m_knob_1 * ((int)10));
+		t_sample mul_306 = (m_knob_1 * ((int)10));
 		samples_to_seconds = (1 / samplerate);
-		t_sample mul_44570 = (m_knob_2 * ((int)10));
+		t_sample mul_309 = (m_knob_2 * ((int)10));
 		// the main sample loop;
 		while ((__n--)) {
 			const t_sample in1 = (*(__in1++));
 			const t_sample in2 = (*(__in2++));
-			t_sample phasor_44568 = __m_phasor_3(mul_44567, samples_to_seconds);
-			t_sample phasor_44571 = __m_phasor_4(mul_44570, samples_to_seconds);
-			t_sample sah_44569 = __m_sah_5(phasor_44568, phasor_44571, ((t_sample)0.5));
-			t_sample mul_44564 = (sah_44569 * ((int)1000));
-			__m_cycle_6.freq(mul_44564);
-			t_sample cycle_44565 = __m_cycle_6(__sinedata);
-			t_sample cycleindex_44566 = __m_cycle_6.phase();
-			t_sample out1 = (cycle_44565 + in1);
-			t_sample out2 = (in2 + cycle_44565);
+			t_sample phasor_307 = __m_phasor_3(mul_306, samples_to_seconds);
+			t_sample phasor_310 = __m_phasor_4(mul_309, samples_to_seconds);
+			t_sample sah_308 = __m_sah_5(phasor_307, phasor_310, ((t_sample)0.5));
+			t_sample mul_303 = (sah_308 * ((int)1000));
+			__m_cycle_6.freq(mul_303);
+			t_sample cycle_304 = __m_cycle_6(__sinedata);
+			t_sample cycleindex_305 = __m_cycle_6.phase();
+			t_sample out1 = (cycle_304 + in1);
+			t_sample out2 = (in2 + cycle_304);
 			// assign results to output buffer;
 			(*(__out1++)) = out1;
 			(*(__out2++)) = out2;

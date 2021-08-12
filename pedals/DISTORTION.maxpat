@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 945.0, 230.0, 609.0, 738.0 ],
+		"rect" : [ 328.0, 178.0, 609.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -780,8 +780,8 @@
 		"parameters" : 		{
 			"obj-1" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
-			"obj-83::obj-36" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-83::obj-4" : [ "live.menu[2]", "live.menu", 0 ],
+			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
+			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],
 			"parameterbanks" : 			{
 
 			}
