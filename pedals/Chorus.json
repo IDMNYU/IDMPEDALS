@@ -333,7 +333,53 @@
 			},
 			{
 				"class": "Declaration",
-				"id": "node_1234",
+				"id": "node_1235",
+				"name": "knob6_taps",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_1236",
+						"value": "0",
+						"eval": 0,
+						"type": "constant int",
+						"source": "box: [param knob6_taps 0 @max 1. @min 0.] => knob6_taps"
+					}
+				],
+				"attributes": {
+					"max": {
+						"class": "Attribute",
+						"id": "node_1237",
+						"name": "max",
+						"value": {
+							"class": "Constant",
+							"id": "node_420",
+							"value": "1.",
+							"eval": 1,
+							"type": "constant int",
+							"source": "6:24 -> 6:26"
+						}
+					},
+					"min": {
+						"class": "Attribute",
+						"id": "node_1238",
+						"name": "min",
+						"value": {
+							"class": "Constant",
+							"id": "node_422",
+							"value": "0.",
+							"eval": 0,
+							"type": "constant int",
+							"source": "6:32 -> 6:34"
+						}
+					}
+				},
+				"type": "control t_sample",
+				"typename": "Param",
+				"source": "box: [param knob6_taps 0 @max 1. @min 0.] => knob6_taps"
+			},
+			{
+				"class": "Declaration",
+				"id": "node_1230",
 				"name": "knob5_breadth",
 				"inputs": [
 					{
@@ -348,41 +394,41 @@
 				"attributes": {
 					"max": {
 						"class": "Attribute",
-						"id": "node_1236",
+						"id": "node_1232",
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_374",
+							"id": "node_412",
 							"value": "2400.",
 							"eval": 2400,
 							"type": "constant int",
-							"source": "6:27 -> 6:32"
+							"source": "5:27 -> 5:32"
 						}
 					},
 					"default": {
 						"class": "Attribute",
-						"id": "node_1237",
+						"id": "node_1233",
 						"name": "default",
 						"value": {
 							"class": "Constant",
-							"id": "node_376",
+							"id": "node_414",
 							"value": "256",
 							"eval": 256,
 							"type": "constant int",
-							"source": "6:42 -> 6:45"
+							"source": "5:42 -> 5:45"
 						}
 					},
 					"min": {
 						"class": "Attribute",
-						"id": "node_1238",
+						"id": "node_1234",
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_378",
+							"id": "node_416",
 							"value": "240.",
 							"eval": 240,
 							"type": "constant int",
-							"source": "6:51 -> 6:55"
+							"source": "5:51 -> 5:55"
 						}
 					}
 				},
@@ -392,12 +438,12 @@
 			},
 			{
 				"class": "Declaration",
-				"id": "node_1230",
+				"id": "node_1226",
 				"name": "knob3_depth",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_1231",
+						"id": "node_1227",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
@@ -407,28 +453,28 @@
 				"attributes": {
 					"max": {
 						"class": "Attribute",
-						"id": "node_1232",
+						"id": "node_1228",
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_382",
+							"id": "node_406",
 							"value": "1.",
 							"eval": 1,
 							"type": "constant int",
-							"source": "5:25 -> 5:27"
+							"source": "4:25 -> 4:27"
 						}
 					},
 					"min": {
 						"class": "Attribute",
-						"id": "node_1233",
+						"id": "node_1229",
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_384",
+							"id": "node_408",
 							"value": "0.",
 							"eval": 0,
 							"type": "constant int",
-							"source": "5:33 -> 5:35"
+							"source": "4:33 -> 4:35"
 						}
 					}
 				},
@@ -438,79 +484,12 @@
 			},
 			{
 				"class": "Declaration",
-				"id": "node_1228",
-				"name": "sw1",
-				"inputs": [
-					{
-						"class": "Constant",
-						"id": "node_1229",
-						"value": "0",
-						"eval": 0,
-						"type": "constant int",
-						"source": "box: [param sw1 0] => sw1"
-					}
-				],
-				"attributes": {
-					
-				},
-				"type": "control t_sample",
-				"typename": "Param",
-				"source": "box: [param sw1 0] => sw1"
-			},
-			{
-				"class": "Declaration",
 				"id": "node_1224",
-				"name": "knob4_rate",
-				"inputs": [
-					{
-						"class": "Constant",
-						"id": "node_1225",
-						"value": "0",
-						"eval": 0,
-						"type": "constant int",
-						"source": "box: [param knob4_rate 0 @max 1. @min 0.] => knob4_rate"
-					}
-				],
-				"attributes": {
-					"max": {
-						"class": "Attribute",
-						"id": "node_1226",
-						"name": "max",
-						"value": {
-							"class": "Constant",
-							"id": "node_390",
-							"value": "1.",
-							"eval": 1,
-							"type": "constant int",
-							"source": "3:24 -> 3:26"
-						}
-					},
-					"min": {
-						"class": "Attribute",
-						"id": "node_1227",
-						"name": "min",
-						"value": {
-							"class": "Constant",
-							"id": "node_392",
-							"value": "0.",
-							"eval": 0,
-							"type": "constant int",
-							"source": "3:32 -> 3:34"
-						}
-					}
-				},
-				"type": "control t_sample",
-				"typename": "Param",
-				"source": "box: [param knob4_rate 0 @max 1. @min 0.] => knob4_rate"
-			},
-			{
-				"class": "Declaration",
-				"id": "node_1222",
 				"name": "sw5",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_1223",
+						"id": "node_1225",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
@@ -526,8 +505,29 @@
 			},
 			{
 				"class": "Declaration",
+				"id": "node_1222",
+				"name": "sw1",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_1223",
+						"value": "0",
+						"eval": 0,
+						"type": "constant int",
+						"source": "box: [param sw1 0] => sw1"
+					}
+				],
+				"attributes": {
+					
+				},
+				"type": "control t_sample",
+				"typename": "Param",
+				"source": "box: [param sw1 0] => sw1"
+			},
+			{
+				"class": "Declaration",
 				"id": "node_1218",
-				"name": "knob6_taps",
+				"name": "knob4_rate",
 				"inputs": [
 					{
 						"class": "Constant",
@@ -535,7 +535,7 @@
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [param knob6_taps 0 @max 1. @min 0.] => knob6_taps"
+						"source": "box: [param knob4_rate 0 @max 1. @min 0.] => knob4_rate"
 					}
 				],
 				"attributes": {
@@ -545,7 +545,7 @@
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_398",
+							"id": "node_396",
 							"value": "1.",
 							"eval": 1,
 							"type": "constant int",
@@ -558,7 +558,7 @@
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_400",
+							"id": "node_398",
 							"value": "0.",
 							"eval": 0,
 							"type": "constant int",
@@ -568,7 +568,7 @@
 				},
 				"type": "control t_sample",
 				"typename": "Param",
-				"source": "box: [param knob6_taps 0 @max 1. @min 0.] => knob6_taps"
+				"source": "box: [param knob4_rate 0 @max 1. @min 0.] => knob4_rate"
 			},
 			{
 				"class": "Statement",
@@ -585,7 +585,7 @@
 								"value": 1,
 								"eval": 1,
 								"type": "constant int",
-								"source": "code: 1:1 -> 1:1 [expr $in1] => expr_117"
+								"source": "code: 1:1 -> 1:1 [expr $in1] => expr_118"
 							},
 							{
 								"class": "Expression",
@@ -608,98 +608,11 @@
 														"value": 1,
 														"eval": 1,
 														"type": "constant int",
-														"source": "code: 1:16 -> 1:16 [expr $in1] => expr_117"
-													},
-													{
-														"class": "Variable",
-														"id": "node_1274",
-														"name": "knob4_rate",
-														"type": "control t_sample",
-														"source": "code: 1:20 -> 1:20 [expr $in1] => expr_117"
-													}
-												],
-												"attributes": {
-													
-												},
-												"type": "control t_sample",
-												"source": "code: 1:16 -> 1:23 [expr $in1] => expr_117"
-											}
-										],
-										"attributes": {
-											
-										},
-										"type": "control t_sample",
-										"source": "code: 1:11 -> 1:23 [expr $in1] => expr_117"
-									}
-								],
-								"attributes": {
-									
-								},
-								"type": "control t_sample",
-								"source": "code: 1:6 -> 1:23 [expr $in1] => expr_117"
-							}
-						],
-						"attributes": {
-							
-						},
-						"type": "control t_sample",
-						"source": "code: 1:1 -> 1:23 [expr $in1] => expr_117"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_1275",
-						"name": "expr_117",
-						"type": "control t_sample",
-						"source": "code: 1:1 -> 1:23 [expr $in1] => expr_117"
-					}
-				],
-				"source": "code: 1:1 -> 1:23 [expr $in1] => expr_117"
-			},
-			{
-				"class": "Statement",
-				"id": "node_1276",
-				"inputs": [
-					{
-						"class": "Expression",
-						"id": "node_1277",
-						"operator": "sub",
-						"inputs": [
-							{
-								"class": "Constant",
-								"id": "node_1278",
-								"value": 1,
-								"eval": 1,
-								"type": "constant int",
-								"source": "code: 1:1 -> 1:1 [expr $in1] => expr_118"
-							},
-							{
-								"class": "Expression",
-								"id": "node_1279",
-								"operator": "sqrt",
-								"inputs": [
-									{
-										"class": "Expression",
-										"id": "node_1280",
-										"operator": "sqrt",
-										"inputs": [
-											{
-												"class": "Expression",
-												"id": "node_1281",
-												"operator": "sub",
-												"inputs": [
-													{
-														"class": "Constant",
-														"id": "node_1282",
-														"value": 1,
-														"eval": 1,
-														"type": "constant int",
 														"source": "code: 1:16 -> 1:16 [expr $in1] => expr_118"
 													},
 													{
 														"class": "Variable",
-														"id": "node_1283",
+														"id": "node_1274",
 														"name": "knob3_depth",
 														"type": "control t_sample",
 														"source": "code: 1:20 -> 1:20 [expr $in1] => expr_118"
@@ -736,13 +649,100 @@
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_1284",
+						"id": "node_1275",
 						"name": "expr_118",
 						"type": "control t_sample",
 						"source": "code: 1:1 -> 1:23 [expr $in1] => expr_118"
 					}
 				],
 				"source": "code: 1:1 -> 1:23 [expr $in1] => expr_118"
+			},
+			{
+				"class": "Statement",
+				"id": "node_1276",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_1277",
+						"operator": "sub",
+						"inputs": [
+							{
+								"class": "Constant",
+								"id": "node_1278",
+								"value": 1,
+								"eval": 1,
+								"type": "constant int",
+								"source": "code: 1:1 -> 1:1 [expr $in1] => expr_117"
+							},
+							{
+								"class": "Expression",
+								"id": "node_1279",
+								"operator": "sqrt",
+								"inputs": [
+									{
+										"class": "Expression",
+										"id": "node_1280",
+										"operator": "sqrt",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_1281",
+												"operator": "sub",
+												"inputs": [
+													{
+														"class": "Constant",
+														"id": "node_1282",
+														"value": 1,
+														"eval": 1,
+														"type": "constant int",
+														"source": "code: 1:16 -> 1:16 [expr $in1] => expr_117"
+													},
+													{
+														"class": "Variable",
+														"id": "node_1283",
+														"name": "knob4_rate",
+														"type": "control t_sample",
+														"source": "code: 1:20 -> 1:20 [expr $in1] => expr_117"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "control t_sample",
+												"source": "code: 1:16 -> 1:23 [expr $in1] => expr_117"
+											}
+										],
+										"attributes": {
+											
+										},
+										"type": "control t_sample",
+										"source": "code: 1:11 -> 1:23 [expr $in1] => expr_117"
+									}
+								],
+								"attributes": {
+									
+								},
+								"type": "control t_sample",
+								"source": "code: 1:6 -> 1:23 [expr $in1] => expr_117"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "control t_sample",
+						"source": "code: 1:1 -> 1:23 [expr $in1] => expr_117"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_1284",
+						"name": "expr_117",
+						"type": "control t_sample",
+						"source": "code: 1:1 -> 1:23 [expr $in1] => expr_117"
+					}
+				],
+				"source": "code: 1:1 -> 1:23 [expr $in1] => expr_117"
 			},
 			{
 				"class": "Statement",
@@ -928,19 +928,19 @@
 						"value": 0,
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [out 4 $in1] => "
+						"source": "box: [out 6 $in1] => "
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
 						"id": "node_1312",
-						"name": "out4",
+						"name": "out6",
 						"type": "signal t_sample",
-						"source": "box: [out 4 $in1] => "
+						"source": "box: [out 6 $in1] => "
 					}
 				],
-				"source": "box: [out 4 $in1] => "
+				"source": "box: [out 6 $in1] => "
 			},
 			{
 				"class": "Statement",
@@ -952,19 +952,19 @@
 						"value": 0,
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [out 5 $in1] => "
+						"source": "box: [out 4 $in1] => "
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
 						"id": "node_1315",
-						"name": "out5",
+						"name": "out4",
 						"type": "signal t_sample",
-						"source": "box: [out 5 $in1] => "
+						"source": "box: [out 4 $in1] => "
 					}
 				],
-				"source": "box: [out 5 $in1] => "
+				"source": "box: [out 4 $in1] => "
 			},
 			{
 				"class": "Statement",
@@ -976,19 +976,19 @@
 						"value": 0,
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [out 6 $in1] => "
+						"source": "box: [out 5 $in1] => "
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
 						"id": "node_1318",
-						"name": "out6",
+						"name": "out5",
 						"type": "signal t_sample",
-						"source": "box: [out 6 $in1] => "
+						"source": "box: [out 5 $in1] => "
 					}
 				],
-				"source": "box: [out 6 $in1] => "
+				"source": "box: [out 5 $in1] => "
 			},
 			{
 				"class": "Statement",
@@ -3833,7 +3833,7 @@
 					{
 						"class": "Variable",
 						"id": "node_1607",
-						"name": "mix_151",
+						"name": "mix_152",
 						"type": "signal t_sample",
 						"source": "box: [mix $in1 $in2 $in3] => mix_14"
 					}
@@ -3877,7 +3877,7 @@
 											{
 												"class": "Variable",
 												"id": "node_2341",
-												"name": "mix_151",
+												"name": "mix_152",
 												"type": "signal t_sample",
 												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_12"
 											},
@@ -3995,7 +3995,7 @@
 					{
 						"class": "Variable",
 						"id": "node_1620",
-						"name": "history_17_next_152",
+						"name": "history_17_next_153",
 						"type": "signal t_sample",
 						"source": "box: [history history_17 0 $in1] => history_17"
 					}
@@ -4014,7 +4014,7 @@
 							{
 								"class": "Variable",
 								"id": "node_1623",
-								"name": "mix_151",
+								"name": "mix_152",
 								"type": "signal t_sample",
 								"source": "box: [history history_15 0 $in1] => history_15"
 							}
@@ -4065,7 +4065,7 @@
 					{
 						"class": "Variable",
 						"id": "node_1628",
-						"name": "history_13_next_153",
+						"name": "history_13_next_154",
 						"type": "signal t_sample",
 						"source": "box: [history history_13 0 $in1] => history_13"
 					}
@@ -6785,7 +6785,7 @@
 					{
 						"class": "Variable",
 						"id": "node_1935",
-						"name": "history_17_next_152",
+						"name": "history_17_next_153",
 						"type": "signal t_sample",
 						"source": "box: [history history_17 0 $in1] => history_17"
 					}
@@ -6808,7 +6808,7 @@
 					{
 						"class": "Variable",
 						"id": "node_1932",
-						"name": "history_13_next_153",
+						"name": "history_13_next_154",
 						"type": "signal t_sample",
 						"source": "box: [history history_13 0 $in1] => history_13"
 					}
@@ -6885,5 +6885,5 @@
 			}
 		]
 	},
-	"source": "patcher: gen.patcher 0x7fd650480270 graph 0x60000349b2d0"
+	"source": "patcher: gen.patcher 0x7fc58476b9a0 graph 0x6000010c3000"
 }
