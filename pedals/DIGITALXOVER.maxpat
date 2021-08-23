@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -169,7 +169,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 415.0, 42.0, 172.0, 22.0 ],
-					"text" : "target petal, samplerate 96kHz"
+					"text" : "target petal, samplerate 48kHz"
 				}
 
 			}
@@ -255,8 +255,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -707,14 +707,14 @@
  ]
 					}
 ,
-					"patching_rect" : [ 80.0, 435.0, 112.0, 22.0 ],
+					"patching_rect" : [ 80.0, 435.0, 138.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
-						"exportname" : "Xover"
+						"exportname" : "DigitalXover"
 					}
 ,
-					"text" : "gen~ @title Xover",
-					"varname" : "Xover"
+					"text" : "gen~ @title DigitalXover",
+					"varname" : "DigitalXover"
 				}
 
 			}

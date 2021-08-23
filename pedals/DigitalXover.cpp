@@ -1,6 +1,6 @@
-#include "Xover.h"
+#include "DigitalXover.h"
 
-namespace Xover {
+namespace DigitalXover {
 
 /*******************************************************************************************************************
 Cycling '74 License for Max-Generated Code for Export
@@ -103,31 +103,31 @@ typedef struct State {
 		// the main sample loop;
 		while ((__n--)) {
 			const t_sample in1 = (*(__in1++));
-			t_sample out4 = ((int)0);
 			t_sample out5 = ((int)0);
+			t_sample out4 = ((int)0);
 			t_sample out6 = ((int)0);
-			t_sample sah_2990 = __m_sah_19(m_history_16, m_sw_18, ((int)0));
-			t_sample gen_2992 = sah_2990;
-			t_sample rsub_2988 = (((int)1) - sah_2990);
-			t_sample history_2989_next_2991 = fixdenorm(rsub_2988);
-			t_sample out3 = gen_2992;
-			t_sample add_2993 = (gen_2992 + ((int)1));
-			t_sample choice_20 = int(add_2993);
-			t_sample gate_2986 = (((choice_20 >= 1) && (choice_20 < 2)) ? in1 : 0);
-			t_sample gate_2987 = ((choice_20 >= 2) ? in1 : 0);
-			t_sample mix_3002 = (m_history_15 + (((t_sample)0.0019634941468452) * (m_knob3_pitch_17 - m_history_15)));
-			t_sample mix_2979 = mix_3002;
-			t_sample mix_3003 = (m_history_14 + (((t_sample)0.0019634941468452) * (mix_2979 - m_history_14)));
-			t_sample mix_2977 = mix_3003;
-			t_sample mix_3004 = (m_history_13 + (((t_sample)0.0019634941468452) * (mix_2977 - m_history_13)));
-			t_sample mix_2975 = mix_3004;
-			t_sample gen_2985 = mix_2975;
-			t_sample history_2980_next_2982 = fixdenorm(mix_2979);
-			t_sample history_2978_next_2983 = fixdenorm(mix_2977);
-			t_sample history_2976_next_2984 = fixdenorm(mix_2975);
-			t_sample mtof_2974 = mtof(gen_2985, ((int)440));
-			t_sample x = gate_2987;
-			t_sample freq = mtof_2974;
+			t_sample sah_175 = __m_sah_19(m_history_16, m_sw_18, ((int)0));
+			t_sample gen_177 = sah_175;
+			t_sample rsub_173 = (((int)1) - sah_175);
+			t_sample history_174_next_176 = fixdenorm(rsub_173);
+			t_sample out3 = gen_177;
+			t_sample add_178 = (gen_177 + ((int)1));
+			t_sample choice_20 = int(add_178);
+			t_sample gate_171 = (((choice_20 >= 1) && (choice_20 < 2)) ? in1 : 0);
+			t_sample gate_172 = ((choice_20 >= 2) ? in1 : 0);
+			t_sample mix_199 = (m_history_15 + (((t_sample)0.0019634941468452) * (m_knob3_pitch_17 - m_history_15)));
+			t_sample mix_164 = mix_199;
+			t_sample mix_200 = (m_history_14 + (((t_sample)0.0019634941468452) * (mix_164 - m_history_14)));
+			t_sample mix_162 = mix_200;
+			t_sample mix_201 = (m_history_13 + (((t_sample)0.0019634941468452) * (mix_162 - m_history_13)));
+			t_sample mix_160 = mix_201;
+			t_sample gen_170 = mix_160;
+			t_sample history_165_next_167 = fixdenorm(mix_164);
+			t_sample history_163_next_168 = fixdenorm(mix_162);
+			t_sample history_161_next_169 = fixdenorm(mix_160);
+			t_sample mtof_159 = mtof(gen_170, ((int)440));
+			t_sample x = gate_172;
+			t_sample freq = mtof_159;
 			t_sample rads = (((t_sample)6.2831853071796) * freq);
 			t_sample k = safediv(rads, tan(safediv((((t_sample)3.1415926535898) * freq), samplerate)));
 			t_sample temp = ((((((((int)4) * safepow(rads, ((int)2))) * safepow(k, ((int)2))) + ((((t_sample)2.8284271247462) * safepow(rads, ((int)3))) * k)) + safepow(k, ((int)4))) + ((((t_sample)2.8284271247462) * rads) * safepow(k, ((int)3)))) + safepow(rads, ((int)4)));
@@ -159,14 +159,14 @@ typedef struct State {
 			m_x_10 = m_x_11;
 			m_x_11 = m_x_12;
 			m_x_12 = x;
-			t_sample add_2994 = (gate_2986 + hy);
-			t_sample out2 = add_2994;
-			t_sample add_2995 = (gate_2986 + ly);
-			t_sample out1 = add_2995;
-			m_history_16 = history_2989_next_2991;
-			m_history_15 = history_2980_next_2982;
-			m_history_13 = history_2976_next_2984;
-			m_history_14 = history_2978_next_2983;
+			t_sample add_179 = (gate_171 + hy);
+			t_sample out2 = add_179;
+			t_sample add_180 = (gate_171 + ly);
+			t_sample out1 = add_180;
+			m_history_16 = history_174_next_176;
+			m_history_15 = history_165_next_167;
+			m_history_13 = history_161_next_169;
+			m_history_14 = history_163_next_168;
 			// assign results to output buffer;
 			(*(__out1++)) = out1;
 			(*(__out2++)) = out2;
@@ -364,4 +364,4 @@ void destroy(CommonState *cself) {
 }
 
 
-} // Xover::
+} // DigitalXover::
