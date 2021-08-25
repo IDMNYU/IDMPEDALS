@@ -1999,18 +1999,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-1" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
-			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
-			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "swtoggle.gendsp",
 				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
