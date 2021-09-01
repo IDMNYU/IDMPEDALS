@@ -1,6 +1,6 @@
 {
 	"class": "Module",
-	"id": "node_14203",
+	"id": "node_19308",
 	"inlets": [
 		{
 			"assist": "in1",
@@ -35,20 +35,20 @@
 	},
 	"block": {
 		"class": "Block",
-		"id": "node_14617",
+		"id": "node_19722",
 		"children": [
 			{
 				"class": "Declaration",
-				"id": "node_14240",
-				"name": "delay_468",
+				"id": "node_19345",
+				"name": "delay_758",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14241",
+						"id": "node_19346",
 						"value": "96000",
 						"eval": 96000,
 						"type": "constant int",
-						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 					}
 				],
 				"attributes": {
@@ -56,20 +56,20 @@
 				},
 				"type": "init Delay",
 				"typename": "Delay",
-				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14238",
-				"name": "history_426",
+				"id": "node_19343",
+				"name": "history_716",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14239",
+						"id": "node_19344",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [history history_426 0 $in1] => history_426"
+						"source": "box: [history history_716 0 $in1] => history_716"
 					}
 				],
 				"attributes": {
@@ -77,20 +77,20 @@
 				},
 				"type": "signal t_sample",
 				"typename": "History",
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_426 0 $in1] => history_426"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_716 0 $in1] => history_716"
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14236",
-				"name": "history_428",
+				"id": "node_19341",
+				"name": "history_718",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14237",
+						"id": "node_19342",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [history history_428 0 $in1] => history_428"
+						"source": "box: [history history_718 0 $in1] => history_718"
 					}
 				],
 				"attributes": {
@@ -98,20 +98,20 @@
 				},
 				"type": "signal t_sample",
 				"typename": "History",
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_428 0 $in1] => history_428"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_718 0 $in1] => history_718"
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14234",
-				"name": "history_430",
+				"id": "node_19339",
+				"name": "history_720",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14235",
+						"id": "node_19340",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [history history_430 0 $in1] => history_430"
+						"source": "box: [history history_720 0 $in1] => history_720"
 					}
 				],
 				"attributes": {
@@ -119,20 +119,20 @@
 				},
 				"type": "signal t_sample",
 				"typename": "History",
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_430 0 $in1] => history_430"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_720 0 $in1] => history_720"
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14232",
-				"name": "history_439",
+				"id": "node_19337",
+				"name": "history_729",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14233",
+						"id": "node_19338",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [history history_439 0 $in1] => history_439"
+						"source": "box: [history history_729 0 $in1] => history_729"
 					}
 				],
 				"attributes": {
@@ -140,62 +140,16 @@
 				},
 				"type": "signal t_sample",
 				"typename": "History",
-				"source": "source: [gen $in1 @file swtoggle] => gen_442 parent: box: [history history_439 0 $in1] => history_439"
+				"source": "source: [gen $in1 @file swtoggle] => gen_732 parent: box: [history history_729 0 $in1] => history_729"
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14228",
-				"name": "knob6_feedback",
-				"inputs": [
-					{
-						"class": "Constant",
-						"id": "node_14229",
-						"value": "0",
-						"eval": 0,
-						"type": "constant int",
-						"source": "box: [param knob6_feedback 0 @max 0.99 @min 0] => knob6_feedback"
-					}
-				],
-				"attributes": {
-					"max": {
-						"class": "Attribute",
-						"id": "node_14230",
-						"name": "max",
-						"value": {
-							"class": "Constant",
-							"id": "node_13401",
-							"value": "0.99",
-							"eval": 0.99,
-							"type": "constant t_sample",
-							"source": "7:28 -> 7:32"
-						}
-					},
-					"min": {
-						"class": "Attribute",
-						"id": "node_14231",
-						"name": "min",
-						"value": {
-							"class": "Constant",
-							"id": "node_13403",
-							"value": "0",
-							"eval": 0,
-							"type": "constant int",
-							"source": "7:38 -> 7:39"
-						}
-					}
-				},
-				"type": "control t_sample",
-				"typename": "Param",
-				"source": "box: [param knob6_feedback 0 @max 0.99 @min 0] => knob6_feedback"
-			},
-			{
-				"class": "Declaration",
-				"id": "node_14224",
+				"id": "node_19333",
 				"name": "knob3_coarse",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14225",
+						"id": "node_19334",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
@@ -205,28 +159,28 @@
 				"attributes": {
 					"max": {
 						"class": "Attribute",
-						"id": "node_14226",
+						"id": "node_19335",
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_13407",
+							"id": "node_18506",
 							"value": "24",
 							"eval": 24,
 							"type": "constant int",
-							"source": "6:26 -> 6:28"
+							"source": "7:26 -> 7:28"
 						}
 					},
 					"min": {
 						"class": "Attribute",
-						"id": "node_14227",
+						"id": "node_19336",
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_13409",
+							"id": "node_18508",
 							"value": "-24",
 							"eval": -24,
 							"type": "constant int",
-							"source": "6:34 -> 6:37"
+							"source": "7:34 -> 7:37"
 						}
 					}
 				},
@@ -236,117 +190,58 @@
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14220",
-				"name": "knob4_fine",
+				"id": "node_19329",
+				"name": "knob6_feedback",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14221",
+						"id": "node_19330",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
-						"source": "box: [param knob4_fine 0 @max 50 @min -50] => knob4_fine"
+						"source": "box: [param knob6_feedback 0 @max 0.99 @min 0] => knob6_feedback"
 					}
 				],
 				"attributes": {
 					"max": {
 						"class": "Attribute",
-						"id": "node_14222",
+						"id": "node_19331",
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_13413",
-							"value": "50",
-							"eval": 50,
-							"type": "constant int",
-							"source": "5:24 -> 5:26"
+							"id": "node_18512",
+							"value": "0.99",
+							"eval": 0.99,
+							"type": "constant t_sample",
+							"source": "6:28 -> 6:32"
 						}
 					},
 					"min": {
 						"class": "Attribute",
-						"id": "node_14223",
+						"id": "node_19332",
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_13415",
-							"value": "-50",
-							"eval": -50,
-							"type": "constant int",
-							"source": "5:32 -> 5:35"
-						}
-					}
-				},
-				"type": "control t_sample",
-				"typename": "Param",
-				"source": "box: [param knob4_fine 0 @max 50 @min -50] => knob4_fine"
-			},
-			{
-				"class": "Declaration",
-				"id": "node_14215",
-				"name": "knob2_wet",
-				"inputs": [
-					{
-						"class": "Constant",
-						"id": "node_14616",
-						"value": 1,
-						"eval": 1,
-						"type": "constant int",
-						"source": "box: [param knob2_wet 0 @max 1 @default 1. @min 0] => knob2_wet"
-					}
-				],
-				"attributes": {
-					"max": {
-						"class": "Attribute",
-						"id": "node_14217",
-						"name": "max",
-						"value": {
-							"class": "Constant",
-							"id": "node_13419",
-							"value": "1",
-							"eval": 1,
-							"type": "constant int",
-							"source": "4:23 -> 4:24"
-						}
-					},
-					"default": {
-						"class": "Attribute",
-						"id": "node_14218",
-						"name": "default",
-						"value": {
-							"class": "Constant",
-							"id": "node_13421",
-							"value": "1.",
-							"eval": 1,
-							"type": "constant int",
-							"source": "4:34 -> 4:36"
-						}
-					},
-					"min": {
-						"class": "Attribute",
-						"id": "node_14219",
-						"name": "min",
-						"value": {
-							"class": "Constant",
-							"id": "node_13423",
+							"id": "node_18514",
 							"value": "0",
 							"eval": 0,
 							"type": "constant int",
-							"source": "4:42 -> 4:43"
+							"source": "6:38 -> 6:39"
 						}
 					}
 				},
 				"type": "control t_sample",
 				"typename": "Param",
-				"source": "box: [param knob2_wet 0 @max 1 @default 1. @min 0] => knob2_wet"
+				"source": "box: [param knob6_feedback 0 @max 0.99 @min 0] => knob6_feedback"
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14211",
+				"id": "node_19325",
 				"name": "knob5_delay",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14212",
+						"id": "node_19326",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
@@ -356,28 +251,28 @@
 				"attributes": {
 					"max": {
 						"class": "Attribute",
-						"id": "node_14213",
+						"id": "node_19327",
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_13427",
+							"id": "node_18518",
 							"value": "1000",
 							"eval": 1000,
 							"type": "constant int",
-							"source": "3:25 -> 3:29"
+							"source": "5:25 -> 5:29"
 						}
 					},
 					"min": {
 						"class": "Attribute",
-						"id": "node_14214",
+						"id": "node_19328",
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_13429",
+							"id": "node_18520",
 							"value": "0",
 							"eval": 0,
 							"type": "constant int",
-							"source": "3:35 -> 3:36"
+							"source": "5:35 -> 5:36"
 						}
 					}
 				},
@@ -387,12 +282,12 @@
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14207",
+				"id": "node_19321",
 				"name": "knob1_windowsize",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14208",
+						"id": "node_19322",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
@@ -402,28 +297,28 @@
 				"attributes": {
 					"max": {
 						"class": "Attribute",
-						"id": "node_14209",
+						"id": "node_19323",
 						"name": "max",
 						"value": {
 							"class": "Constant",
-							"id": "node_13433",
+							"id": "node_18524",
 							"value": "480",
 							"eval": 480,
 							"type": "constant int",
-							"source": "2:30 -> 2:33"
+							"source": "4:30 -> 4:33"
 						}
 					},
 					"min": {
 						"class": "Attribute",
-						"id": "node_14210",
+						"id": "node_19324",
 						"name": "min",
 						"value": {
 							"class": "Constant",
-							"id": "node_13435",
+							"id": "node_18526",
 							"value": "240",
 							"eval": 240,
 							"type": "constant int",
-							"source": "2:39 -> 2:42"
+							"source": "4:39 -> 4:42"
 						}
 					}
 				},
@@ -433,12 +328,117 @@
 			},
 			{
 				"class": "Declaration",
-				"id": "node_14205",
+				"id": "node_19316",
+				"name": "knob2_wet",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_19721",
+						"value": 1,
+						"eval": 1,
+						"type": "constant int",
+						"source": "box: [param knob2_wet 0 @max 1 @default 1. @min 0] => knob2_wet"
+					}
+				],
+				"attributes": {
+					"max": {
+						"class": "Attribute",
+						"id": "node_19318",
+						"name": "max",
+						"value": {
+							"class": "Constant",
+							"id": "node_18530",
+							"value": "1",
+							"eval": 1,
+							"type": "constant int",
+							"source": "3:23 -> 3:24"
+						}
+					},
+					"default": {
+						"class": "Attribute",
+						"id": "node_19319",
+						"name": "default",
+						"value": {
+							"class": "Constant",
+							"id": "node_18532",
+							"value": "1.",
+							"eval": 1,
+							"type": "constant int",
+							"source": "3:34 -> 3:36"
+						}
+					},
+					"min": {
+						"class": "Attribute",
+						"id": "node_19320",
+						"name": "min",
+						"value": {
+							"class": "Constant",
+							"id": "node_18534",
+							"value": "0",
+							"eval": 0,
+							"type": "constant int",
+							"source": "3:42 -> 3:43"
+						}
+					}
+				},
+				"type": "control t_sample",
+				"typename": "Param",
+				"source": "box: [param knob2_wet 0 @max 1 @default 1. @min 0] => knob2_wet"
+			},
+			{
+				"class": "Declaration",
+				"id": "node_19312",
+				"name": "knob4_fine",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_19313",
+						"value": "0",
+						"eval": 0,
+						"type": "constant int",
+						"source": "box: [param knob4_fine 0 @max 50 @min -50] => knob4_fine"
+					}
+				],
+				"attributes": {
+					"max": {
+						"class": "Attribute",
+						"id": "node_19314",
+						"name": "max",
+						"value": {
+							"class": "Constant",
+							"id": "node_18538",
+							"value": "50",
+							"eval": 50,
+							"type": "constant int",
+							"source": "2:24 -> 2:26"
+						}
+					},
+					"min": {
+						"class": "Attribute",
+						"id": "node_19315",
+						"name": "min",
+						"value": {
+							"class": "Constant",
+							"id": "node_18540",
+							"value": "-50",
+							"eval": -50,
+							"type": "constant int",
+							"source": "2:32 -> 2:35"
+						}
+					}
+				},
+				"type": "control t_sample",
+				"typename": "Param",
+				"source": "box: [param knob4_fine 0 @max 50 @min -50] => knob4_fine"
+			},
+			{
+				"class": "Declaration",
+				"id": "node_19310",
 				"name": "sw1",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14206",
+						"id": "node_19311",
 						"value": "0",
 						"eval": 0,
 						"type": "constant int",
@@ -454,59 +454,11 @@
 			},
 			{
 				"class": "Statement",
-				"id": "node_14246",
+				"id": "node_19351",
 				"inputs": [
 					{
 						"class": "Constant",
-						"id": "node_14619",
-						"value": 0,
-						"eval": 0,
-						"type": "constant int",
-						"source": "box: [out 4 $in1] => "
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14248",
-						"name": "out4",
-						"type": "signal t_sample",
-						"source": "box: [out 4 $in1] => "
-					}
-				],
-				"source": "box: [out 4 $in1] => "
-			},
-			{
-				"class": "Statement",
-				"id": "node_14249",
-				"inputs": [
-					{
-						"class": "Constant",
-						"id": "node_14620",
-						"value": 0,
-						"eval": 0,
-						"type": "constant int",
-						"source": "box: [out 6 $in1] => "
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14251",
-						"name": "out6",
-						"type": "signal t_sample",
-						"source": "box: [out 6 $in1] => "
-					}
-				],
-				"source": "box: [out 6 $in1] => "
-			},
-			{
-				"class": "Statement",
-				"id": "node_14252",
-				"inputs": [
-					{
-						"class": "Constant",
-						"id": "node_14621",
+						"id": "node_19724",
 						"value": 0,
 						"eval": 0,
 						"type": "constant int",
@@ -516,7 +468,7 @@
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14254",
+						"id": "node_19353",
 						"name": "out5",
 						"type": "signal t_sample",
 						"source": "box: [out 5 $in1] => "
@@ -526,62 +478,110 @@
 			},
 			{
 				"class": "Statement",
-				"id": "node_14255",
+				"id": "node_19354",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_19725",
+						"value": 0,
+						"eval": 0,
+						"type": "constant int",
+						"source": "box: [out 4 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19356",
+						"name": "out4",
+						"type": "signal t_sample",
+						"source": "box: [out 4 $in1] => "
+					}
+				],
+				"source": "box: [out 4 $in1] => "
+			},
+			{
+				"class": "Statement",
+				"id": "node_19357",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_19726",
+						"value": 0,
+						"eval": 0,
+						"type": "constant int",
+						"source": "box: [out 6 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19359",
+						"name": "out6",
+						"type": "signal t_sample",
+						"source": "box: [out 6 $in1] => "
+					}
+				],
+				"source": "box: [out 6 $in1] => "
+			},
+			{
+				"class": "Statement",
+				"id": "node_19360",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14256",
+						"id": "node_19361",
 						"operator": "sah",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14257",
-								"name": "history_439",
+								"id": "node_19362",
+								"name": "history_729",
 								"type": "signal t_sample",
-								"source": "box: [sah $in1 $in2 $in3] => sah_440"
+								"source": "box: [sah $in1 $in2 $in3] => sah_730"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14258",
+								"id": "node_19363",
 								"name": "sw1",
 								"type": "control t_sample",
-								"source": "box: [sah $in1 $in2 $in3] => sah_440"
+								"source": "box: [sah $in1 $in2 $in3] => sah_730"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14259",
+								"id": "node_19364",
 								"value": "0",
 								"eval": 0,
 								"type": "constant int",
-								"source": "box: [sah $in1 $in2 $in3] => sah_440"
+								"source": "box: [sah $in1 $in2 $in3] => sah_730"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [sah $in1 $in2 $in3] => sah_440"
+						"source": "box: [sah $in1 $in2 $in3] => sah_730"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14260",
-						"name": "sah_440",
+						"id": "node_19365",
+						"name": "sah_730",
 						"type": "signal t_sample",
-						"source": "box: [sah $in1 $in2 $in3] => sah_440"
+						"source": "box: [sah $in1 $in2 $in3] => sah_730"
 					}
 				],
-				"source": "source: [gen $in1 @file swtoggle] => gen_442 parent: box: [sah $in1 $in2 $in3] => sah_440"
+				"source": "source: [gen $in1 @file swtoggle] => gen_732 parent: box: [sah $in1 $in2 $in3] => sah_730"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14261",
+				"id": "node_19366",
 				"inputs": [
 					{
 						"class": "Variable",
-						"id": "node_14262",
-						"name": "sah_440",
+						"id": "node_19367",
+						"name": "sah_730",
 						"type": "signal t_sample",
 						"source": "box: [out 1 $in1] => "
 					}
@@ -589,100 +589,100 @@
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14263",
-						"name": "gen_442",
+						"id": "node_19368",
+						"name": "gen_732",
 						"type": "signal t_sample",
 						"source": "box: [out 1 $in1] => "
 					}
 				],
-				"source": "source: [gen $in1 @file swtoggle] => gen_442 parent: box: [out 1 $in1] => "
+				"source": "source: [gen $in1 @file swtoggle] => gen_732 parent: box: [out 1 $in1] => "
 			},
 			{
 				"class": "Statement",
-				"id": "node_14264",
+				"id": "node_19369",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14265",
+						"id": "node_19370",
 						"operator": "sub",
 						"inputs": [
 							{
 								"class": "Constant",
-								"id": "node_14266",
+								"id": "node_19371",
 								"value": "1",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [rsub $in1 1] => rsub_438"
+								"source": "box: [rsub $in1 1] => rsub_728"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14267",
-								"name": "sah_440",
+								"id": "node_19372",
+								"name": "sah_730",
 								"type": "signal t_sample",
-								"source": "box: [rsub $in1 1] => rsub_438"
+								"source": "box: [rsub $in1 1] => rsub_728"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [rsub $in1 1] => rsub_438"
+						"source": "box: [rsub $in1 1] => rsub_728"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14268",
-						"name": "rsub_438",
+						"id": "node_19373",
+						"name": "rsub_728",
 						"type": "signal t_sample",
-						"source": "box: [rsub $in1 1] => rsub_438"
+						"source": "box: [rsub $in1 1] => rsub_728"
 					}
 				],
-				"source": "source: [gen $in1 @file swtoggle] => gen_442 parent: box: [rsub $in1 1] => rsub_438"
+				"source": "source: [gen $in1 @file swtoggle] => gen_732 parent: box: [rsub $in1 1] => rsub_728"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14269",
+				"id": "node_19374",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14270",
+						"id": "node_19375",
 						"operator": "fixdenorm",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14271",
-								"name": "rsub_438",
+								"id": "node_19376",
+								"name": "rsub_728",
 								"type": "signal t_sample",
-								"source": "box: [history history_439 0 $in1] => history_439"
+								"source": "box: [history history_729 0 $in1] => history_729"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [history history_439 0 $in1] => history_439"
+						"source": "box: [history history_729 0 $in1] => history_729"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14272",
-						"name": "history_439_next_441",
+						"id": "node_19377",
+						"name": "history_729_next_731",
 						"type": "signal t_sample",
-						"source": "box: [history history_439 0 $in1] => history_439"
+						"source": "box: [history history_729 0 $in1] => history_729"
 					}
 				],
-				"source": "source: [gen $in1 @file swtoggle] => gen_442 parent: box: [history history_439 0 $in1] => history_439"
+				"source": "source: [gen $in1 @file swtoggle] => gen_732 parent: box: [history history_729 0 $in1] => history_729"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14273",
+				"id": "node_19378",
 				"inputs": [
 					{
 						"class": "Variable",
-						"id": "node_14274",
-						"name": "gen_442",
+						"id": "node_19379",
+						"name": "gen_732",
 						"type": "signal t_sample",
 						"source": "box: [out 3 $in1] => "
 					}
@@ -690,7 +690,7 @@
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14275",
+						"id": "node_19380",
 						"name": "out3",
 						"type": "signal t_sample",
 						"source": "box: [out 3 $in1] => "
@@ -700,1719 +700,1719 @@
 			},
 			{
 				"class": "Statement",
-				"id": "node_14276",
+				"id": "node_19381",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14277",
+						"id": "node_19382",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14278",
-								"name": "gen_442",
+								"id": "node_19383",
+								"name": "gen_732",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 1] => add_443"
+								"source": "box: [add $in1 1] => add_733"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14279",
+								"id": "node_19384",
 								"value": "1",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [add $in1 1] => add_443"
+								"source": "box: [add $in1 1] => add_733"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 1] => add_443"
+						"source": "box: [add $in1 1] => add_733"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14280",
-						"name": "add_443",
+						"id": "node_19385",
+						"name": "add_733",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 1] => add_443"
+						"source": "box: [add $in1 1] => add_733"
 					}
 				],
-				"source": "box: [add $in1 1] => add_443"
+				"source": "box: [add $in1 1] => add_733"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14281",
+				"id": "node_19386",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14282",
+						"id": "node_19387",
 						"operator": "gate",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14283",
-								"name": "add_443",
+								"id": "node_19388",
+								"name": "add_733",
 								"type": "signal t_sample",
-								"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+								"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14284",
+								"id": "node_19389",
 								"name": "in1",
 								"type": "signal t_sample",
-								"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+								"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 							}
 						],
 						"attributes": {
 							"choices": {
 								"class": "Attribute",
-								"id": "node_14285",
+								"id": "node_19390",
 								"name": "choices",
 								"value": {
 									"class": "Constant",
-									"id": "node_13489",
+									"id": "node_18594",
 									"value": "2",
 									"eval": 2,
 									"type": "constant int",
-									"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+									"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 								},
-								"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+								"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 							}
 						},
 						"type": "signal t_sample",
-						"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+						"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14286",
-						"name": "gate_436",
+						"id": "node_19391",
+						"name": "gate_726",
 						"type": "signal t_sample",
-						"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+						"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 					},
 					{
 						"class": "Variable",
-						"id": "node_14287",
-						"name": "gate_437",
+						"id": "node_19392",
+						"name": "gate_727",
 						"type": "signal t_sample",
-						"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+						"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 					}
 				],
-				"source": "box: [gate $in1 $in2 @choices 2] => gate_436,gate_437"
+				"source": "box: [gate $in1 $in2 @choices 2] => gate_726,gate_727"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14288",
+				"id": "node_19393",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14289",
+						"id": "node_19394",
 						"operator": "div",
 						"inputs": [
 							{
 								"class": "Constant",
-								"id": "node_14290",
+								"id": "node_19395",
 								"value": "-3.795",
 								"eval": -3.795,
 								"type": "constant t_sample",
-								"source": "box: [rdiv $in1 -3.795] => rdiv_476"
+								"source": "box: [rdiv $in1 -3.795] => rdiv_766"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14291",
+								"id": "node_19396",
 								"name": "knob1_windowsize",
 								"type": "control t_sample",
-								"source": "box: [rdiv $in1 -3.795] => rdiv_476"
+								"source": "box: [rdiv $in1 -3.795] => rdiv_766"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [rdiv $in1 -3.795] => rdiv_476"
+						"source": "box: [rdiv $in1 -3.795] => rdiv_766"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14292",
-						"name": "rdiv_476",
+						"id": "node_19397",
+						"name": "rdiv_766",
 						"type": "control t_sample",
-						"source": "box: [rdiv $in1 -3.795] => rdiv_476"
+						"source": "box: [rdiv $in1 -3.795] => rdiv_766"
 					}
 				],
-				"source": "box: [rdiv $in1 -3.795] => rdiv_476"
+				"source": "box: [rdiv $in1 -3.795] => rdiv_766"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14293",
+				"id": "node_19398",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14294",
+						"id": "node_19399",
 						"operator": "sub",
 						"inputs": [
 							{
 								"class": "Constant",
-								"id": "node_14295",
+								"id": "node_19400",
 								"value": "1.",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [rsub $in1 1.] => rsub_475"
+								"source": "box: [rsub $in1 1.] => rsub_765"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14296",
+								"id": "node_19401",
 								"name": "knob2_wet",
 								"type": "control t_sample",
-								"source": "box: [rsub $in1 1.] => rsub_475"
+								"source": "box: [rsub $in1 1.] => rsub_765"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [rsub $in1 1.] => rsub_475"
+						"source": "box: [rsub $in1 1.] => rsub_765"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14297",
-						"name": "rsub_475",
+						"id": "node_19402",
+						"name": "rsub_765",
 						"type": "control t_sample",
-						"source": "box: [rsub $in1 1.] => rsub_475"
+						"source": "box: [rsub $in1 1.] => rsub_765"
 					}
 				],
-				"source": "box: [rsub $in1 1.] => rsub_475"
+				"source": "box: [rsub $in1 1.] => rsub_765"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14298",
+				"id": "node_19403",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14299",
+						"id": "node_19404",
 						"operator": "sqrt",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14300",
-								"name": "rsub_475",
+								"id": "node_19405",
+								"name": "rsub_765",
 								"type": "control t_sample",
-								"source": "box: [sqrt $in1] => sqrt_473"
+								"source": "box: [sqrt $in1] => sqrt_763"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [sqrt $in1] => sqrt_473"
+						"source": "box: [sqrt $in1] => sqrt_763"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14301",
-						"name": "sqrt_473",
+						"id": "node_19406",
+						"name": "sqrt_763",
 						"type": "control t_sample",
-						"source": "box: [sqrt $in1] => sqrt_473"
+						"source": "box: [sqrt $in1] => sqrt_763"
 					}
 				],
-				"source": "box: [sqrt $in1] => sqrt_473"
+				"source": "box: [sqrt $in1] => sqrt_763"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14302",
+				"id": "node_19407",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14303",
+						"id": "node_19408",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14304",
-								"name": "gate_437",
+								"id": "node_19409",
+								"name": "gate_727",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_474"
+								"source": "box: [mul $in1 $in2] => mul_764"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14305",
-								"name": "sqrt_473",
+								"id": "node_19410",
+								"name": "sqrt_763",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_474"
+								"source": "box: [mul $in1 $in2] => mul_764"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_474"
+						"source": "box: [mul $in1 $in2] => mul_764"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14306",
-						"name": "mul_474",
+						"id": "node_19411",
+						"name": "mul_764",
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_474"
+						"source": "box: [mul $in1 $in2] => mul_764"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_474"
+				"source": "box: [mul $in1 $in2] => mul_764"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14307",
+				"id": "node_19412",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14308",
+						"id": "node_19413",
 						"operator": "round",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14309",
+								"id": "node_19414",
 								"name": "knob3_coarse",
 								"type": "control t_sample",
-								"source": "box: [round $in1 $in2] => round_485"
+								"source": "box: [round $in1 $in2] => round_775"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14310",
+								"id": "node_19415",
 								"value": "1",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [round $in1 $in2] => round_485"
+								"source": "box: [round $in1 $in2] => round_775"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [round $in1 $in2] => round_485"
+						"source": "box: [round $in1 $in2] => round_775"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14311",
-						"name": "round_485",
+						"id": "node_19416",
+						"name": "round_775",
 						"type": "control t_sample",
-						"source": "box: [round $in1 $in2] => round_485"
+						"source": "box: [round $in1 $in2] => round_775"
 					}
 				],
-				"source": "box: [round $in1 $in2] => round_485"
+				"source": "box: [round $in1 $in2] => round_775"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14312",
+				"id": "node_19417",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14313",
+						"id": "node_19418",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14314",
-								"name": "round_485",
+								"id": "node_19419",
+								"name": "round_775",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 100] => mul_484"
+								"source": "box: [mul $in1 100] => mul_774"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14315",
+								"id": "node_19420",
 								"value": "100",
 								"eval": 100,
 								"type": "constant int",
-								"source": "box: [mul $in1 100] => mul_484"
+								"source": "box: [mul $in1 100] => mul_774"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [mul $in1 100] => mul_484"
+						"source": "box: [mul $in1 100] => mul_774"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14316",
-						"name": "mul_484",
+						"id": "node_19421",
+						"name": "mul_774",
 						"type": "control t_sample",
-						"source": "box: [mul $in1 100] => mul_484"
+						"source": "box: [mul $in1 100] => mul_774"
 					}
 				],
-				"source": "box: [mul $in1 100] => mul_484"
+				"source": "box: [mul $in1 100] => mul_774"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14317",
+				"id": "node_19422",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14318",
+						"id": "node_19423",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14319",
-								"name": "mul_484",
+								"id": "node_19424",
+								"name": "mul_774",
 								"type": "control t_sample",
-								"source": "box: [add $in1 $in2] => add_483"
+								"source": "box: [add $in1 $in2] => add_773"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14320",
+								"id": "node_19425",
 								"name": "knob4_fine",
 								"type": "control t_sample",
-								"source": "box: [add $in1 $in2] => add_483"
+								"source": "box: [add $in1 $in2] => add_773"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [add $in1 $in2] => add_483"
+						"source": "box: [add $in1 $in2] => add_773"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14321",
-						"name": "add_483",
+						"id": "node_19426",
+						"name": "add_773",
 						"type": "control t_sample",
-						"source": "box: [add $in1 $in2] => add_483"
+						"source": "box: [add $in1 $in2] => add_773"
 					}
 				],
-				"source": "box: [add $in1 $in2] => add_483"
+				"source": "box: [add $in1 $in2] => add_773"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14322",
+				"id": "node_19427",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14323",
+						"id": "node_19428",
 						"operator": "clamp",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14324",
-								"name": "add_483",
+								"id": "node_19429",
+								"name": "add_773",
 								"type": "control t_sample",
-								"source": "box: [clamp $in1 -2400 2400] => clamp_482"
+								"source": "box: [clamp $in1 -2400 2400] => clamp_772"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14325",
+								"id": "node_19430",
 								"value": "-2400",
 								"eval": -2400,
 								"type": "constant int",
-								"source": "box: [clamp $in1 -2400 2400] => clamp_482"
+								"source": "box: [clamp $in1 -2400 2400] => clamp_772"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14326",
+								"id": "node_19431",
 								"value": "2400",
 								"eval": 2400,
 								"type": "constant int",
-								"source": "box: [clamp $in1 -2400 2400] => clamp_482"
+								"source": "box: [clamp $in1 -2400 2400] => clamp_772"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [clamp $in1 -2400 2400] => clamp_482"
+						"source": "box: [clamp $in1 -2400 2400] => clamp_772"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14327",
-						"name": "clamp_482",
+						"id": "node_19432",
+						"name": "clamp_772",
 						"type": "control t_sample",
-						"source": "box: [clamp $in1 -2400 2400] => clamp_482"
+						"source": "box: [clamp $in1 -2400 2400] => clamp_772"
 					}
 				],
-				"source": "box: [clamp $in1 -2400 2400] => clamp_482"
+				"source": "box: [clamp $in1 -2400 2400] => clamp_772"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14328",
+				"id": "node_19433",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14329",
+						"id": "node_19434",
 						"operator": "eq",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14330",
-								"name": "clamp_482",
+								"id": "node_19435",
+								"name": "clamp_772",
 								"type": "control t_sample",
-								"source": "box: [eq $in1 0] => eq_457"
+								"source": "box: [eq $in1 0] => eq_747"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14331",
+								"id": "node_19436",
 								"value": "0",
 								"eval": 0,
 								"type": "constant int",
-								"source": "box: [eq $in1 0] => eq_457"
+								"source": "box: [eq $in1 0] => eq_747"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control int",
-						"source": "box: [eq $in1 0] => eq_457"
+						"source": "box: [eq $in1 0] => eq_747"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14332",
-						"name": "eq_457",
+						"id": "node_19437",
+						"name": "eq_747",
 						"type": "control int",
-						"source": "box: [eq $in1 0] => eq_457"
+						"source": "box: [eq $in1 0] => eq_747"
 					}
 				],
-				"source": "box: [eq $in1 0] => eq_457"
+				"source": "box: [eq $in1 0] => eq_747"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14333",
+				"id": "node_19438",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14334",
+						"id": "node_19439",
 						"operator": "change",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14335",
-								"name": "eq_457",
+								"id": "node_19440",
+								"name": "eq_747",
 								"type": "control int",
-								"source": "box: [change $in1] => change_456"
+								"source": "box: [change $in1] => change_746"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal int",
-						"source": "box: [change $in1] => change_456"
+						"source": "box: [change $in1] => change_746"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14336",
-						"name": "change_456",
+						"id": "node_19441",
+						"name": "change_746",
 						"type": "signal int",
-						"source": "box: [change $in1] => change_456"
+						"source": "box: [change $in1] => change_746"
 					}
 				],
-				"source": "box: [change $in1] => change_456"
+				"source": "box: [change $in1] => change_746"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14337",
+				"id": "node_19442",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14338",
+						"id": "node_19443",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14339",
-								"name": "clamp_482",
+								"id": "node_19444",
+								"name": "clamp_772",
 								"type": "control t_sample",
-								"source": "box: [add $in1 6000.] => add_481"
+								"source": "box: [add $in1 6000.] => add_771"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14340",
+								"id": "node_19445",
 								"value": "6000.",
 								"eval": 6000,
 								"type": "constant int",
-								"source": "box: [add $in1 6000.] => add_481"
+								"source": "box: [add $in1 6000.] => add_771"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [add $in1 6000.] => add_481"
+						"source": "box: [add $in1 6000.] => add_771"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14341",
-						"name": "add_481",
+						"id": "node_19446",
+						"name": "add_771",
 						"type": "control t_sample",
-						"source": "box: [add $in1 6000.] => add_481"
+						"source": "box: [add $in1 6000.] => add_771"
 					}
 				],
-				"source": "box: [add $in1 6000.] => add_481"
+				"source": "box: [add $in1 6000.] => add_771"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14342",
+				"id": "node_19447",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14343",
+						"id": "node_19448",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14344",
-								"name": "add_481",
+								"id": "node_19449",
+								"name": "add_771",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 0.01] => mul_480"
+								"source": "box: [mul $in1 0.01] => mul_770"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14345",
+								"id": "node_19450",
 								"value": "0.01",
 								"eval": 0.01,
 								"type": "constant t_sample",
-								"source": "box: [mul $in1 0.01] => mul_480"
+								"source": "box: [mul $in1 0.01] => mul_770"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [mul $in1 0.01] => mul_480"
+						"source": "box: [mul $in1 0.01] => mul_770"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14346",
-						"name": "mul_480",
+						"id": "node_19451",
+						"name": "mul_770",
 						"type": "control t_sample",
-						"source": "box: [mul $in1 0.01] => mul_480"
+						"source": "box: [mul $in1 0.01] => mul_770"
 					}
 				],
-				"source": "box: [mul $in1 0.01] => mul_480"
+				"source": "box: [mul $in1 0.01] => mul_770"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14347",
+				"id": "node_19452",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14348",
+						"id": "node_19453",
 						"operator": "mtof",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14349",
-								"name": "mul_480",
+								"id": "node_19454",
+								"name": "mul_770",
 								"type": "control t_sample",
-								"source": "box: [mtof $in1 $in2] => mtof_479"
+								"source": "box: [mtof $in1 $in2] => mtof_769"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14350",
+								"id": "node_19455",
 								"value": "440",
 								"eval": 440,
 								"type": "constant int",
-								"source": "box: [mtof $in1 $in2] => mtof_479"
+								"source": "box: [mtof $in1 $in2] => mtof_769"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [mtof $in1 $in2] => mtof_479"
+						"source": "box: [mtof $in1 $in2] => mtof_769"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14351",
-						"name": "mtof_479",
+						"id": "node_19456",
+						"name": "mtof_769",
 						"type": "control t_sample",
-						"source": "box: [mtof $in1 $in2] => mtof_479"
+						"source": "box: [mtof $in1 $in2] => mtof_769"
 					}
 				],
-				"source": "box: [mtof $in1 $in2] => mtof_479"
+				"source": "box: [mtof $in1 $in2] => mtof_769"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14352",
+				"id": "node_19457",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14353",
+						"id": "node_19458",
 						"operator": "sub",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14354",
-								"name": "mtof_479",
+								"id": "node_19459",
+								"name": "mtof_769",
 								"type": "control t_sample",
-								"source": "box: [sub $in1 261.625977] => sub_478"
+								"source": "box: [sub $in1 261.625977] => sub_768"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14355",
+								"id": "node_19460",
 								"value": "261.625977",
 								"eval": 261.625977,
 								"type": "constant t_sample",
-								"source": "box: [sub $in1 261.625977] => sub_478"
+								"source": "box: [sub $in1 261.625977] => sub_768"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [sub $in1 261.625977] => sub_478"
+						"source": "box: [sub $in1 261.625977] => sub_768"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14356",
-						"name": "sub_478",
+						"id": "node_19461",
+						"name": "sub_768",
 						"type": "control t_sample",
-						"source": "box: [sub $in1 261.625977] => sub_478"
+						"source": "box: [sub $in1 261.625977] => sub_768"
 					}
 				],
-				"source": "box: [sub $in1 261.625977] => sub_478"
+				"source": "box: [sub $in1 261.625977] => sub_768"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14357",
+				"id": "node_19462",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14358",
+						"id": "node_19463",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14359",
-								"name": "sub_478",
+								"id": "node_19464",
+								"name": "sub_768",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_477"
+								"source": "box: [mul $in1 $in2] => mul_767"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14360",
-								"name": "rdiv_476",
+								"id": "node_19465",
+								"name": "rdiv_766",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_477"
+								"source": "box: [mul $in1 $in2] => mul_767"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [mul $in1 $in2] => mul_477"
+						"source": "box: [mul $in1 $in2] => mul_767"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14361",
-						"name": "mul_477",
+						"id": "node_19466",
+						"name": "mul_767",
 						"type": "control t_sample",
-						"source": "box: [mul $in1 $in2] => mul_477"
+						"source": "box: [mul $in1 $in2] => mul_767"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_477"
+				"source": "box: [mul $in1 $in2] => mul_767"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14362",
+				"id": "node_19467",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14363",
+						"id": "node_19468",
 						"operator": "phasor",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14364",
-								"name": "mul_477",
+								"id": "node_19469",
+								"name": "mul_767",
 								"type": "control t_sample",
-								"source": "box: [phasor $in1 $in2] => phasor_460"
+								"source": "box: [phasor $in1 $in2] => phasor_750"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14365",
-								"name": "change_456",
+								"id": "node_19470",
+								"name": "change_746",
 								"type": "signal int",
-								"source": "box: [phasor $in1 $in2] => phasor_460"
+								"source": "box: [phasor $in1 $in2] => phasor_750"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [phasor $in1 $in2] => phasor_460"
+						"source": "box: [phasor $in1 $in2] => phasor_750"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14366",
-						"name": "phasor_460",
+						"id": "node_19471",
+						"name": "phasor_750",
 						"type": "signal t_sample",
-						"source": "box: [phasor $in1 $in2] => phasor_460"
+						"source": "box: [phasor $in1 $in2] => phasor_750"
 					}
 				],
-				"source": "box: [phasor $in1 $in2] => phasor_460"
+				"source": "box: [phasor $in1 $in2] => phasor_750"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14367",
+				"id": "node_19472",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14368",
+						"id": "node_19473",
 						"operator": "sub",
 						"inputs": [
 							{
 								"class": "Expression",
-								"id": "node_14369",
+								"id": "node_19474",
 								"operator": "mul",
 								"inputs": [
 									{
 										"class": "Constant",
-										"id": "node_14370",
+										"id": "node_19475",
 										"value": 1.1,
 										"eval": 1.1,
 										"type": "constant t_sample",
-										"source": "code: 1:2 -> 1:2 [expr $in1] => expr_488"
+										"source": "code: 1:2 -> 1:2 [expr $in1] => expr_778"
 									},
 									{
 										"class": "Expression",
-										"id": "node_14371",
+										"id": "node_19476",
 										"operator": "sin",
 										"inputs": [
 											{
 												"class": "Expression",
-												"id": "node_14372",
+												"id": "node_19477",
 												"operator": "mul",
 												"inputs": [
 													{
 														"class": "Expression",
-														"id": "node_14373",
+														"id": "node_19478",
 														"operator": "div",
 														"inputs": [
 															{
 																"class": "Variable",
-																"id": "node_14374",
-																"name": "phasor_460",
+																"id": "node_19479",
+																"name": "phasor_750",
 																"type": "signal t_sample",
-																"source": "code: 1:14 -> 1:14 [expr $in1] => expr_488"
+																"source": "code: 1:14 -> 1:14 [expr $in1] => expr_778"
 															},
 															{
 																"class": "Constant",
-																"id": "node_14375",
+																"id": "node_19480",
 																"value": 2,
 																"eval": 2,
 																"type": "constant int",
-																"source": "code: 1:18 -> 1:18 [expr $in1] => expr_488"
+																"source": "code: 1:18 -> 1:18 [expr $in1] => expr_778"
 															}
 														],
 														"attributes": {
 															
 														},
 														"type": "signal t_sample",
-														"source": "code: 1:14 -> 1:20 [expr $in1] => expr_488"
+														"source": "code: 1:14 -> 1:20 [expr $in1] => expr_778"
 													},
 													{
 														"class": "Constant",
-														"id": "node_14376",
+														"id": "node_19481",
 														"value": 6.2831852,
 														"eval": 6.2831852,
 														"type": "constant t_sample",
-														"source": "code: 1:23 -> 1:37 [expr $in1] => expr_488"
+														"source": "code: 1:23 -> 1:37 [expr $in1] => expr_778"
 													}
 												],
 												"attributes": {
 													
 												},
 												"type": "signal t_sample",
-												"source": "code: 1:14 -> 1:37 [expr $in1] => expr_488"
+												"source": "code: 1:14 -> 1:37 [expr $in1] => expr_778"
 											}
 										],
 										"attributes": {
 											
 										},
 										"type": "signal t_sample",
-										"source": "code: 1:9 -> 1:37 [expr $in1] => expr_488"
+										"source": "code: 1:9 -> 1:37 [expr $in1] => expr_778"
 									}
 								],
 								"attributes": {
 									
 								},
 								"type": "signal t_sample",
-								"source": "code: 1:2 -> 1:37 [expr $in1] => expr_488"
+								"source": "code: 1:2 -> 1:37 [expr $in1] => expr_778"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14377",
+								"id": "node_19482",
 								"value": 0.1,
 								"eval": 0.1,
 								"type": "constant t_sample",
-								"source": "code: 1:43 -> 1:43 [expr $in1] => expr_488"
+								"source": "code: 1:43 -> 1:43 [expr $in1] => expr_778"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_488"
+						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_778"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14378",
-						"name": "expr_488",
+						"id": "node_19483",
+						"name": "expr_778",
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_488"
+						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_778"
 					}
 				],
-				"source": "code: 1:2 -> 1:45 [expr $in1] => expr_488"
+				"source": "code: 1:2 -> 1:45 [expr $in1] => expr_778"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14379",
+				"id": "node_19484",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14380",
+						"id": "node_19485",
 						"operator": "clamp",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14381",
-								"name": "expr_488",
+								"id": "node_19486",
+								"name": "expr_778",
 								"type": "signal t_sample",
-								"source": "box: [clamp $in1 0. 1.] => clamp_446"
+								"source": "box: [clamp $in1 0. 1.] => clamp_736"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14382",
+								"id": "node_19487",
 								"value": "0.",
 								"eval": 0,
 								"type": "constant int",
-								"source": "box: [clamp $in1 0. 1.] => clamp_446"
+								"source": "box: [clamp $in1 0. 1.] => clamp_736"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14383",
+								"id": "node_19488",
 								"value": "1.",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [clamp $in1 0. 1.] => clamp_446"
+								"source": "box: [clamp $in1 0. 1.] => clamp_736"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [clamp $in1 0. 1.] => clamp_446"
+						"source": "box: [clamp $in1 0. 1.] => clamp_736"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14384",
-						"name": "clamp_446",
+						"id": "node_19489",
+						"name": "clamp_736",
 						"type": "signal t_sample",
-						"source": "box: [clamp $in1 0. 1.] => clamp_446"
+						"source": "box: [clamp $in1 0. 1.] => clamp_736"
 					}
 				],
-				"source": "box: [clamp $in1 0. 1.] => clamp_446"
+				"source": "box: [clamp $in1 0. 1.] => clamp_736"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14385",
+				"id": "node_19490",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14386",
+						"id": "node_19491",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14387",
-								"name": "phasor_460",
+								"id": "node_19492",
+								"name": "phasor_750",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 0.5] => add_459"
+								"source": "box: [add $in1 0.5] => add_749"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14388",
+								"id": "node_19493",
 								"value": "0.5",
 								"eval": 0.5,
 								"type": "constant t_sample",
-								"source": "box: [add $in1 0.5] => add_459"
+								"source": "box: [add $in1 0.5] => add_749"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 0.5] => add_459"
+						"source": "box: [add $in1 0.5] => add_749"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14389",
-						"name": "add_459",
+						"id": "node_19494",
+						"name": "add_749",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 0.5] => add_459"
+						"source": "box: [add $in1 0.5] => add_749"
 					}
 				],
-				"source": "box: [add $in1 0.5] => add_459"
+				"source": "box: [add $in1 0.5] => add_749"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14390",
+				"id": "node_19495",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14391",
+						"id": "node_19496",
 						"operator": "mod",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14392",
-								"name": "add_459",
+								"id": "node_19497",
+								"name": "add_749",
 								"type": "signal t_sample",
-								"source": "box: [mod $in1 1] => mod_458"
+								"source": "box: [mod $in1 1] => mod_748"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14393",
+								"id": "node_19498",
 								"value": "1",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [mod $in1 1] => mod_458"
+								"source": "box: [mod $in1 1] => mod_748"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mod $in1 1] => mod_458"
+						"source": "box: [mod $in1 1] => mod_748"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14394",
-						"name": "mod_458",
+						"id": "node_19499",
+						"name": "mod_748",
 						"type": "signal t_sample",
-						"source": "box: [mod $in1 1] => mod_458"
+						"source": "box: [mod $in1 1] => mod_748"
 					}
 				],
-				"source": "box: [mod $in1 1] => mod_458"
+				"source": "box: [mod $in1 1] => mod_748"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14395",
+				"id": "node_19500",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14396",
+						"id": "node_19501",
 						"operator": "sub",
 						"inputs": [
 							{
 								"class": "Expression",
-								"id": "node_14397",
+								"id": "node_19502",
 								"operator": "mul",
 								"inputs": [
 									{
 										"class": "Constant",
-										"id": "node_14398",
+										"id": "node_19503",
 										"value": 1.1,
 										"eval": 1.1,
 										"type": "constant t_sample",
-										"source": "code: 1:2 -> 1:2 [expr $in1] => expr_487"
+										"source": "code: 1:2 -> 1:2 [expr $in1] => expr_777"
 									},
 									{
 										"class": "Expression",
-										"id": "node_14399",
+										"id": "node_19504",
 										"operator": "sin",
 										"inputs": [
 											{
 												"class": "Expression",
-												"id": "node_14400",
+												"id": "node_19505",
 												"operator": "mul",
 												"inputs": [
 													{
 														"class": "Expression",
-														"id": "node_14401",
+														"id": "node_19506",
 														"operator": "div",
 														"inputs": [
 															{
 																"class": "Variable",
-																"id": "node_14402",
-																"name": "mod_458",
+																"id": "node_19507",
+																"name": "mod_748",
 																"type": "signal t_sample",
-																"source": "code: 1:14 -> 1:14 [expr $in1] => expr_487"
+																"source": "code: 1:14 -> 1:14 [expr $in1] => expr_777"
 															},
 															{
 																"class": "Constant",
-																"id": "node_14403",
+																"id": "node_19508",
 																"value": 2,
 																"eval": 2,
 																"type": "constant int",
-																"source": "code: 1:18 -> 1:18 [expr $in1] => expr_487"
+																"source": "code: 1:18 -> 1:18 [expr $in1] => expr_777"
 															}
 														],
 														"attributes": {
 															
 														},
 														"type": "signal t_sample",
-														"source": "code: 1:14 -> 1:20 [expr $in1] => expr_487"
+														"source": "code: 1:14 -> 1:20 [expr $in1] => expr_777"
 													},
 													{
 														"class": "Constant",
-														"id": "node_14404",
+														"id": "node_19509",
 														"value": 6.2831852,
 														"eval": 6.2831852,
 														"type": "constant t_sample",
-														"source": "code: 1:23 -> 1:37 [expr $in1] => expr_487"
+														"source": "code: 1:23 -> 1:37 [expr $in1] => expr_777"
 													}
 												],
 												"attributes": {
 													
 												},
 												"type": "signal t_sample",
-												"source": "code: 1:14 -> 1:37 [expr $in1] => expr_487"
+												"source": "code: 1:14 -> 1:37 [expr $in1] => expr_777"
 											}
 										],
 										"attributes": {
 											
 										},
 										"type": "signal t_sample",
-										"source": "code: 1:9 -> 1:37 [expr $in1] => expr_487"
+										"source": "code: 1:9 -> 1:37 [expr $in1] => expr_777"
 									}
 								],
 								"attributes": {
 									
 								},
 								"type": "signal t_sample",
-								"source": "code: 1:2 -> 1:37 [expr $in1] => expr_487"
+								"source": "code: 1:2 -> 1:37 [expr $in1] => expr_777"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14405",
+								"id": "node_19510",
 								"value": 0.1,
 								"eval": 0.1,
 								"type": "constant t_sample",
-								"source": "code: 1:43 -> 1:43 [expr $in1] => expr_487"
+								"source": "code: 1:43 -> 1:43 [expr $in1] => expr_777"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_487"
+						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_777"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14406",
-						"name": "expr_487",
+						"id": "node_19511",
+						"name": "expr_777",
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_487"
+						"source": "code: 1:2 -> 1:45 [expr $in1] => expr_777"
 					}
 				],
-				"source": "code: 1:2 -> 1:45 [expr $in1] => expr_487"
+				"source": "code: 1:2 -> 1:45 [expr $in1] => expr_777"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14407",
+				"id": "node_19512",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14408",
+						"id": "node_19513",
 						"operator": "clamp",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14409",
-								"name": "expr_487",
+								"id": "node_19514",
+								"name": "expr_777",
 								"type": "signal t_sample",
-								"source": "box: [clamp $in1 0. 1.] => clamp_444"
+								"source": "box: [clamp $in1 0. 1.] => clamp_734"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14410",
+								"id": "node_19515",
 								"value": "0.",
 								"eval": 0,
 								"type": "constant int",
-								"source": "box: [clamp $in1 0. 1.] => clamp_444"
+								"source": "box: [clamp $in1 0. 1.] => clamp_734"
 							},
 							{
 								"class": "Constant",
-								"id": "node_14411",
+								"id": "node_19516",
 								"value": "1.",
 								"eval": 1,
 								"type": "constant int",
-								"source": "box: [clamp $in1 0. 1.] => clamp_444"
+								"source": "box: [clamp $in1 0. 1.] => clamp_734"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [clamp $in1 0. 1.] => clamp_444"
+						"source": "box: [clamp $in1 0. 1.] => clamp_734"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14412",
-						"name": "clamp_444",
+						"id": "node_19517",
+						"name": "clamp_734",
 						"type": "signal t_sample",
-						"source": "box: [clamp $in1 0. 1.] => clamp_444"
+						"source": "box: [clamp $in1 0. 1.] => clamp_734"
 					}
 				],
-				"source": "box: [clamp $in1 0. 1.] => clamp_444"
+				"source": "box: [clamp $in1 0. 1.] => clamp_734"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14413",
+				"id": "node_19518",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14414",
+						"id": "node_19519",
 						"operator": "sqrt",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14415",
+								"id": "node_19520",
 								"name": "knob2_wet",
 								"type": "control t_sample",
-								"source": "box: [sqrt $in1] => sqrt_472"
+								"source": "box: [sqrt $in1] => sqrt_762"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [sqrt $in1] => sqrt_472"
+						"source": "box: [sqrt $in1] => sqrt_762"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14416",
-						"name": "sqrt_472",
+						"id": "node_19521",
+						"name": "sqrt_762",
 						"type": "control t_sample",
-						"source": "box: [sqrt $in1] => sqrt_472"
+						"source": "box: [sqrt $in1] => sqrt_762"
 					}
 				],
-				"source": "box: [sqrt $in1] => sqrt_472"
+				"source": "box: [sqrt $in1] => sqrt_762"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14417",
+				"id": "node_19522",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14418",
+						"id": "node_19523",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14419",
-								"name": "gate_437",
+								"id": "node_19524",
+								"name": "gate_727",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_471"
+								"source": "box: [mul $in1 $in2] => mul_761"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14420",
-								"name": "sqrt_472",
+								"id": "node_19525",
+								"name": "sqrt_762",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_471"
+								"source": "box: [mul $in1 $in2] => mul_761"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_471"
+						"source": "box: [mul $in1 $in2] => mul_761"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14421",
-						"name": "mul_471",
+						"id": "node_19526",
+						"name": "mul_761",
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_471"
+						"source": "box: [mul $in1 $in2] => mul_761"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_471"
+				"source": "box: [mul $in1 $in2] => mul_761"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14422",
+				"id": "node_19527",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14423",
+						"id": "node_19528",
 						"operator": "mstosamps",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14424",
+								"id": "node_19529",
 								"name": "knob1_windowsize",
 								"type": "control t_sample",
-								"source": "box: [mstosamps $in1] => mstosamps_463"
+								"source": "box: [mstosamps $in1] => mstosamps_753"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "control t_sample",
-						"source": "box: [mstosamps $in1] => mstosamps_463"
+						"source": "box: [mstosamps $in1] => mstosamps_753"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14425",
-						"name": "mstosamps_463",
+						"id": "node_19530",
+						"name": "mstosamps_753",
 						"type": "control t_sample",
-						"source": "box: [mstosamps $in1] => mstosamps_463"
+						"source": "box: [mstosamps $in1] => mstosamps_753"
 					}
 				],
-				"source": "box: [mstosamps $in1] => mstosamps_463"
+				"source": "box: [mstosamps $in1] => mstosamps_753"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14426",
+				"id": "node_19531",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14427",
+						"id": "node_19532",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14428",
-								"name": "phasor_460",
+								"id": "node_19533",
+								"name": "phasor_750",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_461"
+								"source": "box: [mul $in1 $in2] => mul_751"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14429",
-								"name": "mstosamps_463",
+								"id": "node_19534",
+								"name": "mstosamps_753",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_461"
+								"source": "box: [mul $in1 $in2] => mul_751"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_461"
+						"source": "box: [mul $in1 $in2] => mul_751"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14430",
-						"name": "mul_461",
+						"id": "node_19535",
+						"name": "mul_751",
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_461"
+						"source": "box: [mul $in1 $in2] => mul_751"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_461"
+				"source": "box: [mul $in1 $in2] => mul_751"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14431",
+				"id": "node_19536",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14432",
+						"id": "node_19537",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14433",
-								"name": "mod_458",
+								"id": "node_19538",
+								"name": "mod_748",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_462"
+								"source": "box: [mul $in1 $in2] => mul_752"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14434",
-								"name": "mstosamps_463",
+								"id": "node_19539",
+								"name": "mstosamps_753",
 								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_462"
+								"source": "box: [mul $in1 $in2] => mul_752"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_462"
+						"source": "box: [mul $in1 $in2] => mul_752"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14435",
-						"name": "mul_462",
+						"id": "node_19540",
+						"name": "mul_752",
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_462"
+						"source": "box: [mul $in1 $in2] => mul_752"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_462"
+				"source": "box: [mul $in1 $in2] => mul_752"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14565",
+				"id": "node_19670",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14566",
+						"id": "node_19671",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14575",
-								"name": "history_430",
+								"id": "node_19680",
+								"name": "history_720",
 								"type": "signal t_sample",
-								"source": "code: 1:9 -> 1:9 [mix $in1 $in2 $in3] => mix_429"
+								"source": "code: 1:9 -> 1:9 [mix $in1 $in2 $in3] => mix_719"
 							},
 							{
 								"class": "Expression",
-								"id": "node_14568",
+								"id": "node_19673",
 								"operator": "mul",
 								"inputs": [
 									{
 										"class": "Constant",
-										"id": "node_14623",
-										"value": 0.0019634941468452,
-										"eval": 0.0019634941468452,
+										"id": "node_19728",
+										"value": 0.003926980723806,
+										"eval": 0.003926980723806,
 										"type": "constant t_sample",
-										"source": "code: 1:13 -> 1:13 [mix $in1 $in2 $in3] => mix_429"
+										"source": "code: 1:13 -> 1:13 [mix $in1 $in2 $in3] => mix_719"
 									},
 									{
 										"class": "Expression",
-										"id": "node_14570",
+										"id": "node_19675",
 										"operator": "sub",
 										"inputs": [
 											{
 												"class": "Variable",
-												"id": "node_14577",
+												"id": "node_19682",
 												"name": "knob5_delay",
 												"type": "control t_sample",
-												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_429"
+												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_719"
 											},
 											{
 												"class": "Variable",
-												"id": "node_14578",
-												"name": "history_430",
+												"id": "node_19683",
+												"name": "history_720",
 												"type": "signal t_sample",
-												"source": "code: 1:22 -> 1:22 [mix $in1 $in2 $in3] => mix_429"
+												"source": "code: 1:22 -> 1:22 [mix $in1 $in2 $in3] => mix_719"
 											}
 										],
 										"attributes": {
 											
 										},
 										"type": "signal t_sample",
-										"source": "code: 1:18 -> 1:25 [mix $in1 $in2 $in3] => mix_429"
+										"source": "code: 1:18 -> 1:25 [mix $in1 $in2 $in3] => mix_719"
 									}
 								],
 								"attributes": {
 									
 								},
 								"type": "signal t_sample",
-								"source": "code: 1:13 -> 1:25 [mix $in1 $in2 $in3] => mix_429"
+								"source": "code: 1:13 -> 1:25 [mix $in1 $in2 $in3] => mix_719"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "code: 1:9 -> 1:25 [mix $in1 $in2 $in3] => mix_429"
+						"source": "code: 1:9 -> 1:25 [mix $in1 $in2 $in3] => mix_719"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14574",
-						"name": "mix_492",
+						"id": "node_19679",
+						"name": "mix_782",
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:2 [mix $in1 $in2 $in3] => mix_429"
+						"source": "code: 1:2 -> 1:2 [mix $in1 $in2 $in3] => mix_719"
 					}
 				],
-				"source": "code: 1:2 -> 1:25 [mix $in1 $in2 $in3] => mix_429"
+				"source": "code: 1:2 -> 1:25 [mix $in1 $in2 $in3] => mix_719"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14440",
+				"id": "node_19545",
 				"inputs": [
 					{
 						"class": "Variable",
-						"id": "node_14579",
-						"name": "mix_492",
+						"id": "node_19684",
+						"name": "mix_782",
 						"type": "signal t_sample",
-						"source": "box: [mix $in1 $in2 $in3] => mix_429"
+						"source": "box: [mix $in1 $in2 $in3] => mix_719"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14445",
-						"name": "mix_429",
+						"id": "node_19550",
+						"name": "mix_719",
 						"type": "signal t_sample",
-						"source": "box: [mix $in1 $in2 $in3] => mix_429"
+						"source": "box: [mix $in1 $in2 $in3] => mix_719"
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [mix $in1 $in2 $in3] => mix_429"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [mix $in1 $in2 $in3] => mix_719"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14582",
+				"id": "node_19687",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14583",
+						"id": "node_19688",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14592",
-								"name": "history_428",
+								"id": "node_19697",
+								"name": "history_718",
 								"type": "signal t_sample",
-								"source": "code: 1:9 -> 1:9 [mix $in1 $in2 $in3] => mix_427"
+								"source": "code: 1:9 -> 1:9 [mix $in1 $in2 $in3] => mix_717"
 							},
 							{
 								"class": "Expression",
-								"id": "node_14585",
+								"id": "node_19690",
 								"operator": "mul",
 								"inputs": [
 									{
 										"class": "Constant",
-										"id": "node_14624",
-										"value": 0.0019634941468452,
-										"eval": 0.0019634941468452,
+										"id": "node_19729",
+										"value": 0.003926980723806,
+										"eval": 0.003926980723806,
 										"type": "constant t_sample",
-										"source": "code: 1:13 -> 1:13 [mix $in1 $in2 $in3] => mix_427"
+										"source": "code: 1:13 -> 1:13 [mix $in1 $in2 $in3] => mix_717"
 									},
 									{
 										"class": "Expression",
-										"id": "node_14587",
+										"id": "node_19692",
 										"operator": "sub",
 										"inputs": [
 											{
 												"class": "Variable",
-												"id": "node_14594",
-												"name": "mix_429",
+												"id": "node_19699",
+												"name": "mix_719",
 												"type": "signal t_sample",
-												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_427"
+												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_717"
 											},
 											{
 												"class": "Variable",
-												"id": "node_14595",
-												"name": "history_428",
+												"id": "node_19700",
+												"name": "history_718",
 												"type": "signal t_sample",
-												"source": "code: 1:22 -> 1:22 [mix $in1 $in2 $in3] => mix_427"
+												"source": "code: 1:22 -> 1:22 [mix $in1 $in2 $in3] => mix_717"
 											}
 										],
 										"attributes": {
 											
 										},
 										"type": "signal t_sample",
-										"source": "code: 1:18 -> 1:25 [mix $in1 $in2 $in3] => mix_427"
+										"source": "code: 1:18 -> 1:25 [mix $in1 $in2 $in3] => mix_717"
 									}
 								],
 								"attributes": {
 									
 								},
 								"type": "signal t_sample",
-								"source": "code: 1:13 -> 1:25 [mix $in1 $in2 $in3] => mix_427"
+								"source": "code: 1:13 -> 1:25 [mix $in1 $in2 $in3] => mix_717"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "code: 1:9 -> 1:25 [mix $in1 $in2 $in3] => mix_427"
+						"source": "code: 1:9 -> 1:25 [mix $in1 $in2 $in3] => mix_717"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14591",
-						"name": "mix_493",
+						"id": "node_19696",
+						"name": "mix_783",
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:2 [mix $in1 $in2 $in3] => mix_427"
+						"source": "code: 1:2 -> 1:2 [mix $in1 $in2 $in3] => mix_717"
 					}
 				],
-				"source": "code: 1:2 -> 1:25 [mix $in1 $in2 $in3] => mix_427"
+				"source": "code: 1:2 -> 1:25 [mix $in1 $in2 $in3] => mix_717"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14446",
+				"id": "node_19551",
 				"inputs": [
 					{
 						"class": "Variable",
-						"id": "node_14596",
-						"name": "mix_493",
+						"id": "node_19701",
+						"name": "mix_783",
 						"type": "signal t_sample",
-						"source": "box: [mix $in1 $in2 $in3] => mix_427"
+						"source": "box: [mix $in1 $in2 $in3] => mix_717"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14451",
-						"name": "mix_427",
+						"id": "node_19556",
+						"name": "mix_717",
 						"type": "signal t_sample",
-						"source": "box: [mix $in1 $in2 $in3] => mix_427"
+						"source": "box: [mix $in1 $in2 $in3] => mix_717"
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [mix $in1 $in2 $in3] => mix_427"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [mix $in1 $in2 $in3] => mix_717"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14599",
+				"id": "node_19704",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14600",
+						"id": "node_19705",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14609",
-								"name": "history_426",
+								"id": "node_19714",
+								"name": "history_716",
 								"type": "signal t_sample",
-								"source": "code: 1:9 -> 1:9 [mix $in1 $in2 $in3] => mix_425"
+								"source": "code: 1:9 -> 1:9 [mix $in1 $in2 $in3] => mix_715"
 							},
 							{
 								"class": "Expression",
-								"id": "node_14602",
+								"id": "node_19707",
 								"operator": "mul",
 								"inputs": [
 									{
 										"class": "Constant",
-										"id": "node_14625",
-										"value": 0.0019634941468452,
-										"eval": 0.0019634941468452,
+										"id": "node_19730",
+										"value": 0.003926980723806,
+										"eval": 0.003926980723806,
 										"type": "constant t_sample",
-										"source": "code: 1:13 -> 1:13 [mix $in1 $in2 $in3] => mix_425"
+										"source": "code: 1:13 -> 1:13 [mix $in1 $in2 $in3] => mix_715"
 									},
 									{
 										"class": "Expression",
-										"id": "node_14604",
+										"id": "node_19709",
 										"operator": "sub",
 										"inputs": [
 											{
 												"class": "Variable",
-												"id": "node_14611",
-												"name": "mix_427",
+												"id": "node_19716",
+												"name": "mix_717",
 												"type": "signal t_sample",
-												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_425"
+												"source": "code: 1:18 -> 1:18 [mix $in1 $in2 $in3] => mix_715"
 											},
 											{
 												"class": "Variable",
-												"id": "node_14612",
-												"name": "history_426",
+												"id": "node_19717",
+												"name": "history_716",
 												"type": "signal t_sample",
-												"source": "code: 1:22 -> 1:22 [mix $in1 $in2 $in3] => mix_425"
+												"source": "code: 1:22 -> 1:22 [mix $in1 $in2 $in3] => mix_715"
 											}
 										],
 										"attributes": {
 											
 										},
 										"type": "signal t_sample",
-										"source": "code: 1:18 -> 1:25 [mix $in1 $in2 $in3] => mix_425"
+										"source": "code: 1:18 -> 1:25 [mix $in1 $in2 $in3] => mix_715"
 									}
 								],
 								"attributes": {
 									
 								},
 								"type": "signal t_sample",
-								"source": "code: 1:13 -> 1:25 [mix $in1 $in2 $in3] => mix_425"
+								"source": "code: 1:13 -> 1:25 [mix $in1 $in2 $in3] => mix_715"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "code: 1:9 -> 1:25 [mix $in1 $in2 $in3] => mix_425"
+						"source": "code: 1:9 -> 1:25 [mix $in1 $in2 $in3] => mix_715"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14608",
-						"name": "mix_494",
+						"id": "node_19713",
+						"name": "mix_784",
 						"type": "signal t_sample",
-						"source": "code: 1:2 -> 1:2 [mix $in1 $in2 $in3] => mix_425"
+						"source": "code: 1:2 -> 1:2 [mix $in1 $in2 $in3] => mix_715"
 					}
 				],
-				"source": "code: 1:2 -> 1:25 [mix $in1 $in2 $in3] => mix_425"
+				"source": "code: 1:2 -> 1:25 [mix $in1 $in2 $in3] => mix_715"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14452",
+				"id": "node_19557",
 				"inputs": [
 					{
 						"class": "Variable",
-						"id": "node_14613",
-						"name": "mix_494",
+						"id": "node_19718",
+						"name": "mix_784",
 						"type": "signal t_sample",
-						"source": "box: [mix $in1 $in2 $in3] => mix_425"
+						"source": "box: [mix $in1 $in2 $in3] => mix_715"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14457",
-						"name": "mix_425",
+						"id": "node_19562",
+						"name": "mix_715",
 						"type": "signal t_sample",
-						"source": "box: [mix $in1 $in2 $in3] => mix_425"
+						"source": "box: [mix $in1 $in2 $in3] => mix_715"
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [mix $in1 $in2 $in3] => mix_425"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [mix $in1 $in2 $in3] => mix_715"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14458",
+				"id": "node_19563",
 				"inputs": [
 					{
 						"class": "Variable",
-						"id": "node_14459",
-						"name": "mix_425",
+						"id": "node_19564",
+						"name": "mix_715",
 						"type": "signal t_sample",
 						"source": "box: [out 1 $in1] => "
 					}
@@ -2420,270 +2420,270 @@
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14460",
-						"name": "gen_435",
+						"id": "node_19565",
+						"name": "gen_725",
 						"type": "signal t_sample",
 						"source": "box: [out 1 $in1] => "
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [out 1 $in1] => "
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [out 1 $in1] => "
 			},
 			{
 				"class": "Statement",
-				"id": "node_14461",
+				"id": "node_19566",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14462",
+						"id": "node_19567",
 						"operator": "fixdenorm",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14463",
-								"name": "mix_429",
+								"id": "node_19568",
+								"name": "mix_719",
 								"type": "signal t_sample",
-								"source": "box: [history history_430 0 $in1] => history_430"
+								"source": "box: [history history_720 0 $in1] => history_720"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [history history_430 0 $in1] => history_430"
+						"source": "box: [history history_720 0 $in1] => history_720"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14464",
-						"name": "history_430_next_432",
+						"id": "node_19569",
+						"name": "history_720_next_722",
 						"type": "signal t_sample",
-						"source": "box: [history history_430 0 $in1] => history_430"
+						"source": "box: [history history_720 0 $in1] => history_720"
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_430 0 $in1] => history_430"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_720 0 $in1] => history_720"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14465",
+				"id": "node_19570",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14466",
+						"id": "node_19571",
 						"operator": "fixdenorm",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14467",
-								"name": "mix_427",
+								"id": "node_19572",
+								"name": "mix_717",
 								"type": "signal t_sample",
-								"source": "box: [history history_428 0 $in1] => history_428"
+								"source": "box: [history history_718 0 $in1] => history_718"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [history history_428 0 $in1] => history_428"
+						"source": "box: [history history_718 0 $in1] => history_718"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14468",
-						"name": "history_428_next_433",
+						"id": "node_19573",
+						"name": "history_718_next_723",
 						"type": "signal t_sample",
-						"source": "box: [history history_428 0 $in1] => history_428"
+						"source": "box: [history history_718 0 $in1] => history_718"
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_428 0 $in1] => history_428"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_718 0 $in1] => history_718"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14469",
+				"id": "node_19574",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14470",
+						"id": "node_19575",
 						"operator": "fixdenorm",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14471",
-								"name": "mix_425",
+								"id": "node_19576",
+								"name": "mix_715",
 								"type": "signal t_sample",
-								"source": "box: [history history_426 0 $in1] => history_426"
+								"source": "box: [history history_716 0 $in1] => history_716"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [history history_426 0 $in1] => history_426"
+						"source": "box: [history history_716 0 $in1] => history_716"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14472",
-						"name": "history_426_next_434",
+						"id": "node_19577",
+						"name": "history_716_next_724",
 						"type": "signal t_sample",
-						"source": "box: [history history_426 0 $in1] => history_426"
+						"source": "box: [history history_716 0 $in1] => history_716"
 					}
 				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_426 0 $in1] => history_426"
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_716 0 $in1] => history_716"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14473",
+				"id": "node_19578",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14474",
+						"id": "node_19579",
 						"operator": "mstosamps",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14475",
-								"name": "gen_435",
+								"id": "node_19580",
+								"name": "gen_725",
 								"type": "signal t_sample",
-								"source": "box: [mstosamps $in1] => mstosamps_452"
+								"source": "box: [mstosamps $in1] => mstosamps_742"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mstosamps $in1] => mstosamps_452"
+						"source": "box: [mstosamps $in1] => mstosamps_742"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14476",
-						"name": "mstosamps_452",
+						"id": "node_19581",
+						"name": "mstosamps_742",
 						"type": "signal t_sample",
-						"source": "box: [mstosamps $in1] => mstosamps_452"
+						"source": "box: [mstosamps $in1] => mstosamps_742"
 					}
 				],
-				"source": "box: [mstosamps $in1] => mstosamps_452"
+				"source": "box: [mstosamps $in1] => mstosamps_742"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14477",
+				"id": "node_19582",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14478",
+						"id": "node_19583",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14479",
-								"name": "mul_461",
+								"id": "node_19584",
+								"name": "mul_751",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_465"
+								"source": "box: [add $in1 $in2] => add_755"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14480",
-								"name": "mstosamps_452",
+								"id": "node_19585",
+								"name": "mstosamps_742",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_465"
+								"source": "box: [add $in1 $in2] => add_755"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_465"
+						"source": "box: [add $in1 $in2] => add_755"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14481",
-						"name": "add_465",
+						"id": "node_19586",
+						"name": "add_755",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_465"
+						"source": "box: [add $in1 $in2] => add_755"
 					}
 				],
-				"source": "box: [add $in1 $in2] => add_465"
+				"source": "box: [add $in1 $in2] => add_755"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14482",
+				"id": "node_19587",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14483",
+						"id": "node_19588",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14484",
-								"name": "mul_462",
+								"id": "node_19589",
+								"name": "mul_752",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_464"
+								"source": "box: [add $in1 $in2] => add_754"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14485",
-								"name": "mstosamps_452",
+								"id": "node_19590",
+								"name": "mstosamps_742",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_464"
+								"source": "box: [add $in1 $in2] => add_754"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_464"
+						"source": "box: [add $in1 $in2] => add_754"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14486",
-						"name": "add_464",
+						"id": "node_19591",
+						"name": "add_754",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_464"
+						"source": "box: [add $in1 $in2] => add_754"
 					}
 				],
-				"source": "box: [add $in1 $in2] => add_464"
+				"source": "box: [add $in1 $in2] => add_754"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14487",
+				"id": "node_19592",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14488",
+						"id": "node_19593",
 						"operator": "read",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14489",
-								"name": "delay_468",
+								"id": "node_19594",
+								"name": "delay_758",
 								"type": "init Delay",
-								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14490",
-								"name": "add_465",
+								"id": "node_19595",
+								"name": "add_755",
 								"type": "signal t_sample",
-								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 							}
 						],
 						"attributes": {
 							"interp": {
 								"class": "Attribute",
-								"id": "node_14491",
+								"id": "node_19596",
 								"name": "interp",
 								"value": {
 									"class": "Constant",
-									"id": "node_13720",
+									"id": "node_18825",
 									"value": "\"none\"",
 									"eval": "\"none\"",
 									"type": "constant string"
@@ -2691,52 +2691,52 @@
 							}
 						},
 						"type": "signal t_sample",
-						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14492",
-						"name": "tap_469",
+						"id": "node_19597",
+						"name": "tap_759",
 						"type": "signal t_sample",
-						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 					}
 				],
-				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14493",
+				"id": "node_19598",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14494",
+						"id": "node_19599",
 						"operator": "read",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14495",
-								"name": "delay_468",
+								"id": "node_19600",
+								"name": "delay_758",
 								"type": "init Delay",
-								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14496",
-								"name": "add_464",
+								"id": "node_19601",
+								"name": "add_754",
 								"type": "signal t_sample",
-								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 							}
 						],
 						"attributes": {
 							"interp": {
 								"class": "Attribute",
-								"id": "node_14497",
+								"id": "node_19602",
 								"name": "interp",
 								"value": {
 									"class": "Constant",
-									"id": "node_13727",
+									"id": "node_18832",
 									"value": "\"none\"",
 									"eval": "\"none\"",
 									"type": "constant string"
@@ -2744,320 +2744,278 @@
 							}
 						},
 						"type": "signal t_sample",
-						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14498",
-						"name": "tap_470",
+						"id": "node_19603",
+						"name": "tap_760",
 						"type": "signal t_sample",
-						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 					}
 				],
-				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14499",
+				"id": "node_19604",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14500",
+						"id": "node_19605",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14501",
-								"name": "tap_469",
+								"id": "node_19606",
+								"name": "tap_759",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_455"
+								"source": "box: [mul $in1 $in2] => mul_745"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14502",
-								"name": "clamp_446",
+								"id": "node_19607",
+								"name": "clamp_736",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_455"
+								"source": "box: [mul $in1 $in2] => mul_745"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_455"
+						"source": "box: [mul $in1 $in2] => mul_745"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14503",
-						"name": "mul_455",
+						"id": "node_19608",
+						"name": "mul_745",
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_455"
+						"source": "box: [mul $in1 $in2] => mul_745"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_455"
+				"source": "box: [mul $in1 $in2] => mul_745"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14504",
+				"id": "node_19609",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14505",
+						"id": "node_19610",
 						"operator": "dcblock",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14506",
-								"name": "mul_455",
+								"id": "node_19611",
+								"name": "mul_745",
 								"type": "signal t_sample",
-								"source": "box: [dcblock $in1] => dcblock_449"
+								"source": "box: [dcblock $in1] => dcblock_739"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [dcblock $in1] => dcblock_449"
+						"source": "box: [dcblock $in1] => dcblock_739"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14507",
-						"name": "dcblock_449",
+						"id": "node_19612",
+						"name": "dcblock_739",
 						"type": "signal t_sample",
-						"source": "box: [dcblock $in1] => dcblock_449"
+						"source": "box: [dcblock $in1] => dcblock_739"
 					}
 				],
-				"source": "box: [dcblock $in1] => dcblock_449"
+				"source": "box: [dcblock $in1] => dcblock_739"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14508",
+				"id": "node_19613",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14509",
+						"id": "node_19614",
 						"operator": "mul",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14510",
-								"name": "tap_470",
+								"id": "node_19615",
+								"name": "tap_760",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_454"
+								"source": "box: [mul $in1 $in2] => mul_744"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14511",
-								"name": "clamp_444",
+								"id": "node_19616",
+								"name": "clamp_734",
 								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_454"
+								"source": "box: [mul $in1 $in2] => mul_744"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_454"
+						"source": "box: [mul $in1 $in2] => mul_744"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14512",
-						"name": "mul_454",
+						"id": "node_19617",
+						"name": "mul_744",
 						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_454"
+						"source": "box: [mul $in1 $in2] => mul_744"
 					}
 				],
-				"source": "box: [mul $in1 $in2] => mul_454"
+				"source": "box: [mul $in1 $in2] => mul_744"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14513",
+				"id": "node_19618",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14514",
+						"id": "node_19619",
 						"operator": "dcblock",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14515",
-								"name": "mul_454",
+								"id": "node_19620",
+								"name": "mul_744",
 								"type": "signal t_sample",
-								"source": "box: [dcblock $in1] => dcblock_448"
+								"source": "box: [dcblock $in1] => dcblock_738"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [dcblock $in1] => dcblock_448"
+						"source": "box: [dcblock $in1] => dcblock_738"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14516",
-						"name": "dcblock_448",
+						"id": "node_19621",
+						"name": "dcblock_738",
 						"type": "signal t_sample",
-						"source": "box: [dcblock $in1] => dcblock_448"
+						"source": "box: [dcblock $in1] => dcblock_738"
 					}
 				],
-				"source": "box: [dcblock $in1] => dcblock_448"
+				"source": "box: [dcblock $in1] => dcblock_738"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14517",
+				"id": "node_19622",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14518",
+						"id": "node_19623",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14519",
-								"name": "dcblock_449",
+								"id": "node_19624",
+								"name": "dcblock_739",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_453"
+								"source": "box: [add $in1 $in2] => add_743"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14520",
-								"name": "dcblock_448",
+								"id": "node_19625",
+								"name": "dcblock_738",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_453"
+								"source": "box: [add $in1 $in2] => add_743"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_453"
+						"source": "box: [add $in1 $in2] => add_743"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14521",
-						"name": "add_453",
+						"id": "node_19626",
+						"name": "add_743",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_453"
+						"source": "box: [add $in1 $in2] => add_743"
 					}
 				],
-				"source": "box: [add $in1 $in2] => add_453"
+				"source": "box: [add $in1 $in2] => add_743"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14522",
+				"id": "node_19627",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14523",
+						"id": "node_19628",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14524",
-								"name": "mul_474",
+								"id": "node_19629",
+								"name": "mul_764",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_486"
+								"source": "box: [add $in1 $in2] => add_776"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14525",
-								"name": "add_453",
+								"id": "node_19630",
+								"name": "add_743",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_486"
+								"source": "box: [add $in1 $in2] => add_776"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_486"
+						"source": "box: [add $in1 $in2] => add_776"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14526",
-						"name": "add_486",
+						"id": "node_19631",
+						"name": "add_776",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_486"
+						"source": "box: [add $in1 $in2] => add_776"
 					}
 				],
-				"source": "box: [add $in1 $in2] => add_486"
+				"source": "box: [add $in1 $in2] => add_776"
 			},
 			{
 				"class": "Statement",
-				"id": "node_14527",
+				"id": "node_19632",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14528",
+						"id": "node_19633",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14529",
-								"name": "gate_436",
-								"type": "signal t_sample",
-								"source": "join: [out 2 $in1] =>  1"
-							},
-							{
-								"class": "Variable",
-								"id": "node_14530",
-								"name": "add_486",
-								"type": "signal t_sample",
-								"source": "join: [out 2 $in1] =>  1"
-							}
-						],
-						"attributes": {
-							
-						},
-						"type": "signal t_sample",
-						"source": "join: [out 2 $in1] =>  1"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14531",
-						"name": "out2",
-						"type": "signal t_sample",
-						"source": "box: [out 2 $in1] => "
-					}
-				],
-				"source": "box: [out 2 $in1] => "
-			},
-			{
-				"class": "Statement",
-				"id": "node_14532",
-				"inputs": [
-					{
-						"class": "Expression",
-						"id": "node_14533",
-						"operator": "add",
-						"inputs": [
-							{
-								"class": "Variable",
-								"id": "node_14534",
-								"name": "gate_436",
+								"id": "node_19634",
+								"name": "gate_726",
 								"type": "signal t_sample",
 								"source": "join: [out 1 $in1] =>  1"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14535",
-								"name": "add_486",
+								"id": "node_19635",
+								"name": "add_776",
 								"type": "signal t_sample",
 								"source": "join: [out 1 $in1] =>  1"
 							}
@@ -3072,7 +3030,7 @@
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14536",
+						"id": "node_19636",
 						"name": "out1",
 						"type": "signal t_sample",
 						"source": "box: [out 1 $in1] => "
@@ -3082,217 +3040,259 @@
 			},
 			{
 				"class": "Statement",
-				"id": "node_14537",
+				"id": "node_19637",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14538",
-						"operator": "mul",
-						"inputs": [
-							{
-								"class": "Variable",
-								"id": "node_14539",
-								"name": "add_453",
-								"type": "signal t_sample",
-								"source": "box: [mul $in1 $in2] => mul_466"
-							},
-							{
-								"class": "Variable",
-								"id": "node_14540",
-								"name": "knob6_feedback",
-								"type": "control t_sample",
-								"source": "box: [mul $in1 $in2] => mul_466"
-							}
-						],
-						"attributes": {
-							
-						},
-						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_466"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14541",
-						"name": "mul_466",
-						"type": "signal t_sample",
-						"source": "box: [mul $in1 $in2] => mul_466"
-					}
-				],
-				"source": "box: [mul $in1 $in2] => mul_466"
-			},
-			{
-				"class": "Statement",
-				"id": "node_14542",
-				"inputs": [
-					{
-						"class": "Expression",
-						"id": "node_14543",
+						"id": "node_19638",
 						"operator": "add",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14544",
-								"name": "mul_471",
+								"id": "node_19639",
+								"name": "gate_726",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_467"
+								"source": "join: [out 2 $in1] =>  1"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14545",
-								"name": "mul_466",
+								"id": "node_19640",
+								"name": "add_776",
 								"type": "signal t_sample",
-								"source": "box: [add $in1 $in2] => add_467"
+								"source": "join: [out 2 $in1] =>  1"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_467"
+						"source": "join: [out 2 $in1] =>  1"
 					}
 				],
 				"outputs": [
 					{
 						"class": "Variable",
-						"id": "node_14546",
-						"name": "add_467",
+						"id": "node_19641",
+						"name": "out2",
 						"type": "signal t_sample",
-						"source": "box: [add $in1 $in2] => add_467"
+						"source": "box: [out 2 $in1] => "
 					}
 				],
-				"source": "box: [add $in1 $in2] => add_467"
+				"source": "box: [out 2 $in1] => "
 			},
 			{
 				"class": "Statement",
-				"id": "node_14547",
-				"inputs": [
-					{
-						"class": "Variable",
-						"id": "node_14548",
-						"name": "history_439_next_441",
-						"type": "signal t_sample",
-						"source": "box: [history history_439 0 $in1] => history_439"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14549",
-						"name": "history_439",
-						"type": "signal t_sample",
-						"source": "box: [history history_439 0 $in1] => history_439"
-					}
-				],
-				"source": "source: [gen $in1 @file swtoggle] => gen_442 parent: box: [history history_439 0 $in1] => history_439"
-			},
-			{
-				"class": "Statement",
-				"id": "node_14560",
-				"inputs": [
-					{
-						"class": "Variable",
-						"id": "node_14561",
-						"name": "history_430_next_432",
-						"type": "signal t_sample",
-						"source": "box: [history history_430 0 $in1] => history_430"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14562",
-						"name": "history_430",
-						"type": "signal t_sample",
-						"source": "box: [history history_430 0 $in1] => history_430"
-					}
-				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_430 0 $in1] => history_430"
-			},
-			{
-				"class": "Statement",
-				"id": "node_14557",
-				"inputs": [
-					{
-						"class": "Variable",
-						"id": "node_14558",
-						"name": "history_426_next_434",
-						"type": "signal t_sample",
-						"source": "box: [history history_426 0 $in1] => history_426"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14559",
-						"name": "history_426",
-						"type": "signal t_sample",
-						"source": "box: [history history_426 0 $in1] => history_426"
-					}
-				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_426 0 $in1] => history_426"
-			},
-			{
-				"class": "Statement",
-				"id": "node_14554",
-				"inputs": [
-					{
-						"class": "Variable",
-						"id": "node_14555",
-						"name": "history_428_next_433",
-						"type": "signal t_sample",
-						"source": "box: [history history_428 0 $in1] => history_428"
-					}
-				],
-				"outputs": [
-					{
-						"class": "Variable",
-						"id": "node_14556",
-						"name": "history_428",
-						"type": "signal t_sample",
-						"source": "box: [history history_428 0 $in1] => history_428"
-					}
-				],
-				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_435 parent: box: [history history_428 0 $in1] => history_428"
-			},
-			{
-				"class": "Statement",
-				"id": "node_14550",
+				"id": "node_19642",
 				"inputs": [
 					{
 						"class": "Expression",
-						"id": "node_14551",
+						"id": "node_19643",
+						"operator": "mul",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_19644",
+								"name": "add_743",
+								"type": "signal t_sample",
+								"source": "box: [mul $in1 $in2] => mul_756"
+							},
+							{
+								"class": "Variable",
+								"id": "node_19645",
+								"name": "knob6_feedback",
+								"type": "control t_sample",
+								"source": "box: [mul $in1 $in2] => mul_756"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal t_sample",
+						"source": "box: [mul $in1 $in2] => mul_756"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19646",
+						"name": "mul_756",
+						"type": "signal t_sample",
+						"source": "box: [mul $in1 $in2] => mul_756"
+					}
+				],
+				"source": "box: [mul $in1 $in2] => mul_756"
+			},
+			{
+				"class": "Statement",
+				"id": "node_19647",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_19648",
+						"operator": "add",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_19649",
+								"name": "mul_761",
+								"type": "signal t_sample",
+								"source": "box: [add $in1 $in2] => add_757"
+							},
+							{
+								"class": "Variable",
+								"id": "node_19650",
+								"name": "mul_756",
+								"type": "signal t_sample",
+								"source": "box: [add $in1 $in2] => add_757"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal t_sample",
+						"source": "box: [add $in1 $in2] => add_757"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19651",
+						"name": "add_757",
+						"type": "signal t_sample",
+						"source": "box: [add $in1 $in2] => add_757"
+					}
+				],
+				"source": "box: [add $in1 $in2] => add_757"
+			},
+			{
+				"class": "Statement",
+				"id": "node_19652",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_19653",
+						"name": "history_729_next_731",
+						"type": "signal t_sample",
+						"source": "box: [history history_729 0 $in1] => history_729"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19654",
+						"name": "history_729",
+						"type": "signal t_sample",
+						"source": "box: [history history_729 0 $in1] => history_729"
+					}
+				],
+				"source": "source: [gen $in1 @file swtoggle] => gen_732 parent: box: [history history_729 0 $in1] => history_729"
+			},
+			{
+				"class": "Statement",
+				"id": "node_19665",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_19666",
+						"name": "history_720_next_722",
+						"type": "signal t_sample",
+						"source": "box: [history history_720 0 $in1] => history_720"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19667",
+						"name": "history_720",
+						"type": "signal t_sample",
+						"source": "box: [history history_720 0 $in1] => history_720"
+					}
+				],
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_720 0 $in1] => history_720"
+			},
+			{
+				"class": "Statement",
+				"id": "node_19662",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_19663",
+						"name": "history_716_next_724",
+						"type": "signal t_sample",
+						"source": "box: [history history_716 0 $in1] => history_716"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19664",
+						"name": "history_716",
+						"type": "signal t_sample",
+						"source": "box: [history history_716 0 $in1] => history_716"
+					}
+				],
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_716 0 $in1] => history_716"
+			},
+			{
+				"class": "Statement",
+				"id": "node_19659",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_19660",
+						"name": "history_718_next_723",
+						"type": "signal t_sample",
+						"source": "box: [history history_718 0 $in1] => history_718"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_19661",
+						"name": "history_718",
+						"type": "signal t_sample",
+						"source": "box: [history history_718 0 $in1] => history_718"
+					}
+				],
+				"source": "source: [gen $in1 @file oopsy.ctrl.smooth3] => gen_725 parent: box: [history history_718 0 $in1] => history_718"
+			},
+			{
+				"class": "Statement",
+				"id": "node_19655",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_19656",
 						"operator": "write",
 						"inputs": [
 							{
 								"class": "Variable",
-								"id": "node_14552",
-								"name": "delay_468",
+								"id": "node_19657",
+								"name": "delay_758",
 								"type": "init Delay",
-								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 							},
 							{
 								"class": "Variable",
-								"id": "node_14553",
-								"name": "add_467",
+								"id": "node_19658",
+								"name": "add_757",
 								"type": "signal t_sample",
-								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+								"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 							}
 						],
 						"attributes": {
 							
 						},
 						"type": "signal void",
-						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+						"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 					}
 				],
 				"outputs": {
 					
 				},
-				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_469,tap_470"
+				"source": "box: [delay 96000 $in1 $in2 $in3 @interp none] => tap_759,tap_760"
 			}
 		]
 	},
-	"source": "patcher: gen.patcher 0x7f84a9842750 graph 0x600002648300"
+	"source": "patcher: gen.patcher 0x7f9c80bc7970 graph 0x6000031c6d00"
 }

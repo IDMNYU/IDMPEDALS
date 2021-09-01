@@ -26,7 +26,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include "genlib_exportfunctions.h"
 #include "genlib_ops.h"
 
-namespace lukephaser_field_stereo {
+namespace Glitch2 {
 
 int num_inputs();
 int num_outputs();
@@ -46,4 +46,4 @@ short setstate(CommonState *cself, const char *state);
 void *create(t_param sr, long vs);
 void destroy(CommonState *cself);
 
-} // lukephaser_field_stereo::
+} // Glitch2::

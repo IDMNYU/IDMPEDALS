@@ -1,0 +1,3017 @@
+{
+	"class": "Module",
+	"id": "node_14288",
+	"inlets": [
+		{
+			"assist": "in1",
+			"default": 0
+		}
+	],
+	"outlets": [
+		{
+			"assist": "out1"
+		},
+		{
+			"assist": "out2"
+		},
+		{
+			"assist": "out3"
+		},
+		{
+			"assist": "out4"
+		}
+	],
+	"imports": {
+		
+	},
+	"functions": [
+		{
+			"class": "Function",
+			"id": "node_14334",
+			"name": "parabolicInterpolation",
+			"block": {
+				"class": "Block",
+				"id": "node_14338",
+				"children": [
+					{
+						"class": "Statement",
+						"id": "node_14339",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14340",
+								"name": "in3",
+								"type": "unknown unknown",
+								"source": "code: 119:19 -> 119:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14341",
+								"name": "halfBufferSize",
+								"type": "unknown unknown",
+								"source": "code: 119:2 -> 119:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 119:2 -> 119:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Statement",
+						"id": "node_14342",
+						"inputs": [
+							{
+								"class": "Constant",
+								"id": "node_14343",
+								"value": 0,
+								"eval": 0,
+								"type": "unknown unknown",
+								"source": "code: 120:7 -> 120:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14344",
+								"name": "x0",
+								"type": "unknown unknown",
+								"source": "code: 120:2 -> 120:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 120:2 -> 120:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Statement",
+						"id": "node_14345",
+						"inputs": [
+							{
+								"class": "Constant",
+								"id": "node_14346",
+								"value": 0,
+								"eval": 0,
+								"type": "unknown unknown",
+								"source": "code: 121:7 -> 121:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14347",
+								"name": "x2",
+								"type": "unknown unknown",
+								"source": "code: 121:2 -> 121:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 121:2 -> 121:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Statement",
+						"id": "node_14348",
+						"inputs": [
+							{
+								"class": "Constant",
+								"id": "node_14349",
+								"value": 0,
+								"eval": 0,
+								"type": "unknown unknown",
+								"source": "code: 122:14 -> 122:14 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14350",
+								"name": "betterTau",
+								"type": "unknown unknown",
+								"source": "code: 122:2 -> 122:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 122:2 -> 122:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "IfStatement",
+						"id": "node_14351",
+						"condition": {
+							"class": "Expression",
+							"id": "node_14357",
+							"operator": "lt",
+							"inputs": [
+								{
+									"class": "Variable",
+									"id": "node_14358",
+									"name": "tauEstimate",
+									"type": "unknown unknown",
+									"source": "code: 124:6 -> 124:6 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Constant",
+									"id": "node_14359",
+									"value": 1,
+									"eval": 1,
+									"type": "unknown unknown",
+									"source": "code: 124:20 -> 124:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 124:6 -> 124:21 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14353",
+							"children": [
+								{
+									"class": "Statement",
+									"id": "node_14354",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14355",
+											"name": "tauEstimate",
+											"type": "unknown unknown",
+											"source": "code: 125:8 -> 125:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14356",
+											"name": "x0",
+											"type": "unknown unknown",
+											"source": "code: 125:3 -> 125:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 125:3 -> 125:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 125:3 -> 125:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"alternative": {
+							"class": "Block",
+							"id": "node_14360",
+							"children": [
+								{
+									"class": "Statement",
+									"id": "node_14361",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14362",
+											"operator": "sub",
+											"inputs": [
+												{
+													"class": "Variable",
+													"id": "node_14363",
+													"name": "tauEstimate",
+													"type": "unknown unknown",
+													"source": "code: 128:8 -> 128:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Constant",
+													"id": "node_14364",
+													"value": 1,
+													"eval": 1,
+													"type": "unknown unknown",
+													"source": "code: 128:22 -> 128:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 128:8 -> 128:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14365",
+											"name": "x0",
+											"type": "unknown unknown",
+											"source": "code: 128:3 -> 128:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 128:3 -> 128:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 128:3 -> 128:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"source": "code: 125:3 -> 128:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "IfStatement",
+						"id": "node_14366",
+						"condition": {
+							"class": "Expression",
+							"id": "node_14374",
+							"operator": "lt",
+							"inputs": [
+								{
+									"class": "Expression",
+									"id": "node_14375",
+									"operator": "add",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14376",
+											"name": "tauEstimate",
+											"type": "unknown unknown",
+											"source": "code: 132:6 -> 132:6 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										{
+											"class": "Constant",
+											"id": "node_14377",
+											"value": 1,
+											"eval": 1,
+											"type": "unknown unknown",
+											"source": "code: 132:20 -> 132:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"attributes": {
+										
+									},
+									"type": "unknown unknown",
+									"source": "code: 132:6 -> 132:21 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Variable",
+									"id": "node_14378",
+									"name": "halfBufferSize",
+									"type": "unknown unknown",
+									"source": "code: 132:24 -> 132:24 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 132:6 -> 132:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14368",
+							"children": [
+								{
+									"class": "Statement",
+									"id": "node_14369",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14370",
+											"operator": "add",
+											"inputs": [
+												{
+													"class": "Variable",
+													"id": "node_14371",
+													"name": "tauEstimate",
+													"type": "unknown unknown",
+													"source": "code: 133:8 -> 133:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Constant",
+													"id": "node_14372",
+													"value": 1,
+													"eval": 1,
+													"type": "unknown unknown",
+													"source": "code: 133:22 -> 133:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 133:8 -> 133:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14373",
+											"name": "x2",
+											"type": "unknown unknown",
+											"source": "code: 133:3 -> 133:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 133:3 -> 133:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 133:3 -> 133:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"alternative": {
+							"class": "Block",
+							"id": "node_14379",
+							"children": [
+								{
+									"class": "Statement",
+									"id": "node_14380",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14381",
+											"name": "tauEstimate",
+											"type": "unknown unknown",
+											"source": "code: 136:8 -> 136:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14382",
+											"name": "x2",
+											"type": "unknown unknown",
+											"source": "code: 136:3 -> 136:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 136:3 -> 136:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 136:3 -> 136:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"source": "code: 133:3 -> 136:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "IfStatement",
+						"id": "node_14383",
+						"condition": {
+							"class": "Expression",
+							"id": "node_14403",
+							"operator": "eq",
+							"inputs": [
+								{
+									"class": "Variable",
+									"id": "node_14404",
+									"name": "x0",
+									"type": "unknown unknown",
+									"source": "code: 140:6 -> 140:6 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Variable",
+									"id": "node_14405",
+									"name": "tauEstimate",
+									"type": "unknown unknown",
+									"source": "code: 140:12 -> 140:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 140:6 -> 140:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14385",
+							"children": [
+								{
+									"class": "IfStatement",
+									"id": "node_14386",
+									"condition": {
+										"class": "Expression",
+										"id": "node_14392",
+										"operator": "lte",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14393",
+												"operator": "peek",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14394",
+														"name": "yB",
+														"type": "unknown unknown",
+														"source": "code: 141:12 -> 141:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14395",
+														"name": "tauEstimate",
+														"type": "unknown unknown",
+														"source": "code: 141:15 -> 141:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 141:7 -> 141:26 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Expression",
+												"id": "node_14396",
+												"operator": "peek",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14397",
+														"name": "yB",
+														"type": "unknown unknown",
+														"source": "code: 141:36 -> 141:36 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14398",
+														"name": "x2",
+														"type": "unknown unknown",
+														"source": "code: 141:39 -> 141:39 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 141:31 -> 141:41 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"attributes": {
+											
+										},
+										"type": "unknown unknown",
+										"source": "code: 141:7 -> 141:41 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"block": {
+										"class": "Block",
+										"id": "node_14388",
+										"children": [
+											{
+												"class": "Statement",
+												"id": "node_14389",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14390",
+														"name": "tauEstimate",
+														"type": "unknown unknown",
+														"source": "code: 142:16 -> 142:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": [
+													{
+														"class": "Variable",
+														"id": "node_14391",
+														"name": "betterTau",
+														"type": "unknown unknown",
+														"source": "code: 142:4 -> 142:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"source": "code: 142:4 -> 142:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 142:4 -> 142:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"alternative": {
+										"class": "Block",
+										"id": "node_14399",
+										"children": [
+											{
+												"class": "Statement",
+												"id": "node_14400",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14401",
+														"name": "x2",
+														"type": "unknown unknown",
+														"source": "code: 145:16 -> 145:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": [
+													{
+														"class": "Variable",
+														"id": "node_14402",
+														"name": "betterTau",
+														"type": "unknown unknown",
+														"source": "code: 145:4 -> 145:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"source": "code: 145:4 -> 145:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 145:4 -> 145:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"source": "code: 142:4 -> 145:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 142:4 -> 145:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"alternative": {
+							"class": "IfStatement",
+							"id": "node_14406",
+							"condition": {
+								"class": "Expression",
+								"id": "node_14426",
+								"operator": "eq",
+								"inputs": [
+									{
+										"class": "Variable",
+										"id": "node_14427",
+										"name": "x2",
+										"type": "unknown unknown",
+										"source": "code: 148:11 -> 148:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Variable",
+										"id": "node_14428",
+										"name": "tauEstimate",
+										"type": "unknown unknown",
+										"source": "code: 148:17 -> 148:17 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									}
+								],
+								"attributes": {
+									
+								},
+								"type": "unknown unknown",
+								"source": "code: 148:11 -> 148:28 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							"block": {
+								"class": "Block",
+								"id": "node_14408",
+								"children": [
+									{
+										"class": "IfStatement",
+										"id": "node_14409",
+										"condition": {
+											"class": "Expression",
+											"id": "node_14415",
+											"operator": "lte",
+											"inputs": [
+												{
+													"class": "Expression",
+													"id": "node_14416",
+													"operator": "peek",
+													"inputs": [
+														{
+															"class": "Variable",
+															"id": "node_14417",
+															"name": "yB",
+															"type": "unknown unknown",
+															"source": "code: 149:12 -> 149:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														},
+														{
+															"class": "Variable",
+															"id": "node_14418",
+															"name": "tauEstimate",
+															"type": "unknown unknown",
+															"source": "code: 149:15 -> 149:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"attributes": {
+														
+													},
+													"type": "unknown unknown",
+													"source": "code: 149:7 -> 149:26 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Expression",
+													"id": "node_14419",
+													"operator": "peek",
+													"inputs": [
+														{
+															"class": "Variable",
+															"id": "node_14420",
+															"name": "yB",
+															"type": "unknown unknown",
+															"source": "code: 149:36 -> 149:36 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														},
+														{
+															"class": "Variable",
+															"id": "node_14421",
+															"name": "x0",
+															"type": "unknown unknown",
+															"source": "code: 149:39 -> 149:39 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"attributes": {
+														
+													},
+													"type": "unknown unknown",
+													"source": "code: 149:31 -> 149:41 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 149:7 -> 149:41 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										"block": {
+											"class": "Block",
+											"id": "node_14411",
+											"children": [
+												{
+													"class": "Statement",
+													"id": "node_14412",
+													"inputs": [
+														{
+															"class": "Variable",
+															"id": "node_14413",
+															"name": "tauEstimate",
+															"type": "unknown unknown",
+															"source": "code: 150:16 -> 150:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"outputs": [
+														{
+															"class": "Variable",
+															"id": "node_14414",
+															"name": "betterTau",
+															"type": "unknown unknown",
+															"source": "code: 150:4 -> 150:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"source": "code: 150:4 -> 150:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"source": "code: 150:4 -> 150:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										"alternative": {
+											"class": "Block",
+											"id": "node_14422",
+											"children": [
+												{
+													"class": "Statement",
+													"id": "node_14423",
+													"inputs": [
+														{
+															"class": "Variable",
+															"id": "node_14424",
+															"name": "x0",
+															"type": "unknown unknown",
+															"source": "code: 153:16 -> 153:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"outputs": [
+														{
+															"class": "Variable",
+															"id": "node_14425",
+															"name": "betterTau",
+															"type": "unknown unknown",
+															"source": "code: 153:4 -> 153:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"source": "code: 153:4 -> 153:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"source": "code: 153:4 -> 153:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										"source": "code: 150:4 -> 153:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									}
+								],
+								"source": "code: 150:4 -> 153:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							"alternative": {
+								"class": "Block",
+								"id": "node_14429",
+								"children": [
+									{
+										"class": "Declaration",
+										"id": "node_14430",
+										"name": "s2",
+										"inputs": {
+											
+										},
+										"attributes": {
+											
+										},
+										"type": "unknown unknown",
+										"typename": "float",
+										"source": "code: 157:17 -> 157:17 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Declaration",
+										"id": "node_14431",
+										"name": "s1",
+										"inputs": {
+											
+										},
+										"attributes": {
+											
+										},
+										"type": "unknown unknown",
+										"typename": "float",
+										"source": "code: 157:13 -> 157:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Declaration",
+										"id": "node_14432",
+										"name": "s0",
+										"inputs": {
+											
+										},
+										"attributes": {
+											
+										},
+										"type": "unknown unknown",
+										"typename": "float",
+										"source": "code: 157:9 -> 157:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Statement",
+										"id": "node_14433",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14434",
+												"operator": "peek",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14435",
+														"name": "yB",
+														"type": "unknown unknown",
+														"source": "code: 158:13 -> 158:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14436",
+														"name": "x0",
+														"type": "unknown unknown",
+														"source": "code: 158:16 -> 158:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 158:8 -> 158:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"outputs": [
+											{
+												"class": "Variable",
+												"id": "node_14437",
+												"name": "s0",
+												"type": "unknown unknown",
+												"source": "code: 158:3 -> 158:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 158:3 -> 158:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Statement",
+										"id": "node_14438",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14439",
+												"operator": "peek",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14440",
+														"name": "yB",
+														"type": "unknown unknown",
+														"source": "code: 159:13 -> 159:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14441",
+														"name": "tauEstimate",
+														"type": "unknown unknown",
+														"source": "code: 159:16 -> 159:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 159:8 -> 159:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"outputs": [
+											{
+												"class": "Variable",
+												"id": "node_14442",
+												"name": "s1",
+												"type": "unknown unknown",
+												"source": "code: 159:3 -> 159:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 159:3 -> 159:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Statement",
+										"id": "node_14443",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14444",
+												"operator": "peek",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14445",
+														"name": "yB",
+														"type": "unknown unknown",
+														"source": "code: 160:13 -> 160:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14446",
+														"name": "x2",
+														"type": "unknown unknown",
+														"source": "code: 160:16 -> 160:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 160:8 -> 160:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"outputs": [
+											{
+												"class": "Variable",
+												"id": "node_14447",
+												"name": "s2",
+												"type": "unknown unknown",
+												"source": "code: 160:3 -> 160:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 160:3 -> 160:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Statement",
+										"id": "node_14448",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14449",
+												"operator": "add",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14450",
+														"name": "tauEstimate",
+														"type": "unknown unknown",
+														"source": "code: 163:15 -> 163:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Expression",
+														"id": "node_14451",
+														"operator": "div",
+														"inputs": [
+															{
+																"class": "Expression",
+																"id": "node_14452",
+																"operator": "sub",
+																"inputs": [
+																	{
+																		"class": "Variable",
+																		"id": "node_14453",
+																		"name": "s2",
+																		"type": "unknown unknown",
+																		"source": "code: 163:30 -> 163:30 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	},
+																	{
+																		"class": "Variable",
+																		"id": "node_14454",
+																		"name": "s0",
+																		"type": "unknown unknown",
+																		"source": "code: 163:35 -> 163:35 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	}
+																],
+																"attributes": {
+																	
+																},
+																"type": "unknown unknown",
+																"source": "code: 163:30 -> 163:37 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Expression",
+																"id": "node_14455",
+																"operator": "mul",
+																"inputs": [
+																	{
+																		"class": "Constant",
+																		"id": "node_14456",
+																		"value": 2,
+																		"eval": 2,
+																		"type": "unknown unknown",
+																		"source": "code: 163:42 -> 163:42 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	},
+																	{
+																		"class": "Expression",
+																		"id": "node_14457",
+																		"operator": "sub",
+																		"inputs": [
+																			{
+																				"class": "Expression",
+																				"id": "node_14458",
+																				"operator": "sub",
+																				"inputs": [
+																					{
+																						"class": "Expression",
+																						"id": "node_14459",
+																						"operator": "mul",
+																						"inputs": [
+																							{
+																								"class": "Constant",
+																								"id": "node_14460",
+																								"value": 2,
+																								"eval": 2,
+																								"type": "unknown unknown",
+																								"source": "code: 163:47 -> 163:47 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																							},
+																							{
+																								"class": "Variable",
+																								"id": "node_14461",
+																								"name": "s1",
+																								"type": "unknown unknown",
+																								"source": "code: 163:51 -> 163:51 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																							}
+																						],
+																						"attributes": {
+																							
+																						},
+																						"type": "unknown unknown",
+																						"source": "code: 163:47 -> 163:53 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																					},
+																					{
+																						"class": "Variable",
+																						"id": "node_14462",
+																						"name": "s2",
+																						"type": "unknown unknown",
+																						"source": "code: 163:56 -> 163:56 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																					}
+																				],
+																				"attributes": {
+																					
+																				},
+																				"type": "unknown unknown",
+																				"source": "code: 163:47 -> 163:58 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																			},
+																			{
+																				"class": "Variable",
+																				"id": "node_14463",
+																				"name": "s0",
+																				"type": "unknown unknown",
+																				"source": "code: 163:61 -> 163:61 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																			}
+																		],
+																		"attributes": {
+																			
+																		},
+																		"type": "unknown unknown",
+																		"source": "code: 163:47 -> 163:63 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	}
+																],
+																"attributes": {
+																	
+																},
+																"type": "unknown unknown",
+																"source": "code: 163:42 -> 163:63 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														],
+														"attributes": {
+															
+														},
+														"type": "unknown unknown",
+														"source": "code: 163:30 -> 163:63 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 163:15 -> 163:63 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"outputs": [
+											{
+												"class": "Variable",
+												"id": "node_14464",
+												"name": "betterTau",
+												"type": "unknown unknown",
+												"source": "code: 163:3 -> 163:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 163:3 -> 163:63 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									}
+								],
+								"source": "code: 157:9 -> 163:61 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							"source": "code: 150:4 -> 163:61 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"source": "code: 142:4 -> 163:61 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "JumpStatement",
+						"id": "node_14465",
+						"name": "return",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14466",
+								"name": "betterTau",
+								"type": "unknown unknown",
+								"source": "code: 165:9 -> 165:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 165:2 -> 165:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"source": "code: 119:2 -> 165:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			"arguments": [
+				{
+					"class": "Variable",
+					"id": "node_14336",
+					"name": "yB",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14337",
+					"name": "tauEstimate",
+					"type": "unknown unknown"
+				}
+			],
+			"attributes": {
+				
+			},
+			"source": "code: 117:1 -> 165:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+		},
+		{
+			"class": "Function",
+			"id": "node_14467",
+			"name": "getPitch",
+			"block": {
+				"class": "Block",
+				"id": "node_14689",
+				"children": [
+					{
+						"class": "Statement",
+						"id": "node_14474",
+						"inputs": [
+							{
+								"class": "Expression",
+								"id": "node_14475",
+								"operator": "difference",
+								"inputs": [
+									{
+										"class": "Variable",
+										"id": "node_14476",
+										"name": "iB",
+										"type": "unknown unknown",
+										"source": "code: 11:18 -> 11:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Variable",
+										"id": "node_14477",
+										"name": "yB",
+										"type": "unknown unknown",
+										"source": "code: 11:22 -> 11:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									}
+								],
+								"attributes": {
+									
+								},
+								"type": "unknown unknown",
+								"source": "code: 11:7 -> 11:24 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14478",
+								"name": "yB",
+								"type": "unknown unknown",
+								"source": "code: 11:2 -> 11:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 11:2 -> 11:24 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "JumpStatement",
+						"id": "node_14479",
+						"name": "return",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14480",
+								"name": "yB",
+								"type": "unknown unknown",
+								"source": "code: 26:9 -> 26:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 26:2 -> 26:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				]
+			},
+			"arguments": [
+				{
+					"class": "Variable",
+					"id": "node_14469",
+					"name": "iB",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14470",
+					"name": "yB",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14471",
+					"name": "thresh",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14472",
+					"name": "prob",
+					"type": "unknown unknown"
+				}
+			],
+			"attributes": {
+				
+			},
+			"source": "code: 4:1 -> 26:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+		},
+		{
+			"class": "Function",
+			"id": "node_14481",
+			"name": "difference",
+			"block": {
+				"class": "Block",
+				"id": "node_14688",
+				"children": [
+					{
+						"class": "Statement",
+						"id": "node_14486",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14487",
+								"name": "in3",
+								"type": "unknown unknown",
+								"source": "code: 36:19 -> 36:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14488",
+								"name": "halfBufferSize",
+								"type": "unknown unknown",
+								"source": "code: 36:2 -> 36:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 36:2 -> 36:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "ForStatement",
+						"id": "node_14489",
+						"init": {
+							"class": "Statement",
+							"id": "node_14537",
+							"inputs": [
+								{
+									"class": "Constant",
+									"id": "node_14538",
+									"value": 0,
+									"eval": 0,
+									"type": "unknown unknown",
+									"source": "code: 39:12 -> 39:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"outputs": [
+								{
+									"class": "Variable",
+									"id": "node_14539",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 39:6 -> 39:6 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 39:6 -> 39:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"condition": {
+							"class": "Expression",
+							"id": "node_14540",
+							"operator": "lt",
+							"inputs": [
+								{
+									"class": "Variable",
+									"id": "node_14541",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 39:16 -> 39:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Variable",
+									"id": "node_14542",
+									"name": "halfBufferSize",
+									"type": "unknown unknown",
+									"source": "code: 39:22 -> 39:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 39:16 -> 39:36 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"increment": {
+							"class": "Statement",
+							"id": "node_14543",
+							"inputs": [
+								{
+									"class": "Expression",
+									"id": "node_14544",
+									"operator": "add",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14545",
+											"name": "tau",
+											"type": "unknown unknown",
+											"source": "code: 39:38 -> 39:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										{
+											"class": "Constant",
+											"id": "node_14546",
+											"value": 1,
+											"eval": 1,
+											"type": "unknown unknown",
+											"source": "code: 39:43 -> 39:43 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"attributes": {
+										
+									},
+									"type": "unknown unknown",
+									"source": "code: 39:38 -> 39:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"outputs": [
+								{
+									"class": "Variable",
+									"id": "node_14547",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 39:38 -> 39:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 39:38 -> 39:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14687",
+							"children": [
+								{
+									"class": "ForStatement",
+									"id": "node_14492",
+									"init": {
+										"class": "Statement",
+										"id": "node_14526",
+										"inputs": [
+											{
+												"class": "Constant",
+												"id": "node_14527",
+												"value": 0,
+												"eval": 0,
+												"type": "unknown unknown",
+												"source": "code: 43:11 -> 43:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"outputs": [
+											{
+												"class": "Variable",
+												"id": "node_14528",
+												"name": "i",
+												"type": "unknown unknown",
+												"source": "code: 43:7 -> 43:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 43:7 -> 43:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"condition": {
+										"class": "Expression",
+										"id": "node_14529",
+										"operator": "lt",
+										"inputs": [
+											{
+												"class": "Variable",
+												"id": "node_14530",
+												"name": "i",
+												"type": "unknown unknown",
+												"source": "code: 43:14 -> 43:14 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Variable",
+												"id": "node_14531",
+												"name": "halfBufferSize",
+												"type": "unknown unknown",
+												"source": "code: 43:18 -> 43:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"attributes": {
+											
+										},
+										"type": "unknown unknown",
+										"source": "code: 43:14 -> 43:32 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"increment": {
+										"class": "Statement",
+										"id": "node_14532",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14533",
+												"operator": "add",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14534",
+														"name": "i",
+														"type": "unknown unknown",
+														"source": "code: 43:34 -> 43:34 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Constant",
+														"id": "node_14535",
+														"value": 1,
+														"eval": 1,
+														"type": "unknown unknown",
+														"source": "code: 43:37 -> 43:37 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 43:34 -> 43:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"outputs": [
+											{
+												"class": "Variable",
+												"id": "node_14536",
+												"name": "i",
+												"type": "unknown unknown",
+												"source": "code: 43:34 -> 43:34 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 43:34 -> 43:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"block": {
+										"class": "Block",
+										"id": "node_14686",
+										"children": [
+											{
+												"class": "Statement",
+												"id": "node_14495",
+												"inputs": [
+													{
+														"class": "Expression",
+														"id": "node_14496",
+														"operator": "read",
+														"inputs": [
+															{
+																"class": "Variable",
+																"id": "node_14497",
+																"name": "iB",
+																"type": "unknown unknown",
+																"source": "code: 44:12 -> 44:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Variable",
+																"id": "node_14498",
+																"name": "i",
+																"type": "unknown unknown",
+																"source": "code: 44:20 -> 44:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Constant",
+																"id": "node_14499",
+																"value": 0,
+																"eval": 0,
+																"type": "unknown unknown",
+																"source": "code: 44:22 -> 44:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														],
+														"attributes": {
+															
+														},
+														"type": "unknown unknown",
+														"source": "code: 44:12 -> 44:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": [
+													{
+														"class": "Variable",
+														"id": "node_14500",
+														"name": "read_146",
+														"type": "unknown unknown",
+														"source": "code: 44:12 -> 44:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14501",
+														"name": "read_147",
+														"type": "unknown unknown",
+														"source": "code: 44:12 -> 44:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"source": "code: 44:12 -> 44:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Statement",
+												"id": "node_14502",
+												"inputs": [
+													{
+														"class": "Expression",
+														"id": "node_14503",
+														"operator": "read",
+														"inputs": [
+															{
+																"class": "Variable",
+																"id": "node_14504",
+																"name": "iB",
+																"type": "unknown unknown",
+																"source": "code: 44:27 -> 44:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Expression",
+																"id": "node_14505",
+																"operator": "add",
+																"inputs": [
+																	{
+																		"class": "Variable",
+																		"id": "node_14506",
+																		"name": "i",
+																		"type": "unknown unknown",
+																		"source": "code: 44:35 -> 44:35 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	},
+																	{
+																		"class": "Variable",
+																		"id": "node_14507",
+																		"name": "tau",
+																		"type": "unknown unknown",
+																		"source": "code: 44:39 -> 44:39 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	}
+																],
+																"attributes": {
+																	
+																},
+																"type": "unknown unknown",
+																"source": "code: 44:35 -> 44:42 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Constant",
+																"id": "node_14508",
+																"value": 0,
+																"eval": 0,
+																"type": "unknown unknown",
+																"source": "code: 44:44 -> 44:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														],
+														"attributes": {
+															
+														},
+														"type": "unknown unknown",
+														"source": "code: 44:27 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": [
+													{
+														"class": "Variable",
+														"id": "node_14509",
+														"name": "read_148",
+														"type": "unknown unknown",
+														"source": "code: 44:27 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14510",
+														"name": "read_149",
+														"type": "unknown unknown",
+														"source": "code: 44:27 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"source": "code: 44:27 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Statement",
+												"id": "node_14511",
+												"inputs": [
+													{
+														"class": "Expression",
+														"id": "node_14512",
+														"operator": "sub",
+														"inputs": [
+															{
+																"class": "Variable",
+																"id": "node_14513",
+																"name": "read_146",
+																"type": "unknown unknown",
+																"source": "code: 44:12 -> 44:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Variable",
+																"id": "node_14514",
+																"name": "read_148",
+																"type": "unknown unknown",
+																"source": "code: 44:27 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														],
+														"attributes": {
+															
+														},
+														"type": "unknown unknown",
+														"source": "code: 44:12 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": [
+													{
+														"class": "Variable",
+														"id": "node_14515",
+														"name": "delta",
+														"type": "unknown unknown",
+														"source": "code: 44:4 -> 44:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"source": "code: 44:4 -> 44:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Statement",
+												"id": "node_14516",
+												"inputs": [
+													{
+														"class": "Expression",
+														"id": "node_14517",
+														"operator": "poke",
+														"inputs": [
+															{
+																"class": "Variable",
+																"id": "node_14518",
+																"name": "yB",
+																"type": "unknown unknown",
+																"source": "code: 46:9 -> 46:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Expression",
+																"id": "node_14519",
+																"operator": "mul",
+																"inputs": [
+																	{
+																		"class": "Variable",
+																		"id": "node_14520",
+																		"name": "delta",
+																		"type": "unknown unknown",
+																		"source": "code: 46:12 -> 46:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	},
+																	{
+																		"class": "Variable",
+																		"id": "node_14521",
+																		"name": "delta",
+																		"type": "unknown unknown",
+																		"source": "code: 46:20 -> 46:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	}
+																],
+																"attributes": {
+																	
+																},
+																"type": "unknown unknown",
+																"source": "code: 46:12 -> 46:25 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Variable",
+																"id": "node_14522",
+																"name": "tau",
+																"type": "unknown unknown",
+																"source": "code: 46:27 -> 46:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Constant",
+																"id": "node_14523",
+																"value": "0",
+																"eval": 0,
+																"type": "unknown unknown",
+																"source": "code: 46:4 -> 46:51 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Constant",
+																"id": "node_14524",
+																"value": "0",
+																"eval": 0,
+																"type": "unknown unknown",
+																"source": "code: 46:4 -> 46:51 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														],
+														"attributes": {
+															"overdubmode": {
+																"class": "Attribute",
+																"id": "node_14525",
+																"name": "overdubmode",
+																"value": {
+																	"class": "Constant",
+																	"id": "node_13091",
+																	"value": "\"accum\"",
+																	"eval": "\"accum\"",
+																	"type": "constant string",
+																	"source": "code: 46:44 -> 46:44"
+																},
+																"source": "code: 46:32 -> 46:51 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														},
+														"type": "unknown unknown",
+														"source": "code: 46:4 -> 46:51 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": {
+													
+												},
+												"source": "code: 46:4 -> 46:51 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										]
+									},
+									"source": "code: 44:4 -> 46:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							]
+						},
+						"source": "code: 44:4 -> 46:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "JumpStatement",
+						"id": "node_14548",
+						"name": "return",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14549",
+								"name": "yB",
+								"type": "unknown unknown",
+								"source": "code: 49:9 -> 49:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 49:2 -> 49:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				]
+			},
+			"arguments": [
+				{
+					"class": "Variable",
+					"id": "node_14483",
+					"name": "iB",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14484",
+					"name": "yB",
+					"type": "unknown unknown"
+				}
+			],
+			"attributes": {
+				
+			},
+			"source": "code: 35:1 -> 49:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+		},
+		{
+			"class": "Function",
+			"id": "node_14550",
+			"name": "cumulativeMeanNormalizedDifference",
+			"block": {
+				"class": "Block",
+				"id": "node_14553",
+				"children": [
+					{
+						"class": "Statement",
+						"id": "node_14554",
+						"inputs": [
+							{
+								"class": "Constant",
+								"id": "node_14555",
+								"value": 0,
+								"eval": 0,
+								"type": "unknown unknown",
+								"source": "code: 58:15 -> 58:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14556",
+								"name": "runningSum",
+								"type": "unknown unknown",
+								"source": "code: 58:2 -> 58:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 58:2 -> 58:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Statement",
+						"id": "node_14557",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14558",
+								"name": "in3",
+								"type": "unknown unknown",
+								"source": "code: 59:19 -> 59:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14559",
+								"name": "halfBufferSize",
+								"type": "unknown unknown",
+								"source": "code: 59:2 -> 59:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 59:2 -> 59:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Statement",
+						"id": "node_14560",
+						"inputs": [
+							{
+								"class": "Expression",
+								"id": "node_14561",
+								"operator": "poke",
+								"inputs": [
+									{
+										"class": "Variable",
+										"id": "node_14562",
+										"name": "yB",
+										"type": "unknown unknown",
+										"source": "code: 60:7 -> 60:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Constant",
+										"id": "node_14563",
+										"value": 1,
+										"eval": 1,
+										"type": "unknown unknown",
+										"source": "code: 60:11 -> 60:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									{
+										"class": "Constant",
+										"id": "node_14564",
+										"value": 0,
+										"eval": 0,
+										"type": "unknown unknown",
+										"source": "code: 60:14 -> 60:14 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									}
+								],
+								"attributes": {
+									
+								},
+								"type": "unknown unknown",
+								"source": "code: 60:2 -> 60:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": {
+							
+						},
+						"source": "code: 60:2 -> 60:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "ForStatement",
+						"id": "node_14565",
+						"init": {
+							"class": "Statement",
+							"id": "node_14587",
+							"inputs": [
+								{
+									"class": "Constant",
+									"id": "node_14588",
+									"value": 1,
+									"eval": 1,
+									"type": "unknown unknown",
+									"source": "code: 64:13 -> 64:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"outputs": [
+								{
+									"class": "Variable",
+									"id": "node_14589",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 64:7 -> 64:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 64:7 -> 64:14 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"condition": {
+							"class": "Expression",
+							"id": "node_14590",
+							"operator": "lt",
+							"inputs": [
+								{
+									"class": "Variable",
+									"id": "node_14591",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 64:16 -> 64:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Variable",
+									"id": "node_14592",
+									"name": "halfBufferSize",
+									"type": "unknown unknown",
+									"source": "code: 64:22 -> 64:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 64:16 -> 64:36 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"increment": {
+							"class": "Statement",
+							"id": "node_14593",
+							"inputs": [
+								{
+									"class": "Expression",
+									"id": "node_14594",
+									"operator": "add",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14595",
+											"name": "tau",
+											"type": "unknown unknown",
+											"source": "code: 64:38 -> 64:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										{
+											"class": "Constant",
+											"id": "node_14596",
+											"value": 1,
+											"eval": 1,
+											"type": "unknown unknown",
+											"source": "code: 64:43 -> 64:43 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"attributes": {
+										
+									},
+									"type": "unknown unknown",
+									"source": "code: 64:38 -> 64:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"outputs": [
+								{
+									"class": "Variable",
+									"id": "node_14597",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 64:38 -> 64:38 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 64:38 -> 64:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14567",
+							"children": [
+								{
+									"class": "Statement",
+									"id": "node_14568",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14569",
+											"operator": "add",
+											"inputs": [
+												{
+													"class": "Variable",
+													"id": "node_14570",
+													"name": "runningSum",
+													"type": "unknown unknown",
+													"source": "code: 65:3 -> 65:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Expression",
+													"id": "node_14571",
+													"operator": "peek",
+													"inputs": [
+														{
+															"class": "Variable",
+															"id": "node_14572",
+															"name": "yB",
+															"type": "unknown unknown",
+															"source": "code: 65:22 -> 65:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														},
+														{
+															"class": "Variable",
+															"id": "node_14573",
+															"name": "tau",
+															"type": "unknown unknown",
+															"source": "code: 65:25 -> 65:25 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"attributes": {
+														
+													},
+													"type": "unknown unknown",
+													"source": "code: 65:17 -> 65:28 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 65:3 -> 65:28 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14574",
+											"name": "runningSum",
+											"type": "unknown unknown",
+											"source": "code: 65:3 -> 65:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 65:3 -> 65:28 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Statement",
+									"id": "node_14575",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14576",
+											"operator": "div",
+											"inputs": [
+												{
+													"class": "Expression",
+													"id": "node_14577",
+													"operator": "mul",
+													"inputs": [
+														{
+															"class": "Variable",
+															"id": "node_14578",
+															"name": "runningSum",
+															"type": "unknown unknown",
+															"source": "code: 66:12 -> 66:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														},
+														{
+															"class": "Variable",
+															"id": "node_14579",
+															"name": "tau",
+															"type": "unknown unknown",
+															"source": "code: 66:25 -> 66:25 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"attributes": {
+														
+													},
+													"type": "unknown unknown",
+													"source": "code: 66:12 -> 66:28 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Variable",
+													"id": "node_14580",
+													"name": "runningSum",
+													"type": "unknown unknown",
+													"source": "code: 66:31 -> 66:31 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 66:12 -> 66:41 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14581",
+											"name": "newSum",
+											"type": "unknown unknown",
+											"source": "code: 66:3 -> 66:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 66:3 -> 66:41 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Statement",
+									"id": "node_14582",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14583",
+											"operator": "poke",
+											"inputs": [
+												{
+													"class": "Variable",
+													"id": "node_14584",
+													"name": "yB",
+													"type": "unknown unknown",
+													"source": "code: 67:8 -> 67:8 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Variable",
+													"id": "node_14585",
+													"name": "newSum",
+													"type": "unknown unknown",
+													"source": "code: 67:12 -> 67:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Variable",
+													"id": "node_14586",
+													"name": "tau",
+													"type": "unknown unknown",
+													"source": "code: 67:20 -> 67:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 67:3 -> 67:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": {
+										
+									},
+									"source": "code: 67:3 -> 67:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 65:3 -> 67:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"source": "code: 65:3 -> 67:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"source": "code: 58:2 -> 67:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			"arguments": [
+				{
+					"class": "Variable",
+					"id": "node_14552",
+					"name": "yB",
+					"type": "unknown unknown"
+				}
+			],
+			"attributes": {
+				
+			},
+			"source": "code: 57:1 -> 67:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+		},
+		{
+			"class": "Function",
+			"id": "node_14598",
+			"name": "absoluteThreshold",
+			"block": {
+				"class": "Block",
+				"id": "node_14603",
+				"children": [
+					{
+						"class": "Statement",
+						"id": "node_14604",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14605",
+								"name": "in3",
+								"type": "unknown unknown",
+								"source": "code: 77:19 -> 77:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"outputs": [
+							{
+								"class": "Variable",
+								"id": "node_14606",
+								"name": "halfBufferSize",
+								"type": "unknown unknown",
+								"source": "code: 77:2 -> 77:2 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 77:2 -> 77:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "ForStatement",
+						"id": "node_14607",
+						"init": {
+							"class": "Statement",
+							"id": "node_14649",
+							"inputs": [
+								{
+									"class": "Constant",
+									"id": "node_14650",
+									"value": 2,
+									"eval": 2,
+									"type": "unknown unknown",
+									"source": "code: 78:13 -> 78:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"outputs": [
+								{
+									"class": "Variable",
+									"id": "node_14651",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 78:7 -> 78:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 78:7 -> 78:14 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"condition": {
+							"class": "Expression",
+							"id": "node_14652",
+							"operator": "lt",
+							"inputs": [
+								{
+									"class": "Variable",
+									"id": "node_14653",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 78:16 -> 78:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Variable",
+									"id": "node_14654",
+									"name": "halfBufferSize",
+									"type": "unknown unknown",
+									"source": "code: 78:22 -> 78:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 78:16 -> 78:36 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"increment": {
+							"class": "Statement",
+							"id": "node_14655",
+							"inputs": [
+								{
+									"class": "Expression",
+									"id": "node_14656",
+									"operator": "add",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14657",
+											"name": "tau",
+											"type": "unknown unknown",
+											"source": "code: 78:39 -> 78:39 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										{
+											"class": "Constant",
+											"id": "node_14658",
+											"value": 1,
+											"eval": 1,
+											"type": "unknown unknown",
+											"source": "code: 78:44 -> 78:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"attributes": {
+										
+									},
+									"type": "unknown unknown",
+									"source": "code: 78:39 -> 78:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"outputs": [
+								{
+									"class": "Variable",
+									"id": "node_14659",
+									"name": "tau",
+									"type": "unknown unknown",
+									"source": "code: 78:39 -> 78:39 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 78:39 -> 78:45 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14609",
+							"children": [
+								{
+									"class": "IfStatement",
+									"id": "node_14610",
+									"condition": {
+										"class": "Expression",
+										"id": "node_14644",
+										"operator": "lt",
+										"inputs": [
+											{
+												"class": "Expression",
+												"id": "node_14645",
+												"operator": "peek",
+												"inputs": [
+													{
+														"class": "Variable",
+														"id": "node_14646",
+														"name": "yB",
+														"type": "unknown unknown",
+														"source": "code: 79:12 -> 79:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													},
+													{
+														"class": "Variable",
+														"id": "node_14647",
+														"name": "tau",
+														"type": "unknown unknown",
+														"source": "code: 79:15 -> 79:15 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"attributes": {
+													
+												},
+												"type": "unknown unknown",
+												"source": "code: 79:7 -> 79:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Variable",
+												"id": "node_14648",
+												"name": "thresh",
+												"type": "unknown unknown",
+												"source": "code: 79:22 -> 79:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"attributes": {
+											
+										},
+										"type": "unknown unknown",
+										"source": "code: 79:7 -> 79:28 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"block": {
+										"class": "Block",
+										"id": "node_14612",
+										"children": [
+											{
+												"class": "WhileStatement",
+												"id": "node_14613",
+												"condition": {
+													"class": "Expression",
+													"id": "node_14621",
+													"operator": "and",
+													"inputs": [
+														{
+															"class": "Expression",
+															"id": "node_14622",
+															"operator": "lt",
+															"inputs": [
+																{
+																	"class": "Expression",
+																	"id": "node_14623",
+																	"operator": "add",
+																	"inputs": [
+																		{
+																			"class": "Variable",
+																			"id": "node_14624",
+																			"name": "tau",
+																			"type": "unknown unknown",
+																			"source": "code: 82:11 -> 82:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		},
+																		{
+																			"class": "Constant",
+																			"id": "node_14625",
+																			"value": 1,
+																			"eval": 1,
+																			"type": "unknown unknown",
+																			"source": "code: 82:17 -> 82:17 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		}
+																	],
+																	"attributes": {
+																		
+																	},
+																	"type": "unknown unknown",
+																	"source": "code: 82:11 -> 82:18 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																},
+																{
+																	"class": "Variable",
+																	"id": "node_14626",
+																	"name": "halfBufferSize",
+																	"type": "unknown unknown",
+																	"source": "code: 82:21 -> 82:21 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																}
+															],
+															"attributes": {
+																
+															},
+															"type": "unknown unknown",
+															"source": "code: 82:11 -> 82:35 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														},
+														{
+															"class": "Expression",
+															"id": "node_14627",
+															"operator": "lt",
+															"inputs": [
+																{
+																	"class": "Expression",
+																	"id": "node_14628",
+																	"operator": "peek",
+																	"inputs": [
+																		{
+																			"class": "Variable",
+																			"id": "node_14629",
+																			"name": "yB",
+																			"type": "unknown unknown",
+																			"source": "code: 82:44 -> 82:44 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		},
+																		{
+																			"class": "Expression",
+																			"id": "node_14630",
+																			"operator": "add",
+																			"inputs": [
+																				{
+																					"class": "Variable",
+																					"id": "node_14631",
+																					"name": "tau",
+																					"type": "unknown unknown",
+																					"source": "code: 82:47 -> 82:47 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																				},
+																				{
+																					"class": "Constant",
+																					"id": "node_14632",
+																					"value": 1,
+																					"eval": 1,
+																					"type": "unknown unknown",
+																					"source": "code: 82:53 -> 82:53 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																				}
+																			],
+																			"attributes": {
+																				
+																			},
+																			"type": "unknown unknown",
+																			"source": "code: 82:47 -> 82:54 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		}
+																	],
+																	"attributes": {
+																		
+																	},
+																	"type": "unknown unknown",
+																	"source": "code: 82:39 -> 82:54 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																},
+																{
+																	"class": "Expression",
+																	"id": "node_14633",
+																	"operator": "peek",
+																	"inputs": [
+																		{
+																			"class": "Variable",
+																			"id": "node_14634",
+																			"name": "yB",
+																			"type": "unknown unknown",
+																			"source": "code: 82:63 -> 82:63 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		},
+																		{
+																			"class": "Variable",
+																			"id": "node_14635",
+																			"name": "tau",
+																			"type": "unknown unknown",
+																			"source": "code: 82:66 -> 82:66 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		}
+																	],
+																	"attributes": {
+																		
+																	},
+																	"type": "unknown unknown",
+																	"source": "code: 82:58 -> 82:69 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																}
+															],
+															"attributes": {
+																
+															},
+															"type": "unknown unknown",
+															"source": "code: 82:39 -> 82:69 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"attributes": {
+														
+													},
+													"type": "unknown unknown",
+													"source": "code: 82:11 -> 82:69 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												"block": {
+													"class": "Block",
+													"id": "node_14615",
+													"children": [
+														{
+															"class": "Statement",
+															"id": "node_14616",
+															"inputs": [
+																{
+																	"class": "Expression",
+																	"id": "node_14617",
+																	"operator": "add",
+																	"inputs": [
+																		{
+																			"class": "Variable",
+																			"id": "node_14618",
+																			"name": "tau",
+																			"type": "unknown unknown",
+																			"source": "code: 83:5 -> 83:5 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		},
+																		{
+																			"class": "Constant",
+																			"id": "node_14619",
+																			"value": 1,
+																			"eval": 1,
+																			"type": "unknown unknown",
+																			"source": "code: 83:10 -> 83:10 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																		}
+																	],
+																	"attributes": {
+																		
+																	},
+																	"type": "unknown unknown",
+																	"source": "code: 83:5 -> 83:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																}
+															],
+															"outputs": [
+																{
+																	"class": "Variable",
+																	"id": "node_14620",
+																	"name": "tau",
+																	"type": "unknown unknown",
+																	"source": "code: 83:5 -> 83:5 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																}
+															],
+															"source": "code: 83:5 -> 83:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+														}
+													],
+													"source": "code: 83:5 -> 83:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												"source": "code: 83:5 -> 83:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "Statement",
+												"id": "node_14636",
+												"inputs": [
+													{
+														"class": "Expression",
+														"id": "node_14637",
+														"operator": "sub",
+														"inputs": [
+															{
+																"class": "Constant",
+																"id": "node_14638",
+																"value": 1,
+																"eval": 1,
+																"type": "unknown unknown",
+																"source": "code: 94:11 -> 94:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															},
+															{
+																"class": "Expression",
+																"id": "node_14639",
+																"operator": "peek",
+																"inputs": [
+																	{
+																		"class": "Variable",
+																		"id": "node_14640",
+																		"name": "yB",
+																		"type": "unknown unknown",
+																		"source": "code: 94:20 -> 94:20 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	},
+																	{
+																		"class": "Variable",
+																		"id": "node_14641",
+																		"name": "tau",
+																		"type": "unknown unknown",
+																		"source": "code: 94:23 -> 94:23 [expr $in1 $in2 $in3] => expr_151,expr_152"
+																	}
+																],
+																"attributes": {
+																	
+																},
+																"type": "unknown unknown",
+																"source": "code: 94:15 -> 94:26 [expr $in1 $in2 $in3] => expr_151,expr_152"
+															}
+														],
+														"attributes": {
+															
+														},
+														"type": "unknown unknown",
+														"source": "code: 94:11 -> 94:26 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"outputs": [
+													{
+														"class": "Variable",
+														"id": "node_14642",
+														"name": "prob",
+														"type": "unknown unknown",
+														"source": "code: 94:4 -> 94:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+													}
+												],
+												"source": "code: 94:4 -> 94:26 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											},
+											{
+												"class": "JumpStatement",
+												"id": "node_14643",
+												"name": "break",
+												"inputs": {
+													
+												},
+												"source": "code: 95:4 -> 95:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+											}
+										],
+										"source": "code: 83:5 -> 95:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+									},
+									"alternative": null,
+									"source": "code: 83:5 -> 95:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 83:5 -> 95:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"source": "code: 83:5 -> 95:4 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "IfStatement",
+						"id": "node_14660",
+						"condition": {
+							"class": "Expression",
+							"id": "node_14670",
+							"operator": "or",
+							"inputs": [
+								{
+									"class": "Expression",
+									"id": "node_14671",
+									"operator": "eq",
+									"inputs": [
+										{
+											"class": "Variable",
+											"id": "node_14672",
+											"name": "tau",
+											"type": "unknown unknown",
+											"source": "code: 100:6 -> 100:6 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										{
+											"class": "Variable",
+											"id": "node_14673",
+											"name": "halfBufferSize",
+											"type": "unknown unknown",
+											"source": "code: 100:13 -> 100:13 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"attributes": {
+										
+									},
+									"type": "unknown unknown",
+									"source": "code: 100:6 -> 100:27 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Expression",
+									"id": "node_14674",
+									"operator": "gte",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14675",
+											"operator": "peek",
+											"inputs": [
+												{
+													"class": "Variable",
+													"id": "node_14676",
+													"name": "yB",
+													"type": "unknown unknown",
+													"source": "code: 100:36 -> 100:36 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												},
+												{
+													"class": "Variable",
+													"id": "node_14677",
+													"name": "tau",
+													"type": "unknown unknown",
+													"source": "code: 100:39 -> 100:39 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 100:31 -> 100:42 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										},
+										{
+											"class": "Variable",
+											"id": "node_14678",
+											"name": "thresh",
+											"type": "unknown unknown",
+											"source": "code: 100:47 -> 100:47 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"attributes": {
+										
+									},
+									"type": "unknown unknown",
+									"source": "code: 100:31 -> 100:53 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"attributes": {
+								
+							},
+							"type": "unknown unknown",
+							"source": "code: 100:6 -> 100:53 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"block": {
+							"class": "Block",
+							"id": "node_14662",
+							"children": [
+								{
+									"class": "Statement",
+									"id": "node_14663",
+									"inputs": [
+										{
+											"class": "Expression",
+											"id": "node_14664",
+											"operator": "neg",
+											"inputs": [
+												{
+													"class": "Constant",
+													"id": "node_14665",
+													"value": 1,
+													"eval": 1,
+													"type": "unknown unknown",
+													"source": "code: 101:10 -> 101:10 [expr $in1 $in2 $in3] => expr_151,expr_152"
+												}
+											],
+											"attributes": {
+												
+											},
+											"type": "unknown unknown",
+											"source": "code: 101:10 -> 101:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14666",
+											"name": "tau",
+											"type": "unknown unknown",
+											"source": "code: 101:3 -> 101:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 101:3 -> 101:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								},
+								{
+									"class": "Statement",
+									"id": "node_14667",
+									"inputs": [
+										{
+											"class": "Constant",
+											"id": "node_14668",
+											"value": 0,
+											"eval": 0,
+											"type": "unknown unknown",
+											"source": "code: 102:10 -> 102:10 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"outputs": [
+										{
+											"class": "Variable",
+											"id": "node_14669",
+											"name": "prob",
+											"type": "unknown unknown",
+											"source": "code: 102:3 -> 102:3 [expr $in1 $in2 $in3] => expr_151,expr_152"
+										}
+									],
+									"source": "code: 102:3 -> 102:11 [expr $in1 $in2 $in3] => expr_151,expr_152"
+								}
+							],
+							"source": "code: 101:3 -> 102:10 [expr $in1 $in2 $in3] => expr_151,expr_152"
+						},
+						"alternative": null,
+						"source": "code: 101:3 -> 102:10 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "JumpStatement",
+						"id": "node_14679",
+						"name": "return",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14680",
+								"name": "tau",
+								"type": "unknown unknown",
+								"source": "code: 105:9 -> 105:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"source": "code: 105:2 -> 105:12 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"source": "code: 77:2 -> 105:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			"arguments": [
+				{
+					"class": "Variable",
+					"id": "node_14600",
+					"name": "yB",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14601",
+					"name": "thresh",
+					"type": "unknown unknown"
+				},
+				{
+					"class": "Variable",
+					"id": "node_14602",
+					"name": "prob",
+					"type": "unknown unknown"
+				}
+			],
+			"attributes": {
+				
+			},
+			"source": "code: 74:1 -> 105:9 [expr $in1 $in2 $in3] => expr_151,expr_152"
+		}
+	],
+	"block": {
+		"class": "Block",
+		"id": "node_14690",
+		"children": [
+			{
+				"class": "Declaration",
+				"id": "node_14290",
+				"name": "inBuffer",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_14291",
+						"value": 1166,
+						"eval": 1166,
+						"type": "signal int",
+						"source": "code: 170:16 -> 170:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Constant",
+						"id": "node_14292",
+						"value": 1,
+						"eval": 1,
+						"type": "signal int",
+						"source": "code: 170:22 -> 170:22 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"attributes": {
+					
+				},
+				"type": "init Delay",
+				"typename": "Delay",
+				"source": "code: 170:7 -> 170:7 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			{
+				"class": "Declaration",
+				"id": "node_14293",
+				"name": "yinBuffer",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_14294",
+						"value": 583,
+						"eval": 583,
+						"type": "signal int",
+						"source": "code: 171:16 -> 171:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					},
+					{
+						"class": "Constant",
+						"id": "node_14295",
+						"value": 1,
+						"eval": 1,
+						"type": "signal int",
+						"source": "code: 171:21 -> 171:21 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"attributes": {
+					
+				},
+				"type": "init Data",
+				"typename": "Data",
+				"source": "code: 171:6 -> 171:6 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			{
+				"class": "Statement",
+				"id": "node_14296",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_14297",
+						"value": "0",
+						"eval": 0,
+						"type": "signal int",
+						"source": "box: [out 4 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_14298",
+						"name": "out4",
+						"type": "signal t_sample",
+						"source": "box: [out 4 $in1] => "
+					}
+				],
+				"source": "box: [out 4 $in1] => "
+			},
+			{
+				"class": "Statement",
+				"id": "node_14299",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_14300",
+						"name": "in1",
+						"type": "signal t_sample",
+						"source": "box: [out 1 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_14301",
+						"name": "out1",
+						"type": "signal t_sample",
+						"source": "box: [out 1 $in1] => "
+					}
+				],
+				"source": "box: [out 1 $in1] => "
+			},
+			{
+				"class": "Statement",
+				"id": "node_14302",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_14303",
+						"name": "in1",
+						"type": "signal t_sample",
+						"source": "box: [out 2 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_14304",
+						"name": "out2",
+						"type": "signal t_sample",
+						"source": "box: [out 2 $in1] => "
+					}
+				],
+				"source": "box: [out 2 $in1] => "
+			},
+			{
+				"class": "Statement",
+				"id": "node_14314",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_14315",
+						"operator": "write",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14316",
+								"name": "inBuffer",
+								"type": "init Delay",
+								"source": "code: 182:1 -> 182:1 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							{
+								"class": "Variable",
+								"id": "node_14317",
+								"name": "in1",
+								"type": "signal t_sample",
+								"source": "code: 182:16 -> 182:16 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal void",
+						"source": "code: 182:1 -> 182:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"outputs": {
+					
+				},
+				"source": "code: 182:1 -> 182:19 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			{
+				"class": "Statement",
+				"id": "node_14318",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_14319",
+						"operator": "getPitch",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_14320",
+								"name": "inBuffer",
+								"type": "init Delay",
+								"source": "code: 184:21 -> 184:21 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							{
+								"class": "Variable",
+								"id": "node_14321",
+								"name": "yinBuffer",
+								"type": "init Data",
+								"source": "code: 184:31 -> 184:31 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							{
+								"class": "Constant",
+								"id": "node_14322",
+								"value": 0.05,
+								"eval": 0.05,
+								"type": "constant t_sample",
+								"source": "code: 184:42 -> 184:42 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							},
+							{
+								"class": "Constant",
+								"id": "node_14323",
+								"value": 0,
+								"eval": 0,
+								"type": "signal int",
+								"source": "code: 184:53 -> 184:53 [expr $in1 $in2 $in3] => expr_151,expr_152"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal Data",
+						"source": "code: 184:12 -> 184:64 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_14324",
+						"name": "thepitch_150",
+						"type": "signal Data",
+						"source": "code: 184:1 -> 184:1 [expr $in1 $in2 $in3] => expr_151,expr_152"
+					}
+				],
+				"source": "code: 184:1 -> 184:64 [expr $in1 $in2 $in3] => expr_151,expr_152"
+			},
+			{
+				"class": "Statement",
+				"id": "node_14331",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_14691",
+						"name": "thepitch_150",
+						"type": "signal Data",
+						"source": "box: [out 3 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_14333",
+						"name": "out3",
+						"type": "signal t_sample",
+						"source": "box: [out 3 $in1] => "
+					}
+				],
+				"source": "box: [out 3 $in1] => "
+			}
+		]
+	},
+	"source": "patcher: gen.patcher 0x7f8f6dbbc600 graph 0x600001187c80"
+}
