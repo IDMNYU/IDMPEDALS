@@ -40,14 +40,15 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-20",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 504.0, 348.0, 50.0, 22.0 ]
+					"patching_rect" : [ 476.0, 342.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -58,21 +59,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 504.0, 389.0, 100.0, 22.0 ],
+					"patching_rect" : [ 476.0, 391.0, 100.0, 22.0 ],
 					"text" : "knob1_wetdry $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-18",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 395.5, 350.0, 50.0, 22.0 ]
+					"patching_rect" : [ 371.5, 344.0, 40.0, 40.0 ],
+					"size" : 400.0
 				}
 
 			}
@@ -83,21 +85,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.5, 389.0, 101.0, 22.0 ],
+					"patching_rect" : [ 371.5, 391.0, 101.0, 22.0 ],
 					"text" : "knob6_spread $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-14",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 305.5, 350.0, 50.0, 22.0 ]
+					"patching_rect" : [ 285.5, 344.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -108,21 +111,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 305.5, 389.0, 81.0, 22.0 ],
+					"patching_rect" : [ 285.5, 391.0, 81.0, 22.0 ],
 					"text" : "knob5_fb2 $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-12",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 213.5, 350.0, 50.0, 22.0 ]
+					"patching_rect" : [ 200.5, 344.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -133,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.5, 389.0, 81.0, 22.0 ],
+					"patching_rect" : [ 200.5, 391.0, 81.0, 22.0 ],
 					"text" : "knob4_fb1 $1"
 				}
 
@@ -146,7 +150,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 59.5, 350.0, 24.0, 24.0 ]
+					"patching_rect" : [ 50.5, 360.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -157,7 +161,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.5, 389.0, 47.0, 22.0 ],
+					"patching_rect" : [ 50.5, 391.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -293,14 +297,15 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-4",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 110.5, 350.0, 50.0, 22.0 ]
+					"patching_rect" : [ 101.5, 344.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -311,7 +316,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 110.5, 389.0, 95.0, 22.0 ],
+					"patching_rect" : [ 101.5, 391.0, 95.0, 22.0 ],
 					"text" : "knob3_damp $1"
 				}
 

@@ -40,14 +40,15 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-19",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 567.0, 470.0, 50.0, 22.0 ]
+					"patching_rect" : [ 545.0, 346.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -58,21 +59,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 540.0, 511.0, 100.0, 22.0 ],
+					"patching_rect" : [ 545.0, 397.0, 100.0, 22.0 ],
 					"text" : "knob1_wetdry $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-17",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 651.0, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 440.0, 346.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -83,21 +85,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 624.0, 400.0, 103.0, 22.0 ],
+					"patching_rect" : [ 440.0, 397.0, 103.0, 22.0 ],
 					"text" : "knob6_density $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-6",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 515.0, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 329.0, 346.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -108,21 +111,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 488.0, 400.0, 109.0, 22.0 ],
+					"patching_rect" : [ 329.0, 397.0, 109.0, 22.0 ],
 					"text" : "knob5_glitchlen $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-4",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 399.0, 354.0, 50.0, 22.0 ]
+					"patching_rect" : [ 229.5, 346.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -133,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 372.0, 395.0, 97.0, 22.0 ],
+					"patching_rect" : [ 229.5, 397.0, 97.0, 22.0 ],
 					"text" : "knob4_buflen $1"
 				}
 
@@ -149,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 293.5, 528.0, 65.0, 22.0 ],
+					"patching_rect" : [ 169.5, 525.0, 65.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -160,8 +164,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 466.0, 42.0, 20.0 ],
-					"text" : "freeze"
+					"patching_rect" : [ 675.0, 366.0, 52.0, 20.0 ],
+					"text" : "< freeze"
 				}
 
 			}
@@ -172,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.0, 504.0, 47.0, 22.0 ],
+					"patching_rect" : [ 647.0, 397.0, 47.0, 22.0 ],
 					"text" : "sw2 $1"
 				}
 
@@ -185,7 +189,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 425.0, 468.0, 24.0, 24.0 ]
+					"patching_rect" : [ 647.0, 362.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -200,7 +204,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 235.5, 528.0, 56.0, 22.0 ],
+					"patching_rect" : [ 111.5, 525.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -257,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 242.0, 717.0, 211.0, 20.0 ],
+					"patching_rect" : [ 118.0, 714.0, 211.0, 20.0 ],
 					"text" : "IDMPEDALS glitch 2 (reverse pattern)"
 				}
 
@@ -271,7 +275,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 183.5, 528.0, 48.0, 136.0 ],
+					"patching_rect" : [ 59.5, 525.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -314,7 +318,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 183.5, 692.0, 45.0, 45.0 ]
+					"patching_rect" : [ 59.5, 689.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -325,7 +329,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.0, 395.0, 47.0, 22.0 ],
+					"patching_rect" : [ 83.5, 397.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -338,20 +342,21 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 194.0, 359.0, 24.0, 24.0 ]
+					"patching_rect" : [ 83.5, 362.0, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-33",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 277.0, 354.0, 50.0, 22.0 ]
+					"patching_rect" : [ 142.5, 346.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -362,7 +367,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.0, 395.0, 85.0, 22.0 ],
+					"patching_rect" : [ 142.5, 397.0, 85.0, 22.0 ],
 					"text" : "knob3_rate $1"
 				}
 
@@ -11793,7 +11798,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 183.5, 468.0, 110.0, 22.0 ],
+					"patching_rect" : [ 59.5, 465.0, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
 						"exportname" : "Glitch2"
@@ -11865,7 +11870,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 1 ],
-					"midpoints" : [ 200.25, 677.5, 219.0, 677.5 ],
+					"midpoints" : [ 76.25, 674.5, 95.0, 674.5 ],
 					"source" : [ "obj-14", 1 ]
 				}
 

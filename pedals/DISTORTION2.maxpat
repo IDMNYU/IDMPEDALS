@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 482.0, 231.0, 609.0, 738.0 ],
+		"rect" : [ 482.0, 231.0, 562.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -82,14 +82,16 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-12",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : 20.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 347.5, 333.0, 50.0, 22.0 ]
+					"patching_rect" : [ 304.5, 335.0, 40.0, 40.0 ],
+					"size" : 60.0
 				}
 
 			}
@@ -100,21 +102,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 347.5, 373.0, 94.0, 22.0 ],
-					"text" : "knob5_xover $1"
+					"patching_rect" : [ 304.5, 385.0, 88.0, 22.0 ],
+					"text" : "knob5_tone $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-11",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : -70.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 461.0, 333.0, 50.0, 22.0 ]
+					"patching_rect" : [ 393.5, 335.0, 40.0, 40.0 ],
+					"size" : 85.0
 				}
 
 			}
@@ -125,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 461.0, 373.0, 98.0, 22.0 ],
+					"patching_rect" : [ 393.5, 385.0, 98.0, 22.0 ],
 					"text" : "knob6_output $1"
 				}
 
@@ -199,14 +203,16 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-2",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : 1.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 247.5, 333.0, 50.0, 22.0 ]
+					"patching_rect" : [ 203.5, 335.0, 40.0, 40.0 ],
+					"size" : 4.0
 				}
 
 			}
@@ -217,8 +223,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.5, 373.0, 88.0, 22.0 ],
-					"text" : "knob4_ratio $1"
+					"patching_rect" : [ 203.5, 385.0, 99.0, 22.0 ],
+					"text" : "knob4_squish $1"
 				}
 
 			}
@@ -230,7 +236,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 68.0, 333.0, 24.0, 24.0 ]
+					"patching_rect" : [ 61.5, 345.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -241,7 +247,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 68.0, 373.0, 47.0, 22.0 ],
+					"patching_rect" : [ 61.5, 385.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -268,14 +274,15 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-70",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 129.5, 333.0, 50.0, 22.0 ]
+					"patching_rect" : [ 110.5, 335.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -286,8 +293,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 129.5, 373.0, 114.0, 22.0 ],
-					"text" : "knob3_threshold $1"
+					"patching_rect" : [ 110.5, 385.0, 91.0, 22.0 ],
+					"text" : "knob3_drive $1"
 				}
 
 			}

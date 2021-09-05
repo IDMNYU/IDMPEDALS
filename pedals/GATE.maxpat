@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -246,8 +246,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 626.0, 351.0, 59.0, 20.0 ],
-					"text" : "sidechain"
+					"patching_rect" : [ 606.0, 423.0, 70.0, 20.0 ],
+					"text" : "< sidechain"
 				}
 
 			}
@@ -259,7 +259,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 590.0, 351.0, 24.0, 24.0 ]
+					"patching_rect" : [ 575.0, 423.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -270,7 +270,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 586.0, 386.0, 47.0, 22.0 ],
+					"patching_rect" : [ 575.0, 457.0, 47.0, 22.0 ],
 					"text" : "sw5 $1"
 				}
 
@@ -282,21 +282,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 471.0, 386.0, 104.0, 22.0 ],
+					"patching_rect" : [ 467.0, 457.0, 104.0, 22.0 ],
 					"text" : "knob5_release $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-28",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : 5.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 471.0, 351.0, 50.0, 22.0 ]
+					"patching_rect" : [ 467.0, 407.0, 40.0, 40.0 ],
+					"size" : 995.0
 				}
 
 			}
@@ -307,21 +309,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 372.0, 386.0, 97.0, 22.0 ],
+					"patching_rect" : [ 368.0, 457.0, 97.0, 22.0 ],
 					"text" : "knob4_attack $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-26",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : 0.5,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 372.0, 351.0, 50.0, 22.0 ]
+					"patching_rect" : [ 368.0, 407.0, 40.0, 40.0 ],
+					"size" : 199.5
 				}
 
 			}
@@ -332,21 +336,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 248.0, 386.0, 114.0, 22.0 ],
+					"patching_rect" : [ 250.0, 457.0, 114.0, 22.0 ],
 					"text" : "knob3_threshold $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-22",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : -70.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 248.0, 351.0, 50.0, 22.0 ]
+					"patching_rect" : [ 250.0, 407.0, 40.0, 40.0 ],
+					"size" : 88.0
 				}
 
 			}
@@ -357,21 +363,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.0, 491.0, 98.0, 22.0 ],
+					"patching_rect" : [ 548.299999999999955, 366.0, 98.0, 22.0 ],
 					"text" : "knob2_output $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-20",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : -70.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 516.0, 453.0, 50.0, 22.0 ]
+					"patching_rect" : [ 548.299999999999955, 318.0, 40.0, 40.0 ],
+					"size" : 85.0
 				}
 
 			}
@@ -382,21 +390,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 491.0, 91.0, 22.0 ],
+					"patching_rect" : [ 455.299999999999955, 366.0, 91.0, 22.0 ],
 					"text" : "knob1_input $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-14",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : -70.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 411.0, 453.0, 50.0, 22.0 ]
+					"patching_rect" : [ 455.299999999999955, 318.0, 40.0, 40.0 ],
+					"size" : 85.0
 				}
 
 			}
@@ -407,7 +417,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 187.0, 390.0, 47.0, 22.0 ],
+					"patching_rect" : [ 200.0, 457.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -420,7 +430,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 190.0, 351.0, 24.0, 24.0 ]
+					"patching_rect" : [ 200.0, 423.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -435,8 +445,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}

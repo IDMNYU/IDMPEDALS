@@ -56,14 +56,15 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-13",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 375.699999999999932, 330.0, 50.0, 22.0 ]
+					"patching_rect" : [ 309.699999999999932, 325.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -74,7 +75,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.699999999999932, 368.0, 100.0, 22.0 ],
+					"patching_rect" : [ 309.699999999999932, 371.0, 100.0, 22.0 ],
 					"text" : "knob4_wetdry $1"
 				}
 
@@ -87,7 +88,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 174.699999999999932, 330.0, 24.0, 24.0 ]
+					"patching_rect" : [ 165.699999999999932, 341.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -98,7 +99,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.699999999999932, 368.0, 47.0, 22.0 ],
+					"patching_rect" : [ 165.699999999999932, 371.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -218,14 +219,16 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-4",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : 1.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 283.699999999999932, 330.0, 50.0, 22.0 ]
+					"patching_rect" : [ 217.699999999999932, 325.0, 40.0, 40.0 ],
+					"size" : 99.0
 				}
 
 			}
@@ -236,7 +239,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 283.699999999999932, 368.0, 86.0, 22.0 ],
+					"patching_rect" : [ 217.699999999999932, 371.0, 86.0, 22.0 ],
 					"text" : "knob3_size $1"
 				}
 

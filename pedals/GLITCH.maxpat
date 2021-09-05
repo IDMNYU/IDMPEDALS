@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 486.0, 119.0, 779.0, 758.0 ],
+		"rect" : [ 486.0, 119.0, 763.0, 747.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,14 +40,15 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-19",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 567.0, 470.0, 50.0, 22.0 ]
+					"patching_rect" : [ 556.0, 337.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -58,21 +59,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 540.0, 511.0, 100.0, 22.0 ],
+					"patching_rect" : [ 556.0, 389.0, 100.0, 22.0 ],
 					"text" : "knob1_wetdry $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-17",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 651.0, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 451.0, 337.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -83,21 +85,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 624.0, 400.0, 103.0, 22.0 ],
+					"patching_rect" : [ 451.0, 389.0, 103.0, 22.0 ],
 					"text" : "knob6_density $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-6",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 515.0, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 340.0, 337.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -108,21 +111,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 488.0, 400.0, 109.0, 22.0 ],
+					"patching_rect" : [ 340.0, 389.0, 109.0, 22.0 ],
 					"text" : "knob5_glitchlen $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-4",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 399.0, 354.0, 50.0, 22.0 ]
+					"patching_rect" : [ 241.0, 337.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -133,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 372.0, 395.0, 97.0, 22.0 ],
+					"patching_rect" : [ 241.0, 389.0, 97.0, 22.0 ],
 					"text" : "knob4_buflen $1"
 				}
 
@@ -149,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 293.5, 528.0, 65.0, 22.0 ],
+					"patching_rect" : [ 191.5, 522.0, 65.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -160,8 +164,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 466.0, 42.0, 20.0 ],
-					"text" : "freeze"
+					"patching_rect" : [ 686.0, 353.0, 52.0, 20.0 ],
+					"text" : "< freeze"
 				}
 
 			}
@@ -172,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.0, 504.0, 47.0, 22.0 ],
+					"patching_rect" : [ 658.0, 389.0, 47.0, 22.0 ],
 					"text" : "sw2 $1"
 				}
 
@@ -185,7 +189,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 425.0, 468.0, 24.0, 24.0 ]
+					"patching_rect" : [ 658.0, 353.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -200,7 +204,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 235.5, 528.0, 56.0, 22.0 ],
+					"patching_rect" : [ 133.5, 522.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -257,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 242.0, 717.0, 109.0, 20.0 ],
+					"patching_rect" : [ 140.0, 711.0, 109.0, 20.0 ],
 					"text" : "IDMPEDALS glitch"
 				}
 
@@ -271,7 +275,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 183.5, 528.0, 48.0, 136.0 ],
+					"patching_rect" : [ 81.5, 522.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -314,7 +318,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 183.5, 692.0, 45.0, 45.0 ]
+					"patching_rect" : [ 81.5, 686.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -325,7 +329,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.0, 395.0, 47.0, 22.0 ],
+					"patching_rect" : [ 82.0, 389.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -338,31 +342,21 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 194.0, 359.0, 24.0, 24.0 ]
+					"patching_rect" : [ 82.0, 353.0, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 285.0, 322.0, 48.0, 20.0 ],
-					"text" : "min"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-33",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 277.0, 354.0, 50.0, 22.0 ]
+					"patching_rect" : [ 141.0, 337.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -373,7 +367,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.0, 395.0, 98.0, 22.0 ],
+					"patching_rect" : [ 141.0, 389.0, 98.0, 22.0 ],
 					"text" : "knob3_thresh $1"
 				}
 
@@ -12091,7 +12085,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 183.5, 468.0, 104.0, 22.0 ],
+					"patching_rect" : [ 81.5, 462.0, 104.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
 						"exportname" : "Glitch"
@@ -12163,7 +12157,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 1 ],
-					"midpoints" : [ 200.25, 677.5, 219.0, 677.5 ],
+					"midpoints" : [ 98.25, 671.5, 117.0, 671.5 ],
 					"source" : [ "obj-14", 1 ]
 				}
 

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 495.0, 147.0, 639.0, 742.0 ],
+		"rect" : [ 495.0, 147.0, 593.0, 742.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 557.0, 331.0, 60.0, 20.0 ],
+					"patching_rect" : [ 516.0, 335.0, 60.0, 20.0 ],
 					"text" : "< mu-tron"
 				}
 
@@ -57,7 +57,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 524.0, 326.0, 24.0, 24.0 ]
+					"patching_rect" : [ 488.0, 335.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -68,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 360.0, 47.0, 22.0 ],
+					"patching_rect" : [ 488.0, 367.0, 47.0, 22.0 ],
 					"text" : "sw5 $1"
 				}
 
@@ -81,7 +81,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 61.0, 327.0, 24.0, 24.0 ]
+					"patching_rect" : [ 58.0, 335.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -234,22 +234,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.0, 362.0, 81.0, 22.0 ],
+					"patching_rect" : [ 403.0, 367.0, 81.0, 22.0 ],
 					"text" : "knob6_res $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-45",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 425.0, 324.0, 67.0, 22.0 ]
+					"patching_rect" : [ 403.0, 319.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -268,15 +268,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-43",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 107.0, 329.0, 67.0, 22.0 ]
+					"patching_rect" : [ 107.0, 319.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -288,7 +288,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.0, 367.0, 95.0, 22.0 ],
+					"patching_rect" : [ 216.0, 367.0, 95.0, 22.0 ],
 					"text" : "knob4_depth $1"
 				}
 
@@ -301,36 +301,37 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.5, 367.0, 85.0, 22.0 ],
+					"patching_rect" : [ 314.5, 367.0, 85.0, 22.0 ],
 					"text" : "knob5_rate $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-30",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
+					"min" : -1.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 219.0, 329.0, 67.0, 22.0 ]
+					"patching_rect" : [ 216.0, 319.0, 40.0, 40.0 ],
+					"size" : 2.0
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-28",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 326.5, 329.0, 67.0, 22.0 ]
+					"patching_rect" : [ 314.5, 319.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -352,7 +353,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 215.0, 80.0, 1380.0, 912.0 ],
+						"rect" : [ 215.0, 80.0, 1153.0, 912.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,

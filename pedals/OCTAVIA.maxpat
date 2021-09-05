@@ -49,7 +49,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 254.166666666666629, 535.0, 56.0, 22.0 ],
+					"patching_rect" : [ 225.166666666666629, 519.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -80,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.300000000000011, 599.0, 142.0, 20.0 ],
+					"patching_rect" : [ 251.300000000000011, 583.0, 142.0, 20.0 ],
 					"text" : "IDMPEDALS octave fuzz"
 				}
 
@@ -94,7 +94,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 200.0, 550.0, 48.0, 136.0 ],
+					"patching_rect" : [ 171.0, 534.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -117,7 +117,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.0, 714.0, 45.0, 45.0 ]
+					"patching_rect" : [ 171.0, 698.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -169,14 +169,15 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-2",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 358.5, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 283.166666666666629, 345.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -187,7 +188,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.666666666666629, 402.0, 87.0, 22.0 ],
+					"patching_rect" : [ 283.166666666666629, 397.0, 87.0, 22.0 ],
 					"text" : "knob4_fuzz $1"
 				}
 
@@ -200,7 +201,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.0, 362.0, 24.0, 24.0 ]
+					"patching_rect" : [ 151.0, 361.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -211,21 +212,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 173.0, 402.0, 47.0, 22.0 ],
+					"patching_rect" : [ 151.0, 397.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
+					"floatoutput" : 1,
 					"id" : "obj-70",
-					"maxclass" : "flonum",
+					"maxclass" : "dial",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 240.5, 359.0, 50.0, 22.0 ]
+					"patching_rect" : [ 200.166666666666629, 345.0, 40.0, 40.0 ],
+					"size" : 1.0
 				}
 
 			}
@@ -236,7 +238,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.666666666666629, 402.0, 81.0, 22.0 ],
+					"patching_rect" : [ 200.166666666666629, 397.0, 81.0, 22.0 ],
 					"text" : "knob3_oct $1"
 				}
 
@@ -372,7 +374,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 232.5, 473.0, 109.0, 33.0 ],
+									"patching_rect" : [ 232.5, 473.0, 110.0, 33.0 ],
 									"text" : "hyperbolic tangent (distortion)"
 								}
 
@@ -917,7 +919,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 180.5, 467.0, 259.0, 22.0 ],
+					"patching_rect" : [ 151.5, 451.0, 259.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
 						"exportname" : "Octavia"
@@ -997,7 +999,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"midpoints" : [ 216.75, 699.5, 235.5, 699.5 ],
+					"midpoints" : [ 187.75, 683.5, 206.5, 683.5 ],
 					"source" : [ "obj-6", 1 ]
 				}
 
