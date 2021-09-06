@@ -53,15 +53,26 @@
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-11",
-					"maxclass" : "dial",
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 317.5, 327.0, 40.0, 40.0 ],
-					"size" : 1.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 317.5, 319.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Q",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.001,
+							"parameter_shortname" : "Q",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[1]"
 				}
 
 			}
@@ -80,15 +91,25 @@
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-7",
-					"maxclass" : "dial",
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 225.5, 327.0, 40.0, 40.0 ],
-					"size" : 1.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 225.5, 319.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "gain",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "gain",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[2]"
 				}
 
 			}
@@ -260,16 +281,25 @@
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-30",
-					"maxclass" : "dial",
-					"min" : 60.0,
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 131.5, 327.0, 40.0, 40.0 ],
-					"size" : 67.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 131.5, 319.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "pitch",
+							"parameter_mmin" : 60.0,
+							"parameter_shortname" : "pitch",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[3]"
 				}
 
 			}
@@ -1027,7 +1057,10 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-11" : [ "Q", "Q", 0 ],
+			"obj-30" : [ "pitch", "pitch", 0 ],
 			"obj-6" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-7" : [ "gain", "gain", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
 			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
 			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],

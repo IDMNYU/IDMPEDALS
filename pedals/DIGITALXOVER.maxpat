@@ -143,7 +143,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 206.0, 685.0, 45.0, 45.0 ]
+					"patching_rect" : [ 84.0, 679.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -232,16 +232,25 @@
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-30",
-					"maxclass" : "dial",
-					"min" : 60.0,
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 179.5, 327.0, 40.0, 40.0 ],
-					"size" : 67.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 179.5, 320.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "pitch",
+							"parameter_mmin" : 60.0,
+							"parameter_shortname" : "pitch",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[4]"
 				}
 
 			}
@@ -263,7 +272,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 345.0, 139.0, 665.0, 476.0 ],
+						"rect" : [ 345.0, 139.0, 690.0, 476.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -827,6 +836,7 @@
  ],
 		"parameters" : 		{
 			"obj-1" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-30" : [ "pitch", "pitch", 0 ],
 			"obj-6" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
 			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],

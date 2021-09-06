@@ -82,16 +82,26 @@
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-11",
-					"maxclass" : "dial",
-					"min" : -70.0,
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 218.0, 325.0, 40.0, 40.0 ],
-					"size" : 90.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 218.0, 321.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "output",
+							"parameter_mmax" : 20.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "output",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[4]"
 				}
 
 			}
@@ -221,16 +231,26 @@
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-70",
-					"maxclass" : "dial",
-					"min" : 0.001,
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 120.5, 325.0, 40.0, 40.0 ],
-					"size" : 999.999000000000024
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 120.5, 321.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "drive[1]",
+							"parameter_mmax" : 1000.0,
+							"parameter_mmin" : 0.0001,
+							"parameter_shortname" : "drive",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[1]"
 				}
 
 			}
@@ -369,7 +389,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 660.0, 124.0, 114.0, 49.0 ],
+									"patching_rect" : [ 660.0, 124.0, 115.0, 49.0 ],
 									"text" : "param knob3_drive @min 0.0001 @max 1000."
 								}
 
@@ -784,6 +804,8 @@
  ],
 		"parameters" : 		{
 			"obj-1" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-11" : [ "output", "output", 0 ],
+			"obj-70" : [ "drive[1]", "drive", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
 			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
 			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],

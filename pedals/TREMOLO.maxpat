@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 584.5, 334.0, 39.0, 20.0 ],
+					"patching_rect" : [ 584.5, 344.0, 39.0, 20.0 ],
 					"text" : "< pan"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.5, 370.0, 47.0, 22.0 ],
+					"patching_rect" : [ 555.5, 380.0, 47.0, 22.0 ],
 					"text" : "sw6 $1"
 				}
 
@@ -69,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 555.5, 335.0, 24.0, 24.0 ]
+					"patching_rect" : [ 555.5, 345.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -81,22 +81,33 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.5, 370.0, 97.0, 22.0 ],
+					"patching_rect" : [ 367.5, 380.0, 97.0, 22.0 ],
 					"text" : "knob5_shape $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-14",
-					"maxclass" : "dial",
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 367.5, 324.0, 40.0, 40.0 ],
-					"size" : 10.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 367.5, 325.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "shape",
+							"parameter_mmax" : 10.0,
+							"parameter_mmin" : 1.0,
+							"parameter_shortname" : "shape",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[3]"
 				}
 
 			}
@@ -106,7 +117,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 495.5, 334.0, 57.0, 20.0 ],
+					"patching_rect" : [ 495.5, 344.0, 57.0, 20.0 ],
 					"text" : "< univibe"
 				}
 
@@ -118,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 466.5, 370.0, 47.0, 22.0 ],
+					"patching_rect" : [ 466.5, 380.0, 47.0, 22.0 ],
 					"text" : "sw5 $1"
 				}
 
@@ -131,7 +142,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 466.5, 335.0, 24.0, 24.0 ]
+					"patching_rect" : [ 466.5, 345.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -143,7 +154,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 128.0, 339.0, 24.0, 24.0 ]
+					"patching_rect" : [ 128.0, 349.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -154,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 369.0, 47.0, 22.0 ],
+					"patching_rect" : [ 128.0, 379.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -170,7 +181,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 190.199999999999989, 468.0, 56.0, 22.0 ],
+					"patching_rect" : [ 190.199999999999989, 478.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -201,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 188.5, 535.0, 169.0, 20.0 ],
+					"patching_rect" : [ 188.5, 545.0, 169.0, 20.0 ],
 					"text" : "IDMPEDALS tremolo / univibe"
 				}
 
@@ -215,7 +226,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 108.199999999999989, 486.0, 48.0, 136.0 ],
+					"patching_rect" : [ 108.199999999999989, 496.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -238,7 +249,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 108.199999999999989, 650.0, 45.0, 45.0 ]
+					"patching_rect" : [ 108.199999999999989, 660.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -296,7 +307,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.5, 370.0, 95.0, 22.0 ],
+					"patching_rect" : [ 179.5, 380.0, 95.0, 22.0 ],
 					"text" : "knob3_depth $1"
 				}
 
@@ -309,36 +320,56 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 279.0, 370.0, 85.0, 22.0 ],
+					"patching_rect" : [ 279.0, 380.0, 85.0, 22.0 ],
 					"text" : "knob4_rate $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-30",
-					"maxclass" : "dial",
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 179.5, 324.0, 40.0, 40.0 ],
-					"size" : 1.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 179.5, 325.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "depth",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "depth",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-28",
-					"maxclass" : "dial",
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 279.0, 324.0, 40.0, 40.0 ],
-					"size" : 1.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 279.0, 325.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "rate",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "rate",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[2]"
 				}
 
 			}
@@ -1410,7 +1441,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 113.0, 411.0, 116.0, 22.0 ],
+					"patching_rect" : [ 113.0, 421.0, 116.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
 						"exportname" : "Tremolo"
@@ -1425,7 +1456,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
-					"midpoints" : [ 124.949999999999989, 635.5, 143.699999999999989, 635.5 ],
+					"midpoints" : [ 124.949999999999989, 645.5, 143.699999999999989, 645.5 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1568,6 +1599,9 @@
  ],
 		"parameters" : 		{
 			"obj-1" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-14" : [ "shape", "shape", 0 ],
+			"obj-28" : [ "rate", "rate", 0 ],
+			"obj-30" : [ "depth", "depth", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
 			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
 			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],

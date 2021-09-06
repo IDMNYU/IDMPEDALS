@@ -40,15 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"floatoutput" : 1,
 					"id" : "obj-4",
-					"maxclass" : "dial",
+					"maxclass" : "live.dial",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 180.5, 321.0, 40.0, 40.0 ],
-					"size" : 500.0
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 180.5, 327.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "rate",
+							"parameter_mmax" : 500.0,
+							"parameter_shortname" : "rate",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[1]"
 				}
 
 			}
@@ -60,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 128.0, 337.0, 24.0, 24.0 ]
+					"patching_rect" : [ 128.0, 351.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -71,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 369.0, 47.0, 22.0 ],
+					"patching_rect" : [ 128.0, 383.0, 47.0, 22.0 ],
 					"text" : "sw1 $1"
 				}
 
@@ -87,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 190.199999999999989, 468.0, 56.0, 22.0 ],
+					"patching_rect" : [ 190.199999999999989, 482.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -118,7 +128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 188.5, 535.0, 158.0, 20.0 ],
+					"patching_rect" : [ 188.5, 549.0, 158.0, 20.0 ],
 					"text" : "IDMPEDALS ring modulator"
 				}
 
@@ -132,7 +142,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 108.199999999999989, 486.0, 48.0, 136.0 ],
+					"patching_rect" : [ 108.199999999999989, 500.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -155,7 +165,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 108.199999999999989, 650.0, 45.0, 45.0 ]
+					"patching_rect" : [ 108.199999999999989, 664.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -213,7 +223,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.5, 369.0, 85.0, 22.0 ],
+					"patching_rect" : [ 180.5, 383.0, 85.0, 22.0 ],
 					"text" : "knob3_rate $1"
 				}
 
@@ -667,7 +677,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 113.0, 411.0, 121.0, 22.0 ],
+					"patching_rect" : [ 113.0, 425.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
 						"exportname" : "Ringmod"
@@ -682,7 +692,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
-					"midpoints" : [ 124.949999999999989, 635.5, 143.699999999999989, 635.5 ],
+					"midpoints" : [ 124.949999999999989, 649.5, 143.699999999999989, 649.5 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -769,6 +779,7 @@
  ],
 		"parameters" : 		{
 			"obj-1" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-4" : [ "rate", "rate", 0 ],
 			"obj-83::obj-32" : [ "live.text[2]", "FILTER", 0 ],
 			"obj-83::obj-33" : [ "live.text[1]", "FILTER", 0 ],
 			"obj-83::obj-34" : [ "live.text[3]", "FILTER", 0 ],
