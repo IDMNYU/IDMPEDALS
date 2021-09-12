@@ -45,17 +45,17 @@ typedef struct State {
 	int __exception;
 	int vectorsize;
 	t_sample m_history_8;
-	t_sample m_knob4_max_22;
+	t_sample m_sw_22;
 	t_sample m_sw_21;
 	t_sample m_knob3_min_23;
-	t_sample m_knob5_r_24;
-	t_sample m_knob2_key_25;
+	t_sample m_knob1_res_24;
+	t_sample m_knob5_r_25;
 	t_sample m_knob6_r_26;
-	t_sample m_knob1_res_20;
+	t_sample m_knob2_key_20;
 	t_sample samples_to_seconds;
 	t_sample samplerate;
 	t_sample m_history_7;
-	t_sample m_sw_19;
+	t_sample m_knob4_max_19;
 	t_sample m_history_17;
 	t_sample m_history_11;
 	t_sample m_history_10;
@@ -90,13 +90,13 @@ typedef struct State {
 		m_history_16 = ((int)0);
 		m_history_17 = ((int)0);
 		m_history_18 = ((int)0);
-		m_sw_19 = ((int)0);
-		m_knob1_res_20 = ((int)0);
+		m_knob4_max_19 = ((int)0);
+		m_knob2_key_20 = ((int)0);
 		m_sw_21 = ((int)0);
-		m_knob4_max_22 = ((int)0);
+		m_sw_22 = ((int)0);
 		m_knob3_min_23 = ((int)0);
-		m_knob5_r_24 = ((int)0);
-		m_knob2_key_25 = ((int)0);
+		m_knob1_res_24 = ((int)0);
+		m_knob5_r_25 = ((int)0);
 		m_knob6_r_26 = ((int)0);
 		__m_sah_27.reset(0);
 		samples_to_seconds = (1 / samplerate);
@@ -124,11 +124,11 @@ typedef struct State {
 			return __exception;
 			
 		};
-		t_sample sqrt_4237 = sqrt(m_knob1_res_20);
-		t_sample sqrt_4246 = sqrt(sqrt_4237);
-		t_sample mul_4249 = (sqrt_4246 * ((t_sample)0.99));
-		t_sample mul_4083 = (m_knob2_key_25 * ((int)12));
-		t_sample round_4082 = round(mul_4083);
+		t_sample sqrt_1296 = sqrt(m_knob1_res_24);
+		t_sample sqrt_1305 = sqrt(sqrt_1296);
+		t_sample mul_1308 = (sqrt_1305 * ((t_sample)0.99));
+		t_sample mul_1142 = (m_knob2_key_20 * ((int)12));
+		t_sample round_1141 = round(mul_1142);
 		samples_to_seconds = (1 / samplerate);
 		int ms_dim = m_ms_5.dim;
 		int ms_channels = m_ms_5.channels;
@@ -182,70 +182,70 @@ typedef struct State {
 			t_sample out4 = ((int)0);
 			t_sample out6 = ((int)0);
 			t_sample out5 = ((int)0);
-			t_sample sah_4240 = __m_sah_27(m_history_18, m_sw_19, ((int)0));
-			t_sample gen_4242 = sah_4240;
-			t_sample rsub_4238 = (((int)1) - sah_4240);
-			t_sample history_4239_next_4241 = fixdenorm(rsub_4238);
-			t_sample out3 = gen_4242;
-			t_sample add_4245 = (gen_4242 + ((int)1));
-			t_sample choice_28 = int(add_4245);
-			t_sample gate_4243 = (((choice_28 >= 1) && (choice_28 < 2)) ? in1 : 0);
-			t_sample gate_4244 = ((choice_28 >= 2) ? in1 : 0);
-			t_sample switch_4071 = (m_sw_21 ? gate_4244 : ((int)0));
-			t_sample mix_4478 = (m_history_17 + (((t_sample)0.003926980723806) * (m_knob3_min_23 - m_history_17)));
-			t_sample mix_4198 = mix_4478;
-			t_sample mix_4479 = (m_history_16 + (((t_sample)0.003926980723806) * (mix_4198 - m_history_16)));
-			t_sample mix_4196 = mix_4479;
-			t_sample mix_4480 = (m_history_15 + (((t_sample)0.003926980723806) * (mix_4196 - m_history_15)));
-			t_sample mix_4194 = mix_4480;
-			t_sample gen_4235 = mix_4194;
-			t_sample history_4199_next_4201 = fixdenorm(mix_4198);
-			t_sample history_4197_next_4202 = fixdenorm(mix_4196);
-			t_sample history_4195_next_4203 = fixdenorm(mix_4194);
-			t_sample sub_4484 = (gen_4235 - ((int)0));
-			t_sample scale_4481 = ((safepow((sub_4484 * ((t_sample)1)), ((int)1)) * ((int)84)) + ((int)24));
-			t_sample mix_4485 = (m_history_14 + (((t_sample)0.003926980723806) * (m_knob4_max_22 - m_history_14)));
-			t_sample mix_4259 = mix_4485;
-			t_sample mix_4486 = (m_history_13 + (((t_sample)0.003926980723806) * (mix_4259 - m_history_13)));
-			t_sample mix_4258 = mix_4486;
-			t_sample mix_4487 = (m_history_12 + (((t_sample)0.003926980723806) * (mix_4258 - m_history_12)));
-			t_sample mix_4262 = mix_4487;
-			t_sample gen_4204 = mix_4262;
-			t_sample history_4199_next_4257 = fixdenorm(mix_4259);
-			t_sample history_4197_next_4254 = fixdenorm(mix_4258);
-			t_sample history_4195_next_4253 = fixdenorm(mix_4262);
-			t_sample sub_4491 = (gen_4204 - ((int)0));
-			t_sample scale_4488 = ((safepow((sub_4491 * ((t_sample)1)), ((int)1)) * ((int)84)) + ((int)24));
-			t_sample mix_4492 = (m_history_11 + (((t_sample)0.003926980723806) * (m_knob5_r_24 - m_history_11)));
-			t_sample mix_4271 = mix_4492;
-			t_sample mix_4493 = (m_history_10 + (((t_sample)0.003926980723806) * (mix_4271 - m_history_10)));
-			t_sample mix_4267 = mix_4493;
-			t_sample mix_4494 = (m_history_9 + (((t_sample)0.003926980723806) * (mix_4267 - m_history_9)));
-			t_sample mix_4275 = mix_4494;
-			t_sample gen_4234 = mix_4275;
-			t_sample history_4199_next_4268 = fixdenorm(mix_4271);
-			t_sample history_4197_next_4272 = fixdenorm(mix_4267);
-			t_sample history_4195_next_4266 = fixdenorm(mix_4275);
-			t_sample mul_4247 = (gen_4234 * ((int)10));
-			t_sample phasor_4248 = __m_phasor_29(mul_4247, samples_to_seconds);
-			t_sample mix_4495 = (m_history_8 + (((t_sample)0.003926980723806) * (m_knob6_r_26 - m_history_8)));
-			t_sample mix_4284 = mix_4495;
-			t_sample mix_4496 = (m_history_7 + (((t_sample)0.003926980723806) * (mix_4284 - m_history_7)));
-			t_sample mix_4280 = mix_4496;
-			t_sample mix_4497 = (m_history_6 + (((t_sample)0.003926980723806) * (mix_4280 - m_history_6)));
-			t_sample mix_4288 = mix_4497;
-			t_sample gen_4233 = mix_4288;
-			t_sample history_4199_next_4281 = fixdenorm(mix_4284);
-			t_sample history_4197_next_4285 = fixdenorm(mix_4280);
-			t_sample history_4195_next_4279 = fixdenorm(mix_4288);
-			t_sample mul_4188 = (gen_4233 * ((int)10));
-			t_sample phasor_4189 = __m_phasor_30(mul_4188, samples_to_seconds);
-			t_sample sah_4190 = __m_sah_31(phasor_4248, phasor_4189, ((t_sample)0.5));
-			t_sample add_4085 = (sah_4190 + ((t_sample)0.75));
-			t_sample mod_4084 = safemod(add_4085, ((int)1));
-			t_sample orange_4500 = (scale_4488 - scale_4481);
-			t_sample sub_4501 = (mod_4084 - ((int)0));
-			t_sample scale_4498 = ((safepow((sub_4501 * ((t_sample)1)), ((int)1)) * orange_4500) + scale_4481);
+			t_sample sah_1299 = __m_sah_27(m_history_18, m_sw_22, ((int)0));
+			t_sample gen_1301 = sah_1299;
+			t_sample rsub_1297 = (((int)1) - sah_1299);
+			t_sample history_1298_next_1300 = fixdenorm(rsub_1297);
+			t_sample out3 = gen_1301;
+			t_sample add_1304 = (gen_1301 + ((int)1));
+			t_sample choice_28 = int(add_1304);
+			t_sample gate_1302 = (((choice_28 >= 1) && (choice_28 < 2)) ? in1 : 0);
+			t_sample gate_1303 = ((choice_28 >= 2) ? in1 : 0);
+			t_sample switch_1130 = (m_sw_21 ? gate_1303 : ((int)0));
+			t_sample mix_1537 = (m_history_17 + (((t_sample)0.003926980723806) * (m_knob3_min_23 - m_history_17)));
+			t_sample mix_1257 = mix_1537;
+			t_sample mix_1538 = (m_history_16 + (((t_sample)0.003926980723806) * (mix_1257 - m_history_16)));
+			t_sample mix_1255 = mix_1538;
+			t_sample mix_1539 = (m_history_15 + (((t_sample)0.003926980723806) * (mix_1255 - m_history_15)));
+			t_sample mix_1253 = mix_1539;
+			t_sample gen_1294 = mix_1253;
+			t_sample history_1258_next_1260 = fixdenorm(mix_1257);
+			t_sample history_1256_next_1261 = fixdenorm(mix_1255);
+			t_sample history_1254_next_1262 = fixdenorm(mix_1253);
+			t_sample sub_1543 = (gen_1294 - ((int)0));
+			t_sample scale_1540 = ((safepow((sub_1543 * ((t_sample)1)), ((int)1)) * ((int)84)) + ((int)24));
+			t_sample mix_1544 = (m_history_14 + (((t_sample)0.003926980723806) * (m_knob4_max_19 - m_history_14)));
+			t_sample mix_1312 = mix_1544;
+			t_sample mix_1545 = (m_history_13 + (((t_sample)0.003926980723806) * (mix_1312 - m_history_13)));
+			t_sample mix_1317 = mix_1545;
+			t_sample mix_1546 = (m_history_12 + (((t_sample)0.003926980723806) * (mix_1317 - m_history_12)));
+			t_sample mix_1313 = mix_1546;
+			t_sample gen_1263 = mix_1313;
+			t_sample history_1258_next_1316 = fixdenorm(mix_1312);
+			t_sample history_1256_next_1315 = fixdenorm(mix_1317);
+			t_sample history_1254_next_1314 = fixdenorm(mix_1313);
+			t_sample sub_1550 = (gen_1263 - ((int)0));
+			t_sample scale_1547 = ((safepow((sub_1550 * ((t_sample)1)), ((int)1)) * ((int)84)) + ((int)24));
+			t_sample mix_1551 = (m_history_11 + (((t_sample)0.003926980723806) * (m_knob5_r_25 - m_history_11)));
+			t_sample mix_1329 = mix_1551;
+			t_sample mix_1552 = (m_history_10 + (((t_sample)0.003926980723806) * (mix_1329 - m_history_10)));
+			t_sample mix_1326 = mix_1552;
+			t_sample mix_1553 = (m_history_9 + (((t_sample)0.003926980723806) * (mix_1326 - m_history_9)));
+			t_sample mix_1325 = mix_1553;
+			t_sample gen_1293 = mix_1325;
+			t_sample history_1258_next_1327 = fixdenorm(mix_1329);
+			t_sample history_1256_next_1332 = fixdenorm(mix_1326);
+			t_sample history_1254_next_1331 = fixdenorm(mix_1325);
+			t_sample mul_1306 = (gen_1293 * ((int)10));
+			t_sample phasor_1307 = __m_phasor_29(mul_1306, samples_to_seconds);
+			t_sample mix_1554 = (m_history_8 + (((t_sample)0.003926980723806) * (m_knob6_r_26 - m_history_8)));
+			t_sample mix_1343 = mix_1554;
+			t_sample mix_1555 = (m_history_7 + (((t_sample)0.003926980723806) * (mix_1343 - m_history_7)));
+			t_sample mix_1339 = mix_1555;
+			t_sample mix_1556 = (m_history_6 + (((t_sample)0.003926980723806) * (mix_1339 - m_history_6)));
+			t_sample mix_1338 = mix_1556;
+			t_sample gen_1292 = mix_1338;
+			t_sample history_1258_next_1340 = fixdenorm(mix_1343);
+			t_sample history_1256_next_1345 = fixdenorm(mix_1339);
+			t_sample history_1254_next_1341 = fixdenorm(mix_1338);
+			t_sample mul_1247 = (gen_1292 * ((int)10));
+			t_sample phasor_1248 = __m_phasor_30(mul_1247, samples_to_seconds);
+			t_sample sah_1249 = __m_sah_31(phasor_1307, phasor_1248, ((t_sample)0.5));
+			t_sample add_1144 = (sah_1249 + ((t_sample)0.75));
+			t_sample mod_1143 = safemod(add_1144, ((int)1));
+			t_sample orange_1559 = (scale_1547 - scale_1540);
+			t_sample sub_1560 = (mod_1143 - ((int)0));
+			t_sample scale_1557 = ((safepow((sub_1560 * ((t_sample)1)), ((int)1)) * orange_1559) + scale_1540);
 			m_ms_5.write(((int)0), 0, 0);
 			if ((!index_ignore_32)) {
 				m_ms_5.write(((int)0), ((int)1), 0);
@@ -291,25 +291,25 @@ typedef struct State {
 				m_ms_5.write(((int)11), ((int)11), 0);
 				
 			};
-			t_sample oct = floor((scale_4498 * ((t_sample)0.083333333333333)));
-			t_sample pc = floor(safemod((scale_4498 + round_4082), ((int)12)));
+			t_sample oct = floor((scale_1557 * ((t_sample)0.083333333333333)));
+			t_sample pc = floor(safemod((scale_1557 + round_1141), ((int)12)));
 			int index_trunc_43 = fixnan(floor(pc));
 			bool index_ignore_44 = ((index_trunc_43 >= ms_dim) || (index_trunc_43 < 0));
 			// samples ms channel 1;
 			t_sample pc_grid = (index_ignore_44 ? 0 : m_ms_5.read(index_trunc_43, 0));
-			t_sample outpitch = ((pc_grid + (oct * ((int)12))) - round_4082);
-			t_sample mtof_4093 = mtof(outpitch, ((int)440));
-			t_sample rdiv_4092 = safediv(((int)1000), mtof_4093);
-			t_sample mstosamps_4091 = (rdiv_4092 * (samplerate * 0.001));
-			t_sample tap_4121 = m_delay_4.read_linear(mstosamps_4091);
-			t_sample mul_4119 = (tap_4121 * mul_4249);
-			t_sample mul_4074 = (mul_4119 * ((t_sample)0.4));
-			t_sample mul_4075 = (mul_4119 * ((t_sample)0.6));
-			t_sample add_4087 = (sah_4190 + ((t_sample)0.5));
-			t_sample mod_4086 = safemod(add_4087, ((int)1));
-			t_sample orange_4504 = (scale_4488 - scale_4481);
-			t_sample sub_4505 = (mod_4086 - ((int)0));
-			t_sample scale_4502 = ((safepow((sub_4505 * ((t_sample)1)), ((int)1)) * orange_4504) + scale_4481);
+			t_sample outpitch = ((pc_grid + (oct * ((int)12))) - round_1141);
+			t_sample mtof_1152 = mtof(outpitch, ((int)440));
+			t_sample rdiv_1151 = safediv(((int)1000), mtof_1152);
+			t_sample mstosamps_1150 = (rdiv_1151 * (samplerate * 0.001));
+			t_sample tap_1180 = m_delay_4.read_linear(mstosamps_1150);
+			t_sample mul_1178 = (tap_1180 * mul_1308);
+			t_sample mul_1133 = (mul_1178 * ((t_sample)0.4));
+			t_sample mul_1134 = (mul_1178 * ((t_sample)0.6));
+			t_sample add_1146 = (sah_1249 + ((t_sample)0.5));
+			t_sample mod_1145 = safemod(add_1146, ((int)1));
+			t_sample orange_1563 = (scale_1547 - scale_1540);
+			t_sample sub_1564 = (mod_1145 - ((int)0));
+			t_sample scale_1561 = ((safepow((sub_1564 * ((t_sample)1)), ((int)1)) * orange_1563) + scale_1540);
 			m_ms_5.write(((int)0), 0, 0);
 			if ((!index_ignore_45)) {
 				m_ms_5.write(((int)0), ((int)1), 0);
@@ -355,25 +355,25 @@ typedef struct State {
 				m_ms_5.write(((int)11), ((int)11), 0);
 				
 			};
-			t_sample oct_4292 = floor((scale_4502 * ((t_sample)0.083333333333333)));
-			t_sample pc_4293 = floor(safemod((scale_4502 + round_4082), ((int)12)));
-			int index_trunc_56 = fixnan(floor(pc_4293));
+			t_sample oct_1351 = floor((scale_1561 * ((t_sample)0.083333333333333)));
+			t_sample pc_1352 = floor(safemod((scale_1561 + round_1141), ((int)12)));
+			int index_trunc_56 = fixnan(floor(pc_1352));
 			bool index_ignore_57 = ((index_trunc_56 >= ms_dim) || (index_trunc_56 < 0));
 			// samples ms channel 1;
-			t_sample pc_grid_4295 = (index_ignore_57 ? 0 : m_ms_5.read(index_trunc_56, 0));
-			t_sample outpitch_4294 = ((pc_grid_4295 + (oct_4292 * ((int)12))) - round_4082);
-			t_sample mtof_4125 = mtof(outpitch_4294, ((int)440));
-			t_sample rdiv_4124 = safediv(((int)1000), mtof_4125);
-			t_sample mstosamps_4123 = (rdiv_4124 * (samplerate * 0.001));
-			t_sample tap_4153 = m_delay_3.read_linear(mstosamps_4123);
-			t_sample mul_4151 = (tap_4153 * mul_4249);
-			t_sample mul_4076 = (mul_4151 * ((t_sample)0.1));
-			t_sample mul_4077 = (mul_4151 * ((t_sample)0.9));
-			t_sample add_4187 = (sah_4190 + ((int)0));
-			t_sample mod_4186 = safemod(add_4187, ((int)1));
-			t_sample orange_4508 = (scale_4488 - scale_4481);
-			t_sample sub_4509 = (mod_4186 - ((int)0));
-			t_sample scale_4506 = ((safepow((sub_4509 * ((t_sample)1)), ((int)1)) * orange_4508) + scale_4481);
+			t_sample pc_grid_1354 = (index_ignore_57 ? 0 : m_ms_5.read(index_trunc_56, 0));
+			t_sample outpitch_1353 = ((pc_grid_1354 + (oct_1351 * ((int)12))) - round_1141);
+			t_sample mtof_1184 = mtof(outpitch_1353, ((int)440));
+			t_sample rdiv_1183 = safediv(((int)1000), mtof_1184);
+			t_sample mstosamps_1182 = (rdiv_1183 * (samplerate * 0.001));
+			t_sample tap_1212 = m_delay_3.read_linear(mstosamps_1182);
+			t_sample mul_1210 = (tap_1212 * mul_1308);
+			t_sample mul_1135 = (mul_1210 * ((t_sample)0.1));
+			t_sample mul_1136 = (mul_1210 * ((t_sample)0.9));
+			t_sample add_1246 = (sah_1249 + ((int)0));
+			t_sample mod_1245 = safemod(add_1246, ((int)1));
+			t_sample orange_1567 = (scale_1547 - scale_1540);
+			t_sample sub_1568 = (mod_1245 - ((int)0));
+			t_sample scale_1565 = ((safepow((sub_1568 * ((t_sample)1)), ((int)1)) * orange_1567) + scale_1540);
 			m_ms_5.write(((int)0), 0, 0);
 			if ((!index_ignore_58)) {
 				m_ms_5.write(((int)0), ((int)1), 0);
@@ -419,25 +419,25 @@ typedef struct State {
 				m_ms_5.write(((int)11), ((int)11), 0);
 				
 			};
-			t_sample oct_4296 = floor((scale_4506 * ((t_sample)0.083333333333333)));
-			t_sample pc_4297 = floor(safemod((scale_4506 + round_4082), ((int)12)));
-			int index_trunc_69 = fixnan(floor(pc_4297));
+			t_sample oct_1355 = floor((scale_1565 * ((t_sample)0.083333333333333)));
+			t_sample pc_1356 = floor(safemod((scale_1565 + round_1141), ((int)12)));
+			int index_trunc_69 = fixnan(floor(pc_1356));
 			bool index_ignore_70 = ((index_trunc_69 >= ms_dim) || (index_trunc_69 < 0));
 			// samples ms channel 1;
-			t_sample pc_grid_4299 = (index_ignore_70 ? 0 : m_ms_5.read(index_trunc_69, 0));
-			t_sample outpitch_4298 = ((pc_grid_4299 + (oct_4296 * ((int)12))) - round_4082);
-			t_sample mtof_4207 = mtof(outpitch_4298, ((int)440));
-			t_sample rdiv_4206 = safediv(((int)1000), mtof_4207);
-			t_sample mstosamps_4205 = (rdiv_4206 * (samplerate * 0.001));
-			t_sample tap_4252 = m_delay_2.read_linear(mstosamps_4205);
-			t_sample mul_4250 = (tap_4252 * mul_4249);
-			t_sample mul_4081 = (mul_4250 * ((t_sample)0.9));
-			t_sample mul_4080 = (mul_4250 * ((t_sample)0.1));
-			t_sample add_4089 = (sah_4190 + ((t_sample)0.25));
-			t_sample mod_4088 = safemod(add_4089, ((int)1));
-			t_sample orange_4512 = (scale_4488 - scale_4481);
-			t_sample sub_4513 = (mod_4088 - ((int)0));
-			t_sample scale_4510 = ((safepow((sub_4513 * ((t_sample)1)), ((int)1)) * orange_4512) + scale_4481);
+			t_sample pc_grid_1358 = (index_ignore_70 ? 0 : m_ms_5.read(index_trunc_69, 0));
+			t_sample outpitch_1357 = ((pc_grid_1358 + (oct_1355 * ((int)12))) - round_1141);
+			t_sample mtof_1266 = mtof(outpitch_1357, ((int)440));
+			t_sample rdiv_1265 = safediv(((int)1000), mtof_1266);
+			t_sample mstosamps_1264 = (rdiv_1265 * (samplerate * 0.001));
+			t_sample tap_1311 = m_delay_2.read_linear(mstosamps_1264);
+			t_sample mul_1309 = (tap_1311 * mul_1308);
+			t_sample mul_1140 = (mul_1309 * ((t_sample)0.9));
+			t_sample mul_1139 = (mul_1309 * ((t_sample)0.1));
+			t_sample add_1148 = (sah_1249 + ((t_sample)0.25));
+			t_sample mod_1147 = safemod(add_1148, ((int)1));
+			t_sample orange_1571 = (scale_1547 - scale_1540);
+			t_sample sub_1572 = (mod_1147 - ((int)0));
+			t_sample scale_1569 = ((safepow((sub_1572 * ((t_sample)1)), ((int)1)) * orange_1571) + scale_1540);
 			m_ms_5.write(((int)0), 0, 0);
 			if ((!index_ignore_71)) {
 				m_ms_5.write(((int)0), ((int)1), 0);
@@ -483,41 +483,41 @@ typedef struct State {
 				m_ms_5.write(((int)11), ((int)11), 0);
 				
 			};
-			t_sample oct_4300 = floor((scale_4510 * ((t_sample)0.083333333333333)));
-			t_sample pc_4301 = floor(safemod((scale_4510 + round_4082), ((int)12)));
-			int index_trunc_82 = fixnan(floor(pc_4301));
+			t_sample oct_1359 = floor((scale_1569 * ((t_sample)0.083333333333333)));
+			t_sample pc_1360 = floor(safemod((scale_1569 + round_1141), ((int)12)));
+			int index_trunc_82 = fixnan(floor(pc_1360));
 			bool index_ignore_83 = ((index_trunc_82 >= ms_dim) || (index_trunc_82 < 0));
 			// samples ms channel 1;
-			t_sample pc_grid_4303 = (index_ignore_83 ? 0 : m_ms_5.read(index_trunc_82, 0));
-			t_sample outpitch_4302 = ((pc_grid_4303 + (oct_4300 * ((int)12))) - round_4082);
-			t_sample mtof_4157 = mtof(outpitch_4302, ((int)440));
-			t_sample rdiv_4156 = safediv(((int)1000), mtof_4157);
-			t_sample mstosamps_4155 = (rdiv_4156 * (samplerate * 0.001));
-			t_sample tap_4185 = m_delay_1.read_linear(mstosamps_4155);
-			t_sample mul_4183 = (tap_4185 * mul_4249);
-			t_sample mul_4079 = (mul_4183 * ((t_sample)0.6));
-			t_sample div_4073 = (((((mul_4079 + mul_4081) + switch_4071) + mul_4076) + mul_4074) * ((t_sample)0.25));
-			t_sample out1 = (gate_4243 + div_4073);
-			t_sample mul_4078 = (mul_4183 * ((t_sample)0.4));
-			t_sample div_4072 = (((((mul_4078 + mul_4080) + switch_4071) + mul_4077) + mul_4075) * ((t_sample)0.25));
-			t_sample out2 = (gate_4243 + div_4072);
-			m_history_18 = history_4239_next_4241;
-			m_history_17 = history_4199_next_4201;
-			m_history_15 = history_4195_next_4203;
-			m_history_16 = history_4197_next_4202;
-			m_history_14 = history_4199_next_4257;
-			m_history_12 = history_4195_next_4253;
-			m_history_13 = history_4197_next_4254;
-			m_history_11 = history_4199_next_4268;
-			m_history_9 = history_4195_next_4266;
-			m_history_10 = history_4197_next_4272;
-			m_history_8 = history_4199_next_4281;
-			m_history_6 = history_4195_next_4279;
-			m_history_7 = history_4197_next_4285;
-			m_delay_4.write((mul_4119 + gate_4244));
-			m_delay_3.write((mul_4151 + gate_4244));
-			m_delay_2.write((mul_4250 + gate_4244));
-			m_delay_1.write((mul_4183 + gate_4244));
+			t_sample pc_grid_1362 = (index_ignore_83 ? 0 : m_ms_5.read(index_trunc_82, 0));
+			t_sample outpitch_1361 = ((pc_grid_1362 + (oct_1359 * ((int)12))) - round_1141);
+			t_sample mtof_1216 = mtof(outpitch_1361, ((int)440));
+			t_sample rdiv_1215 = safediv(((int)1000), mtof_1216);
+			t_sample mstosamps_1214 = (rdiv_1215 * (samplerate * 0.001));
+			t_sample tap_1244 = m_delay_1.read_linear(mstosamps_1214);
+			t_sample mul_1242 = (tap_1244 * mul_1308);
+			t_sample mul_1138 = (mul_1242 * ((t_sample)0.6));
+			t_sample div_1132 = (((((mul_1138 + mul_1140) + switch_1130) + mul_1135) + mul_1133) * ((t_sample)0.25));
+			t_sample out1 = (gate_1302 + div_1132);
+			t_sample mul_1137 = (mul_1242 * ((t_sample)0.4));
+			t_sample div_1131 = (((((mul_1137 + mul_1139) + switch_1130) + mul_1136) + mul_1134) * ((t_sample)0.25));
+			t_sample out2 = (gate_1302 + div_1131);
+			m_history_18 = history_1298_next_1300;
+			m_history_17 = history_1258_next_1260;
+			m_history_15 = history_1254_next_1262;
+			m_history_16 = history_1256_next_1261;
+			m_history_14 = history_1258_next_1316;
+			m_history_12 = history_1254_next_1314;
+			m_history_13 = history_1256_next_1315;
+			m_history_11 = history_1258_next_1327;
+			m_history_9 = history_1254_next_1331;
+			m_history_10 = history_1256_next_1332;
+			m_history_8 = history_1258_next_1340;
+			m_history_6 = history_1254_next_1341;
+			m_history_7 = history_1256_next_1345;
+			m_delay_4.write((mul_1178 + gate_1303));
+			m_delay_3.write((mul_1210 + gate_1303));
+			m_delay_2.write((mul_1309 + gate_1303));
+			m_delay_1.write((mul_1242 + gate_1303));
 			m_delay_1.step();
 			m_delay_2.step();
 			m_delay_3.step();
@@ -537,26 +537,26 @@ typedef struct State {
 	inline void set_ms(void * _value) {
 		m_ms_5.setbuffer(_value);
 	};
-	inline void set_sw1(t_param _value) {
-		m_sw_19 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	inline void set_knob4_max(t_param _value) {
+		m_knob4_max_19 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
-	inline void set_knob1_res(t_param _value) {
-		m_knob1_res_20 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	inline void set_knob2_key(t_param _value) {
+		m_knob2_key_20 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
 	inline void set_sw5(t_param _value) {
 		m_sw_21 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
-	inline void set_knob4_max(t_param _value) {
-		m_knob4_max_22 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	inline void set_sw1(t_param _value) {
+		m_sw_22 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
 	inline void set_knob3_min(t_param _value) {
 		m_knob3_min_23 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
-	inline void set_knob5_r1(t_param _value) {
-		m_knob5_r_24 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	inline void set_knob1_res(t_param _value) {
+		m_knob1_res_24 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
-	inline void set_knob2_key(t_param _value) {
-		m_knob2_key_25 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	inline void set_knob5_r1(t_param _value) {
+		m_knob5_r_25 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
 	inline void set_knob6_r2(t_param _value) {
 		m_knob6_r_26 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
@@ -621,14 +621,14 @@ void setparameter(CommonState *cself, long index, t_param value, void *ref) {
 void getparameter(CommonState *cself, long index, t_param *value) {
 	State *self = (State *)cself;
 	switch (index) {
-		case 0: *value = self->m_knob1_res_20; break;
-		case 1: *value = self->m_knob2_key_25; break;
+		case 0: *value = self->m_knob1_res_24; break;
+		case 1: *value = self->m_knob2_key_20; break;
 		case 2: *value = self->m_knob3_min_23; break;
-		case 3: *value = self->m_knob4_max_22; break;
-		case 4: *value = self->m_knob5_r_24; break;
+		case 3: *value = self->m_knob4_max_19; break;
+		case 4: *value = self->m_knob5_r_25; break;
 		case 5: *value = self->m_knob6_r_26; break;
 		
-		case 7: *value = self->m_sw_19; break;
+		case 7: *value = self->m_sw_22; break;
 		case 8: *value = self->m_sw_21; break;
 		
 		default: break;
@@ -712,11 +712,11 @@ void *create(t_param sr, long vs) {
 	self->__commonstate.vs = vs;
 	self->__commonstate.params = (ParamInfo *)genlib_sysmem_newptr(9 * sizeof(ParamInfo));
 	self->__commonstate.numparams = 9;
-	// initialize parameter 0 ("m_knob1_res_20")
+	// initialize parameter 0 ("m_knob1_res_24")
 	pi = self->__commonstate.params + 0;
 	pi->name = "knob1_res";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob1_res_20;
+	pi->defaultvalue = self->m_knob1_res_24;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -726,11 +726,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 1;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 1 ("m_knob2_key_25")
+	// initialize parameter 1 ("m_knob2_key_20")
 	pi = self->__commonstate.params + 1;
 	pi->name = "knob2_key";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob2_key_25;
+	pi->defaultvalue = self->m_knob2_key_20;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -754,11 +754,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 1;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 3 ("m_knob4_max_22")
+	// initialize parameter 3 ("m_knob4_max_19")
 	pi = self->__commonstate.params + 3;
 	pi->name = "knob4_max";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob4_max_22;
+	pi->defaultvalue = self->m_knob4_max_19;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -768,11 +768,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 1;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 4 ("m_knob5_r_24")
+	// initialize parameter 4 ("m_knob5_r_25")
 	pi = self->__commonstate.params + 4;
 	pi->name = "knob5_r1";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob5_r_24;
+	pi->defaultvalue = self->m_knob5_r_25;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -810,11 +810,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 1;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 7 ("m_sw_19")
+	// initialize parameter 7 ("m_sw_22")
 	pi = self->__commonstate.params + 7;
 	pi->name = "sw1";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_sw_19;
+	pi->defaultvalue = self->m_sw_22;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
