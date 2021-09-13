@@ -513,7 +513,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 398.0, 768.5, 129.0, 20.0 ],
+									"patching_rect" : [ 444.0, 766.5, 129.0, 20.0 ],
 									"text" : "hold petal lights 2-4 off"
 								}
 
@@ -546,7 +546,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 351.419920000000275, 808.5, 61.0, 22.0 ],
+									"patching_rect" : [ 398.0, 317.0, 61.0, 22.0 ],
 									"text" : "out 4 led2"
 								}
 
@@ -558,7 +558,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 374.0, 768.5, 19.0, 22.0 ],
+									"patching_rect" : [ 420.0, 766.5, 19.0, 22.0 ],
 									"text" : "0"
 								}
 
@@ -6836,7 +6836,7 @@
 								"patchline" : 								{
 									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"destination" : [ "obj-14", 2 ],
-									"order" : 2,
+									"order" : 3,
 									"source" : [ "obj-68", 0 ]
 								}
 
@@ -6863,7 +6863,7 @@
 								"patchline" : 								{
 									"color" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ],
 									"destination" : [ "obj-48", 0 ],
-									"order" : 3,
+									"order" : 2,
 									"source" : [ "obj-68", 0 ]
 								}
 

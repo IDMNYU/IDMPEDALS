@@ -70,7 +70,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 216.0, 393.0, 111.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "knob4_xthresh2 $1"
 				}
 
@@ -108,7 +107,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 472.0, 531.0, 98.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "knob2_output $1"
 				}
 
@@ -602,11 +600,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-56",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 771.666666666666629, 162.0, 64.0, 20.0 ],
-									"text" : "pedal gain",
+									"patching_rect" : [ 771.666666666666629, 162.0, 64.0, 33.0 ],
+									"text" : "stage 3\n(lower)",
 									"textcolor" : [ 0.028541615232825, 0.250918865203857, 0.50196373462677, 1.0 ]
 								}
 
@@ -689,11 +688,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-51",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 652.666666666666629, 127.0, 64.0, 20.0 ],
-									"text" : "pedal gain",
+									"patching_rect" : [ 652.666666666666629, 127.0, 64.0, 33.0 ],
+									"text" : "stage 2\n(upper)",
 									"textcolor" : [ 0.065929934382439, 0.501798808574677, 0.006832201499492, 1.0 ]
 								}
 
@@ -717,8 +717,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 520.0, 96.0, 64.0, 20.0 ],
-									"text" : "pedal gain",
+									"patching_rect" : [ 520.0, 96.0, 48.0, 20.0 ],
+									"text" : "stage 1",
 									"textcolor" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ]
 								}
 

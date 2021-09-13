@@ -389,7 +389,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 301.0, 111.0, 1181.0, 833.0 ],
+						"rect" : [ 301.0, 111.0, 966.0, 829.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -425,7 +425,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 467.0, 149.0, 29.5, 22.0 ],
+									"patching_rect" : [ 464.0, 278.5, 266.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -438,7 +438,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 914.5, 149.0, 39.0, 22.0 ],
+									"patching_rect" : [ 711.5, 150.0, 39.0, 22.0 ],
 									"text" : "round"
 								}
 
@@ -451,7 +451,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 456.5, 228.5, 29.5, 22.0 ],
+									"patching_rect" : [ 453.5, 358.0, 29.5, 22.0 ],
 									"text" : "+"
 								}
 
@@ -464,7 +464,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 625.0, 215.0, 208.0, 22.0 ],
+									"patching_rect" : [ 492.5, 388.0, 208.0, 22.0 ],
 									"text" : "param knob4_fb @min 0. @max 0.48"
 								}
 
@@ -476,7 +476,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 914.5, 34.5, 124.0, 33.0 ],
+									"patching_rect" : [ 711.5, 35.5, 124.0, 33.0 ],
 									"text" : "use MIDI values to get log response",
 									"textcolor" : [ 0.000000062398612, 0.0, 0.501960754394531, 1.0 ]
 								}
@@ -555,7 +555,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 782.5, 567.0, 245.0, 20.0 ],
+									"patching_rect" : [ 222.5, 54.0, 245.0, 20.0 ],
 									"text" : "IDMPEDALS stereo digital delay 2 (multitap)"
 								}
 
@@ -568,7 +568,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 432.5, 105.5, 103.0, 22.0 ],
+									"patching_rect" : [ 429.5, 235.0, 103.0, 22.0 ],
 									"text" : "scale 0 1 0 96000"
 								}
 
@@ -579,7 +579,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 960.5, 195.0, 57.0, 20.0 ],
+									"patching_rect" : [ 757.5, 196.0, 57.0, 20.0 ],
 									"text" : "multiplier",
 									"textcolor" : [ 0.000000062398612, 0.0, 0.501960754394531, 1.0 ]
 								}
@@ -593,7 +593,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 914.5, 107.0, 108.0, 22.0 ],
+									"patching_rect" : [ 711.5, 108.0, 108.0, 22.0 ],
 									"text" : "oopsy.ctrl.smooth3"
 								}
 
@@ -606,7 +606,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 914.5, 195.0, 39.0, 22.0 ],
+									"patching_rect" : [ 711.5, 196.0, 39.0, 22.0 ],
 									"text" : "!/ 1."
 								}
 
@@ -619,7 +619,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 914.5, 71.0, 227.0, 22.0 ],
+									"patching_rect" : [ 711.5, 72.0, 227.0, 22.0 ],
 									"text" : "param knob6_multitap @min 1 @max 6"
 								}
 
@@ -763,7 +763,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 432.5, 60.5, 108.0, 22.0 ],
+									"patching_rect" : [ 429.5, 190.0, 108.0, 22.0 ],
 									"text" : "oopsy.ctrl.smooth3"
 								}
 
@@ -823,7 +823,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 448.25, 344.0, 29.5, 22.0 ],
+									"patching_rect" : [ 445.25, 480.0, 29.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -859,7 +859,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 640.5, 22.0, 63.0, 20.0 ],
+									"patching_rect" : [ 429.5, 127.0, 63.0, 20.0 ],
 									"text" : "delay time",
 									"textcolor" : [ 0.501958906650543, 0.501930236816406, 0.014756095595658, 1.0 ]
 								}
@@ -871,7 +871,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 625.0, 185.0, 57.0, 20.0 ],
+									"patching_rect" : [ 492.5, 358.0, 57.0, 20.0 ],
 									"text" : "feedback",
 									"textcolor" : [ 0.064120709896088, 0.501819789409637, 0.501972615718842, 1.0 ]
 								}
@@ -883,7 +883,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 242.5, 530.0, 66.0, 20.0 ],
+									"patching_rect" : [ 492.5, 488.0, 66.0, 20.0 ],
 									"text" : "effect level",
 									"textcolor" : [ 0.501960813999176, 0.0, 0.250980347394943, 1.0 ]
 								}
@@ -897,7 +897,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 432.5, 22.0, 201.0, 22.0 ],
+									"patching_rect" : [ 429.5, 151.5, 201.0, 22.0 ],
 									"text" : "param knob5_time @min 0 @max 1"
 								}
 
@@ -910,7 +910,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 625.0, 251.0, 108.0, 22.0 ],
+									"patching_rect" : [ 492.5, 424.0, 108.0, 22.0 ],
 									"text" : "oopsy.ctrl.smooth3"
 								}
 
@@ -923,7 +923,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 333.5, 344.0, 29.5, 22.0 ],
+									"patching_rect" : [ 330.5, 480.0, 29.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -947,7 +947,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 212.5, 288.0, 263.0, 22.0 ],
+									"patching_rect" : [ 209.5, 424.0, 263.0, 22.0 ],
 									"text" : "delay 192000 2 @feedback 1 @interp cubic"
 								}
 
@@ -960,7 +960,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 238.5, 561.0, 203.0, 22.0 ],
+									"patching_rect" : [ 488.5, 519.0, 203.0, 22.0 ],
 									"text" : "param knob3_level @min 0 @max 1"
 								}
 

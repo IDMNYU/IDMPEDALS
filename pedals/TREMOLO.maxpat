@@ -786,7 +786,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 223.729980000000012, 404.0, 29.5, 22.0 ],
+									"patching_rect" : [ 223.729980000000012, 404.0, 95.0, 22.0 ],
 									"text" : "*"
 								}
 

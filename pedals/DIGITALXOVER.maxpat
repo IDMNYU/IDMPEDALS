@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 415.0, 220.0, 115.0, 20.0 ],
+					"text" : "xover runs at 48kHz"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
@@ -435,7 +446,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 365.25, 25.0, 302.0, 22.0 ],
-									"text" : "param knob3_pitch @default 23. @min 60. @max 127."
+									"text" : "param knob3_pitch @default 80. @min 60. @max 127."
 								}
 
 							}

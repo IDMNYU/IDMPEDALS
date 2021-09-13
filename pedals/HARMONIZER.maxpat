@@ -1088,7 +1088,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 190.5, 145.0, 122.0, 49.0 ],
+									"patching_rect" : [ 190.5, 145.0, 124.0, 49.0 ],
 									"text" : "param knob2_wetdry @min 0 @max 1 @default 1."
 								}
 
