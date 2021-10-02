@@ -219,7 +219,9 @@ inline t_sample wrap(t_sample v, t_sample lo1, t_sample hi1){
 	if (v >= lo && v < hi) return v;
 	if (range <= 0.000000001) return lo;	// no point...
 	const long numWraps = long((v-lo)/range) - (v < lo);
-	return v - range * t_sample(numWraps);
+	const t_sample result = v - range * t_sample(numWraps);
+	if (result >= hi) return result - range;
+	else return result;
 }
 
 // this version gives far better performance when wrapping is relatively rare

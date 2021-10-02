@@ -55,11 +55,11 @@ typedef struct State {
 	t_sample m_x_24;
 	t_sample m_x_23;
 	t_sample samples_to_seconds;
-	t_sample m_sw_5;
-	t_sample m_history_6;
+	t_sample m_knob5_mix_5;
+	t_sample m_knob4_fine_6;
 	t_sample m_x_9;
-	t_sample m_knob4_fine_4;
-	t_sample m_knob5_mix_2;
+	t_sample m_sw_4;
+	t_sample m_history_2;
 	t_sample m_knob3_freq_3;
 	t_sample samplerate;
 	t_sample m_x_10;
@@ -76,11 +76,11 @@ typedef struct State {
 		vectorsize = __vs;
 		samplerate = __sr;
 		m_sw_1 = ((int)0);
-		m_knob5_mix_2 = ((int)0);
+		m_history_2 = ((int)0);
 		m_knob3_freq_3 = ((int)0);
-		m_knob4_fine_4 = ((int)0);
-		m_sw_5 = ((int)0);
-		m_history_6 = ((int)0);
+		m_sw_4 = ((int)0);
+		m_knob5_mix_5 = ((int)0);
+		m_knob4_fine_6 = ((int)0);
 		__m_sah_7.reset(0);
 		m_x_9 = ((int)0);
 		m_x_10 = ((int)0);
@@ -130,34 +130,34 @@ typedef struct State {
 			return __exception;
 			
 		};
-		t_sample add_554 = (m_knob3_freq_3 + m_knob4_fine_4);
+		t_sample add_2120 = (m_knob3_freq_3 + m_knob4_fine_6);
 		int md = int(m_sw_1);
 		samples_to_seconds = (1 / samplerate);
-		t_sample rsub_553 = (((int)1) - m_knob5_mix_2);
+		t_sample rsub_2119 = (((int)1) - m_knob5_mix_5);
 		// the main sample loop;
 		while ((__n--)) {
 			const t_sample in1 = (*(__in1++));
-			t_sample sah_563 = __m_sah_7(m_history_6, m_sw_5, ((int)0));
-			t_sample gen_565 = sah_563;
-			t_sample rsub_561 = (((int)1) - sah_563);
-			t_sample history_562_next_564 = fixdenorm(rsub_561);
-			t_sample out3 = gen_565;
+			t_sample out5 = ((int)0);
 			t_sample out4 = ((int)0);
 			t_sample out6 = ((int)0);
-			t_sample out5 = ((int)0);
-			t_sample add_566 = (gen_565 + ((int)1));
-			t_sample choice_8 = int(add_566);
-			t_sample gate_559 = (((choice_8 >= 1) && (choice_8 < 2)) ? in1 : 0);
-			t_sample gate_560 = ((choice_8 >= 2) ? in1 : 0);
+			t_sample sah_2129 = __m_sah_7(m_history_2, m_sw_4, ((int)0));
+			t_sample gen_2131 = sah_2129;
+			t_sample rsub_2127 = (((int)1) - sah_2129);
+			t_sample history_2128_next_2130 = fixdenorm(rsub_2127);
+			t_sample out3 = gen_2131;
+			t_sample add_2132 = (gen_2131 + ((int)1));
+			t_sample choice_8 = int(add_2132);
+			t_sample gate_2125 = (((choice_8 >= 1) && (choice_8 < 2)) ? in1 : 0);
+			t_sample gate_2126 = ((choice_8 >= 2) ? in1 : 0);
 			t_sample return_20;
 			t_sample return_21;
-			hilbertBiquad_d(gate_560, return_20, return_21);
+			hilbertBiquad_d(gate_2126, return_20, return_21);
 			t_sample r = return_20;
 			t_sample i = return_21;
 			if ((md == ((int)1))) {
 				t_sample return_46;
 				t_sample return_47;
-				polyphaseIIR_d(gate_560, return_46, return_47);
+				polyphaseIIR_d(gate_2126, return_46, return_47);
 				r = return_46;
 				i = return_47;
 				
@@ -165,21 +165,21 @@ typedef struct State {
 			t_sample return_49;
 			t_sample return_50;
 			t_sample return_51;
-			complexSine_d(add_554, return_49, return_50, return_51);
+			complexSine_d(add_2120, return_49, return_50, return_51);
 			t_sample rm = return_49;
 			t_sample ri = return_50;
 			t_sample sync = return_51;
 			t_sample return_52;
 			t_sample return_53;
 			complexRing_d_d_d_d(r, i, rm, ri, return_52, return_53);
-			t_sample expr_569 = return_52;
-			t_sample expr_570 = return_53;
-			t_sample mix_574 = (expr_569 + (rsub_553 * (expr_570 - expr_569)));
-			t_sample add_558 = (gate_559 + mix_574);
-			t_sample out2 = add_558;
-			t_sample add_568 = (gate_559 + mix_574);
-			t_sample out1 = add_568;
-			m_history_6 = history_562_next_564;
+			t_sample expr_2135 = return_52;
+			t_sample expr_2136 = return_53;
+			t_sample mix_2140 = (expr_2135 + (rsub_2119 * (expr_2136 - expr_2135)));
+			t_sample add_2134 = (gate_2125 + mix_2140);
+			t_sample out1 = add_2134;
+			t_sample add_2124 = (gate_2125 + mix_2140);
+			t_sample out2 = add_2124;
+			m_history_2 = history_2128_next_2130;
 			// assign results to output buffer;
 			(*(__out1++)) = out1;
 			(*(__out2++)) = out2;
@@ -195,17 +195,17 @@ typedef struct State {
 	inline void set_sw5(t_param _value) {
 		m_sw_1 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
 	};
-	inline void set_knob5_mix(t_param _value) {
-		m_knob5_mix_2 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
-	};
 	inline void set_knob3_freq(t_param _value) {
 		m_knob3_freq_3 = (_value < 0.1 ? 0.1 : (_value > 5000 ? 5000 : _value));
 	};
-	inline void set_knob4_fine(t_param _value) {
-		m_knob4_fine_4 = (_value < -50 ? -50 : (_value > 50 ? 50 : _value));
-	};
 	inline void set_sw1(t_param _value) {
-		m_sw_5 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+		m_sw_4 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	};
+	inline void set_knob5_mix(t_param _value) {
+		m_knob5_mix_5 = (_value < 0 ? 0 : (_value > 1 ? 1 : _value));
+	};
+	inline void set_knob4_fine(t_param _value) {
+		m_knob4_fine_6 = (_value < -50 ? -50 : (_value > 50 ? 50 : _value));
 	};
 	inline void hilbertBiquad_d(t_sample x0, t_sample& out1, t_sample& out2) {
 		t_sample x1 = biquadTdf2_d_d_d_i_d_d(x0, ((t_sample)0.94657), (-((t_sample)1.94632)), ((int)1), (-((t_sample)1.94632)), ((t_sample)0.94657));
@@ -389,9 +389,9 @@ void getparameter(CommonState *cself, long index, t_param *value) {
 	State *self = (State *)cself;
 	switch (index) {
 		case 0: *value = self->m_knob3_freq_3; break;
-		case 1: *value = self->m_knob4_fine_4; break;
-		case 2: *value = self->m_knob5_mix_2; break;
-		case 3: *value = self->m_sw_5; break;
+		case 1: *value = self->m_knob4_fine_6; break;
+		case 2: *value = self->m_knob5_mix_5; break;
+		case 3: *value = self->m_sw_4; break;
 		case 4: *value = self->m_sw_1; break;
 		
 		default: break;
@@ -489,11 +489,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 5000;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 1 ("m_knob4_fine_4")
+	// initialize parameter 1 ("m_knob4_fine_6")
 	pi = self->__commonstate.params + 1;
 	pi->name = "knob4_fine";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob4_fine_4;
+	pi->defaultvalue = self->m_knob4_fine_6;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -503,11 +503,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 50;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 2 ("m_knob5_mix_2")
+	// initialize parameter 2 ("m_knob5_mix_5")
 	pi = self->__commonstate.params + 2;
 	pi->name = "knob5_mix";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_knob5_mix_2;
+	pi->defaultvalue = self->m_knob5_mix_5;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
@@ -517,11 +517,11 @@ void *create(t_param sr, long vs) {
 	pi->outputmax = 1;
 	pi->exp = 0;
 	pi->units = "";		// no units defined
-	// initialize parameter 3 ("m_sw_5")
+	// initialize parameter 3 ("m_sw_4")
 	pi = self->__commonstate.params + 3;
 	pi->name = "sw1";
 	pi->paramtype = GENLIB_PARAMTYPE_FLOAT;
-	pi->defaultvalue = self->m_sw_5;
+	pi->defaultvalue = self->m_sw_4;
 	pi->defaultref = 0;
 	pi->hasinputminmax = false;
 	pi->inputmin = 0;
