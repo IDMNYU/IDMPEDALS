@@ -231,6 +231,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "testinput_bpatch.maxpat",
 					"numinlets" : 0,
@@ -249,7 +250,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.300000000000011, 571.0, 181.0, 74.0 ],
+					"patching_rect" : [ 98.300000000000011, 571.0, 184.0, 74.0 ],
 					"text" : "IDMPEDALS reverb3 (\"creepy\"). \nInspired by \"Time-variant Orthogonal Matrix Feedback Delay Network Reverberator\", Shreyas A. Paranjpe"
 				}
 
@@ -326,6 +327,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-83",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "oopsy.maxpat",
 					"numinlets" : 1,
@@ -524,7 +526,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 194.928574000000026, 320.0, 124.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "param knob1_wetdry @min 0. @max 1."
 								}
 

@@ -125,6 +125,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-83",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "oopsy.maxpat",
 					"numinlets" : 1,
@@ -181,6 +182,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "testinput_bpatch.maxpat",
 					"numinlets" : 0,
@@ -283,7 +285,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 341.5, 398.0, 85.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "knob4_rate $1"
 				}
 
