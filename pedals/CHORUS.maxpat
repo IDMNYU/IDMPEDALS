@@ -509,7 +509,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 399.0, 74.0, 115.0, 33.0 ],
-									"text" : "LFO rate (0.01-10.01Hz)",
+									"text" : "LFO rate (0.01-5.01Hz)",
 									"textcolor" : [ 0.50195974111557, 0.0, 0.008130922913551, 1.0 ]
 								}
 
@@ -632,8 +632,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 349.0, 74.0, 33.0, 22.0 ],
-									"text" : "* 10."
+									"patching_rect" : [ 349.0, 74.0, 27.0, 22.0 ],
+									"text" : "* 5."
 								}
 
 							}

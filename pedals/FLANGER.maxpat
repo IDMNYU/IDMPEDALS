@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 461.0, 235.0, 732.0, 758.0 ],
+		"rect" : [ 318.0, 79.0, 732.0, 758.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -390,7 +390,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 449.0, 289.0, 954.0, 702.0 ],
+						"rect" : [ 184.0, 79.0, 954.0, 702.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
