@@ -248,7 +248,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 399.0, 156.0, 564.0, 533.0 ],
+						"rect" : [ 399.0, 156.0, 916.0, 845.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -463,7 +463,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -921,18 +921,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.0, 284.5, 29.5, 22.0 ],
-									"text" : "+"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1159,13 +1147,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
 									"order" : 0,
 									"source" : [ "obj-19", 0 ]
@@ -1304,7 +1285,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
+									"destination" : [ "obj-17", 0 ],
 									"order" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
@@ -1654,6 +1635,27 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "oopsy.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/oopsy/patchers",
+				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.node4max.js",
+				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.snoop.js",
+				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "swtoggle.gendsp",
 				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
 				"patcherrelativepath" : ".",
@@ -1665,27 +1667,6 @@
 				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "oopsy.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/patchers",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "oopsy.snoop.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "oopsy.node4max.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],
