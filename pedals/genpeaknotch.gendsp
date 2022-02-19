@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 540.0, 79.0, 642.0, 705.0 ],
+		"rect" : [ 540.0, 79.0, 628.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "cf = in1;\r\ngain = in2;\r\nQ = in3;\r\n\r\nomega = cf * twopi/samplerate;\nsn = sin(omega);\ncs = cos(omega);\nalpha = sn * 0.5/Q;\r\n\r\nA = sqrt(gain); \none_over_A = 1./A; \r\nb0 = 1./(1. + alpha*one_over_A);\r\n\r\na0 = (1. + alpha*A) * b0;\nb1 = (-2. * cs) * b0;\r\na1 = b1;\na2 = (1. - alpha*A) * b0;\nb2 = (1. - alpha*one_over_A) * b0;\r\n\r\nout1 = a0;\r\nout2 = a1;\r\nout3 = a2;\r\nout4 = b1;\r\nout5 = b2;",
+					"code" : "// peak / notch biquad coefficients\r\n\r\ncf = in1;\r\ngain = in2;\r\nQ = in3;\r\n\r\nomega = cf * twopi/samplerate;\nsn = sin(omega);\ncs = cos(omega);\nalpha = sn * 0.5/Q;\r\n\r\nA = sqrt(gain); \none_over_A = 1./A; \r\nb0 = 1./(1. + alpha*one_over_A);\r\n\r\na0 = (1. + alpha*A) * b0;\nb1 = (-2. * cs) * b0;\r\na1 = b1;\na2 = (1. - alpha*A) * b0;\nb2 = (1. - alpha*one_over_A) * b0;\r\n\r\nout1 = a0;\r\nout2 = a1;\r\nout3 = a2;\r\nout4 = b1;\r\nout5 = b2;",
 					"fontface" : 0,
 					"fontname" : "Menlo Regular",
 					"fontsize" : 12.0,
@@ -49,7 +49,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 123.729979999999998, 118.0, 480.0, 504.0 ]
+					"patching_rect" : [ 123.729979999999998, 118.0, 479.999999999999943, 423.0 ]
 				}
 
 			}
@@ -96,7 +96,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.0, 635.0, 594.729979999999955, 23.0 ],
+					"patching_rect" : [ 9.0, 566.0, 594.729979999999955, 23.0 ],
 					"text" : "genbiquad"
 				}
 
@@ -109,7 +109,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 665.0, 190.0, 23.0 ],
+					"patching_rect" : [ 9.0, 596.0, 190.0, 23.0 ],
 					"text" : "out 1 @comment \"filtered signal\""
 				}
 
@@ -140,7 +140,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 1 ],
-					"midpoints" : [ 159.229980000000012, 107.0, 363.729980000000012, 107.0 ],
+					"midpoints" : [ 159.229980000000012, 107.0, 363.729979999999955, 107.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 

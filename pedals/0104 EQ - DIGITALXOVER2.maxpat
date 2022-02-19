@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -242,13 +242,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 660.0, 117.0, 1002.0, 831.0 ],
+						"rect" : [ 660.0, 117.0, 906.0, 823.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -282,7 +282,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 655.0, 725.0, 129.0, 20.0 ],
+									"patching_rect" : [ 257.0, 750.0, 129.0, 20.0 ],
 									"text" : "hold petal lights 2-4 off"
 								}
 
@@ -293,7 +293,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 773.0, 765.0, 61.0, 22.0 ],
+									"patching_rect" : [ 375.0, 790.0, 61.0, 22.0 ],
 									"text" : "out 6 led4"
 								}
 
@@ -304,7 +304,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 701.0, 765.0, 61.0, 22.0 ],
+									"patching_rect" : [ 303.0, 790.0, 61.0, 22.0 ],
 									"text" : "out 5 led3"
 								}
 
@@ -315,7 +315,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 632.0, 765.0, 61.0, 22.0 ],
+									"patching_rect" : [ 234.0, 790.0, 61.0, 22.0 ],
 									"text" : "out 4 led2"
 								}
 
@@ -327,7 +327,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 632.0, 725.0, 19.0, 22.0 ],
+									"patching_rect" : [ 234.0, 750.0, 19.0, 22.0 ],
 									"text" : "0"
 								}
 
@@ -338,7 +338,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 294.25, 91.0, 177.0, 20.0 ],
+									"patching_rect" : [ 224.25, 104.0, 177.0, 20.0 ],
 									"text" : "IDMPEDALS crossover2 (fixed)"
 								}
 
@@ -349,8 +349,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 214.5, 686.0, 42.0, 20.0 ],
-									"text" : "high >"
+									"patching_rect" : [ 152.5, 790.0, 42.0, 20.0 ],
+									"text" : "< high"
 								}
 
 							}
@@ -360,7 +360,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.5, 686.0, 37.0, 20.0 ],
+									"patching_rect" : [ 65.5, 790.0, 37.0, 20.0 ],
 									"text" : "< low"
 								}
 
@@ -372,7 +372,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 25.0, 159.0, 42.0, 22.0 ],
+									"patching_rect" : [ 26.0, 159.0, 133.0, 22.0 ],
 									"text" : "gate 2"
 								}
 
@@ -383,7 +383,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 162.0, 126.0, 61.0, 22.0 ],
+									"patching_rect" : [ 57.0, 104.0, 61.0, 22.0 ],
 									"text" : "out 3 led1"
 								}
 
@@ -395,7 +395,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.0, 91.0, 56.0, 22.0 ],
+									"patching_rect" : [ 26.0, 69.0, 56.0, 22.0 ],
 									"text" : "swtoggle"
 								}
 
@@ -407,7 +407,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.0, 126.0, 26.0, 22.0 ],
+									"patching_rect" : [ 26.0, 104.0, 26.0, 22.0 ],
 									"text" : "+ 1"
 								}
 
@@ -419,7 +419,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.0, 52.0, 67.0, 22.0 ],
+									"patching_rect" : [ 26.0, 30.0, 67.0, 22.0 ],
 									"text" : "param sw1"
 								}
 
@@ -432,7 +432,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 48.0, 126.0, 28.0, 22.0 ],
+									"patching_rect" : [ 140.0, 104.0, 28.0, 22.0 ],
 									"text" : "in 1"
 								}
 
@@ -444,7 +444,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 272.5, 739.0, 29.5, 22.0 ],
+									"patching_rect" : [ 110.0, 739.0, 29.5, 22.0 ],
 									"text" : "+"
 								}
 
@@ -456,7 +456,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.5, 739.0, 29.5, 22.0 ],
+									"patching_rect" : [ 26.0, 739.0, 29.5, 22.0 ],
 									"text" : "+"
 								}
 
@@ -469,7 +469,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 272.5, 790.0, 35.0, 22.0 ],
+									"patching_rect" : [ 110.0, 790.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -482,7 +482,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 28.5, 790.0, 35.0, 22.0 ],
+									"patching_rect" : [ 26.0, 790.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -498,7 +498,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 48.0, 200.0, 779.5, 478.0 ]
+									"patching_rect" : [ 140.0, 204.0, 738.5, 460.0 ]
 								}
 
 							}
@@ -519,6 +519,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.19999997317791, 0.199999943375587, 0.19999997317791, 1.0 ],
 									"destination" : [ "obj-22", 1 ],
 									"source" : [ "obj-38", 1 ]
 								}
@@ -526,6 +527,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.19999997317791, 0.199999943375587, 0.19999997317791, 1.0 ],
 									"destination" : [ "obj-59", 1 ],
 									"source" : [ "obj-38", 0 ]
 								}
@@ -602,6 +604,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.19999997317791, 0.199999943375587, 0.19999997317791, 1.0 ],
 									"destination" : [ "obj-38", 0 ],
 									"source" : [ "obj-77", 1 ]
 								}
@@ -754,17 +757,17 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "swtoggle.gendsp",
-				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "oopsy.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/oopsy/patchers",
 				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.node4max.js",
+				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -775,10 +778,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "oopsy.node4max.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
-				"type" : "TEXT",
+				"name" : "swtoggle.gendsp",
+				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
