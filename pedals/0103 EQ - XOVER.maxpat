@@ -118,8 +118,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 286.300000000000011, 570.0, 177.0, 20.0 ],
-					"text" : "IDMPEDALS crossover2 (fixed)"
+					"patching_rect" : [ 286.300000000000011, 570.0, 170.0, 20.0 ],
+					"text" : "IDMPEDALS crossover (fixed)"
 				}
 
 			}
@@ -338,8 +338,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 224.25, 104.0, 177.0, 20.0 ],
-									"text" : "IDMPEDALS crossover2 (fixed)"
+									"patching_rect" : [ 224.25, 104.0, 170.0, 20.0 ],
+									"text" : "IDMPEDALS crossover (fixed)"
 								}
 
 							}
@@ -640,14 +640,14 @@
  ]
 					}
 ,
-					"patching_rect" : [ 80.0, 435.0, 144.0, 22.0 ],
+					"patching_rect" : [ 80.0, 435.0, 104.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"exportfolder" : "Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals/",
-						"exportname" : "DigitalXover2"
+						"exportname" : "Xover"
 					}
 ,
-					"text" : "gen~ @title DigitalXover2",
-					"varname" : "DigitalXover2"
+					"text" : "gen~ @title Xover",
+					"varname" : "Xover"
 				}
 
 			}
