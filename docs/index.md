@@ -9,7 +9,7 @@ Last updated Spring, 2022.
 - [Overview](#overview)
 - [Oopsy Basics](#oopsy-basics)
 - [Glossary](#glossary)
-- The Pedals
+- [The Pedals](#pedals)
   - [EQ](#eq)
     - [Lowpass Filter](#eq-lowpass)
     - [Parametric EQ](#eq-parametric)
