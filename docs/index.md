@@ -8,8 +8,8 @@ Last updated Spring, 2022.
 
 - [Overview](#overview)
 - [Oopsy Basics](#oopsy-basics)
+- [Glossary](#glossary)
 - The Pedals
-  - [Glossary](#glossary)
   - [EQ](#eqs)
   - [Dynamics](#dynamics)
   - [Distortion](#distortion)
