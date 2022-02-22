@@ -1021,7 +1021,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 131.75, 438.0, 67.0, 47.0 ],
+									"patching_rect" : [ 131.75, 438.0, 68.0, 47.0 ],
 									"text" : "\"vibrato\" zeroes dry signal"
 								}
 
@@ -1812,6 +1812,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"color" : [ 0.19999997317791, 0.199999943375587, 0.19999997317791, 1.0 ],
 									"destination" : [ "obj-77", 1 ],
 									"source" : [ "obj-1", 0 ]
 								}

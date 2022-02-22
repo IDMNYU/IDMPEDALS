@@ -285,7 +285,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 383.0, 208.0, 697.0, 683.0 ],
+						"rect" : [ 504.0, 79.0, 699.0, 944.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -320,7 +320,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 46.0, 615.0, 114.0, 22.0 ],
+									"patching_rect" : [ 46.0, 879.0, 114.0, 22.0 ],
 									"text" : "+"
 								}
 
@@ -332,7 +332,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.0, 537.0, 29.5, 22.0 ],
+									"patching_rect" : [ 141.0, 801.0, 29.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -369,7 +369,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 263.0, 599.0, 129.0, 20.0 ],
+									"patching_rect" : [ 263.0, 863.0, 129.0, 20.0 ],
 									"text" : "hold petal lights 2-4 off"
 								}
 
@@ -380,7 +380,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 380.0, 639.0, 61.0, 22.0 ],
+									"patching_rect" : [ 380.0, 903.0, 61.0, 22.0 ],
 									"text" : "out 6 led4"
 								}
 
@@ -391,7 +391,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 308.0, 639.0, 61.0, 22.0 ],
+									"patching_rect" : [ 308.0, 903.0, 61.0, 22.0 ],
 									"text" : "out 5 led3"
 								}
 
@@ -402,7 +402,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 239.0, 639.0, 61.0, 22.0 ],
+									"patching_rect" : [ 239.0, 903.0, 61.0, 22.0 ],
 									"text" : "out 4 led2"
 								}
 
@@ -414,7 +414,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 239.0, 599.0, 19.0, 22.0 ],
+									"patching_rect" : [ 239.0, 863.0, 19.0, 22.0 ],
 									"text" : "0"
 								}
 
@@ -455,7 +455,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.0, 178.0, 522.0, 311.0 ]
+									"patching_rect" : [ 141.0, 178.0, 518.0, 575.0 ]
 								}
 
 							}
@@ -525,7 +525,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 192.0, 537.0, 39.0, 22.0 ],
+									"patching_rect" : [ 192.0, 801.0, 39.0, 22.0 ],
 									"text" : "dbtoa"
 								}
 
@@ -537,7 +537,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.0, 573.0, 29.5, 22.0 ],
+									"patching_rect" : [ 141.0, 837.0, 29.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -549,7 +549,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.5, 502.5, 229.0, 22.0 ],
+									"patching_rect" : [ 191.5, 766.5, 229.0, 22.0 ],
 									"text" : "param knob4_output @min -70 @max 20"
 								}
 
@@ -560,7 +560,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 106.5, 650.5, 35.0, 22.0 ],
+									"patching_rect" : [ 106.5, 914.5, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -571,7 +571,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 46.0, 650.5, 35.0, 22.0 ],
+									"patching_rect" : [ 46.0, 914.5, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -630,7 +630,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 1 ],
-									"midpoints" : [ 674.5, 497.0, 161.0, 497.0 ],
+									"midpoints" : [ 674.5, 759.0, 161.0, 759.0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 

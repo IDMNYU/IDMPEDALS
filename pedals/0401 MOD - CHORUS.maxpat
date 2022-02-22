@@ -319,7 +319,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 296.5, 397.0, 68.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "invert phase for \"stereo\"",
 									"textcolor" : [ 0.298039227724075, 0.298039257526398, 0.298039197921753, 1.0 ]
 								}
@@ -888,6 +887,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"color" : [ 0.19999997317791, 0.199999943375587, 0.19999997317791, 1.0 ],
 									"destination" : [ "obj-77", 1 ],
 									"source" : [ "obj-1", 0 ]
 								}

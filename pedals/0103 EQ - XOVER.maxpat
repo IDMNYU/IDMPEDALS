@@ -248,7 +248,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 660.0, 117.0, 906.0, 823.0 ],
+						"rect" : [ 489.0, 99.0, 969.0, 921.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -293,7 +293,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 375.0, 790.0, 61.0, 22.0 ],
+									"patching_rect" : [ 501.0, 887.0, 61.0, 22.0 ],
 									"text" : "out 6 led4"
 								}
 
@@ -304,7 +304,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 303.0, 790.0, 61.0, 22.0 ],
+									"patching_rect" : [ 429.0, 887.0, 61.0, 22.0 ],
 									"text" : "out 5 led3"
 								}
 
@@ -315,7 +315,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 234.0, 790.0, 61.0, 22.0 ],
+									"patching_rect" : [ 360.0, 887.0, 61.0, 22.0 ],
 									"text" : "out 4 led2"
 								}
 
@@ -327,7 +327,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 234.0, 750.0, 19.0, 22.0 ],
+									"patching_rect" : [ 360.0, 847.0, 19.0, 22.0 ],
 									"text" : "0"
 								}
 
@@ -338,7 +338,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 224.25, 104.0, 170.0, 20.0 ],
+									"patching_rect" : [ 608.5, 866.0, 170.0, 20.0 ],
 									"text" : "IDMPEDALS crossover (fixed)"
 								}
 
@@ -349,7 +349,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 152.5, 790.0, 42.0, 20.0 ],
+									"patching_rect" : [ 157.5, 887.0, 42.0, 20.0 ],
 									"text" : "< high"
 								}
 
@@ -360,7 +360,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 65.5, 790.0, 37.0, 20.0 ],
+									"patching_rect" : [ 70.5, 887.0, 37.0, 20.0 ],
 									"text" : "< low"
 								}
 
@@ -444,7 +444,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 110.0, 739.0, 29.5, 22.0 ],
+									"patching_rect" : [ 115.0, 857.0, 29.5, 22.0 ],
 									"text" : "+"
 								}
 
@@ -456,7 +456,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 739.0, 29.5, 22.0 ],
+									"patching_rect" : [ 31.0, 857.0, 29.5, 22.0 ],
 									"text" : "+"
 								}
 
@@ -469,7 +469,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 110.0, 790.0, 35.0, 22.0 ],
+									"patching_rect" : [ 115.0, 887.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -482,7 +482,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 26.0, 790.0, 35.0, 22.0 ],
+									"patching_rect" : [ 31.0, 887.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -498,7 +498,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 140.0, 204.0, 738.5, 460.0 ]
+									"patching_rect" : [ 195.0, 12.0, 746.5, 818.0 ]
 								}
 
 							}
@@ -606,6 +606,7 @@
 								"patchline" : 								{
 									"color" : [ 0.19999997317791, 0.199999943375587, 0.19999997317791, 1.0 ],
 									"destination" : [ "obj-38", 0 ],
+									"midpoints" : [ 149.5, 183.0, 184.0, 183.0, 184.0, 3.0, 204.5, 3.0 ],
 									"source" : [ "obj-77", 1 ]
 								}
 

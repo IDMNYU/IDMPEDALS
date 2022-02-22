@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -180,13 +180,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 520.0, 300.0, 406.0, 378.0 ],
+						"rect" : [ 520.0, 300.0, 265.0, 172.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -221,7 +221,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 153.0, 255.666678071022034, 59.0, 22.0 ],
+									"patching_rect" : [ 153.0, 45.666678071022034, 59.0, 22.0 ],
 									"text" : "cycle 200"
 								}
 
@@ -232,7 +232,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 75.0, 325.000003099441528, 35.0, 22.0 ],
+									"patching_rect" : [ 75.0, 115.000003099441528, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -244,7 +244,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.0, 36.0, 28.0, 22.0 ],
+									"patching_rect" : [ 28.0, 27.0, 28.0, 22.0 ],
 									"text" : "in 1"
 								}
 
@@ -256,7 +256,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 75.0, 36.0, 28.0, 22.0 ],
+									"patching_rect" : [ 75.0, 27.0, 28.0, 22.0 ],
 									"text" : "in 2"
 								}
 
@@ -267,7 +267,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 28.0, 325.000003099441528, 35.0, 22.0 ],
+									"patching_rect" : [ 28.0, 115.000003099441528, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -388,14 +388,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "oopsy.snoop.js",
+				"name" : "oopsy.node4max.js",
 				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
 				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "oopsy.node4max.js",
+				"name" : "oopsy.snoop.js",
 				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
 				"patcherrelativepath" : "../../../../../../Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
