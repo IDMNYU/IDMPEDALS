@@ -70,7 +70,7 @@ Last updated Spring, 2022.
 
 ### EQ Lowpass
 
-<img src = "./img/Lowpass.png" height="100%" title="Lowpass patcher" alt="Lowpass patcherr">
+<img src = "./img/Lowpass.png" width="100%" title="Lowpass patcher" alt="Lowpass patcherr">
 
 ### EQ Parametric
 
