@@ -104,9 +104,15 @@ Last updated Spring, 2022.
 
 ### Dyn Tremolo
 
+<img src = "./img/Tremolo.png" title="Tremolo patcher" alt="Tremolo patcherr">
+
 ### Dyn Compressor
 
+<img src = "./img/Compressor.png" title="Compressor patcher" alt="Compressor patcherr">
+
 ### Dyn Gate
+
+<img src = "./img/Gate.png" title="Gate patcher" alt="Gate patcherr">
 
 ## Distortion
 
