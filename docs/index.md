@@ -70,21 +70,35 @@ Last updated Spring, 2022.
 
 ### EQ Lowpass
 
-<img src = "./img/Lowpass.png" width="100%" title="Lowpass patcher" alt="Lowpass patcherr">
+<img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcherr">
 
 ### EQ Parametric
 
+<img src = "./img/Parametric.png" title="Parametric patcher" alt="Parametric patcherr">
+
 ### EQ Xover
+
+<img src = "./img/Xover.png" title="Xover patcher" alt="Xover patcherr">
 
 ### EQ Xover2
 
+<img src = "./img/Xover2.png" title="Xover2 patcher" alt="Xover2 patcherr">
+
 ### EQ Wah
+
+<img src = "./img/Wah.png" title="Wah patcher" alt="Wah patcherr">
 
 ### EQ Wah2
 
+<img src = "./img/Wah2.png" title="Wah2 patcher" alt="Wah2 patcherr">
+
 ### EQ Formant
 
+<img src = "./img/Formant.png" title="Formant patcher" alt="Formant patcherr">
+
 ### EQ Vocoder
+
+<img src = "./img/Vocoder.png" title="Vocoder patcher" alt="Vocoder patcherr">
 
 ## Dynamics
 
