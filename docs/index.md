@@ -182,28 +182,54 @@ Last updated Spring, 2022.
 
 ### Del Digitaldelay
 
+<img src = "./img/DigitalDelay.png" title="DigitalDelay patcher" alt="DigitalDelay patcherr">
+
 ### Del Digitaldelay2
+
+<img src = "./img/DigitalDelay2.png" title="DigitalDelay2 patcher" alt="DigitalDelay2 patcherr">
 
 ### Del Reverb
 
+<img src = "./img/Reverb.png" title="Reverb patcher" alt="Reverb patcherr">
+
 ### Del Reverb2
+
+<img src = "./img/Reverb2.png" title="Reverb2 patcher" alt="Reverb2 patcherr">
 
 ### Del Reverb3
     
+<img src = "./img/Reverb3.png" title="Reverb3 patcher" alt="Reverb3 patcherr">
+
 ## Special
 
 ### Sfx Subharmonic
 
+<img src = "./img/Subharmonic.png" title="Subharmonic patcher" alt="Subharmonic patcherr">
+
 ### Sfx Shsine
+
+<img src = "./img/SHSine.png" title="SHSine patcher" alt="SHSine patcherr">
 
 ### Sfx Ringmod
 
+<img src = "./img/Ringmod.png" title="Ringmod patcher" alt="Ringmod patcherr">
+
 ### Sfx Freqshift
+
+<img src = "./img/FreqShiftRingMod.png" title="FreqShiftRingMod patcher" alt="FreqShiftRingMod patcherr">
 
 ### Sfx Fmdelay
 
+<img src = "./img/FMDelay.png" title="FMDelay patcher" alt="FMDelay patcherr">
+
 ### Sfx Glitch
+
+<img src = "./img/Glitch.png" title="Glitch patcher" alt="Glitch patcherr">
 
 ### Sfx Glitch2 
 
+<img src = "./img/Glitch2.png" title="Glitch2 patcher" alt="Glitch2 patcherr">
+
 ### Sfx Yin
+
+<img src = "./img/Yin.png" title="Yin patcher" alt="Yin patcherr">
