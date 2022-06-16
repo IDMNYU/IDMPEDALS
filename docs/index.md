@@ -118,35 +118,65 @@ Last updated Spring, 2022.
 
 ### Dist Overdrive
 
+<img src = "./img/Overdrive.png" title="Overdrive patcher" alt="Overdrive patcherr">
+
 ### Dist Fuzz
+
+<img src = "./img/Fuzz.png" title="Fuzz patcher" alt="Fuzz patcherr">
 
 ### Dist Octavia
 
+<img src = "./img/Octavia.png" title="Octavia patcher" alt="Octavia patcherr">
+
 ### Dist Distortion
+
+<img src = "./img/Distortion.png" title="Distortion patcher" alt="Distortion patcherr">
 
 ### Dist Distortion2
 
+<img src = "./img/Distortion2.png" title="Distortion2 patcher" alt="Distortion2 patcherr">
+
 ### Dist Waveshaper
+
+<img src = "./img/Waveshaper.png" title="Waveshaper patcher" alt="Waveshaper patcherr">
 
 ### Dist Waveshaper2
     
+<img src = "./img/Waveshaper2.png" title="Waveshaper2 patcher" alt="Waveshaper2 patcherr">
+
 ## Modulation
 
 ### Mod Chorus
 
+<img src = "./img/Chorus.png" title="Chorus patcher" alt="Chorus patcherr">
+
 ### Mod Chorus2
+
+<img src = "./img/Chorus2.png" title="Chorus2 patcher" alt="Chorus2 patcherr">
 
 ### Mod Flanger
 
+<img src = "./img/Flanger.png" title="Flanger patcher" alt="Flanger patcherr">
+
 ### Mod Phaser
+
+<img src = "./img/Phaser.png" title="Phaser patcher" alt="Phaser patcherr">
 
 ### Mod Phaser2
 
+<img src = "./img/Phaser2.png" title="Phaser2 patcher" alt="Phaser2 patcherr">
+
 ### Mod Harmonizer
+
+<img src = "./img/Harmonizer.png" title="Harmonizer patcher" alt="Harmonizer patcherr">
 
 ### Mod Shcomb
 
+<img src = "./img/SHComb.png" title="SHComb patcher" alt="SHComb patcherr">
+
 ### Mod Shcomb2
+
+<img src = "./img/SHComb2.png" title="SHComb2 patcher" alt="SHComb2 patcherr">
 
 ## Delay
 
