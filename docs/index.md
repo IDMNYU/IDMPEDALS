@@ -70,7 +70,7 @@ Last updated Spring, 2022.
 
 ### EQ Lowpass
 
-<img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher">
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
 
 ### EQ Parametric
 
