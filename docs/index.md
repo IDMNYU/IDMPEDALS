@@ -107,7 +107,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Buffer**](https://en.wikipedia.org/wiki/Buffer_amplifier) - a circuit that electrically isolates two parts of a system. In audio devices, buffer circuits are typically put at the inputs, outputs, or both of a circuit that needs to be treated as a distinct part of a system (e.g. an individual module in a modular synthesizer or a pedal in an effects chain). Different buffer amplifier circuits "copy" the electrical signal across the buffer, while guaranteeing that the circuit load on one side of the buffer doesn't change the behavior of the circuit on the other side. Simple buffer circuits can be constructed using op-amps with the output of the amplifier connected directly to the inverting input (full negative feedback). Buffer circuits are often used to optimize the impedance of an audio line, e.g. as part of a direct box. N.B. in some analog audio circuitry (e.g. classic fuzz circuits designed for electric guitars), buffers are undesirable as the effects circuit is *intended* to interact with the electronics of the instrument.
 
-- [**Bypass**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Bypass**](https://en.wikipedia.org/wiki/Bypass_(telecommunications)) - a bypass system in an audio effects context will route the input signal to the output unchanged, *bypassing* the effect. In analog circuits, this can be a switch that, when engaged, routes the signal directly from the input jack to the output jack ("true bypass"); 
 
 - [**Capacitor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
