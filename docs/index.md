@@ -99,9 +99,9 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Analog Electronics**](https://en.wikipedia.org/wiki/Analogue_electronics) - refers to electronic circuits that work - at least primarily - with continuous (as opposed to discrete) signal levels. More broadly, an **analog** signal can be thought of as any representation of a phenemenon (e.g. a sound pressure wave) that is *analogous* to the phenomenon itself; this is in contrast to a **digital** signal, where the signal is quantized and encoded into numerical values that are represented in electronic systems through discrete (typically binary - on or off) signals.
 
-- [**Analog to Digital Converter**]([https://en.wikipedia.org/wiki/CV/Gate](https://en.wikipedia.org/wiki/Analog-to-digital_converter)) (**ADC** or **A/D**) - circuitry that takes a continuous (*analog*) signal and converts it into a discrete, numerical *sample* encoded as a *digital* signal. The speed at which the conversion of the signal occurs is called the *sampling rate*; the resolution (range of values) of each sample is called the *bit depth*. Different media have different common techniques for analog-to-digital converstion; the most common for audio signals in modern circuitry is a [Sigma-Delta](https://en.wikipedia.org/wiki/Delta-sigma_modulation) (Σ-Δ) converter.
+- [**Analog to Digital Converter**]([https://en.wikipedia.org/wiki/CV/Gate](https://en.wikipedia.org/wiki/Analog-to-digital_converter)) (**ADC** or **A/D**) - circuitry that takes a continuous (*analog*) signal and converts it into a discrete, numerical *sample* encoded as a *digital* signal. The speed at which the conversion of the signal occurs is called the *sampling rate*; the resolution (range of values) of each sample is called the *bit depth*. Different media have different common techniques for analog-to-digital conversion, including [Pulse Code Modulation](https://en.wikipedia.org/wiki/Pulse-code_modulation) (PCM) and [Sigma-Delta](https://en.wikipedia.org/wiki/Delta-sigma_modulation) (Σ-Δ).
 
-- [**Bit Depth**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Bit Depth**](https://en.wikipedia.org/wiki/Audio_bit_depth) - the number of bits allocated for each sample in a digital audio signal; in [PCM]((https://en.wikipedia.org/wiki/Pulse-code_modulation))-encoded audio, this value directly correlates to the resolution of how the signal's amplitude is recorded. Each additional bit of resolution doubles the range of possible values for the sample, giving approximately a 6dB boost to the signal-to-noise ratio. CD-quality audio has a 16-bit resolution (with sample values in the range of −32,768 to +32,767); modern professional-quality audio systems typically have a 24-bit resolution or higher.
 
 - [**Bucket-Brigade Device**](https://en.wikipedia.org/wiki/CV/Gate) (**BBD**) - words words words.
 
@@ -158,6 +158,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Sample and Hold**](https://en.wikipedia.org/wiki/CV/Gate) (**S&H**) - words words words.
 
 - [**Sampling Rate**](https://en.wikipedia.org/wiki/CV/Gate) (**SR**) - words words words.
+
+- [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/CV/Gate) (**SNR**) - words words words.
 
 - [**Switch**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
