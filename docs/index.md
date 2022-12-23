@@ -103,7 +103,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Bit Depth**](https://en.wikipedia.org/wiki/Audio_bit_depth) - the number of bits allocated for each sample in a digital audio signal; in [PCM]((https://en.wikipedia.org/wiki/Pulse-code_modulation))-encoded audio, this value directly correlates to the resolution of how the signal's amplitude is recorded. Each additional bit of resolution doubles the range of possible values for the sample, giving approximately a 6dB boost to the signal-to-noise ratio. CD-quality audio has a 16-bit resolution (with sample values in the range of −32,768 to +32,767); modern professional-quality audio systems typically have a 24-bit resolution or higher.
 
-- [**Bucket-Brigade Device**](https://en.wikipedia.org/wiki/Bucket-brigade_device) (**BBD**) - is a circuit that allows for the delay of analog signals using an array of capacitors where each capacitor discharges into the next in the array (the "bucket brigade"). In analog audio 
+- [**Bucket-Brigade Device**](https://en.wikipedia.org/wiki/Bucket-brigade_device) (**BBD**) - is a circuit that allows for the delay of analog signals using an array of capacitors where each capacitor discharges into the next in the array (the "bucket brigade"). In analog audio effects design, this circuit allows for a delay line that can be used to create modulation and echo effects. Although a BBD stores continuous voltages in each capacitor, it is a discrete-time device, so its frequency response is subject to the [Nyquist-Shannon](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) theorem.
 
 - [**Buffer**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
@@ -143,7 +143,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Modulation**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
-- [**Nyquist theorem**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Nyquist-Shannon theorem**](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) - words words words.
 
 - [**Operational Amplifier**](https://en.wikipedia.org/wiki/CV/Gate) (**Op Amp**) - words words words.
 
