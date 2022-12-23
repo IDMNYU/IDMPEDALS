@@ -113,71 +113,71 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Clipping**](https://en.wikipedia.org/wiki/Clipping_(audio)) - the effect of a signal exceeding the threshold of its possible output range; in analog circuits, this can be caused by pushing an amplifying circuit beyond its maximum gain; signals can also be clipped with other techniques, such as intentionally causing clipping with diodes. In a digital system, a signal may be clipped if it exceeds the mathematical range of its bit depth. Clipping is undesirable in many circumstances but is also a core technique in effects such as overdrive.
 
-- [**Current**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Current**](https://en.wikipedia.org/wiki/Electric_current) - words words words.
 
-- [**Delay**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Delay**](https://en.wikipedia.org/wiki/Delay_(audio_effect)) - words words words.
 
-- [**Diode**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Diode**](https://en.wikipedia.org/wiki/Diode) - words words words.
 
-- [**Distortion / Fuzz / Overdrive**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
+- [**Distortion / Fuzz / Overdrive**](https://en.wikipedia.org/wiki/Distortion_(music)) - words words words.
 
-- [**Digital Signal Processing**](https://en.wikipedia.org/wiki/CV/Gate) (**DSP**) - words words words.
+- [**Digital Signal Processing**](https://en.wikipedia.org/wiki/Digital_signal_processing) (**DSP**) - words words words.
 
-- [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
+- [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/Digital-to-analog_converter) (**DAC**) - words words words.
 
 - [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
-- [**Equalization**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Equalization**](https://en.wikipedia.org/wiki/Equalization_(audio)) (**EQ**) - words words words.
 
-- [**Envelope Follower**](https://en.wikipedia.org/wiki/CV/Gate) (**EQ**) - words words words.
+- [**Envelope Follower**](https://en.wikipedia.org/wiki/Envelope_detector) - words words words.
 
-- [**Expression Pedal**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Expression Pedal**](https://en.wikipedia.org/wiki/Expression_pedal) - words words words.
 
-- [**Feedback**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Feedback**](https://en.wikipedia.org/wiki/Feedback) - words words words.
 
-- [**Filter**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Filter**](https://en.wikipedia.org/wiki/Analogue_filter) - words words words.
 
-- [**Gain**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Gain**](https://en.wikipedia.org/wiki/Gain_(electronics)) - words words words.
 
-- [**Impedance**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Impedance**](https://en.wikipedia.org/wiki/Electrical_impedance) - words words words.
 
-- [**Inductor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Inductor**](https://en.wikipedia.org/wiki/Inductor) - words words words.
 
-- [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/Low-frequency_oscillation) - words words words.
 
-- [**MIDI**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**MIDI**](https://en.wikipedia.org/wiki/MIDI) - words words words.
 
-- [**Modulation**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Modulation**](https://en.wikipedia.org/wiki/Modulation) - words words words.
 
 - [**Nyquist-Shannon theorem**](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) - words words words.
 
-- [**Operational Amplifier**](https://en.wikipedia.org/wiki/CV/Gate) (**Op Amp**) - words words words.
+- [**Operational Amplifier**](https://en.wikipedia.org/wiki/Operational_amplifier) (**Op Amp**) - words words words.
 
-- [**Pickup**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Pickup**](https://en.wikipedia.org/wiki/Pickup_(music_technology)) - words words words.
 
-- [**Pitch Tracker**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Pitch Tracker**](https://en.wikipedia.org/wiki/Pitch_detection_algorithm) - words words words.
 
-- [**Potentiometer**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Potentiometer**](https://en.wikipedia.org/wiki/Potentiometer) - words words words.
 
-- [**Resistor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Resistor**](https://en.wikipedia.org/wiki/Resistor) - words words words.
 
-- [**Sample**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Sample**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)) - words words words.
 
-- [**Sample and Hold**](https://en.wikipedia.org/wiki/CV/Gate) (**S&H**) - words words words.
+- [**Sample and Hold**](https://en.wikipedia.org/wiki/Sample_and_hold) (**S&H**) - words words words.
 
-- [**Sampling Rate**](https://en.wikipedia.org/wiki/CV/Gate) (**SR**) - words words words.
+- [**Sampling Rate**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate) (**SR**) - words words words.
 
-- [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/CV/Gate) (**SNR**) - words words words.
+- [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/Signal-to-noise_ratio) (**SNR**) - words words words.
 
-- [**Switch**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Switch**](https://en.wikipedia.org/wiki/Switch) - words words words.
 
-- [**Transistor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Transistor**](https://en.wikipedia.org/wiki/Transistor) - words words words.
 
-- [**Waveshaping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Waveshaping**](https://en.wikipedia.org/wiki/Waveshaper) - words words words.
 
-- [**Vactrol**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Vactrol**](https://en.wikipedia.org/wiki/Resistive_opto-isolator) - words words words.
 
-- [**Voltage**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Voltage**](https://en.wikipedia.org/wiki/Voltage) - words words words.
 
 # Pedals
 
