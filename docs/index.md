@@ -99,7 +99,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Analog Electronics**](https://en.wikipedia.org/wiki/Analogue_electronics) - refers to electronic circuits that work - at least primarily - with continuous (as opposed to discrete) signal levels. More broadly, an **analog** signal can be thought of as any representation of a phenemenon (e.g. a sound pressure wave) that is *analogous* to the phenomenon itself; this is in contrast to a **digital** signal, where the signal is quantized and encoded into numerical values that are represented in electronic systems through discrete (typically binary - on or off) signals.
 
-- [**Analog to Digital Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**ADC**) - words words words.
+- [**Analog to Digital Converter**]([https://en.wikipedia.org/wiki/CV/Gate](https://en.wikipedia.org/wiki/Analog-to-digital_converter)) (**ADC** or **A/D**) - circuitry that takes a continuous (*analog*) signal and converts it into a discrete, numerical *sample* encoded as a *digital* signal. The speed at which the conversion of the signal occurs is called the *sampling rate*; the resolution (range of values) of each sample is called the *bit depth*. Different media have different common techniques for analog-to-digital converstion; the most common for audio signals in modern circuitry is a [Sigma-Delta](https://en.wikipedia.org/wiki/Delta-sigma_modulation) (Σ-Δ) converter.
 
 - [**Bit Depth**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
@@ -152,6 +152,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Potentiometer**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Resistor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Sample**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Sample and Hold**](https://en.wikipedia.org/wiki/CV/Gate) (**S&H**) - words words words.
 
