@@ -101,6 +101,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Analog to Digital Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**ADC**) - words words words.
 
+- [**Bit Depth**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Bucket-Brigade Device**](https://en.wikipedia.org/wiki/CV/Gate) (**BBD**) - words words words.
 
 - [**Buffer**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
@@ -129,6 +131,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Expression Pedal**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
+- [**Feedback**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Filter**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Gain**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
@@ -139,6 +143,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Modulation**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
+- [**Nyquist theorem**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Operational Amplifier**](https://en.wikipedia.org/wiki/CV/Gate) (**Op Amp**) - words words words.
 
 - [**Pitch Tracker**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
@@ -148,6 +154,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Resistor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Sample and Hold**](https://en.wikipedia.org/wiki/CV/Gate) (**S&H**) - words words words.
+
+- [**Sampling Rate**](https://en.wikipedia.org/wiki/CV/Gate) (**SR**) - words words words.
 
 - [**Switch**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
