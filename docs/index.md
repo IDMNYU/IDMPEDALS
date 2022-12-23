@@ -73,7 +73,7 @@ The project is intended to be a resource for people interested in learning about
 
 The **IDM Pedals** project uses the [oopsy](https://github.com/electro-smith/oopsy) package to transmit gen~ patches in Max/MSP directly to an Electrosmith Daisy chip. The patches in this repository are designed for the [Daisy Petal](https://www.perfectcircuit.com/electrosmith-daisy-petal.html) prototyping board:
 
-<img src = "./img/petal.jpg" width="50%" title="Daisy Petal" alt="Daisy Petal">
+<img src = "./img/petal.jpg" width="100%" title="Daisy Petal" alt="Daisy Petal">
 
 The patches contained in the repository consists of numbered and categorized Max/MSP patches that each contain a gen~ subpatch to be uploaded to the Daisy chip. *The gen~ patcher is the actual effect algorithm*; the host Max/MSP patch contains objects for previewing and working with the patch in Max.
 
@@ -94,8 +94,41 @@ This is a "software toggle" algorithm to allow the left-hand toggle switch on th
 
 This is a third-order smoothing filter that is applied to many (but not all) knob inputs in the algorithms in this project; this helps prevent any A/D jitter from the analog controls on the physical pedal from having a negative effect on the effect's behavior.
 
-
 # Glossary
+
+Effects pedals (and audio signal processing techniques in general) have a jargon. Before looking at the pedals themselves, here's a brief glossary of some terms commonly found in effect pedal documentation; many others will be introduced when talking about the pedals themselves:
+
+- [**Analog to Digital Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**ADC**) - words words words.
+
+- [**Bypass**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Clipping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Delay**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Distortion / Fuzz / Overdrive**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
+
+- [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
+
+- [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Equalization**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Envelope Follower**](https://en.wikipedia.org/wiki/CV/Gate) (**EQ**) - words words words.
+
+- [**Filter**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Gain**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Modulation**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Pitch Tracker**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Sample and Hold**](https://en.wikipedia.org/wiki/CV/Gate) (**S&H**) - words words words.
+
+- [**Waveshaping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 # Pedals
 
