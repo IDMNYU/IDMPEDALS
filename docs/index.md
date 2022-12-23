@@ -127,11 +127,15 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Envelope Follower**](https://en.wikipedia.org/wiki/CV/Gate) (**EQ**) - words words words.
 
+- [**Expression Pedal**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Filter**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Gain**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**MIDI**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Modulation**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
