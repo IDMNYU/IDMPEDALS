@@ -2,9 +2,9 @@
 ## IDM PEDALS
 How to make effect pedals based on the [Electrosmith Daisy](https://www.electro-smith.com/daisy)!
 
-NYU Tandon Undergraduate Summer Research Project, 2021
+NYU Tandon Undergraduate Summer Research Project, 2021-22
 
-Last updated Spring, 2022.
+Last updated Fall, 2022.
 
 - [Overview](#overview)
 - [Oopsy Basics](#oopsy-basics)
@@ -85,7 +85,6 @@ An oopsy **bpatcher** in each patch (seen in the upper-right of the example abov
 
 There are a number of utility abstractions used by the **gen~** code in this project, most notably:
 
-
 <img src = "./img/swtoggle.gendsp.png" width="25%" title="Software toggle subpatch" alt="Software toggle subpatch">
 
 This is a "software toggle" algorithm to allow the left-hand toggle switch on the Daisy Petal board to act as a bypass switch for the effect. If you want to use these algorithms in a different context, this is probably the first thing you would remove.
@@ -98,15 +97,27 @@ This is a third-order smoothing filter that is applied to many (but not all) kno
 
 Effects pedals (and audio signal processing techniques in general) have a jargon. Before looking at the pedals themselves, here's a brief glossary of some terms commonly found in effect pedal documentation; many others will be introduced when talking about the pedals themselves:
 
+- [**Analog Electronics**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Analog to Digital Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**ADC**) - words words words.
 
+- [**Bucket-Brigade Device**](https://en.wikipedia.org/wiki/CV/Gate) (**BBD**) - words words words.
+
+- [**Buffer**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Bypass**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Capacitor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Clipping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Delay**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
+- [**Diode**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Distortion / Fuzz / Overdrive**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
+
+- [**Digital Signal Processing**](https://en.wikipedia.org/wiki/CV/Gate) (**DSP**) - words words words.
 
 - [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
 
@@ -124,11 +135,23 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Modulation**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
+- [**Operational Amplifier**](https://en.wikipedia.org/wiki/CV/Gate) (**Op Amp**) - words words words.
+
 - [**Pitch Tracker**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Potentiometer**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Resistor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Sample and Hold**](https://en.wikipedia.org/wiki/CV/Gate) (**S&H**) - words words words.
 
+- [**Switch**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Transistor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Waveshaping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Vactrol**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 # Pedals
 
