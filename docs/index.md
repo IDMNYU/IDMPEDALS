@@ -60,6 +60,15 @@ Last updated Spring, 2022.
 
 # Overview
 
+**IDM Pedals** is an open-source repository of audio signal processing algorithms designed, from a user experience standpoint, to be deployed as [effects pedals](https://en.wikipedia.org/wiki/Effects_unit). The repository contains software implementations of a wide variety of effects, ranging from canonical 1960s analog distortions to common digital effects from the 1980s to studies on more modern and esoteric effects. The repository consists of Max/MSP patches written in the [gen~](https://docs.cycling74.com/max8/vignettes/gen_overview) language and intended to be used with the [Electrosmith Daisy](https://www.electro-smith.com/) platform; the system used in this repository can be easily adapted to other architectures, however, including software-only (VST, Max4Live), or other embedded implementations (via the C++ code export or the [RNBO](https://rnbo.cycling74.com/) system). 
+
+The project is intended to be a resource for people interested in learning about:
+* Digital signal processing algorithms specifically designed for modifying an input audio signal ("audio effects")
+* Historical analog and digital audio effects design
+* Effects pedals
+* The gen~ architecture of Max and the Electrosmith Daisy platform
+* Any combination of the above
+
 # Oopsy basics
 
 # Glossary
