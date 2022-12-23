@@ -124,7 +124,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Digital Signal Processing**](https://en.wikipedia.org/wiki/CV/Gate) (**DSP**) - words words words.
 
 - [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
-- 
+
 - [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Equalization**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
