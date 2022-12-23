@@ -111,7 +111,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Capacitor**](https://en.wikipedia.org/wiki/Capacitor) - a passive, two-terminal electronic component that stores electric charge. Capacitors are used ubuquitously in analog audio circuits in circuits such as filters and electronic oscillators, as well as for simple electrical tasks such as [transforming](https://en.wikipedia.org/wiki/Voltage_transformer) and [decoupling](https://en.wikipedia.org/wiki/Decoupling_capacitor) voltages.
 
-- [**Clipping**](https://en.wikipedia.org/wiki/Clipping_(audio) - the effect of a signal exceeding the threshold of its possible output range; in analog circuits, this can be caused by pushing an amplifying circuit beyond its maximum gain; signals can also be clipped with other techniques, such as intentionally causing clipping with diodes. In a digital system, a signal may be clipped if it exceeds the mathematical range of its bit depth. Clipping is undesirable in many circumstances but is also a core technique in effects such as overdrive.
+- [**Clipping**](https://en.wikipedia.org/wiki/Clipping_(audio)) - the effect of a signal exceeding the threshold of its possible output range; in analog circuits, this can be caused by pushing an amplifying circuit beyond its maximum gain; signals can also be clipped with other techniques, such as intentionally causing clipping with diodes. In a digital system, a signal may be clipped if it exceeds the mathematical range of its bit depth. Clipping is undesirable in many circumstances but is also a core technique in effects such as overdrive.
 
 - [**Current**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
