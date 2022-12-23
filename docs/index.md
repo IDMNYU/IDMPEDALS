@@ -73,7 +73,9 @@ The project is intended to be a resource for people interested in learning about
 
 The **IDM Pedals** project uses the [oopsy](https://github.com/electro-smith/oopsy) package to transmit gen~ patches in Max/MSP directly to an Electrosmith Daisy chip. The patches in this repository are designed for the [Daisy Petal](https://www.perfectcircuit.com/electrosmith-daisy-petal.html) prototyping board:
 
-<img src = "./img/petal.jpg" width="100%" title="Daisy Petal" alt="Daisy Petal">
+<img src = "./img/petal.jpg" width="50%" title="Daisy Petal" alt="Daisy Petal">
+
+The patches contained in the repository consists of 
 
 
 # Glossary
@@ -84,7 +86,7 @@ The **IDM Pedals** project uses the [oopsy](https://github.com/electro-smith/oop
 
 ### EQ Lowpass
 
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
+<a href="./img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
 
 ### EQ Parametric
 
