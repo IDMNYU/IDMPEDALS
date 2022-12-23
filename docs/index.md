@@ -86,7 +86,7 @@ An oopsy **bpatcher** in each patch (seen in the upper-right of the example abov
 There are a number of utility abstractions used by the **gen~** code in this project, most notably:
 
 
-<img src = "./img/swtoggle.gendsp.png" width="50%" title="Software toggle subpatch" alt="Software toggle subpatch">
+<img src = "./img/swtoggle.gendsp.png" width="10%" title="Software toggle subpatch" alt="Software toggle subpatch">
 
 This is a "software toggle" algorithm to allow the left-hand toggle switch on the Daisy Petal board to act as a bypass switch for the effect. If you want to use these algorithms in a different context, this is probably the first thing you would remove.
 
