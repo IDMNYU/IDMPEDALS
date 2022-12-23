@@ -137,6 +137,10 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Gain**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
+- [**Impedance**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Inductor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
 - [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**MIDI**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
@@ -146,6 +150,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Nyquist-Shannon theorem**](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem) - words words words.
 
 - [**Operational Amplifier**](https://en.wikipedia.org/wiki/CV/Gate) (**Op Amp**) - words words words.
+
+- [**Pickup**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Pitch Tracker**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
