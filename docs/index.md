@@ -109,9 +109,11 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Bypass**](https://en.wikipedia.org/wiki/Bypass_(telecommunications)) - a bypass system in an audio effects context will route the input signal to the output unchanged, *bypassing* the effect. In effect pedals and other electronic audio equipment, this can be a switch that, when engaged, routes the signal directly from the input jack to the output jack ("true bypass"); it can also be a switch that routes around all the circuitry *except* the buffering amplifier(s) in the circuit ("buffered bypass"). In digital systems, the bypass is sometimes implemented in software, so that the digital audio stream is simply copied from input to output without modification.
 
-- [**Capacitor**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Capacitor**](https://en.wikipedia.org/wiki/Capacitor) - a passive, two-terminal electronic component that stores electric charge. Capacitors are used ubuquitously in analog audio circuits in circuits such as filters and electronic oscillators, as well as for simple electrical tasks such as [transforming](https://en.wikipedia.org/wiki/Voltage_transformer) and [decoupling](https://en.wikipedia.org/wiki/Decoupling_capacitor) voltages.
 
 - [**Clipping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Current**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Delay**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
@@ -122,7 +124,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Digital Signal Processing**](https://en.wikipedia.org/wiki/CV/Gate) (**DSP**) - words words words.
 
 - [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**DAC**) - words words words.
-
+- 
 - [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Equalization**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
@@ -174,6 +176,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Waveshaping**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 - [**Vactrol**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+
+- [**Voltage**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
 
 # Pedals
 
