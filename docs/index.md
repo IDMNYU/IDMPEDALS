@@ -71,6 +71,11 @@ The project is intended to be a resource for people interested in learning about
 
 # Oopsy basics
 
+The **IDM Pedals** project uses the [oopsy](https://github.com/electro-smith/oopsy) package to transmit gen~ patches in Max/MSP directly to an Electrosmith Daisy chip. The patches in this repository are designed for the [Daisy Petal](https://www.perfectcircuit.com/electrosmith-daisy-petal.html) prototyping board:
+
+<img src = "./img/petal.jpg" width="100%" title="Daisy Petal" alt="Daisy Petal">
+
+
 # Glossary
 
 # Pedals
