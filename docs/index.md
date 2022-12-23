@@ -113,7 +113,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Clipping**](https://en.wikipedia.org/wiki/Clipping_(audio)) - the effect of a signal exceeding the threshold of its possible output range; in analog circuits, this can be caused by pushing an amplifying circuit beyond its maximum gain; signals can also be clipped with other techniques, such as intentionally causing clipping with diodes. In a digital system, a signal may be clipped if it exceeds the mathematical range of its bit depth. Clipping is undesirable in many circumstances but is also a core technique in effects such as overdrive.
 
-- [**Current**](https://en.wikipedia.org/wiki/Electric_current) - words words words.
+- [**Current**](https://en.wikipedia.org/wiki/Electric_current) - when referred to as a unit of measurement, the current of a circuit is the net rate of electric charge flowing through it at a given point; this charge is measured in *amperes*. In the [hydraulic analogy](https://en.wikipedia.org/wiki/Hydraulic_analogy) of electricity, the current of a circuit maps to the flow rate of a water system.
 
 - [**Delay**](https://en.wikipedia.org/wiki/Delay_(audio_effect)) - words words words.
 
@@ -178,6 +178,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Vactrol**](https://en.wikipedia.org/wiki/Resistive_opto-isolator) - words words words.
 
 - [**Voltage**](https://en.wikipedia.org/wiki/Voltage) - words words words.
+
+- [**Wattage**](https://en.wikipedia.org/wiki/Watt) - words words words.
 
 # Pedals
 
