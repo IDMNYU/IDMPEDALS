@@ -97,7 +97,7 @@ This is a third-order smoothing filter that is applied to many (but not all) kno
 
 Effects pedals (and audio signal processing techniques in general) have a jargon. Before looking at the pedals themselves, here's a brief glossary of some terms commonly found in effect pedal documentation; many others will be introduced when talking about the pedals themselves:
 
-- [**Analog Electronics**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Analog Electronics**](https://en.wikipedia.org/wiki/Analogue_electronics) - refers to electronic circuits that work - at least primarily - with continuous (as opposed to discrete) signal levels. More broadly, an **analog** signal can be thought of as any representation of a phenemenon (e.g. a sound pressure wave) that is *analogous* to the phenomenon itself; this is in contrast to a **digital** signal, where the signal is quantized and encoded into numerical values that are represented in electronic systems through discrete (typically binary - on or off) signals.
 
 - [**Analog to Digital Converter**](https://en.wikipedia.org/wiki/CV/Gate) (**ADC**) - words words words.
 
