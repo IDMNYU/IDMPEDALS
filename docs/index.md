@@ -77,12 +77,22 @@ The **IDM Pedals** project uses the [oopsy](https://github.com/electro-smith/oop
 
 The patches contained in the repository consists of numbered and categorized Max/MSP patches that each contain a gen~ subpatch to be uploaded to the Daisy chip. *The gen~ patcher is the actual effect algorithm*; the host Max/MSP patch contains objects for previewing and working with the patch in Max.
 
-The Max/MSP patches all rely on a **bpatcher** object called "testinput_bpatch.maxpat", as well as **toggle** and **live.dial** objects to simulate using the effect within Max:
+The Max/MSP patches all rely on a **bpatcher** object called "testinput_bpatch.maxpat", as well as **toggle** and **live.dial** objects to simulate using the effect within Max, e.g.:
 
 <img src = "./img/mainpatcher.png" width="50%" title="Example Host Patch" alt="Example Host Patch">
 
+An oopsy **bpatcher** in each patch (seen in the upper-right of the example above) allows you to transmit the **gen~** code to the Daisy directly from Max. If you double-click the **gen~** object in the middle of the patch, you will see the actual effect algorithm that will be sent to the chip.
+
+There are a number of utility abstractions used by the **gen~** code in this project, most notably:
 
 
+<img src = "./img/swtoggle.gendsp.png" width="50%" title="Software toggle subpatch" alt="Software toggle subpatch">
+
+This is a "software toggle" algorithm to allow the left-hand toggle switch on the Daisy Petal board to act as a bypass switch for the effect. If you want to use these algorithms in a different context, this is probably the first thing you would remove.
+
+<img src = "./img/oopsy.ctrl.smooth3.gendsp.png" width="50%" title="Oopsy smoothing subpatch" alt="Oopsy smoothing subpatch">
+
+This is a third-order smoothing filter that is applied to many (but not all) knob inputs in the algorithms in this project; this helps prevent any A/D jitter from the analog controls on the physical pedal from having a negative effect on the effect's behavior.
 
 
 # Glossary
