@@ -115,7 +115,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Current**](https://en.wikipedia.org/wiki/Electric_current) - when referred to as a unit of measurement, the current of a circuit is the net rate of electric charge flowing through it at a given point; this charge is measured in *amperes*. In the [hydraulic analogy](https://en.wikipedia.org/wiki/Hydraulic_analogy) of electricity, the current of a circuit maps to the flow rate of a water system.
 
-- [**Delay**](https://en.wikipedia.org/wiki/Delay_(audio_effect)) - words words words.
+- [**Delay**](https://en.wikipedia.org/wiki/Delay_(audio_effect)) - the act of shifting a signal backward in time. Delays are used in signal processing in both analog and digital contexts for a wide variety of effects, ranging from filters (made with short delays) to echo and reverberation effects. Originally, long delays were implemented in audio studios using loops of reel-to-reel tape; later analog circuits used capacitors (see *Bucket-Brigade Device*, above), while delay lines in digital signal processing tend to be arrays of sample memory that are being continuously written into, with the delay being calculated by an offset between the read and write position (similar, in many ways, to analog tape delays).
 
 - [**Diode**](https://en.wikipedia.org/wiki/Diode) - words words words.
 
