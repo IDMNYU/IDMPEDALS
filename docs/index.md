@@ -157,7 +157,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Potentiometer**](https://en.wikipedia.org/wiki/Potentiometer) - a potentiometer as a passive electronic component that either sends a proportion of the input voltage to one of two outputs (a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)) or adds a variable amount of resistance to a signal (a [rheostat](https://en.wikipedia.org/wiki/Potentiometer#Rheostat)). Potentiometers are notable for being variable - controlled either by a physical affordance such as a dial or slider, or via [digital control](https://en.wikipedia.org/wiki/Digital_potentiometer).
 
-- [**Resistor**](https://en.wikipedia.org/wiki/Resistor) - words words words.
+- [**Resistor**](https://en.wikipedia.org/wiki/Resistor) - a simple, two-terminal passive electronic component that adds resistance (reduces the voltage) on a signal. Resistor values are measured in ohms, and are the most common passive component (along with capacitors) used in analog circuit design.
 
 - [**Sample**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)) - words words words.
 
