@@ -121,11 +121,11 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Distortion / Fuzz / Overdrive**](https://en.wikipedia.org/wiki/Distortion_(music)) - a variety of techniques to shape an input signal so that higher overtones are emphasized in a nonlinear or expressive way (compary *Waveshaping*, below). These techniques are most often associated with the amplified electric guitar, with "fuzz" being the result of a damaged speaker, "overdrive" being the result of an amplifier receiving a hot input signal, and "distortion" being the result of the amplifier itself being asked to deliver too much gain. With solid-state analog electronics, these effects can be simulated with diodes, transistors, and other components to clip and shape the waveform. Digital algorithms can distort signals using a variety of mathematical operations ranging from simple clipping to complex transfer functions. 
 
-- [**Digital Signal Processing**](https://en.wikipedia.org/wiki/Digital_signal_processing) (**DSP**) - words words words.
+- [**Digital Signal Processing**](https://en.wikipedia.org/wiki/Digital_signal_processing) (**DSP**) - transforming signals using computers, microcontrollers, or other digital devices that treat the signals as streams of discrete numeric values that can be modified using mathematical transformations.
 
-- [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/Digital-to-analog_converter) (**DAC**) - words words words.
+- [**Digital to Analog Converter**](https://en.wikipedia.org/wiki/Digital-to-analog_converter) (**DAC**) - the inverse of an ADC, a *DAC* takes the numerical values of a digital signal and converts it to analog continuous voltage. Like ADCs, there are a variety of techniques and canonical circuit designs for DACs. 
 
-- [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - words words words.
+- [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - signal processing techniques that operate primarily on the amplitude (dynamics) of the input signal without coloring the frequency or harmonic content; these include *compressors*, *limiters*, *expanders*, and *noise gates*. Dynamics effects often rely on generating a key signal using an *envelope follower* to get a sense of the overall volume of the input signal; some dynamic effects allow a second signal (called a *sidechain*) to serve as the key signal, allowing, e.g. the volume of a backing track to be ducked in response to a vocal performace.
 
 - [**Equalization**](https://en.wikipedia.org/wiki/Equalization_(audio)) (**EQ**) - words words words.
 
