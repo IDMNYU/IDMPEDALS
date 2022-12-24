@@ -165,13 +165,13 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Sampling Rate**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate) (**SR**) - the speed at which an audio signal is *sampled* to create its digital representation; the faster the sampling rate, the better the frequency resolution of the signal (and higher the Nyquist frequency). CD-quality audio has a sampling rate of 44,100 samples per second (44.1 kHz), resulting in an upper frequency limit of 22,050 Hz; modern professional-quality audio systems typically have a higher sampling rate of 48, 96, or 192 kHz. In some literature, the sampling rate may be referred to as the *sampling frequency* (appreviated **Fs**).
 
-- [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/Signal-to-noise_ratio) (**SNR**) - words words words.
+- [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/Signal-to-noise_ratio) (**SNR**) - this number represents the power of the actual signal contrasted to background noise in a signal. This is often expressed in decibels. In digital signals, the SNR is a function of the bit depth of the signal.
 
-- [**Switch**](https://en.wikipedia.org/wiki/Switch) - words words words.
+- [**Switch**](https://en.wikipedia.org/wiki/Switch) - a component in an eletrical system that connects and disconnecs a specific path. Switches are characterized by the number of *poles* (parallel signal lines that are controlled by the switch) and *throws* (number of options for the switch).
 
-- [**Time Domain**](https://en.wikipedia.org/wiki/Time_domain) - words words words.
+- [**Time Domain**](https://en.wikipedia.org/wiki/Time_domain) - the most common representational schema for digital audio signals, with a stream of amplitude values unfolding over time at a constant rate.
 
-- [**Transistor**](https://en.wikipedia.org/wiki/Transistor) - words words words.
+- [**Transistor**](https://en.wikipedia.org/wiki/Transistor) - an active electronic component, consisting of a [semiconductor](https://en.wikipedia.org/wiki/Semiconductor) and at least three terminals. The presence of current at one of the terminals (often called the *base* or the *gate*), allows a much stronger voltage to flow between the other two terminals (the *collector* / *source* and the *emitter* / *drain*). In analog electronics, transistors are the basic component that allows for solid-state amplification of a signal; in digital electronics, transistors are used to construct the gates and switches that form the digital logic of the system.
 
 - [**Waveshaping**](https://en.wikipedia.org/wiki/Waveshaper) - words words words.
 
