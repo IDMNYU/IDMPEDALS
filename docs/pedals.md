@@ -216,3 +216,6 @@
 ### Sfx Yin
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Yin.png" target="_new"><img src = "./img/Yin.png" title="Yin patcher" alt="Yin patcher"></a>
+
+[return to main page](./index.md)
+
