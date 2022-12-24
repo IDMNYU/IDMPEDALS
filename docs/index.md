@@ -129,11 +129,11 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Equalization**](https://en.wikipedia.org/wiki/Equalization_(audio)) (**EQ**) - processing techniques that adjust (or "equalize") different bands of frequencies in an input signal. In traditional analog circuits (and time-domain DSP), equalization is accomplished with filters. More modern digital EQs may use frequency-domain techniques after transforming the input signal with an *FFT*. Equalization circuits range from simple tone controls on consumer stereo equipment to graphic equalizers with many bands that are a staple of professional recording and reproduction systems.
 
-- [**Envelope Follower**](https://en.wikipedia.org/wiki/Envelope_detector) - words words words.
+- [**Envelope Follower**](https://en.wikipedia.org/wiki/Envelope_detector) - a circuit that transforms a fast-moving, alternating current signal into a slower-moving (though accurate) DC signal that provides an overall sense of the envelope (or amplitude) of the input signal. Envelope followers are used to generate the key signals in dynamics processors as well as in many other applications.
 
-- [**Expression Pedal**](https://en.wikipedia.org/wiki/Expression_pedal) - words words words.
+- [**Expression Pedal**](https://en.wikipedia.org/wiki/Expression_pedal) - a pedal that can provide a system with a continuous range of foot presure (as opposed to a switch, such as the sustain pedal on the piano). Expression pedals are common on organs, and are used in volume and Wah-Wah pedals as well as other effects where one parameter is continously adjusted by a performer.
 
-- [**Feedback**](https://en.wikipedia.org/wiki/Feedback) - words words words.
+- [**Feedback**](https://en.wikipedia.org/wiki/Feedback) - the act of routing part (or all) of the output of a circuit or signal processing algorithm back into itself. Feedback at the micro level is key to the design of many common audio circuits, such as op amps and IIR filters; when combined with delay, feedback can be used to provide signal regeneration to make for more realistic echo and reverberation. In digital systems, feedback can be used in conjunction with delay lines for many of the same techniques. 
 
 - [**Filter**](https://en.wikipedia.org/wiki/Analogue_filter) - words words words.
 
