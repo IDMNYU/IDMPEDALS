@@ -159,11 +159,11 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Resistor**](https://en.wikipedia.org/wiki/Resistor) - a simple, two-terminal passive electronic component that adds resistance (reduces the voltage) on a signal. Resistor values are measured in ohms, and are the most common passive component (along with capacitors) used in analog circuit design.
 
-- [**Sample**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)) - words words words.
+- [**Sample**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)) - the smallest unit of data in a time-domain digital audio signal or file. Each *sample* represents the amplitude of a specific point of time in the sound.
 
-- [**Sample and Hold**](https://en.wikipedia.org/wiki/Sample_and_hold) (**S&H**) - words words words.
+- [**Sample and Hold**](https://en.wikipedia.org/wiki/Sample_and_hold) (**S&H**) - a technique where an input voltage is *sampled* by a clock signal and then held as a continuous voltage output until the next clock signal. S&H circuits appear in many synthesizers and are used to create interesting voltage patterns. Sample-and-hold circuits are also infrastructural in many types of analog-to-digital converters.
 
-- [**Sampling Rate**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate) (**SR**) - words words words.
+- [**Sampling Rate**](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate) (**SR**) - the speed at which an audio signal is *sampled* to create its digital representation; the faster the sampling rate, the better the frequency resolution of the signal (and higher the Nyquist frequency). CD-quality audio has a sampling rate of 44,100 samples per second (44.1 kHz), resulting in an upper frequency limit of 22,050 Hz; modern professional-quality audio systems typically have a higher sampling rate of 48, 96, or 192 kHz. In some literature, the sampling rate may be referred to as the *sampling frequency* (appreviated **Fs**).
 
 - [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/Signal-to-noise_ratio) (**SNR**) - words words words.
 
