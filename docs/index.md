@@ -175,11 +175,11 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Waveshaping**](https://en.wikipedia.org/wiki/Waveshaper) - a signal processing technique where an input signal is *shaped* into an output signal via circuitry (or a digital algorithm) that performs a transfer function. Waveshaping is often used in synthesizer design to create different oscillator waveforms from a single core shape. Certain transfer functions, called [Chebyshev polynomials](https://en.wikipedia.org/wiki/Chebyshev_polynomials), have specific effects of spectrum transfer on an incoming signal, allowing, e.g. harmonics to be added to a sine wave.
 
-- [**Vactrol**](https://en.wikipedia.org/wiki/Resistive_opto-isolator) - words words words.
+- [**Vactrol**](https://en.wikipedia.org/wiki/Resistive_opto-isolator) - a generic trademark name often used in audio engineering to refer to a *photoresistive opto-isolator*; these devices consist of an LED and a [photoresistor](https://en.wikipedia.org/wiki/Photoresistor) physically coupled to one another but (typically) electrically isolated from one another. Voltage through the LED lights the light, which drops the resistance in the photoresistor's circuit. Vactrols can be used in a pinch as drop-in components in place of rheostates to add a form of voltage control; they are also commonly used to generate key signals in dynamics effects. The unusual response curve of the device (between the LED and the photoresistor) gives them a characteristic 'curve' that is musically useful in many circumstances. 
 
-- [**Voltage**](https://en.wikipedia.org/wiki/Voltage) - words words words.
+- [**Voltage**](https://en.wikipedia.org/wiki/Voltage) - when referred to as a unit of measurement, the voltage of a circuit is the potential difference (or pressure) of electric charge between two points; this potential is measured in *volts*. In the [hydraulic analogy](https://en.wikipedia.org/wiki/Hydraulic_analogy) of electricity, the voltage of a circuit maps to the flow pressure of a water system.
 
-- [**Wattage**](https://en.wikipedia.org/wiki/Watt) - words words words.
+- [**Wattage**](https://en.wikipedia.org/wiki/Watt) - the quantity of electrical energy transferred at a given rate, calculated by multiplying the *current* of the system by its *voltage*. In the [hydraulic analogy](https://en.wikipedia.org/wiki/Hydraulic_analogy) of electricity, the wattage of an electrical system maps to the quantity of water flowing through a point in the system in a given amount of time.
 
 # Pedals
 
