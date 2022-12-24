@@ -171,9 +171,9 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Time Domain**](https://en.wikipedia.org/wiki/Time_domain) - the most common representational schema for digital audio signals, with a stream of amplitude values unfolding over time at a constant rate.
 
-- [**Transistor**](https://en.wikipedia.org/wiki/Transistor) - an active electronic component, consisting of a [semiconductor](https://en.wikipedia.org/wiki/Semiconductor) and at least three terminals. The presence of current at one of the terminals (often called the *base* or the *gate*), allows a much stronger voltage to flow between the other two terminals (the *collector* / *source* and the *emitter* / *drain*). In analog electronics, transistors are the basic component that allows for solid-state amplification of a signal; in digital electronics, transistors are used to construct the gates and switches that form the digital logic of the system.
+- [**Transistor**](https://en.wikipedia.org/wiki/Transistor) - an active electronic component, consisting of a [semiconductor](https://en.wikipedia.org/wiki/Semiconductor) and at least three terminals. The presence of current at one of the terminals (often called the *base* or the *gate*) allows a much stronger voltage to flow between the other two terminals (the *collector* / *source* and the *emitter* / *drain*). In analog electronics, transistors are the basic component that allows for solid-state amplification of a signal; in digital electronics, transistors are used to construct the gates and switches that form the digital logic of the system.
 
-- [**Waveshaping**](https://en.wikipedia.org/wiki/Waveshaper) - words words words.
+- [**Waveshaping**](https://en.wikipedia.org/wiki/Waveshaper) - a signal processing technique where an input signal is *shaped* into an output signal via circuitry (or a digital algorithm) that performs a transfer function. Waveshaping is often used in synthesizer design to create different oscillator waveforms from a single core shape. Certain transfer functions, called [Chebyshev polynomials](https://en.wikipedia.org/wiki/Chebyshev_polynomials), have specific effects of spectrum transfer on an incoming signal, allowing, e.g. harmonics to be added to a sine wave.
 
 - [**Vactrol**](https://en.wikipedia.org/wiki/Resistive_opto-isolator) - words words words.
 
