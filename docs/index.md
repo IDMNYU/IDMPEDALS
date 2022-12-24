@@ -127,7 +127,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Dynamics Processing**](https://en.wikipedia.org/wiki/CV/Gate) - signal processing techniques that operate primarily on the amplitude (dynamics) of the input signal without coloring the frequency or harmonic content; these include *compressors*, *limiters*, *expanders*, and *noise gates*. Dynamics effects often rely on generating a key signal using an *envelope follower* to get a sense of the overall volume of the input signal; some dynamic effects allow a second signal (called a *sidechain*) to serve as the key signal, allowing, e.g. the volume of a backing track to be ducked in response to a vocal performace.
 
-- [**Equalization**](https://en.wikipedia.org/wiki/Equalization_(audio)) (**EQ**) - words words words.
+- [**Equalization**](https://en.wikipedia.org/wiki/Equalization_(audio)) (**EQ**) - processing techniques that adjust (or "equalize") different bands of frequencies in an input signal. In traditional analog circuits (and time-domain DSP), equalization is accomplished with filters. More modern digital EQs may use frequency-domain techniques after transforming the input signal with an *FFT*. Equalization circuits range from simple tone controls on consumer stereo equipment to graphic equalizers with many bands that are a staple of professional recording and reproduction systems.
 
 - [**Envelope Follower**](https://en.wikipedia.org/wiki/Envelope_detector) - words words words.
 
@@ -136,6 +136,10 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Feedback**](https://en.wikipedia.org/wiki/Feedback) - words words words.
 
 - [**Filter**](https://en.wikipedia.org/wiki/Analogue_filter) - words words words.
+
+- [**Fourier Theorem** / **Fast Fourier Transform**](https://en.wikipedia.org/wiki/FFT) (**FFT**) - words words words.
+
+- [**Frequency Domain**](https://en.wikipedia.org/wiki/Frequency_domain) - words words words.
 
 - [**Gain**](https://en.wikipedia.org/wiki/Gain_(electronics)) - words words words.
 
@@ -170,6 +174,8 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 - [**Signal-to-noise Ratio**](https://en.wikipedia.org/wiki/Signal-to-noise_ratio) (**SNR**) - words words words.
 
 - [**Switch**](https://en.wikipedia.org/wiki/Switch) - words words words.
+
+- [**Time Domain**](https://en.wikipedia.org/wiki/Time_domain) - words words words.
 
 - [**Transistor**](https://en.wikipedia.org/wiki/Transistor) - words words words.
 
