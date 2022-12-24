@@ -153,9 +153,9 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Pickup**](https://en.wikipedia.org/wiki/Pickup_(music_technology)) - an electromagnetic [transducer](https://en.wikipedia.org/wiki/Transducer) commonly used on instruments such as electric guitars and organs. Typically a coil of copper wire wound in a bobbin around one or more magnets, a pickup serves as an [**inductor**](https://en.wikipedia.org/wiki/Inductor), generating a low voltage signal in relation to disturbances in the magnetic field around it that are caused by the string or tone wheel of the instrument.
 
-- [**Pitch Tracker**](https://en.wikipedia.org/wiki/Pitch_detection_algorithm) - words words words.
+- [**Pitch Tracker**](https://en.wikipedia.org/wiki/Pitch_detection_algorithm) - a circuit that attempts to accurately follow the fundamental frequency or pitch of the input signal in order to generate a value or signal that can control parameters of the signal processing. Pitch tracking is important in pitch correction algorithms but it is also used in a simpler way in effects such as [octave dividers](https://en.wikipedia.org/wiki/Octave_effect).
 
-- [**Potentiometer**](https://en.wikipedia.org/wiki/Potentiometer) - words words words.
+- [**Potentiometer**](https://en.wikipedia.org/wiki/Potentiometer) - a potentiometer as a passive electronic component that either sends a proportion of the input voltage to one of two outputs (a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)) or adds a variable amount of resistance to a signal (a [rheostat](https://en.wikipedia.org/wiki/Potentiometer#Rheostat)). Potentiometers are notable for being variable - controlled either by a physical affordance such as a dial or slider, or via [digital control](https://en.wikipedia.org/wiki/Digital_potentiometer).
 
 - [**Resistor**](https://en.wikipedia.org/wiki/Resistor) - words words words.
 
