@@ -139,13 +139,9 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Fourier Theorem** / **Fast Fourier Transform** / **Frequency Domain**](https://en.wikipedia.org/wiki/FFT) - named after French Mathematician [Joseph Fourier](https://en.wikipedia.org/wiki/Joseph_Fourier), the Fourier theorem states that any signal can be decomposed into constituent [sine waves](https://en.wikipedia.org/wiki/Sine_wave) of varying frequencies, amplitudes, and phases. The Fast Fourier Transform (**FFT**, and its reverse, the Inverse Fast Fourier Transform, or **IFFT**) are the algorithms most commonly used in DSP to transform an audio signal from the time domain (samples of amplitude unfolding over time) to the [frequency domain](https://en.wikipedia.org/wiki/Frequency_domain) (frames of complex numbers representing the amplitudes and phases of frequencies). DSP in the frequency domain, while once computationally impactical to implement in real time, is increasingly used in audio effect design for effects such as microphone / amplifier modelling, convolution reverb, and time-stretching / pitch-shifting.
 
-- [**Gain**](https://en.wikipedia.org/wiki/Gain_(electronics)) - words words words.
+- [**Impedance**](https://en.wikipedia.org/wiki/Electrical_impedance) - the resistance of a component or circuit to an alternating current signal. Impedance effects both amplitude and phase and is an important consideration in the design of circuits using analog electronics.
 
-- [**Impedance**](https://en.wikipedia.org/wiki/Electrical_impedance) - words words words.
-
-- [**Inductor**](https://en.wikipedia.org/wiki/Inductor) - words words words.
-
-- [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/Low-frequency_oscillation) - words words words.
+- [**Low Frequency Oscillator**](https://en.wikipedia.org/wiki/Low-frequency_oscillation) (**LFO**) - a time-varying, periodic signal too slow to be heard directly, LFOs are used frequently in effects processing to shift parameters such as the delay time in modulation effects, the filter sweep in "auto-wah" style filters, or the volume attenuation in tremolo units. LFOs, like audio range oscillators, have a frequency, an amplitude, a phase, and a shape, which is often a mathematically simple waveform such as a [sine](https://en.wikipedia.org/wiki/Sine_wave), [square](https://en.wikipedia.org/wiki/Square_wave), [triangle](https://en.wikipedia.org/wiki/Triangle_wave), or [sawtooth](https://en.wikipedia.org/wiki/Sawtooth_wave) wave.
 
 - [**MIDI**](https://en.wikipedia.org/wiki/MIDI) - words words words.
 
@@ -155,7 +151,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Operational Amplifier**](https://en.wikipedia.org/wiki/Operational_amplifier) (**Op Amp**) - words words words.
 
-- [**Pickup**](https://en.wikipedia.org/wiki/Pickup_(music_technology)) - words words words.
+- [**Pickup**](https://en.wikipedia.org/wiki/Pickup_(music_technology)) - an electromagnetic [transducer](https://en.wikipedia.org/wiki/Transducer) commonly used on instruments such as electric guitars and organs. Typically a coil of copper wire wound in a bobbin around one or more magnets, a pickup serves as an [**inductor**](https://en.wikipedia.org/wiki/Inductor), generating a low voltage signal in relation to disturbances in the magnetic field around it that are caused by the string or tone wheel of the instrument.
 
 - [**Pitch Tracker**](https://en.wikipedia.org/wiki/Pitch_detection_algorithm) - words words words.
 
