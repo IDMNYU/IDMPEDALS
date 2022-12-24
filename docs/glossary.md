@@ -86,5 +86,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Wattage**](https://en.wikipedia.org/wiki/Watt) - the quantity of electrical energy transferred at a given rate, calculated by multiplying the *current* of the system by its *voltage*. In the [hydraulic analogy](https://en.wikipedia.org/wiki/Hydraulic_analogy) of electricity, the wattage of an electrical system maps to the quantity of water flowing through a point in the system in a given amount of time.
 
+[back to top](#top)
+
 [return to main page](./index.md)
 
