@@ -46,4 +46,4 @@ This is a "software toggle" algorithm to allow the left-hand toggle switch on th
 
 This is a third-order smoothing filter that is applied to many (but not all) knob inputs in the algorithms in this project; this helps prevent any A/D jitter from the analog controls on the physical pedal from having a negative effect on the effect's behavior.
 
-
+[back to top](#top)
