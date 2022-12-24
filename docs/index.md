@@ -117,7 +117,7 @@ Effects pedals (and audio signal processing techniques in general) have a jargon
 
 - [**Delay**](https://en.wikipedia.org/wiki/Delay_(audio_effect)) - the act of shifting a signal backward in time. Delays are used in signal processing in both analog and digital contexts for a wide variety of effects, ranging from filters (made with short delays) to echo and reverberation effects. Originally, long delays were implemented in audio studios using loops of reel-to-reel tape; later analog circuits used capacitors (see *Bucket-Brigade Device*, above), while delay lines in digital signal processing tend to be arrays of sample memory that are being continuously written into, with the delay being calculated by an offset between the read and write position (similar, in many ways, to analog tape delays).
 
-- [**Diode**](https://en.wikipedia.org/wiki/Diode) - words words words.
+- [**Diode**](https://en.wikipedia.org/wiki/Diode) - a diode is a passive, two-terminal electronic component that, by design, allows current to flow in only direction; diodes come in a wide range of flavors - some are doped with chemicals to be used for illumination (a [light-emitting diode](https://en.wikipedia.org/wiki/Light-emitting_diode)), while others are designed to clip voltages above a certain threshold in their forward direction. Still other types of diodes allow current to flow in the reverse direction over a certain voltage threshold (a [Zener diode](https://en.wikipedia.org/wiki/Zener_diode)). Diodes are used in signal processing for distortion, generating noise signals, and - using LEDs - as a component in *resistive opto-isolators* (see *Vactrol*, below).
 
 - [**Distortion / Fuzz / Overdrive**](https://en.wikipedia.org/wiki/Distortion_(music)) - words words words.
 
