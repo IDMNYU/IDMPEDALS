@@ -64,11 +64,11 @@ After being smoothed and converted to frequency (using the **mtof** operator), t
 
 <samp>
 y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub>
-F = cutoff frequency
-SR = sampling rate
-x = -F*2π/SR
-a = e^x
-b = 1.0-a
+  F = cutoff frequency
+  SR = sampling rate
+  x = -F*2π/SR
+  a = e^x
+  b = 1.0-a
 </samp>
 
 
