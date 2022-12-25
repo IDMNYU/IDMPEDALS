@@ -56,28 +56,30 @@ Equalization effects are audio processors that work by adjusting different frequ
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
 
-This pedal implements a simple, one pole [lowpass filter](https://en.wikipedia.org/wiki/Low-pass_filter) with a single knob (**param knob3**, at the top-right) controlling the [cutoff frequency]. Time-domain filters are implemented using short delays, so the **history** operator, combined with the *mix* operator, do the actual filtering of the signal. The desired cutoff frequency coming from the parameter knob is intially expressed as a MIDI value in the range of 23 to 127 (30 Hz to 12.5 kHz).
+This pedal implements a simple, one pole [lowpass filter](https://en.wikipedia.org/wiki/Low-pass_filter) with a single knob (**param knob3**, at the top-right) controlling the [cutoff frequency]. Time-domain filters are implemented using short delays, so the **history** and *mix* operators do the actual filtering of the signal. 
+
+The desired cutoff frequency coming from the parameter knob is intially expressed as a MIDI value in the range of 23 to 127 (30 Hz to 12.5 kHz).
 
 *Hint: using a MIDI range as a parameter instead of frequency is a simple way to make the knob have a logarithmic frequency (or pitch linear) response; moving the knob by twelve steps, for example, will move the parameter by an octave anywhere in its range.*
 
-After being smoothed and converted to frequency (using the **mtof** operator), the cutoff frequency is converted into the *a* coefficient for a simple lowpass filter:
+After being smoothed (using the **oopsy.ctrl.smooth3** abstraction) and converted to frequency (using the **mtof** operator), the cutoff frequency is converted into the *a* coefficient for a simple first-order IIR lowpass filter:
 
 <samp>
-y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub>
-
-F = cutoff frequency
-
-SR = sampling rate
-
-x = -F*2π/SR
-
-a = e^x
-  
-b = 1.0-a
+y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub><br>
+where...
+x = input samples<br>
+y = output samples<br>
+n = time (n is now, n-1 is one sample ago, etc.)<br>
+F = cutoff frequency<br>
+SR = sampling rate<br>
+x = -F*2π/SR<br>
+a = e^x<br>
+b = 1.0-a<br>
 </samp>
 
+This calculation takes converts our desired cutoff frequency into a single coefficient defining *how much smoothing to apply* to the input signal by mixing it with the previous output sample from the **history** operator. 
 
-This 
+A coefficient of 0. will leave the input signal unchanged, which is the equivalent of the filter cutoff frequency being equal to the Nyquist frequency - no filtering at all. By a similar token, a coefficient of 1. will make the filter output its previous state as direct current and include no new information - a cutoff frequency of 0 Hz. A coefficient of 0.5 will mix the incoming signal and previous output in equal amounts, resulting in a cutoff frequency of half the frequency range of the system (or a quarter of the sampling rate).
 
 ### EQ Parametric
 
