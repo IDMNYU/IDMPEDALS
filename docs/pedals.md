@@ -87,6 +87,8 @@ This effect is quite simple, and would be an unlikely candidate on its own for a
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Parametric.png" target="_new"><img src = "./img/Parametric.png" title="Parametric patcher" alt="Parametric patcher"></a>
 
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genpeaknotch.png" target="_new"><img src = "./img/genpeaknotch.png" title="Peak / notch subpatcher" alt="Peak / notch subpatcher"></a>
+
 ### EQ Xover
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Xover.png" target="_new"><img src = "./img/Xover.png" title="Xover patcher" alt="Xover patcher"></a>
