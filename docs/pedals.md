@@ -64,18 +64,18 @@ The desired cutoff frequency coming from the parameter knob is intially expresse
 
 After being smoothed (using the **oopsy.ctrl.smooth3** abstraction) and converted to frequency (using the **mtof** operator), the cutoff frequency is converted into the *a* coefficient for a simple first-order IIR lowpass filter:
 
-<samp>
-y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub><br>
-where...<br>
-x = the input signal<br>
-y = the output signal<br>
-n = time (n is now, n-1 is one sample ago, etc.)<br>
-F = cutoff frequency<br>
-SR = sampling rate<br>
-i = F*2π/SR (sampling increment)<br>
-a = e^-i<br>
-b = 1.0-a<br>
-</samp>
+```
+y[n] = ax[n] + by[n-1]
+where...
+x = the input signal
+y = the output signal
+n = time (n is now, n-1 is one sample ago, etc.)
+Fc = cutoff frequency
+SR = sampling rate
+Ω = Fc*2π/SR (sampling increment)
+a = e^-Ω
+b = 1.0-a
+```
 
 This calculation takes converts our desired cutoff frequency into a single coefficient defining *how much smoothing to apply* to the input signal by mixing it with the previous output sample from the **history** operator. 
 
@@ -97,9 +97,38 @@ Looking at the main **gen~** patcher for the effect, the three parameters (assig
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genpeaknotch.png" target="_new"><img src = "./img/genpeaknotch.png" title="Peak / notch subpatcher" alt="Peak / notch subpatcher"></a>
 
-The **peaknotch** subpatch takes the audio signal and the three parameters from the pedal's knobs (center frequency, gain, and Q) and calculates the coefficients for a [biquadratic filter](https://en.wikipedia.org/wiki/Digital_biquad_filter) that does that actual processing on the signal. 
+The **peaknotch** subpatch takes the audio signal and the three parameters from the pedal's knobs (center frequency, gain, and Q) and calculates the coefficients for a [biquadratic filter](https://en.wikipedia.org/wiki/Digital_biquad_filter) that does that actual processing on the signal. It does this using a **codebox** with GenExpr code, running the following calculations:
+
+```
+y[n] = ax[n] + bx[n-1] + cx[n-2] - dy[n-1] - ey[n-2]
+where...
+x = the input signal
+y = the output signal
+n = time (n is now, n-1 is one sample ago, etc.)
+Fc = cutoff frequency
+G = gain
+Q = quality factor
+SR = sampling rate
+
+Ω = Fc * 2π/SR (sampling increment)
+alpha = sin(Ω) * 0.5/Q
+
+A = sqrt(G)
+B = 1./(1. + alpha*1.0/A)
+
+a = (1. + alpha*A) * B
+b = c = (-2. * cos(Ω)) * B
+d = (1. - alpha*A) * B
+e = (1. - alpha*1.0/A) * B
+```
+
+The outputs of the **codebox** are the five biquad coefficients. 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genbiquad.png" target="_new"><img src = "./img/genbiquad.png" title="Biquad subpatcher" alt="Biquad subpatcher"></a>
+
+The **genbiquad** subpatch implements the biquadratic filter equation on the input audio stream (**in 1**) using the five coefficients calculated by the **codebox** in the parent patcher. The nested **history** and arithmetic operators perform the calculations.
+
+Parametric equalizers have advantages over fixed-band equalizers (such as found in [graphic equalizers](https://en.wikipedia.org/wiki/Equalization_(audio)#Graphic_equalizer)) insofar as they allow you to sweep and tune the filter to the specific frequency you like. This allows you to, e.g. notch out a specific resonance in the input signal or emphasize a specific range of frequencies by ear 
 
 ### EQ Xover
 
