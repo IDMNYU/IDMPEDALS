@@ -66,9 +66,9 @@ After being smoothed (using the **oopsy.ctrl.smooth3** abstraction) and converte
 
 <samp>
 y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub><br>
-where...
-x = input samples<br>
-y = output samples<br>
+where...<br>
+x = the input signal<br>
+y = the output signal<br>
 n = time (n is now, n-1 is one sample ago, etc.)<br>
 F = cutoff frequency<br>
 SR = sampling rate<br>
