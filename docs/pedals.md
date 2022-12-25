@@ -62,15 +62,19 @@ This pedal implements a simple, one pole [lowpass filter](https://en.wikipedia.o
 
 After being smoothed and converted to frequency (using the **mtof** operator), the cutoff frequency is converted into the *a* coefficient for a simple lowpass filter:
 
-<code>
 y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub>
 
 F = cutoff frequency
+
 SR = sampling rate
+
 x = -F*2π/SR
+
 a = e^x
+
 b = 1.0-a
-</code>
+
+
 
 This 
 
