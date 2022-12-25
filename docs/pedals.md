@@ -50,9 +50,27 @@
 
 ## EQ
 
+Equalization effects are audio processors that work by adjusting different frequency bands in the input signal. These effects range from the subtle and utilitarian (e.g. a tone control which rolls off the treble) to more creative uses of equalization such as [wah-wah](https://en.wikipedia.org/wiki/Wah-wah_pedal) pedals. When working with analog or time-domain digital signals, equalization is done using [filters](https://en.wikipedia.org/wiki/Audio_filter).
+
 ### EQ Lowpass
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
+
+This pedal implements a simple, one pole [lowpass filter](https://en.wikipedia.org/wiki/Low-pass_filter) with a single knob (**param knob3**, at the top-right) controlling the [cutoff frequency]. Time-domain filters are implemented using short delays, so the **history** operator, combined with the *mix* operator, do the actual filtering of the signal. The desired cutoff frequency coming from the parameter knob is intially expressed as a MIDI value in the range of 23 to 127 (30 Hz to 12.5 kHz).
+
+*Hint: using a MIDI range as a parameter instead of frequency is a simple way to make the knob have a logarithmic frequency (or pitch linear) response; moving the knob by twelve steps, for example, will move the parameter by an octave anywhere in its range.*
+
+After being smoothed and converted to frequency (using the **mtof** operator), the cutoff frequency is converted into the *a* coefficient for a simple lowpass filter:
+
+y<sub>n</sub> = ax<sub>n</sub> + by<sub>n-1</sub>
+
+F = cutoff frequency
+SR = sampling rate
+x = -F*2π/SR
+a = e^x
+b = 1.0-a
+
+This 
 
 ### EQ Parametric
 
