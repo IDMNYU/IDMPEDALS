@@ -72,8 +72,8 @@ y = the output signal<br>
 n = time (n is now, n-1 is one sample ago, etc.)<br>
 F = cutoff frequency<br>
 SR = sampling rate<br>
-x = -F*2π/SR<br>
-a = e^x<br>
+i = -F*2π/SR (sampling increment)<br>
+a = e^i<br>
 b = 1.0-a<br>
 </samp>
 
