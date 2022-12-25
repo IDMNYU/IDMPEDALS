@@ -219,7 +219,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "pitch",
-							"parameter_mmin" : 60.0,
+							"parameter_mmin" : 23.0,
 							"parameter_shortname" : "pitch",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
