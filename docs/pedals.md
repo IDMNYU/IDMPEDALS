@@ -212,7 +212,11 @@ The output of the LFO / envelope follower is then amplified with the *depth* par
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/ICST_MoogLP24.gendsp.png" target="_new"><img src = "./img/ICST_MoogLP24.gendsp.png" title="Moog ladder filter patcher" alt="Moog ladder filter patcher"></a>
 
+The **ICST_MoogLP24** subpatch implements a digital model of the classic 4-pole resonant low-pass "Ladder Filder" developed by Robert Moog for his synthesizers. This filter has a 24dB roll-off and can resonate to the point of self-oscillation. One thing of note is that the filter module is modelled even to the point of using Moog's [1V / Octave scaling](https://en.wikipedia.org/wiki/CV/gate) to represent frequency; as a result, the incoming pitch value is converted into this range using the **center-frequency-calc** subpatcher:
+
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/center-frequency-calc.png" target="_new"><img src = "./img/center-frequency-calc.png" title="Moog ladder filter patcher" alt="Moog ladder filter patcher"></a>
+
+[Auto-wah](https://en.wikipedia.org/wiki/Auto-wah) effects - where the filter is controlled by the input signal's envelope or by an LFO, are common effects, and the underlying algorithms for designing the envelope followers and oscillators can be used with many other types of processing.
 
 ### EQ Formant
 
