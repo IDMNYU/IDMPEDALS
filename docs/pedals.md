@@ -170,7 +170,7 @@ Once the input signal's envelope is calculated, the value is multipled by **knob
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genlores.gendsp.png" target="_new"><img src = "./img/genlores.gendsp.png" title="Lores patcher" alt="Lores patcher"></a>
 
-The actual wah effect in this pedal consists of a 2nd order, resonant lowpass filter solved by the calculation in the **genlores** subpatch:
+The actual wah effect in this pedal consists of a 2nd order, resonant lowpass filter solved by the calculation in the **genlores** subpatch pictured above:
 
 ```
 y[n] = ax[n] - by[n-1] - cy[n-2]
