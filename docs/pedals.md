@@ -162,13 +162,21 @@ This subpatch contains a **codebox** with GenExpr code to calculate and perform 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Wah2.png" target="_new"><img src = "./img/Wah2.png" title="Wah2 patcher" alt="Wah2 patcher"></a>
 
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/ICST_MoogLP24.gendsp.png" target="_new"><img src = "./img/ICST_MoogLP24.gendsp.png" title="Moog ladder filter patcher" alt="Moog ladder filter patcher"></a>
+
 ### EQ Formant
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Formant.png" target="_new"><img src = "./img/Formant.png" title="Formant patcher" alt="Formant patcher"></a>
 
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
+
 ### EQ Vocoder
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Vocoder.png" target="_new"><img src = "./img/Vocoder.png" title="Vocoder patcher" alt="Vocoder patcher"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/vocoderchannel.gendsp.png" target="_new"><img src = "./img/vocoderchannel.gendsp.png" title="vocoder subpatch" alt="vocoder subpatch"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
 
 ## Dynamics
 
