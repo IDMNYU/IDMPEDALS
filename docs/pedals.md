@@ -212,7 +212,7 @@ The output of the LFO / envelope follower is then amplified with the *depth* par
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/ICST_MoogLP24.gendsp.png" target="_new"><img src = "./img/ICST_MoogLP24.gendsp.png" title="Moog ladder filter patcher" alt="Moog ladder filter patcher"></a>
 
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/center-frequency-calc.png" target="_new"><img src = "./img/center-frequency-calc.gendsp.png" title="Moog ladder filter patcher" alt="Moog ladder filter patcher"></a>
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/center-frequency-calc.png" target="_new"><img src = "./img/center-frequency-calc.png" title="Moog ladder filter patcher" alt="Moog ladder filter patcher"></a>
 
 ### EQ Formant
 
