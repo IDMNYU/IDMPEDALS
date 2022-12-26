@@ -164,11 +164,33 @@ The algorithm in this pedal has four parameters:
 * **knob5_slew** sets the attack/release characteristics of the envelope follower algorithm, with a low value causing the envelope to closely track the input signal, and a high value generating a smoother - but less responsive - control value.
 * **knob6_res** sets the resonance of the wah itself, with higher values creating a stronger peak at the cutoff frequency.
 
-The envelope follower algorithm in the pedal follows the path colored blue in the patcher: it takes the input signal, rectifies it with the **abs** operator to set the values positive, and then *lowpasses* the signal using the **slide** operator. The second and third inlets of the **slide** operator control the denominator of the filter in the rising and falling direction, respectively, with higher values making smoother output values; the values for the operator are controlled by **knob5_slew**. This rectified and lowpassed value is then scaled up, clipped in the range of 0.0 to 1.0, and finally transformed into an exponential signal using a **sqrt** operator. This final value is the control signal for the wah effect.
+The envelope follower algorithm in the pedal follows the path colored blue in the patcher: it takes the input signal, rectifies it with the **abs** operator to set the values positive, and then *lowpasses* the signal using the **slide** operator. The second and third inlets of the **slide** operator control the denominator of the filter in the rising and falling direction, respectively, with higher values making smoother output values; the values for the operator are controlled by **knob5_slew**. This rectified and lowpassed value is then scaled up, clipped in the range of 0.0 to 1.0, and finally transformed into an exponential signal using a **sqrt** operator. This value is the final envelope signal.
 
-
+Once the input signal's envelope is calculated, the value is multipled by **knob4_range** and offset by **knob3_base** to generate a signal that controls the cutoff frequency of the wah. It also illuminates **led2** on the Daisy Petal board. Before going into the **genlores** subpatch, this value is converted to frequency by scaling the value to a MIDI range and then to Hertz using the **mtof** operator.
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genlores.gendsp.png" target="_new"><img src = "./img/genlores.gendsp.png" title="Lores patcher" alt="Lores patcher"></a>
+
+The actual wah effect in this pedal consists of a 2nd order, resonant lowpass filter solved by the calculation in the **genlores** subpatch:
+
+```
+y[n] = ax[n] - by[n-1] - cy[n-2]
+where...
+x = the input signal
+y = the output signal
+n = time (n is now, n-1 is one sample ago, etc.)
+Fc = cutoff frequency
+R = resonance value
+SR = sampling rate
+
+Ω = Fc*2π/SR (sampling increment)
+G = e^R*0.125 * 0.882497 (resonant coefficient)
+
+c = G*G
+b = -2.0*cos(Ω)*G
+a = 1.0 + b + c
+```
+
+As with the Mu-Tron III that inspired this design, this pedal will respond the the dynamic range of the input instrument by opening the filter on louder notes. The different controls allow you to fine tune both the range and resonance characteristics of the wah itself as well as - just as importantly - the slew of the envelope follower. The original Mu-Tron pedals used a [Vactrol](https://en.wikipedia.org/wiki/Resistive_opto-isolator) with its characteristic response curve to couple the envelope follower to the filter; the photoresistor replaced the potentiometer that would have been attached to the rocker pedal on a conventional wah.
 
 ### EQ Wah2
 
