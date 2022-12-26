@@ -150,11 +150,21 @@ This pedal expands on the previous one, adding a single parameter for the crosso
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genxover.gendsp.png" target="_new"><img src = "./img/genxover.gendsp.png" title="GenDSP subpatcher" alt="GenDSP subpatcher"></a>
 
-This subpatch contains a **codebox** with GenExpr code to calculate and perform the crossover on the input signal. The  algorithm, written by Tim Place in his [crossover filter design tutorial](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial), implements a filter with a variable crossover freuqnecy, so there is significantly more code in this GenExpr than the one above - this is because the filter coefficients need to be calculated on the fly in response to the crossover frequency parameter, which could change at any time.
+This subpatch contains a **codebox** with GenExpr code to calculate and perform the crossover on the input signal. The  algorithm, written by Tim Place in his [crossover filter design tutorial](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial), implements a [Linkwitz-Riley crossover](https://en.wikipedia.org/wiki/Linkwitz%E2%80%93Riley_filter) filter with a variable crossover frequency, so there is significantly more code in this GenExpr than the one above - this is because the filter coefficients need to be calculated on the fly in response to the crossover frequency parameter, which could change at any time.
 
 ### EQ Wah
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Wah.png" target="_new"><img src = "./img/Wah.png" title="Wah patcher" alt="Wah patcher"></a>
+
+This pedal is a [wah-wah](https://en.wikipedia.org/wiki/Wah-wah_pedal) algorithm where the position of the filter is controlled not by an expression pedal but by the amplitude of the input signal, via an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector). This technique was first used to great acclaim in the 1972 [Mu-Tron III](https://en.wikipedia.org/wiki/Mu-Tron_III) envelope filter.
+
+The algorithm in this pedal has four parameters:
+* **knob3_base** sets the fundamental (bottom) frequency of the wah effect, brought in as a value from 0.0 to 0.8; this maps to 0% to 80% of the range of the filter, later scaled to MIDI.
+* **knob4_range** sets the range of the input signal's amplitude on the wah, ranging from very subtle to covering the entire range of the filter.
+* **knob5_slew** sets the attack/release characteristics of the envelope follower algorithm, with a low value causing the envelope to closely track the input signal, and a high value generating a smoother - but less responsive - control value.
+* **knob6_res** sets the resonance of the wah itself, with higher values creating a stronger peak at the cutoff frequency.
+
+
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genlores.gendsp.png" target="_new"><img src = "./img/genlores.gendsp.png" title="Lores patcher" alt="Lores patcher"></a>
 
