@@ -222,6 +222,17 @@ The **ICST_MoogLP24** subpatch implements a digital model of the classic 4-pole 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Formant.png" target="_new"><img src = "./img/Formant.png" title="Formant patcher" alt="Formant patcher"></a>
 
+This pedal implements a filter that simulates the [formants](https://en.wikipedia.org/wiki/Formant) of the human vocal tract. Unlike a conventional filter effect where the key aspect of the filter is its center or cutoff frequency, a formant filter contains an array of values that represent different [vowel](https://en.wikipedia.org/wiki/Vowel) sounds. These vowels are then scanned as a continuum that can be indexed either by an [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) or an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector), as per the previous pedals.
+
+The control parameters for the formant filter pedal are similar to the auto-wah:
+* **knob3_manual** sets the center *formant setting* of the wah effect, brought in as a value from 0.0 to 1.; the LFO then oscillates above this setting; when the LFO depth is set to 0.0 the filter will be fixed at this so-called *manual* formant.
+* **knob4_depthe** sets the amplitude of the LFO, which is then added in as a bipolar signal to the *manual* setting.
+* **knob5_rate** sets both the rate of the LFO from 1 to 5 Hertz, and the threshold for the envelope follower to trigger a new formant.
+* **knob6_res** sets the resonance of the formant filter itself as a [Q](https://en.wikipedia.org/wiki/Q_factor) (quality) factor, with higher value resulting in a narrower bandpass effect.
+* **sw5** selects between the LFO and the envelope follower as the control source for the formant filter.
+
+
+
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
 
 ### EQ Vocoder
