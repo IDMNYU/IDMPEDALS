@@ -266,7 +266,9 @@ The three **reson** filters, when run in parallel, simulate the resonances of th
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Vocoder.png" target="_new"><img src = "./img/Vocoder.png" title="Vocoder patcher" alt="Vocoder patcher"></a>
 
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/vocoderchannel.gendsp.png" target="_new"><img src = "./img/vocoderchannel.gendsp.png" title="vocoder subpatch" alt="vocoder subpatch"></a>
+This pedal implements a [Vocoder](https://en.wikipedia.org/wiki/Vocoder) using two inputs, with input 1 serving as the *carrier* (typically a tonal input such as a synthesizer) and input 2 serving as the *program* (typically a noisy input such as voice). The effect works by filtering both inputs using a bank of bandpass filters and then using the envelope characteristics of the *program* input to control the gain of the equivalent channel in the *carrier*.  
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/vocoderchannel.gendsp.png" target="_new"><img src = "./img/vocoderchannel.gendsp.png" title="vocoder channel subpatch" alt="vocoder subpatch"></a>
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
 
