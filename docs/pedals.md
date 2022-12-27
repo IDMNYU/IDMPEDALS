@@ -231,9 +231,15 @@ The control parameters for the formant filter pedal are similar to the auto-wah:
 * **knob6_res** sets the resonance of the formant filter itself as a [Q](https://en.wikipedia.org/wiki/Q_factor) (quality) factor, with higher value resulting in a narrower bandpass effect.
 * **sw5** selects between the LFO and the envelope follower as the control source for the formant filter.
 
+The formant filter differs from the other filter effects we've looked at. Rather than the LFO or envelope driving a scaled value that serves as the filter's frequency, this filter uses a simple database of formant frequencies stored into a **data** operator in the **gen~** patcher. The **data** operator in **gen~*** works in a manner similar to the **buffer~** object in Max/MSP - it can store an arbitrary set of numerical values across a number of channels. In this case, the operator in the patcher **data formant 10 3** declares a dataset in memory labelled "formant" that will have 10 indices with three values (stored in what are called *channels*) stored at each index. This is akin to a 2-dimensional, 10-value array in a programming language where each value in the array is itself an array of length 3.
 
+The **codebox** on the right of the patcher initializes all the values in the "formant" **data** operator. The **poke** command in GenExpr sets triplets of values into the channels. Each index in "formant" consists of the three fundamendal frequencies for a vowel in the English language.
+
+Once the dataset we want to work with is stored into the **data** operator, it can be read and used in the algorithm. The **sample** operator (colored in blue) indexes the "format" **data** using the LFO/envelope values from 0.0 to 1.0 - a value of 0.0 will output the first indexed values; a value of 10.0 will output the last indexed values, and numbers in between will interpolate between the rest of the data. The **sample** operator is multi-channel, so all three of the formant filters can be driven with one **sample**. These frequencies (along with the input signal and the **param knob6_res** parameter then go into three paralel **genreson** subpatches that perform the filtering on the input signal:
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
+
+
 
 ### EQ Vocoder
 
