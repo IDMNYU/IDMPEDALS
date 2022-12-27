@@ -239,7 +239,28 @@ Once the dataset we want to work with is stored into the **data** operator, it c
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
 
+This subpatch implements a 2nd order resonant bandpass filter, equivalent to the **reson~** object in Max/MSP:
 
+```
+y[n] = ax[n] + bx[n-2] + cy[n-1] + dy[n-2]
+where...
+x = the input signal
+y = the output signal
+n = time (n is now, n-1 is one sample ago, etc.)
+Fc = center frequency
+Q = resonance value (Q factor)
+SR = sampling rate
+
+bw = Fc/Q (bandwidth)
+r = e^-bw*2π/SR (sampling increment)
+
+a = 1-r
+b = (1-r)*r
+c = 2*r*cos(Fc*2π/SR)
+d = -r*r
+```
+
+The three **reson** filters, when run in parallel, simulate the resonances of the human mouth when forming basic vowel sounds - roughly speaking, each filter is responsible for the mouth's width, heigh, and depth. The resulting effect sounds less like a wah-wah and more like a [talk box](https://en.wikipedia.org/wiki/Talk_box). Formant filtering can be used for many applications, from vocal effects to simulating the resonances of instrument bodies (c.f. the [Boss "Acoustic Simulator"](https://www.boss.info/us/products/ac-3/) pedal).
 
 ### EQ Vocoder
 
