@@ -276,11 +276,42 @@ Our vocoder effect has three parameters and one switch used to control the effec
 * **knob5_noise** controls a white noise signal that can be mixed in with the *carrier* to give it more spectral density. A high amount of noise will make the vocoder sound raspier and more voice-like.
 * **sw2** is a momentary "hold" switch will *freeze* the envelope states of the *program* signal. This allows you to, e.g. sing a vowel and sustain it as the filter effect with a footswitch.
 
-
+The vocoder algorithm take the *carrier* (**in 1**, mixed with noise based on **knob5_noise**) and the *program* (**in 2**) and sends both signals (along with parameter information) into sixteen parallel instances of the **vocoderchannel** subpatch. These subpatches are identical but receive different center frequency settings at their second inlets.
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/vocoderchannel.gendsp.png" target="_new"><img src = "./img/vocoderchannel.gendsp.png" title="vocoder channel subpatch" alt="vocoder subpatch"></a>
 
+The sixteen individual **vocoderchannel** subpatchers perform three tasks:
+
+* *filter* both the *carrier* and *program* inputs based on the center frequency and Q sent in from the parent patcher. The frequencies are based on the 1978 Moog specification and are different for each subpatcher; the Q is set by **knob3_res**. The algorithm for the filter is a 2nd order resonant bandpass (**genreson**, the same as used in the formant filter example).
+* an *envelope follower* is applied to the *program* signal, with **abs** and **slide** operators generating a positive envelope signal for each filter channel of the *program*. This value can be sustained by **sw2**, which connects to the **latch** operator to hold a constant value.
+* a multiplier that takes the filtered audio of the *carrier* signal and multiplies it by the envelope derived from the filtered *program* signal. This, happening across sixteen parallel bands, is the heart of the vocoder effect. The **dcblock** operator removes any unwanted [sub-audio signal](https://en.wikipedia.org/wiki/DC_bias) from each channel.
+
+The sixteen outputs of the **vocoderchannel** are then summed to the output of the pedal.
+
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/genreson.gendsp.png" target="_new"><img src = "./img/genreson.gendsp.png" title="resonant filter patcher" alt="resonant filter patcher"></a>
+
+As with the formant filter, the vocoder channels implement a 2nd order resonant bandpass filter, equivalent to the **reson~** object in Max/MSP:
+
+```
+y[n] = ax[n] + bx[n-2] + cy[n-1] + dy[n-2]
+where...
+x = the input signal
+y = the output signal
+n = time (n is now, n-1 is one sample ago, etc.)
+Fc = center frequency
+Q = resonance value (Q factor)
+SR = sampling rate
+
+bw = Fc/Q (bandwidth)
+r = e^-bw*2π/SR (sampling increment)
+
+a = 1-r
+b = (1-r)*r
+c = 2*r*cos(Fc*2π/SR)
+d = -r*r
+```
+
+The vocoder is an interesting hybrid processor, using a filter bank not for traditional equalization, but as a multi-band dynamics processor where a second signal controls the gain on each channel. In the next section, we consider *dynamics* effects, many of which use this technique for different common effects in music production.
 
 ## Dynamics
 
