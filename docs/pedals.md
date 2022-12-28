@@ -226,7 +226,7 @@ This pedal implements a filter that simulates the [formants](https://en.wikipedi
 
 The control parameters for the formant filter pedal are similar to the auto-wah:
 * **knob3_manual** sets the center *formant* of the filter effect, brought in as a value from 0.0 to 1.; the LFO then oscillates above this setting; when the LFO depth is set to 0.0 the filter will be fixed at this so-called *manual* formant.
-* **knob4_depthe** sets the amplitude of the LFO, which is then added in as a bipolar signal to the *manual* setting.
+* **knob4_depth** sets the amplitude of the LFO, which is then added in as a bipolar signal to the *manual* setting.
 * **knob5_ratethresh** sets both the rate of the LFO from 1 to 5 Hertz, and the threshold for the envelope follower to trigger a new formant. Unlike the previous two filter examples where the envelope of the input signal *sweeps* the filter range, here a threshold value triggers a new *random* formant using the **noise** and **sah** ([sample-and-hold](https://en.wikipedia.org/wiki/Sample_and_hold)) operators; every time the input signal rises above the threshold value set by this knob, a new random control value will change the sound of the filter.
 * **knob6_res** sets the resonance of the formant filter itself as a [Q](https://en.wikipedia.org/wiki/Q_factor) (quality) factor, with higher value resulting in a narrower bandpass effect.
 * **sw5** selects between the LFO and the envelope follower as the control source for the formant filter.
