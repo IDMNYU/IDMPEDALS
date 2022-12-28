@@ -270,6 +270,12 @@ This pedal implements a [Vocoder](https://en.wikipedia.org/wiki/Vocoder). Vocode
 
 The patcher used here implements a vocoder based on the [1978 16-channel Moog Vocoder]. It uses two inputs, with input 1 serving as the *carrier* (typically a tonal input such as a synthesizer) and input 2 serving as the *program* (typically an input with a rich, articulated spectrum such as voice). The effect works by filtering both inputs using a bank of bandpass filters; it then puts the output of each of the  *program*'s filter channels through an envelope follower; these envelope characteristics are then used, channel-by-channel, to control the gain of the equivalent frequency band in the *carrier* sound. The result is a synthesizer than can sound like its talking, for example.
 
+Our vocoder effect has three parameters and one switch used to control the effect:
+* **knob3_res** controls the Q of the filters in both sides of the vocoder; the higher the Q, the more focused both the analysis (*program*) and synthesis (*carrier*) channels will be on the center frequencies of the 16 filter bands used in the effect.
+* **knob4_gain** controls the volume (gain) of the *carrier* input.
+* **knob5_noise** controls a white noise signal that can be mixed in with the *carrier* to give it more spectral density. A high amount of noise will make the vocoder sound raspier and more voice-like.
+* **sw2** is a momentary "hold" switch will *freeze* the envelope states of the *program* signal. This allows you to, e.g. sing a vowel and sustain it as the filter effect with a footswitch.
+
 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/vocoderchannel.gendsp.png" target="_new"><img src = "./img/vocoderchannel.gendsp.png" title="vocoder channel subpatch" alt="vocoder subpatch"></a>
