@@ -315,7 +315,7 @@ The vocoder is an interesting hybrid processor, using a filter bank not for trad
 
 ## Dynamics
 
-Dynamics effects work primarily by changing the *gain* of the input signal. Dynamics-based processing techniques, like equalization, are central to audio production, and effects such as *compression*, *limiting*, and *noise gates* are used in live sound reinforcement, broadcast production, recording, and mastering.
+Dynamics effects work primarily by changing the *gain* of the input signal. Dynamics-based processing techniques, like equalization, are central to audio production, and effects such as *compression*, *limiting*, and *noise gates* are used in live sound reinforcement, broadcast production, recording, and mastering. Generally, one important common factor in dynamics processing is the articulation of a *key* signal, usually via an envelope follower; this signal gives the rest of the circuit an understanding of the overall volume of the input, which then influences how the real signal is attenuated or amplified. In pedal design, dynamics processors are often first in the effects chain to provide *compression* on the instrument signal, levelling its dynamic range, or *gating* to reduce noise. With these algorithms, creative effects are possible, often by using sidechain inputs for the key signal.
 
 ### Dyn Tremolo
 
