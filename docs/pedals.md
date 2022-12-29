@@ -315,6 +315,8 @@ The vocoder is an interesting hybrid processor, using a filter bank not for trad
 
 ## Dynamics
 
+Dynamics effects work primarily by changing the *gain* of the input signal. Dynamics-based processing techniques, like equalization, are central to audio production, and effects such as *compression*, *limiting*, and *noise gates* are used in live sound reinforcement, broadcast production, recording, and mastering.
+
 ### Dyn Tremolo
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Tremolo.png" target="_new"><img src = "./img/Tremolo.png" title="Tremolo patcher" alt="Tremolo patcher"></a>
