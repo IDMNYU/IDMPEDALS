@@ -338,6 +338,8 @@ Tremolo effects are among the oldest special effects for instruments, with [trem
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Compressor.png" target="_new"><img src = "./img/Compressor.png" title="Compressor patcher" alt="Compressor patcher"></a>
 
+The pedal implements a digital [compressor / limiter](https://en.wikipedia.org/wiki/Dynamic_range_compression), where an input signal exceeding a threshold value is attenuated either by a fixed ratio (**compression**) or by a very high ratio guaranteed to keep the audio within a specific dynamic range (**limiting**). Compressors and limiters, in addition to their threshold and ratio settings, also have controls around how quickly the compression takes effect when the threshold is exceeded (the **attack** time) and how quickly the compression relaxes once the input signal goes below the threshold (the **release** time); in practice, both of these parameters are controlling aspects of the [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector) that generates the *key signal* for the dynamics processor. Finally, most compressor / limiters allow the user to adjust both the input gain into the circuit and the output level (sometimes called *makeup gain*).
+
 ### Dyn Gate
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Gate.png" target="_new"><img src = "./img/Gate.png" title="Gate patcher" alt="Gate patcher"></a>
