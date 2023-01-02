@@ -359,6 +359,20 @@ Compressor / limiters are fairly ubiquitous as pedal effects, particularly with 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Gate.png" target="_new"><img src = "./img/Gate.png" title="Gate patcher" alt="Gate patcher"></a>
 
+A [noise gate](https://en.wikipedia.org/wiki/Noise_gate) is a dynamics processor that is the inverse of a limiter. Instead of reducing the volume of an input signal that exceeds a threshold, the circuit reduces the volume of a signal that falls *below* a threshold. This can clean up a signal by eliminating ground hum, hiss, or other low level noise in a signal when the instrument driving the signal is silent. Noise gates, like compressors, are used extensively in audio production beyond effect pedals; their most common use is to attenuate (or *duck*) background noise in broadcast or recording scenarios where there is an open mic.
+
+Our noise gate pedal has the same core architecture as the compressor / limiter pedal, with one key component (the comparator operator) changed. There are five dynamic controls as well as a switch that engages the second input to the pdeal as a [sidechain](https://en.wikipedia.org/wiki/Dynamic_range_compression#Side-chaining):
+* **knob1_input** sets the level of the input signal into the gate circuit; this allows us to fine tune the gate to work with a wide range of instrument inputs. This value range is in [decibels](https://en.wikipedia.org/wiki/Decibel), with the eventual value converted to linear amplitude using the **dbtoa** operator.
+* **knob2_output** sets the output of the pedal, post-effect, in the same manner as the **knob1_input**. Dynamics circuits often refer to this parameter as the *makeup gain*.
+* **knob3_threshold** sets the level at which the gate engages. It does this by comparing its value against the output of the input signal's envelope follower. To maintain a logarithmic response, all of these calculations occur in decibels.
+* **knob4_attack** sets the *attack time* (in milliseconds) for the gate; this is the rising value for the **slide** operator on the key signal's [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector). A fast attack will cause the gate to duck quickly in response to a note stopping, for example.
+* **knob5_release** sets the *release time* (in milliseconds) for the gate; this is the falling value for the **slide** operator on the key signal's envelope follower. A slow release will cause the ducking effect to slowly fade the input signal back in.
+* **sw5** selects between the gate listening to the input signal or to a *sidechain* input at **in2** as its key signal; when a sidechain is activated, the gate can be used creatively to, e.g. duck a sustained instrument input based on a drum track.
+
+The key signal's envelope illuminates **led2** on the Daisy Petal allowing you to see the behavior of the attack and decay settings. The gate's calculation algorithm works by converting the envelope follower's output into a key signal expressed in decibels (via the **atodb** operator); when this value falls below the threshold (the **<** operator), the *reducation amount* calculated by the patcher logic colored purple is engaged to create a multiplication factor on the input signal; this will attenuate quiet signals to 0 when the gate fully engages. The output level **knob2_output** then adds makeup gain to the signal allowing you to boost the compressed audio.
+
+Noise gates are used as pedal effects to help attenuate electrical hum (e.g. from a single-coil guitar pickup) and other unwanted sounds when an instrument goes quiet; they are also used with sidechain inputs to add rhythmic effects to a sound.
+
 ## Distortion
 
 ### Dist Overdrive
