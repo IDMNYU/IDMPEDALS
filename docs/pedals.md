@@ -321,7 +321,18 @@ Dynamics effects work by changing the *gain* of the input signal. Dynamics-based
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Tremolo.png" target="_new"><img src = "./img/Tremolo.png" title="Tremolo patcher" alt="Tremolo patcher"></a>
 
-This pedal implements one of the oldest dynamics-related effects: a periodic fading-in and fading-out of the signal through [amplitude modulation](https://en.wikipedia.org/wiki/Amplitude_modulation) that creates an effect akin to musical [**tremolo**](https://en.wikipedia.org/wiki/Tremolo). The tremolo effect uses a [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) (LFO), which can be shaped from a sine wave to a near-[square wave](https://en.wikipedia.org/wiki/Square_wave). The effect has a switch that allows the intensity (*depth*) of the effect to be controlled with by a constant knob value or by the amplitude of the input signal; this latter technique is inspired by the classic [Uni-Vibe](https://en.wikipedia.org/wiki/Uni-Vibe) pedals from the 1960s.
+This pedal implements one of the oldest dynamics-related effects: a periodic fading-in and fading-out of the signal through [amplitude modulation](https://en.wikipedia.org/wiki/Amplitude_modulation) that creates an effect akin to musical [**tremolo**](https://en.wikipedia.org/wiki/Tremolo). The tremolo effect uses a [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) (LFO), which can be shaped from a sine wave to a near-[square wave](https://en.wikipedia.org/wiki/Square_wave). The effect has a switch that allows the intensity (*depth*) of the effect to be controlled with by a constant knob value or by the amplitude of the input signal; this latter technique is inspired by the classic [Uni-Vibe](https://en.wikipedia.org/wiki/Uni-Vibe) pedals from the 1960s. Finally, this pedal has a [stereo output](https://en.wikipedia.org/wiki/Stereophonic_sound), allowing it to be used as an [auto-panner](https://en.wikipedia.org/wiki/Panning_(audio)).
+
+The pedal has three knob controls as well as two switches that control its configuration:
+* **knob3_depth** sets the manual intensity of the tremelo effect when **sw5** is disengaged. When turned all the way up, the input signal will be completely attenuated when the LFO is at its lowest point.
+* **knob4_rate** sets the speed of the LFO up to 12 Hz; the knob has a logarithmic response through the use of the **expr** operator.
+* **knob5_shape** alters the waveform of the LFO by amplifying it into a clipping circuit. This allows the shape of the tremelo to range from a smooth sine wave to an extreme *in/out* shape by making the LFO close to a square wave.
+* **sw5** selects between **knob3_depth** and the [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector) as the intensity control of the LFO.
+* **sw6** engages an *auto-panning* effect where the LFO is inverted at the right output; with this setting engaged, the pedal has a stereo output where the gain of the signal in the left channel will be the opposite of the right.
+
+As with the Wah effects above, this effect uses both an LFO and, optionally, an envelope follower to adjust the actual effect, which is simply a gain control using a <b>*</b> operator. The LFO is a **cycle** operator driven by a **phasor** that can be shaped through a gain stage into a **clip** operator; this shapes the waveform according to **knob5_shape**. The envelope follower takes the input signal and converts it into a smooth representation of the input gain using the **abs** and **slide** operators.
+
+Tremolo effects are among the oldest special effects for instruments, with [tremulant](https://en.wikipedia.org/wiki/Tremulant) effects on organs as far back as the 18th Century.
 
 ### Dyn Compressor
 
