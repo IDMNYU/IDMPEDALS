@@ -351,8 +351,9 @@ In light of all these parameters, our compressor pedal has six dynamic controls 
 * **knob6_release** sets the *release time* (in milliseconds) for the compressor to disengage; this is the falling value for the **slide** operator on the input signal's envelope follower. A slow release will cause the compressor to slowly relax its attenuation.
 * **sw5** selects between the circuit behaving as a *compressor*, where the ratio set by **knob4_ratio** is used, and a *limiter*, where a very high (10000) ratio is used. When engaged, the input will never exceed the threshold value, creating a hard ceiling for the signal's dynamic range.
 
-The key signal of the compressor illuminates **led2** on the Daisy Petal allowing you to see the behavior of the attack and decay settings. The compressor / limiter's calculation algorithm works by converting the envelope follower's output into a key signal expressed in decibels (via the **atodb** operator); when this value exceeds the threshold (the **>** operator), the *reducation amount* calculated by the patcher logic colored purple is engaged to create a multiplication factor on the input signal.
+The key signal of the compressor illuminates **led2** on the Daisy Petal allowing you to see the behavior of the attack and decay settings. The compressor / limiter's calculation algorithm works by converting the envelope follower's output into a key signal expressed in decibels (via the **atodb** operator); when this value exceeds the threshold (the **>** operator), the *reducation amount* calculated by the patcher logic colored purple is engaged to create a multiplication factor on the input signal. The output level **knob2_output** then adds makeup gain to the signal allowing you to boost the compressed audio.
 
+Compressor / limiters are fairly ubiquitous as pedal effects, particularly with instruments that have high dynamic range in their transients (e.g. electric bass guitars). They can be configured to create a transparent "levelling" of an input signal or be used more creatively to create a hard [pumping sound](https://en.wikipedia.org/wiki/Pumping_(audio)) as they engage and disengage.
 
 ### Dyn Gate
 
