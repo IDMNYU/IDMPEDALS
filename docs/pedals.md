@@ -387,6 +387,8 @@ This pedal implements a simple distortion algorithm called *hard clipping*, wher
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Fuzz.png" target="_new"><img src = "./img/Fuzz.png" title="Fuzz patcher" alt="Fuzz patcher"></a>
 
+This pedal implements a more extreme distortion effect by creating sharper angles in a waveform by calculating the [hyperbolic tangent](https://en.wikipedia.org/wiki/Hyperbolic_functions) of the input signal. This *fuzz* effect (done using transistor feedback in analog circuits) emphasizes high harmonics. The single parameter for our pedal (**knob3_fuzz**) amplifies the input signal (using a <b>*</b>) into the **tanh** operator; the output is then constrained using the **clip** operator and then divided down (using a <b>/</b>) by 1/10th of the input gain to level the output volume.
+
 ### Dist Octavia
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Octavia.png" target="_new"><img src = "./img/Octavia.png" title="Octavia patcher" alt="Octavia patcher"></a>
