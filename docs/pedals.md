@@ -449,7 +449,7 @@ out1 = b_in;
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion2.png" target="_new"><img src = "./img/Distortion2.png" title="Distortion2 patcher" alt="Distortion2 patcher"></a>
 
-This pedal implements a multi-band distortion where the input signal is split into three frequency bands, each of which is distorted separately using a sample-by-sample compression circuit that creates a "crunch" to the sound like a *soft clipping* overdrive. The effect uses a 2nd-order [state variable filter](https://en.wikipedia.org/wiki/State_variable_filter) (SVF) to divide the input signal into three bands, with a lowpass, bandpass, and highpass output being treated independently.
+This pedal implements a multi-band distortion where the input signal is split into three frequency bands, each of which is distorted separately using a sample-by-sample compression circuit that functions as a *soft clipping* overdrive. The effect uses a 2nd-order [state variable filter](https://en.wikipedia.org/wiki/State_variable_filter) (SVF) to divide the input signal into three bands, with a lowpass, bandpass, and highpass output being treated independently.
 
 The pedal has three parameters:
 * **knob3_drive** controls the threshold of distortion for each of the three frequency bands. This threshold is compared to the input signal directly rather than to a smoothed key signal, so the amplitude transformation occurs on a sample-by-sample basis.
@@ -481,6 +481,17 @@ This patcher implements a sample-by-sample soft clipping effect using an algorit
 ### Dist Waveshaper
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Waveshaper.png" target="_new"><img src = "./img/Waveshaper.png" title="Waveshaper patcher" alt="Waveshaper patcher"></a>
+
+This pedal implements three elementary forms of [waveshaping](https://en.wikipedia.org/wiki/Waveshaper) in series on the input signal, with the effect parameters controlling the strength of the effect. Waveshaping of this sort is more common in synthesizers (so-called [distortion synthesis](https://en.wikipedia.org/wiki/Distortion_synthesis)) but can be interesting as a signal processing technique as well.
+
+The five parameters for the pedal are:
+* **knob1_input** sets the level of the input signal into the distortion circuit. This value range is in [decibels](https://en.wikipedia.org/wiki/Decibel), with the eventual value converted to linear amplitude using the **dbtoa** operator.
+* **knob2_output** sets the output of the pedal, post-effect, in the same manner as the **knob1_input**.
+* **knob3_fold** sets the threshold for *wave folding* distortion applied to the signal using the **fold** operator; signals that exceed this threshold in either direction (positive or negative) will have their values folded back inwards.
+* **knob4_wrap** sets the threshold for a wrapping (modulo) effect on the signal using the **wrap** operator; signals that exceed the threshold will wrap around to the negative threshold.
+* **knob5_clip** sets the threshold for signal clipping (the **clip** operator; signals exceeding this threshold will be truncated at the threshold.
+
+The pedal implements these three distortions in reverse order, so that the signal is clipped, then wrapped, then folded. You can easily repatch the **gen~** to do these procedures in a different order to experiment with different sounds.
 
 ### Dist Waveshaper2
     
