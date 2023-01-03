@@ -393,6 +393,12 @@ This pedal implements a more extreme distortion effect by creating sharper angle
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Octavia.png" target="_new"><img src = "./img/Octavia.png" title="Octavia patcher" alt="Octavia patcher"></a>
 
+This pedal implements an *octave fuzz* such as found in the [Octavia](https://en.wikipedia.org/wiki/Octavia_(effects_pedal)) pedal designed by [Roger Msyer](https://en.wikipedia.org/wiki/Roger_Mayer_(engineer)) for [Jimi Hendrix](https://en.wikipedia.org/wiki/Jimi_Hendrix). An octave fuzz uses a [rectifier](https://en.wikipedia.org/wiki/Rectifier) circuit to fold the negative side of the AC waveform over into the positive range; this has the effect of doubling the frequency of the input signal, raising the fundamental by an octave. This type of pitch shifting through full-wave rectification works, though the sound can be fairly rough due to slope of the signal near the fold-over point. The output of the rectified signal is then put into a fuzz circuit.
+
+Our digital *octavia* pedal has two parameters: **knob3_oct** controls the blend of the octave effect with the dry signal. The octave effect is acomplished by using the **abs** operator (to rectify the signal) and the **dcblock** operator (to rebalance the rectified signal into the AC range). The blending of the dry and octave signal is done through an [equal-power fade](https://en.wikipedia.org/wiki/Fade_(audio_engineering)). 
+
+The second parameter (**knob4_fuzz**) controls the amount of the fuzz effect using the same algorithm as the previous pedal : a signal multiplied into a hyperbolic tangent operator (**tanh**) with a clipped output (**clip**). The result is a fuzzed version of the blended octave signal.
+
 ### Dist Distortion
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion.png" target="_new"><img src = "./img/Distortion.png" title="Distortion patcher" alt="Distortion patcher"></a>
