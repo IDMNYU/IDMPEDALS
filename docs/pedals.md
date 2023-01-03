@@ -375,6 +375,8 @@ Noise gates are used as pedal effects to help attenuate electrical hum (e.g. fro
 
 ## Distortion
 
+[Distortion](https://en.wikipedia.org/wiki/Distortion_(music)) effects are some of the most iconic signal processing techniques used in audio, and some of the earliest effect pedals fall into this category. Like dynamics effects, distortion effects are mathematically adjusting the amplitude of an audio signal; however, unlike dynamics effects, where the objective is to control the sound's dynamic range overall, distortion effects directly alter the sound wave of the input signal through techniques such as [clipping](https://en.wikipedia.org/wiki/Clipping_(audio)), [waveshaping](https://en.wikipedia.org/wiki/Waveshaper), and other mathematical algorithms that simulate the characteristics of amplification equipment being fed a hot signal, pushed beyond their recommended power output, or intentionally damaged. Modern distortion effects depart from the historical categories of fuzz, overdrive, and distortion to create new sounds, all of which shape the input signal in way that its [timbre](https://en.wikipedia.org/wiki/Timbre) is transformed.
+
 ### Dist Overdrive
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Overdrive.png" target="_new"><img src = "./img/Overdrive.png" title="Overdrive patcher" alt="Overdrive patcher"></a>
