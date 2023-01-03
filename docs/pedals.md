@@ -403,9 +403,80 @@ The second parameter (**knob4_fuzz**) controls the amount of the fuzz effect usi
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion.png" target="_new"><img src = "./img/Distortion.png" title="Distortion patcher" alt="Distortion patcher"></a>
 
+This pedal simulates classic amp distortion using a DSP algorithm developed by [Randy Stenseth](https://www.musicdsp.org/en/latest/Filters/141-karlsen.html) to model the response of a fast differential amplifier. The two parameters control the "filterdrive" coefficient for the amplifier algorithm (**knob3_drive**) and the overall output gain (**knob4_output**). The bulk of the effect is accomplished by the GenExpr code in the **codebox**, which implements the Stenseth algorithm:
+
+```
+// Final version, Stenseth, 17. february, 2006.
+
+// Fast differential amplifier approximation
+
+History b_sbuf1;
+
+b_in = in1;
+b_filterdrive = in2;
+
+b_inr = abs(b_in * b_filterdrive);
+	
+b_inrns = b_inr;
+
+if (b_inr > 1) {b_inr = 1;}
+    
+b_dax = b_inr - ((b_inr * b_inr) * 0.5);
+b_dax = b_dax - b_inr;
+b_inr = b_inr + b_dax;
+
+b_inr = b_inr * 0.24;
+
+if (b_inr > 1) {b_inr = 1;}
+	
+b_dax = b_inr - ((b_inr * 0.33333333) * (b_inr * b_inr));
+b_dax = b_dax - b_inr;
+b_inr = b_inr + b_dax;
+
+b_inr = b_inr / 0.24;
+
+b_mul = b_inrns / b_inr; // beware of zero
+
+b_sbuf1 = ((b_sbuf1 - (b_sbuf1 * 0.4300)) + (b_mul * 0.4300));
+
+b_mul = b_sbuf1 + ((b_mul - b_sbuf1) * 0.6910);
+b_in = b_in / b_mul;
+
+out1 = b_in;
+```
+
 ### Dist Distortion2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion2.png" target="_new"><img src = "./img/Distortion2.png" title="Distortion2 patcher" alt="Distortion2 patcher"></a>
+
+This pedal implements a multi-band distortion where the input signal is split into three frequency bands, each of which is distorted separately using a sample-by-sample compression circuit that creates a "crunch" to the sound like a *soft clipping* overdrive. The effect uses a 2nd-order [state variable filter](https://en.wikipedia.org/wiki/State_variable_filter) (SVF) to divide the input signal into three bands, with a lowpass, bandpass, and highpass output being treated independently.
+
+The pedal has three parameters:
+* **knob3_drive** controls the threshold of distortion for each of the three frequency bands. This threshold is compared to the input signal directly rather than to a smoothed key signal, so the amplitude transformation occurs on a sample-by-sample basis.
+* **knob4_squish** controls the amount of distortion for each of the three frequency bands. The distortion in our pedal consists of a sample-by-sample attenuation that creates a soft clipping effect.
+* **knob5_tone** controls the crossover frequency of the SVF. The value from the knob is in a MIDI range which is converted to frequency via the **mtof** operator. The **codebox** for the SVF contains GenExpr code to implement the following filter:
+
+```
+Fc = center frequency
+SR = sampling rate
+d1, d2 = two samples of memory
+Q = 5 (resonance value)
+Ω = Fc*2π/SR (sampling increment)
+
+LowPass = d2 + sin(Ω)*d1
+HighPass = in1 - L - 1/Q*d1
+BandPass = sin(Ω) * H + d1
+Notch = H+L (unused)
+
+d1 = BandPass
+d2 = LowPass
+```
+
+The three output bands (lowpass, bandpass, highpass) are then sent into a **distort** subpatch:
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/distort.png" target="_new"><img src = "./img/distort.png" title="distortion subpatcher" alt="distortion subpatcher"></a>
+
+This patcher implements a sample-by-sample soft clipping effect using an algorithm similar to a compressor without the key signal: if the absolute value of the input signal exceeds the threshold set by **knob3_drive**, it will be attenuated by the **knob4_squish** amount.
 
 ### Dist Waveshaper
 
