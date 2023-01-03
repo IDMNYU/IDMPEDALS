@@ -18,7 +18,7 @@
   - [Fuzz](#dist-fuzz)
   - [Octave Fuzz](#dist-octavia)
   - [Amp Distortion](#dist-distortion) 
-  - [Crunch Distortion](#dist-distortion2) 
+  - [Multi-Band Distortion](#dist-distortion2) 
   - [Clipping, Folding, Wrapping](#dist-waveshaper) 
   - [Parametric Waveshaping](#dist-waveshaper2) 
 - [Modulation](#modulation)
