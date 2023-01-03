@@ -381,6 +381,8 @@ Noise gates are used as pedal effects to help attenuate electrical hum (e.g. fro
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Overdrive.png" target="_new"><img src = "./img/Overdrive.png" title="Overdrive patcher" alt="Overdrive patcher"></a>
 
+This pedal implements a simple distortion algorithm called *hard clipping*, where a signal is amplified, then input into a circuit that imposes a hard limit on its range, causing an *overdrive* effect where the waveform squares off at the edges, emphasizing and adding harmonics to the signal. Using analog circuitry, hard clipping is easily accomplished by overdriving an operational amplifier; with DSP, we can accomplish a similar effect with one parameter (**knob3_OD**) that amplifies the input signal (using a <b>*</b>) into a **clip** operator (shaping the signal), then divides the signal back down to lower the overall volume (using a <b>/</b>). The higher the overdrive factor (up to 500 in our algorithm), the more prominent the clipping effect will be.
+
 ### Dist Fuzz
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Fuzz.png" target="_new"><img src = "./img/Fuzz.png" title="Fuzz patcher" alt="Fuzz patcher"></a>
