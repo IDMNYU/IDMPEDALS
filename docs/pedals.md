@@ -497,6 +497,12 @@ The pedal implements these three distortions in reverse order, so that the signa
     
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Waveshaper2.png" target="_new"><img src = "./img/Waveshaper2.png" title="Waveshaper2 patcher" alt="Waveshaper2 patcher"></a>
 
+This pedal implements parametric [waveshaping](https://en.wikipedia.org/wiki/Waveshaper) on the input signal, where three parameters set threshold values that determine whether a given sample's polarity is flipped (i.e. a positive sample becomes a negative sample and vice-versa). This will create extreme local discontinuities in the signal that evoke a true "digital" form of distortion.
+
+In our design, each sample's absolute value is first compared against a threshold (**knob3_xthresh1**); if it is greater than the threshold value it is inverted. Then, the positive signal values are compared against a second threshold (**knob4_xthresh2**); again, signals greater than the threshold are inverted. Third, the negative values are compared against a final threshold (**knob5_xthresh3**), with signals *less* than the threshold inverted back into the positive rage. Next, this waveshaped signal is sent through an optional circuit (engaged with **sw5**) which uses the signal values as phase indices of a **cycle** operator. Finally, the resulting waveform is smoothed out by a simple one pole lowpass filter according to an amount set by **knob6_smooth**.
+
+In addition to the waveshaping algorithm described above, the pedal has parameters for input and output level (**knob1_input** and **knob2_output**).
+
 ## Modulation
 
 ### Mod Chorus
