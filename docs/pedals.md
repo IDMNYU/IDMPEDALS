@@ -88,7 +88,7 @@ A coefficient of 0.0 will leave the input signal unchanged, which is the equival
 
 This effect is quite simple, and would be an unlikely candidate on its own for an entire effects pedal - it's much closer to the tone control circuit on an electric guitar or an EQ knob on a consumer stereo system. However, when combined with other algorithms a simple lowpass filter can be used to many creative ways.
 
-<details>	
+</details>	
 
 ### EQ Parametric
 
