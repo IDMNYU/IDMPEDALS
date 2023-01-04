@@ -611,33 +611,89 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Chorus.png" target="_new"><img src = "./img/Chorus.png" title="Chorus patcher" alt="Chorus patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Mod Chorus2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Chorus2.png" target="_new"><img src = "./img/Chorus2.png" title="Chorus2 patcher" alt="Chorus2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Mod Flanger
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Flanger.png" target="_new"><img src = "./img/Flanger.png" title="Flanger patcher" alt="Flanger patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Mod Phaser
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Phaser.png" target="_new"><img src = "./img/Phaser.png" title="Phaser patcher" alt="Phaser patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Mod Phaser2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Phaser2.png" target="_new"><img src = "./img/Phaser2.png" title="Phaser2 patcher" alt="Phaser2 patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Mod Harmonizer
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Harmonizer.png" target="_new"><img src = "./img/Harmonizer.png" title="Harmonizer patcher" alt="Harmonizer patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Mod Shcomb
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHComb.png" target="_new"><img src = "./img/SHComb.png" title="SHComb patcher" alt="SHComb patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Mod Shcomb2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHComb2.png" target="_new"><img src = "./img/SHComb2.png" title="SHComb2 patcher" alt="SHComb2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 [back to top](#top)
 
@@ -649,21 +705,56 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/DigitalDelay.png" target="_new"><img src = "./img/DigitalDelay.png" title="DigitalDelay patcher" alt="DigitalDelay patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Del Digitaldelay2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/DigitalDelay2.png" target="_new"><img src = "./img/DigitalDelay2.png" title="DigitalDelay2 patcher" alt="DigitalDelay2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Del Reverb
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb.png" target="_new"><img src = "./img/Reverb.png" title="Reverb patcher" alt="Reverb patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Del Reverb2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb2.png" target="_new"><img src = "./img/Reverb2.png" title="Reverb2 patcher" alt="Reverb2 patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Del Reverb3
     
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb3.png" target="_new"><img src = "./img/Reverb3.png" title="Reverb3 patcher" alt="Reverb3 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 [back to top](#top)
 
@@ -675,33 +766,89 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Subharmonic.png" target="_new"><img src = "./img/Subharmonic.png" title="Subharmonic patcher" alt="Subharmonic patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Sfx Shsine
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHSine.png" target="_new"><img src = "./img/SHSine.png" title="SHSine patcher" alt="SHSine patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Sfx Ringmod
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Ringmod.png" target="_new"><img src = "./img/Ringmod.png" title="Ringmod patcher" alt="Ringmod patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Sfx Freqshift
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FreqShiftRingMod.png" target="_new"><img src = "./img/FreqShiftRingMod.png" title="FreqShiftRingMod patcher" alt="FreqShiftRingMod patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Sfx Fmdelay
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FMDelay.png" target="_new"><img src = "./img/FMDelay.png" title="FMDelay patcher" alt="FMDelay patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Sfx Glitch
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Glitch.png" target="_new"><img src = "./img/Glitch.png" title="Glitch patcher" alt="Glitch patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 ### Sfx Glitch2 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Glitch2.png" target="_new"><img src = "./img/Glitch2.png" title="Glitch2 patcher" alt="Glitch2 patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
+
 ### Sfx Yin
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Yin.png" target="_new"><img src = "./img/Yin.png" title="Yin patcher" alt="Yin patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
+
+words words words
+
+</details>
 
 [back to top](#top)
 
