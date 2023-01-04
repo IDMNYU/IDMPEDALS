@@ -92,6 +92,9 @@ This effect is quite simple, and would be an unlikely candidate on its own for a
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Parametric.png" target="_new"><img src = "./img/Parametric.png" title="Parametric patcher" alt="Parametric patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
 This pedal consists of a three-parameter, single band *parametric equalizer*. Invented by [Burgess Macneal](https://en.wikipedia.org/wiki/Burgess_Macneal) in the mid-1960s, parametric equalizers allow for the independent control of the three main parameters of an audio filter: the center frequency, the gain (boost or cut), and the filter's [Q](https://en.wikipedia.org/wiki/Q_factor) or quality factor, expressed as a ratio of the center frequency over its bandwidth. Parametric equalizers are often used in mixing boards (especially ones with "British" equalization), as well as independent outboard processing units.
 
 Looking at the main **gen~** patcher for the effect, the three parameters (assigned to the **param** operators) come into the patch, after some smoothing and scaling, send values into the **genpeaknotch** subpatch.
@@ -135,9 +138,14 @@ The **genbiquad** subpatch implements the biquadratic filter equation on the inp
 
 Parametric equalizers have advantages over fixed-band equalizers (such as found in [graphic equalizers](https://en.wikipedia.org/wiki/Equalization_(audio)#Graphic_equalizer)) insofar as they allow you to sweep and tune the filter to the specific frequency you like. This allows you to, e.g. notch out a specific resonance in the input signal or emphasize a specific range of frequencies by ear.
 
+</details>
+
 ### EQ Xover
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Xover.png" target="_new"><img src = "./img/Xover.png" title="Xover patcher" alt="Xover patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal demonstrates how to implement a [crossover filter](https://en.wikipedia.org/wiki/Audio_crossover) as a stereo output on a pedal. Crossovers are important utility filters in signal processing, as they allow you to process different frequency bands independently and then recombine them later. This particular crossover filter has no parameters at all - it works with a fixed crossover frequency of 150 Hz, with frequencies *below* the cutoff going to the first output and frequencies *above* the cutoff going to the second output.
 
@@ -147,9 +155,14 @@ The crossover algorithm used in this pedal is a [Linkwitz-Riley crossover](https
 
 *Hint: when working with the Electrosmith Daisy as a target for **gen~** patches, you sometimes need to accommodate for the fact that the Daisy microcontroller is a 32-bit architecture, as opposed to a 64-bit general computing platform such as a Mac or Windows desktop machine. In the case of this patch, you can see the **frac** variable at the top, which is used at the bottom as a divider for all the coefficients. This allows the coefficients to be written six decimal points higher than usual, giving the internal calculations a higher degree of accuracy in the 32-bit floating-point range.*
 
+</details>
+
 ### EQ Xover2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Xover2.png" target="_new"><img src = "./img/Xover2.png" title="Xover2 patcher" alt="Xover2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal expands on the previous one, adding a single parameter for the crossover frequency. As with the lowpass and parametric EQ pedals, this algorithm uses MIDI scaling for the knob control, smoothing and converting it before sending it into the **genxover** subpatch:
 
@@ -157,9 +170,14 @@ This pedal expands on the previous one, adding a single parameter for the crosso
 
 This subpatch contains a **codebox** with GenExpr code to calculate and perform the crossover on the input signal. The  algorithm, written by Tim Place in his [crossover filter design tutorial](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial), implements a [Linkwitz-Riley crossover](https://en.wikipedia.org/wiki/Linkwitz%E2%80%93Riley_filter) filter with a variable crossover frequency, so there is significantly more code in this GenExpr than the one above - this is because the filter coefficients need to be calculated on the fly in response to the crossover frequency parameter, which could change at any time.
 
+</details>
+
 ### EQ Wah
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Wah.png" target="_new"><img src = "./img/Wah.png" title="Wah patcher" alt="Wah patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal is a [wah-wah](https://en.wikipedia.org/wiki/Wah-wah_pedal) algorithm where the position of the filter is controlled not by an expression pedal but by the amplitude of the input signal, via an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector). This technique was first used to great acclaim in the 1972 [Mu-Tron III](https://en.wikipedia.org/wiki/Mu-Tron_III) envelope filter.
 
@@ -197,9 +215,14 @@ a = 1.0 + b + c
 
 As with the Mu-Tron III that inspired this design, this pedal will respond the the dynamic range of the input instrument by opening the filter on louder notes. The different controls allow you to fine tune both the range and resonance characteristics of the wah itself as well as - just as importantly - the slew of the envelope follower. The original Mu-Tron pedals used a [Vactrol](https://en.wikipedia.org/wiki/Resistive_opto-isolator) with its characteristic response curve to couple the envelope follower to the filter; the photoresistor replaced the potentiometer that would have been attached to the rocker pedal on a conventional wah.
 
+</details>
+
 ### EQ Wah2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Wah2.png" target="_new"><img src = "./img/Wah2.png" title="Wah2 patcher" alt="Wah2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal uses the same premise as the last - a [wah-wah](https://en.wikipedia.org/wiki/Wah-wah_pedal) controlled by something other than a rocker pedal, and builds it out so that the wah frequency can be controlled by an [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) (LFO). It also has a (simplified) version of the Mu-Tron-style envelope follower in the previous pedal that can be activated with a switch. The filter in this pedal is more complex as well: instead of a 2nd order lowpass filter, the filter is Peter McCulloch's [implementation](https://cycling74.com/tools/pm-ladder-moog-ladder-filter) of the [Moog Ladder Filter](https://www.uaudio.com/blog/moog-ladder-filter/).
 
@@ -223,9 +246,14 @@ The **ICST_MoogLP24** subpatch implements a digital model of the classic 4-pole 
 
 [Auto-wah](https://en.wikipedia.org/wiki/Auto-wah) effects - where the filter is controlled by the input signal's envelope or by an LFO, are common effects, and the underlying algorithms for designing the envelope followers and oscillators can be used with many other types of processing.
 
+</details>
+
 ### EQ Formant
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Formant.png" target="_new"><img src = "./img/Formant.png" title="Formant patcher" alt="Formant patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements a filter that simulates the [formants](https://en.wikipedia.org/wiki/Formant) of the human vocal tract. Unlike a conventional filter effect where the key aspect of the filter is its center or cutoff frequency, a formant filter contains an array of values that represent different [vowel](https://en.wikipedia.org/wiki/Vowel) sounds, using three resonant [bandpass filters](https://en.wikipedia.org/wiki/Band-pass_filter). These vowels are then scanned as a continuum that can be indexed either by an [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) or an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector), as per the previous pedals.
 
@@ -267,9 +295,14 @@ d = -r*r
 
 The three **reson** filters, when run in parallel, simulate the resonances of the human mouth when forming basic vowel sounds - roughly speaking, each filter is responsible for the mouth's width, heigh, and depth. The resulting effect sounds less like a wah-wah and more like a [talk box](https://en.wikipedia.org/wiki/Talk_box). Formant filtering can be used for many applications, from vocal effects to simulating the resonances of instrument bodies (c.f. the [Boss "Acoustic Simulator"](https://www.boss.info/us/products/ac-3/) pedal).
 
+</details>
+
 ### EQ Vocoder
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Vocoder.png" target="_new"><img src = "./img/Vocoder.png" title="Vocoder patcher" alt="Vocoder patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements a [Vocoder](https://en.wikipedia.org/wiki/Vocoder). Vocoders were originally developed as a mechanism for low-bandwidth (and secure) encoding of speech as parallel streams of envelopes (DC voltages) that could be transmitted and resynthesized at their destination. These devices became used creatively by composers and musicians so that by the 1970s vocoders were being manufactured (by Moog, Roland, and others) exclusively for use as a musical *cross-synthesizer*, allowing two audio sources to be blended, with one source providing the tonal characteristics and the other providing the articulation and timbre. 
 
@@ -318,6 +351,12 @@ d = -r*r
 
 The vocoder is an interesting hybrid processor, using a filter bank not for traditional equalization, but as a multi-band dynamics processor where a second signal controls the gain on each channel. In the next section, we consider *dynamics* effects, many of which use this technique for different common effects in music production.
 
+</details>
+
+[back to top](#top)
+
+[return to main page](./index.md)
+
 ## Dynamics
 
 Dynamics effects work by changing the *gain* of the input signal. Dynamics-based processing techniques, like equalization, are central to audio production, and effects such as *compression*, *limiting*, and *noise gates* are used in live sound reinforcement, broadcast engineering, recording, and mastering, as tools to help create consistent output levels, prevent sudden signal spikes, reduce noise, and generally improve signal quality. Generally, one important common factor in dynamics processing is the generatino of a *key* signal, usually via an envelope follower; this signal gives the rest of the circuit an understanding of the overall volume of the input, which then influences how the real signal is attenuated or amplified. In pedal design, dynamics processors are often first in the effects chain to provide *compression* on the instrument signal, levelling its dynamic range, or *gating* to reduce noise. With these algorithms, creative effects are possible, often by using sidechain inputs for the key signal.
@@ -325,6 +364,9 @@ Dynamics effects work by changing the *gain* of the input signal. Dynamics-based
 ### Dyn Tremolo
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Tremolo.png" target="_new"><img src = "./img/Tremolo.png" title="Tremolo patcher" alt="Tremolo patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements one of the oldest dynamics-related effects: a periodic fading-in and fading-out of the signal through [amplitude modulation](https://en.wikipedia.org/wiki/Amplitude_modulation) that creates an effect akin to musical [**tremolo**](https://en.wikipedia.org/wiki/Tremolo). The tremolo effect uses a [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) (LFO), which can be shaped from a sine wave to a near-[square wave](https://en.wikipedia.org/wiki/Square_wave). The effect has a switch that allows the intensity (*depth*) of the effect to be controlled with by a constant knob value or by the amplitude of the input signal; this latter technique is inspired by the classic [Uni-Vibe](https://en.wikipedia.org/wiki/Uni-Vibe) pedals from the 1960s. Finally, this pedal has a [stereo output](https://en.wikipedia.org/wiki/Stereophonic_sound), allowing it to be used as an [auto-panner](https://en.wikipedia.org/wiki/Panning_(audio)).
 
@@ -339,9 +381,14 @@ As with the Wah effects above, this effect uses both an LFO and, optionally, an 
 
 Tremolo effects are among the oldest special effects for instruments, with [tremulant](https://en.wikipedia.org/wiki/Tremulant) effects on organs as far back as the 18th Century.
 
+</details>
+
 ### Dyn Compressor
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Compressor.png" target="_new"><img src = "./img/Compressor.png" title="Compressor patcher" alt="Compressor patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 The pedal implements a digital [compressor / limiter](https://en.wikipedia.org/wiki/Dynamic_range_compression), where an input signal exceeding a threshold value is attenuated either by a fixed ratio (**compression**) or by a very high ratio guaranteed to keep the audio within a specific dynamic range (**limiting**). Compressors and limiters, in addition to their threshold and ratio settings, also have controls around how quickly the compression takes effect when the threshold is exceeded (the **attack** time) and how quickly the compression relaxes once the input signal goes below the threshold (the **release** time); in practice, both of these parameters are controlling aspects of the [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector) that generates the *key signal* for the dynamics processor. Finally, most compressor / limiters allow the user to adjust both the input gain into the circuit and the output level (sometimes called *makeup gain*).
 
@@ -360,9 +407,14 @@ The key signal of the compressor illuminates **led2** on the Daisy Petal allowin
 
 Compressor / limiters are fairly ubiquitous as pedal effects, particularly with instruments that have high dynamic range in their transients (e.g. electric bass guitars). They can be configured to create a transparent "levelling" of an input signal or be used more creatively to create a hard [pumping sound](https://en.wikipedia.org/wiki/Pumping_(audio)) as they engage and disengage.
 
+</details>
+
 ### Dyn Gate
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Gate.png" target="_new"><img src = "./img/Gate.png" title="Gate patcher" alt="Gate patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 A [noise gate](https://en.wikipedia.org/wiki/Noise_gate) is a dynamics processor that is the inverse of a limiter. Instead of reducing the volume of an input signal that exceeds a threshold, the circuit reduces the volume of a signal that falls *below* a threshold. This can clean up a signal by eliminating ground hum, hiss, or other low level noise in a signal when the instrument driving the signal is silent. Noise gates, like compressors, are used extensively in audio production beyond effect pedals; their most common use is to attenuate (or *duck*) background noise in broadcast or recording scenarios where there is an open mic.
 
@@ -378,6 +430,12 @@ The key signal's envelope illuminates **led2** on the Daisy Petal allowing you t
 
 Noise gates are used as pedal effects to help attenuate electrical hum (e.g. from a single-coil guitar pickup) and other unwanted sounds when an instrument goes quiet; they are also used with sidechain inputs to add rhythmic effects to a sound.
 
+</details>
+
+[back to top](#top)
+
+[return to main page](./index.md)
+
 ## Distortion
 
 [Distortion](https://en.wikipedia.org/wiki/Distortion_(music)) effects are some of the most iconic signal processing techniques used in audio, and some of the earliest effect pedals fall into this category. Like dynamics effects, distortion effects are mathematically adjusting the amplitude of an audio signal; however, unlike dynamics effects, where the objective is to control the sound's dynamic range overall, distortion effects directly alter the sound wave of the input signal through techniques such as [clipping](https://en.wikipedia.org/wiki/Clipping_(audio)), [waveshaping](https://en.wikipedia.org/wiki/Waveshaper), and other mathematical algorithms that simulate the characteristics of amplification equipment being fed a hot signal, pushed beyond their recommended power output, or intentionally damaged. Modern distortion effects depart from the historical categories of fuzz, overdrive, and distortion to create new sounds, all of which shape the input signal in way that its [timbre](https://en.wikipedia.org/wiki/Timbre) is transformed.
@@ -386,17 +444,30 @@ Noise gates are used as pedal effects to help attenuate electrical hum (e.g. fro
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Overdrive.png" target="_new"><img src = "./img/Overdrive.png" title="Overdrive patcher" alt="Overdrive patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
 This pedal implements a simple distortion algorithm called *hard clipping*, where a signal is amplified, then input into a circuit that imposes a hard limit on its range, causing an *overdrive* effect where the waveform squares off at the edges, emphasizing and adding harmonics to the signal. Using analog circuitry, hard clipping is easily accomplished by overdriving an operational amplifier; with DSP, we can accomplish a similar effect with one parameter (**knob3_OD**) that amplifies the input signal (using a <b>*</b>) into a **clip** operator (shaping the signal), then divides the signal back down to lower the overall volume (using a <b>/</b>). The higher the overdrive factor (up to 500 in our algorithm), the more prominent the clipping effect will be.
+
+</details>
 
 ### Dist Fuzz
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Fuzz.png" target="_new"><img src = "./img/Fuzz.png" title="Fuzz patcher" alt="Fuzz patcher"></a>
 
+<details>
+	<summary>More Info...</summary>
+
 This pedal implements a more extreme distortion effect by creating sharper angles in a waveform by calculating the [hyperbolic tangent](https://en.wikipedia.org/wiki/Hyperbolic_functions) of the input signal. This *fuzz* effect (done using transistor feedback in analog circuits) emphasizes high harmonics. The single parameter for our pedal (**knob3_fuzz**) amplifies the input signal (using a <b>*</b>) into the **tanh** operator; the output is then constrained using the **clip** operator and then divided down (using a <b>/</b>) by 1/10th of the input gain to level the output volume.
+
+</details>
 
 ### Dist Octavia
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Octavia.png" target="_new"><img src = "./img/Octavia.png" title="Octavia patcher" alt="Octavia patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements an *octave fuzz* such as found in the [Octavia](https://en.wikipedia.org/wiki/Octavia_(effects_pedal)) pedal designed by [Roger Msyer](https://en.wikipedia.org/wiki/Roger_Mayer_(engineer)) for [Jimi Hendrix](https://en.wikipedia.org/wiki/Jimi_Hendrix). An octave fuzz uses a [rectifier](https://en.wikipedia.org/wiki/Rectifier) circuit to fold the negative side of the AC waveform over into the positive range; this has the effect of doubling the frequency of the input signal, raising the fundamental by an octave. This type of pitch shifting through full-wave rectification works, though the sound can be fairly rough due to slope of the signal near the fold-over point. The output of the rectified signal is then put into a fuzz circuit.
 
@@ -404,9 +475,14 @@ Our digital *octavia* pedal has two parameters: **knob3_oct** controls the blend
 
 The second parameter (**knob4_fuzz**) controls the amount of the fuzz effect using the same algorithm as the previous pedal : a signal multiplied into a hyperbolic tangent operator (**tanh**) with a clipped output (**clip**). The result is a fuzzed version of the blended octave signal.
 
+</details>
+
 ### Dist Distortion
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion.png" target="_new"><img src = "./img/Distortion.png" title="Distortion patcher" alt="Distortion patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal simulates classic amp distortion using a DSP algorithm developed by [Randy Stenseth](https://www.musicdsp.org/en/latest/Filters/141-karlsen.html) to model the response of a fast differential amplifier. The two parameters control the "filterdrive" coefficient for the amplifier algorithm (**knob3_drive**) and the overall output gain (**knob4_output**). The bulk of the effect is accomplished by the GenExpr code in the **codebox**, which implements the Stenseth algorithm:
 
@@ -450,9 +526,14 @@ b_in = b_in / b_mul;
 out1 = b_in;
 ```
 
+</details>
+
 ### Dist Distortion2
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion2.png" target="_new"><img src = "./img/Distortion2.png" title="Distortion2 patcher" alt="Distortion2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements a multi-band distortion where the input signal is split into three frequency bands, each of which is distorted separately using a sample-by-sample compression circuit that functions as a *soft clipping* overdrive. The effect uses a 2nd-order [state variable filter](https://en.wikipedia.org/wiki/State_variable_filter) (SVF) to divide the input signal into three bands, with a lowpass, bandpass, and highpass output being treated independently.
 
@@ -483,9 +564,14 @@ The three output bands (lowpass, bandpass, highpass) are then sent into a **dist
 
 This patcher implements a sample-by-sample soft clipping effect using an algorithm similar to a compressor without the key signal: if the absolute value of the input signal exceeds the threshold set by **knob3_drive**, it will be attenuated by the **knob4_squish** amount.
 
+</details>
+
 ### Dist Waveshaper
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Waveshaper.png" target="_new"><img src = "./img/Waveshaper.png" title="Waveshaper patcher" alt="Waveshaper patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements three elementary forms of [waveshaping](https://en.wikipedia.org/wiki/Waveshaper) in series on the input signal, with the effect parameters controlling the strength of the effect. Waveshaping of this sort is more common in synthesizers (so-called [distortion synthesis](https://en.wikipedia.org/wiki/Distortion_synthesis)) but can be interesting as a signal processing technique as well.
 
@@ -498,15 +584,26 @@ The five parameters for the pedal are:
 
 The pedal implements these three distortions in reverse order, so that the signal is clipped, then wrapped, then folded. You can easily repatch the **gen~** to do these procedures in a different order to experiment with different sounds.
 
+</details>
+
 ### Dist Waveshaper2
     
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Waveshaper2.png" target="_new"><img src = "./img/Waveshaper2.png" title="Waveshaper2 patcher" alt="Waveshaper2 patcher"></a>
+
+<details>
+	<summary>More Info...</summary>
 
 This pedal implements parametric [waveshaping](https://en.wikipedia.org/wiki/Waveshaper) on the input signal, where three parameters set threshold values that determine whether a given sample's polarity is flipped (i.e. a positive sample becomes a negative sample and vice-versa). This will create extreme local discontinuities in the signal that evoke a true "digital" form of distortion.
 
 In our design, each sample's absolute value is first compared against a threshold (**knob3_xthresh1**); if it is greater than the threshold value it is inverted. Then, the positive signal values are compared against a second threshold (**knob4_xthresh2**); again, signals greater than the threshold are inverted. Third, the negative values are compared against a final threshold (**knob5_xthresh3**), with signals *less* than the threshold inverted back into the positive rage. Next, this waveshaped signal is sent through an optional circuit (engaged with **sw5**) which uses the signal values as phase indices of a **cycle** operator. Finally, the resulting waveform is smoothed out by a simple one pole lowpass filter according to an amount set by **knob6_smooth**.
 
 In addition to the waveshaping algorithm described above, the pedal has parameters for input and output level (**knob1_input** and **knob2_output**).
+
+</details>
+
+[back to top](#top)
+
+[return to main page](./index.md)
 
 ## Modulation
 
@@ -542,6 +639,10 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHComb2.png" target="_new"><img src = "./img/SHComb2.png" title="SHComb2 patcher" alt="SHComb2 patcher"></a>
 
+[back to top](#top)
+
+[return to main page](./index.md)
+
 ## Delay
 
 ### Del Digitaldelay
@@ -563,6 +664,10 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 ### Del Reverb3
     
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb3.png" target="_new"><img src = "./img/Reverb3.png" title="Reverb3 patcher" alt="Reverb3 patcher"></a>
+
+[back to top](#top)
+
+[return to main page](./index.md)
 
 ## Special
 
