@@ -618,11 +618,11 @@ Modulation effects use short, shifting time delays to add depth and richness to 
 
 This pedal produces a simple [chorus](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) effect by shifting the pitch of the incoming signal up and down via a modulating delay line; this signal is then mixed back in with the original to create the illusion of an ensemble sound.
 	
-The key **gen~** operator behind this pedal is the **delay** (colored in blue) which, as its name suggests, is a digital delay line, implemented as an array of memory storage where the write pointer moves through in a loop, with the read pointer a certain amount behind - this distance is the actual delay. The arguments to the **delay** operator are its maximum length in *samples* and a flag to allow for feedback (unused here). The signal to be delayed goes into the left inlet of the operator; the actual desired delay time is the value in the right inlet.
+The key **gen~** operator behind this pedal is the **delay** (colored in blue) which, as its name suggests, is a digital delay line, implemented as an array of memory storage where the write pointer moves through in a loop, with the read pointer a certain amount behind - this distance is the actual delay. The arguments to the **delay** operator are its maximum length in *samples* and the number of *taps* (outputs - here only 1). The signal to be delayed goes into the left inlet of the operator; the actual desired delay time is the value in the right inlet.
 	
 To create our chorus effect, we have a [low frequency oscillator](https://en.wikipedia.org/wiki/Low-frequency_oscillation) (LFO) in the form of a **cycle** operator, which generates a sine wave. The LFO's rate is set by **knob4_rate**; its depth is determined by the <b>*</b> operator, based on a value set by **knob5_depth**. This scaled output is then offset by a **+** operator that provides a central delay time around which the LFO cycles. In our pedal, modelled after the Boss CE-2 Chorus, the delay center is 8ms, with the depth allowing for a maximum of 2ms in either direction (so 6-10ms of delay). The rate of the effect can go from 0.01 to 5.01 Hz. The **expr** operators after the **param** inputs provide a logarithmic scaling to the input knobs so that there is more range at the low values than the high values.
 
-The delayed signal is then mixed back in with the dry signal. Our pedal has a [stereo](https://en.wikipedia.org/wiki/Stereophonic_sound) effect output by inverting the phase on the right side.
+The delayed signal is then mixed back in with the dry signal. Our pedal has a [stereo](https://en.wikipedia.org/wiki/Stereophonic_sound) effect output by inverting the phase on the right side. Even with one delay line and simple parameters controlling the LFO, the chorusing effect in our pedal is quite flexible.
 
 </details>
 
@@ -633,7 +633,16 @@ The delayed signal is then mixed back in with the dry signal. Our pedal has a [s
 <details>
 	<summary>More Info...</summary>
 
-This pedal produces a simple [chorus](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) effect by shifting the pitch of the incoming signal up and down via a modulating delay line; this signal is then mixed back in with the original to create the illusion of an ensemble sound. Our algorithm also allows the dry signal to be bypassed, turning the pedal into a [vibrato](https://en.wikipedia.org/wiki/Vibrato) unit.
+This pedal produces a more complex [chorus](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) effect than the previous pedal, by using multiple *taps* on our modulated delay signal. In addition, the central time of the delay can be widened, creating more time delay between the dry and wet signal; this ability to control for *breadth* as well as depth makes the ensemble effect more flexible. Our pedal design also allows the dry signal to be bypassed entirely, turning the pedal into a [vibrato](https://en.wikipedia.org/wiki/Vibrato) unit.
+	
+Our pedal has four continuous parameters as well as one switch:
+* **knob3_depth** controls the depth (amplitude) of the eight LFOs created by the **cycle** operators in the patch. The depth control goes up to 1002 samples of shift in either direction from the central delay time.
+* **knob4_rate** controls the rate (frequency) of the eight LFOs in the patch. This value is scaled from 0.01-5.01 Hz, and then multiplied by a different value for each of the eight delay taps guaranteeing that the delays will shift around one another; the multipliers into the **cycle** operators contain values intented to roughly mirror one another in the left and right output channels.
+* **knob5_breadth** changes the base delay of the taps from the **delay** operator. Each pair of taps has a base delay that is higher than the previous pair, so as the parameter value increases, the delay amounts around which the LFO's cycle become spread farther apart.
+* **knob6_taps** controls how many delay lines are mixed into the effect signal, with a value of 0 only sounding the first two taps and a value of 1 engaging all 8. This control also sets the overall gain of the effected signal when mixed back in with the original.
+* **sw5** alternates between a *chorus* effect - where the delayed and dry signal are combined, and a *vibrato* effect, where only the wet signal is output.
+
+By using multiple delay taps set to non-integer multiples of one another, this pedal has a much richer chorus effect than the previous example.
 
 </details>
 
