@@ -379,7 +379,7 @@ The pedal has three knob controls as well as two switches that control its confi
 
 As with the Wah effects above, this effect uses both an LFO and, optionally, an envelope follower to adjust the actual effect, which is simply a gain control using a <b>*</b> operator. The LFO is a **cycle** operator driven by a **phasor** that can be shaped through a gain stage into a **clip** operator; this shapes the waveform according to **knob5_shape**. The envelope follower takes the input signal and converts it into a smooth representation of the input gain using the **abs** and **slide** operators. The intensity of the tremolo effect illuminates **led2** on the Daisy Petal board.
 
-Tremolo effects are among the oldest special effects for instruments, with [tremulant](https://en.wikipedia.org/wiki/Tremulant) effects on organs as far back as the 18th Century.
+Tremolo effects are among the oldest special effects for instruments, with [tremulant](https://en.wikipedia.org/wiki/Tremulant) effects on organs as far back as the 18th Century. Modern tremolo pedals are often categorized as *modulation* effects (alongside flangers, phasers, etc.) but we consider them here alongside other dynamics processors as algorithms that modify the volume of a signal.
 
 </details>
 
@@ -606,6 +606,8 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 [return to main page](./index.md)
 
 ## Modulation
+	
+Modulation effects use short, shifting time delays to add depth and richness to a signal, by simulating rotary cabinets (*phasers*), generating ensemble-like sounds (*chorus*), or creating moving resonant peaks in the signal (*flangers*). Modulation effects are among the most creative categories of effects processor, with a wide variety of different techniques and approaches.
 
 ### Mod Chorus
 
