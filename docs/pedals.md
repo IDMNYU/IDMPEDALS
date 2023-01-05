@@ -616,7 +616,7 @@ Modulation effects use short, shifting time delays to add depth and richness to 
 <details>
 	<summary>More Info...</summary>
 
-This pedal produces a simple [chorus](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) effect by shifting the pitch of the incoming signal up and down via a modulating delay line; this signal is then mixed back in with the original to create the illusion of an ensemble sound.
+This pedal produces a simple [chorus](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) effect by shifting the pitch of the incoming signal up and down via a modulating delay line; this signal is then mixed back in with the original to create the illusion of an ensemble sound. Analog chorus effects were developed to take advantage of [bucket brigade devices](https://en.wikipedia.org/wiki/Bucket-brigade_device) - inexpensive integrated circuits which allowed for analog delay lines, and became popular as pedals, rackmount studio gear, and as effects integrated into instrument amplifiers. Chorus effects simulate the sound of multiple instruments playing the same line - the small variations in timing and tuning create a more lush sound (e.g. a string orchestra versus a solo violin). 
 	
 The key **gen~** operator behind this pedal is the **delay** (colored in blue) which, as its name suggests, is a digital delay line, implemented as an array of memory storage where the write pointer moves through in a loop, with the read pointer a certain amount behind - this distance is the actual delay. The arguments to the **delay** operator are its maximum length in *samples* and the number of *taps* (outputs - here only 1). The signal to be delayed goes into the left inlet of the operator; the actual desired delay time is the value in the right inlet.
 	
@@ -653,7 +653,16 @@ By using multiple delay taps set to non-integer multiples of one another, this p
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal implements a [flanger](https://en.wikipedia.org/wiki/Flanging), a modulation effect that (like a chorus) involves a moving delay line (controlled by an [LFO](https://en.wikipedia.org/wiki/Low-frequency_oscillation)) mixed in with the original signal. Unlike a chorus effect, however, flangers often use a wider range of delay times and [feedback](https://en.wikipedia.org/wiki/Feedback) to emphasize the resonant effects of the [comb filter](https://en.wikipedia.org/wiki/Comb_filter) caused by a short delay with high regeneration. Flangers have their origin in analog tape manipulation - the edge of a tape reel has a "flange" which can be manipulated to slightly vary its speed. Analog pedal-format flangers became popular with the advent of solid state [bucket brigade devices](https://en.wikipedia.org/wiki/Bucket-brigade_device) which allowed for delay effects using arrays of capacitors.
+	
+Our flanger implementation consists of four parameters as well as one switch that slightly changes the architecture of the effect:
+* **knob3_manual** controls the base delay (or "manual" value) of the flanger, which is the delay time around which the LFO cycles. This value is typically up to around 20ms (the point at which a delay becomes perceived as an "echo"). The **delay** operator in **gen~** takes values in samples, so our control here is scaled up to 1920 samples (or 20ms at 96kHz).
+* **knob4_rate** controls the speed (frequency) of the sine wave LFO modulating the delay line, up to 10 Hz. A value of 0 will create a static, resonant delay.
+* **knob5_depth** controls the depth (amplitude) of the LFO, expressed as a fraction of the current base delay. At its fullest value, the LFO will sweep all the way from the base delay amount down to 1 sample of delay and up again a corresponding amount.
+* **knob6_res** controls the resonances (feedback) of the delay line; higher values create the characteristic metallic ringing of a flanger, while lower values will create a more subtle effect.
+* **sw5**, when engaged, configures the flanger to work in a "through-zero" mode, where the dry signal is also delayed by the base delay, causing the LFO to cycle values that are actually closer in time than the dry signal. This creates an effect closer to analog tape flanging with the cost of a small latency on the overall signal.
+
+As with the chorus effects, the **delay** operator does the actual work in the pedal; in our version, the flanger is stereo, with two matching delay lines that feedback in series, resulting in a wide stereo image as the right side's delay line is receiving its input slightly later. The resonating, "swooshing" effect characteristic of flangers is due to the moving *comb filter* caused by the delay line - the input signal will ring at a harmonic spectrum equal to the wavelength of the delay. Flangers are very expressive effects, and the four continuous parameters interact in a lot of interesting ways.
 
 </details>
 
