@@ -728,7 +728,11 @@ words words words
 <details>
 	<summary>More Info...</summary>
 
-words words words
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/LFO-allpass_complex.png" target="_new"><img src = "./img/LFO-allpass_complex.png" title="LFO allpass subpatch" alt="LFO allpass subpatch"></a>
+	
+This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filer:
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/allpass-coeffs.png" target="_new"><img src = "./img/allpass-coeffs.png" title="allpass coefficients subpatch" alt="allpass coefficients subpatch"></a>
 
 </details>
 
