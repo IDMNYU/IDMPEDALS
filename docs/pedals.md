@@ -683,7 +683,7 @@ This subpatch contains the LFO itself (a **cycle** operator) which, when amplifi
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/allpass-coeffs.png" target="_new"><img src = "./img/allpass-coeffs.png" title="allpass coefficients subpatch" alt="allpass coefficients subpatch"></a>
 
-Our allpass filter uses a biquadratic filter equation with a variable center frequency and a fixed Q and gain, solved as:
+Our allpass filter uses the biquadratic filter equation with a variable center frequency and a fixed Q and gain, solved as:
 ```
 y[n] = ax[n] + bx[n-1] + cx[n-2] - dy[n-1] - ey[n-2]
 where...
