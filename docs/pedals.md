@@ -704,7 +704,7 @@ d = b
 e = a
 ```
 
-These coefficients create a sweepable bandpass filter with no gain - in other words, the frequency content of the signal is unchanged (hence the term *allpass* filter). However, the *phase* relationships of the input signal are shifted by the filter. When combined with the dry signal (in the parent patch), the result is phase cancellation of different frequencies as the center frequency of the filter sweeps.
+These coefficients create a sweepable filter with no gain - in other words, the *frequency* content of the signal is unchanged (hence the term "allpass"). However, the *phase* relationships of the input signal are shifted by the filter. When combined with the dry signal (in the parent patch), the result is phase cancellation of different frequencies as the center frequency of the filter sweeps.
 	
 Finally, the phaser affect uses [feedback](https://en.wikipedia.org/wiki/Feedback) to create a more resonant effect - the output of the allpass is multiplied by 0.7, delayed by one sample, and added back into the filter. This creates a more pronounced "whooshing" phasing effect, akin to classic phaser pedals.
 
@@ -717,7 +717,11 @@ Finally, the phaser affect uses [feedback](https://en.wikipedia.org/wiki/Feedbac
 <details>
 	<summary>More Info...</summary>
 
-words words words
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/LFO-allpass_complex.png" target="_new"><img src = "./img/LFO-allpass_complex.png" title="LFO allpass subpatch" alt="LFO allpass subpatch"></a>
+	
+This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filer:
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/allpass-coeffs.png" target="_new"><img src = "./img/allpass-coeffs.png" title="allpass coefficients subpatch" alt="allpass coefficients subpatch"></a>
 
 </details>
 
@@ -728,11 +732,7 @@ words words words
 <details>
 	<summary>More Info...</summary>
 
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/LFO-allpass_complex.png" target="_new"><img src = "./img/LFO-allpass_complex.png" title="LFO allpass subpatch" alt="LFO allpass subpatch"></a>
-	
-This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filer:
-
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/allpass-coeffs.png" target="_new"><img src = "./img/allpass-coeffs.png" title="allpass coefficients subpatch" alt="allpass coefficients subpatch"></a>
+words words words
 
 </details>
 
