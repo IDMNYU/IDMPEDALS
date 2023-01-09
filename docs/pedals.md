@@ -810,9 +810,19 @@ The actual comb filtering in the patch is accomplished by the **delay** operator
 <details>
 	<summary>More Info...</summary>
 
-This pedal expands on the previous 
+This pedal expands on the previous design by using four independent [comb filters](https://en.wikipedia.org/wiki/Comb_filter) activated by a [sample and hold](https://en.wikipedia.org/wiki/Sample_and_hold) algorithm. Unlike in the previous pedal design, these filters are intentionally put into a *pitch grid* of a [major scale](https://en.wikipedia.org/wiki/Major_scale). This effect produces ringing chords as the filter resonances are tuned to harmonies within a scale.
+	
+This pedal has six continuous parameters:
+* **knob1_res** controls the overall resonance of the comb filter effect by controlling the [feedback](https://en.wikipedia.org/wiki/Feedback) into the **delay** operator in the **gen~** patcher.
+* **knob2_key** transposes the pitch grid for the harmonic filters through all 12 steps of the [chromatic scale], allowing us to select any (major) key for the resonation effect.
+* **knob3_min** and **knob4_max** set the minimum and maximum pitch boundaries of the comb effect by providing scaling parameters to the output of the sample and hold.
+* **knob5_r1** and **knob6_r2** control the rates (frequencies) of two LFO **phasor** operators which input into the **sah** operator. The *r2* sawtooth is the rate at which the **sah** operator will sample; the *r1* sawtooth is the input being sampled. Both sawtooth generators can go up to 10 Hz. A slow *r1* and a fast *r2* will create a rising ladder effect; a fast *r1* and a slow *r2* will cause the comb frequency to jump around, or sometimes fall, as the rate of the oscillator to be sampled is faster than the rate of sampling (similar to a [stroboscopic effect](https://en.wikipedia.org/wiki/Wagon-wheel_effect)).
+	
+The output of the **sah** operator in this algorithm is offset by 0.25, 0.5, and 0.75 (or 90, 180, and 270 degrees) so that each of the four filters are being activated by a different value. These four values are then input into a **grid** subpatcher:
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/grid.png" target="_new"><img src = "./img/grid.png" title="grid subpatcher" alt="grid subpatcher"></a>
+	
+This subpatch uses a **codebox** with GenExpr code to take a continuous MIDI value at **in 1** and a key (or transposition) value at **in 2** and output a quantized MIDI pitch in a major scale. It does this using the *Data* object in GenExpr, where a 12-point dataset maps a chromatic input to a [diatonic](https://en.wikipedia.org/wiki/Diatonic_scale) output. The incoming MIDI value is separated into an octave and a pitch class, with the pitch class being indexed against the "ms" array stored in the *Data* object. The result is 7 out of 12 possible values being selected, creating harmonic resonances in a specific key.
 
 </details>
 
