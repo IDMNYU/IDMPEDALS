@@ -679,11 +679,11 @@ Our simple phaser pedal, like our first chorus effect, has only two controls, **
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/LFO-allpass_simple.png" target="_new"><img src = "./img/LFO-allpass_simple.png" title="LFO allpass subpatch" alt="LFO allpass subpatch"></a>
 	
-This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filer:
+This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filter:
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/allpass-coeffs.png" target="_new"><img src = "./img/allpass-coeffs.png" title="allpass coefficients subpatch" alt="allpass coefficients subpatch"></a>
 
-Our allpass filter uses the biquadratic filter equation with a variable center frequency and a fixed Q and gain, solved as:
+Our allpass filter uses the biquadratic filter equation with a variable center frequency and a fixed Q (sent from the parent patcher) and gain, solved as:
 ```
 y[n] = ax[n] + bx[n-1] + cx[n-2] - dy[n-1] - ey[n-2]
 where...
@@ -691,7 +691,7 @@ x = the input signal
 y = the output signal
 n = time (n is now, n-1 is one sample ago, etc.)
 Fc = cutoff frequency
-Q = 2.0 (quality factor)
+Q = 3.0 (quality factor)
 SR = sampling rate
 
 Ω = Fc * 2π/SR (sampling increment)
@@ -726,12 +726,37 @@ This pedal expands on the previous design with the addition of additional parame
 * **knob6_diffusion** controls the phase offset of the parallel allpass filters, controlling how out-of-phase they are to one another. The higher this value, the wider the phasing effect.
 * **sw5** engages an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector) on the input signal to scale the depth amount, so that louder input signals cause a deeper phaser effect. This simulates the behavior of classic amplitude-driven pedal circuits such as the [Uni-Vibe](https://en.wikipedia.org/wiki/Uni-Vibe).
 	
+The input signal and control parameters for the LFO go into the **LFO-allpass** subpatchers:
+	
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/LFO-allpass_complex.png" target="_new"><img src = "./img/LFO-allpass_complex.png" title="LFO allpass subpatch" alt="LFO allpass subpatch"></a>
 	
-This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filer:
+Like the previous pedal, this subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filter. Unlike the simple phaser example, this subpatch has additional inlets to allow for an independent Q factor for each filter (**in 4**) as well as a phase offset to the LFO (**in 5**, controlled by the output of **knob6_diffusion**).
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/allpass-coeffs.png" target="_new"><img src = "./img/allpass-coeffs.png" title="allpass coefficients subpatch" alt="allpass coefficients subpatch"></a>
 
+As with the previous pedal, our allpass filter uses the biquadratic filter equation with a variable center frequency and a fixed Q (sent from the parent patcher) and gain, solved as:
+```
+y[n] = ax[n] + bx[n-1] + cx[n-2] - dy[n-1] - ey[n-2]
+where...
+x = the input signal
+y = the output signal
+n = time (n is now, n-1 is one sample ago, etc.)
+Fc = cutoff frequency
+Q = 3.0 (quality factor)
+SR = sampling rate
+
+Ω = Fc * 2π/SR (sampling increment)
+alpha = sin(Ω) * 0.5/Q
+
+a = 1.0/(alpha+1.0)*(1.0-alpha)
+b = 1.0/(alpha+1.0)*(-2.0*cos(Ω))
+c = 1.0
+d = b
+e = a
+```
+
+The output of our four allpass filters is then combined with the dry signal (in the parent patch), creating a complex network of phase cancellations across the frequency spectrum. When combined with feedback and implemented in [stereo](https://en.wikipedia.org/wiki/Stereophonic_sound), this phaser can create a broad range of sounds.	
+	
 </details>
 
 ### Mod Harmonizer
