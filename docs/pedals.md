@@ -10,17 +10,17 @@
   - [Formant Filter](#eq-formant-filter)
   - [Vocoder](#eq-vocoder)
 - [Dynamics](#dynamics)
-  - [Tremolo / Univibe](#dyn-tremolo)
-  - [Compressor / Limiter](#dyn-compressor)
-  - [Gate](#dyn-gate)
+  - [Tremolo](#dynamics-tremolo)
+  - [Compressor / Limiter](#dynamics-compressor-limiter)
+  - [Gate](#dynamics-noise-gate)
 - [Distortion](#distortion)
-  - [Overdrive](#dist-overdrive)
-  - [Fuzz](#dist-fuzz)
-  - [Octave Fuzz](#dist-octavia)
-  - [Amp Distortion](#dist-distortion) 
-  - [Multi-Band Distortion](#dist-distortion2) 
-  - [Clipping, Folding, Wrapping](#dist-waveshaper) 
-  - [Parametric Waveshaping](#dist-waveshaper2) 
+  - [Overdrive](#distortion-overdrive)
+  - [Fuzz](#distortion-fuzz)
+  - [Octave Fuzz](#distortion-octave-fuzz)
+  - [Amp Distortion](#distortion-amp-distortion) 
+  - [Multi-Band Distortion](#distortion-multi-band-distortion) 
+  - [Clipping, Folding, Wrapping](#distortion-clipping-folding-wrapping) 
+  - [Parametric Waveshaper](#distortion-parametric-waveshaper) 
 - [Modulation](#modulation)
   - [Simple Chorus](#mod-chorus) 
   - [Chorus Ensemble](#mod-chorus2) 
@@ -361,7 +361,7 @@ The vocoder is an interesting hybrid processor, using a filter bank not for trad
 
 Dynamics effects work by changing the *gain* of the input signal. Dynamics-based processing techniques, like equalization, are central to audio production, and effects such as *compression*, *limiting*, and *noise gates* are used in live sound reinforcement, broadcast engineering, recording, and mastering, as tools to help create consistent output levels, prevent sudden signal spikes, reduce noise, and generally improve signal quality. Generally, one important common factor in dynamics processing is the generatino of a *key* signal, usually via an envelope follower; this signal gives the rest of the circuit an understanding of the overall volume of the input, which then influences how the real signal is attenuated or amplified. In pedal design, dynamics processors are often first in the effects chain to provide *compression* on the instrument signal, levelling its dynamic range, or *gating* to reduce noise. With these algorithms, creative effects are possible, often by using sidechain inputs for the key signal.
 
-### Dyn Tremolo
+### Dynamics: Tremolo
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Tremolo.png" target="_new"><img src = "./img/Tremolo.png" title="Tremolo patcher" alt="Tremolo patcher"></a>
 
@@ -383,7 +383,7 @@ Tremolo effects are among the oldest special effects for instruments, with [trem
 
 </details>
 
-### Dyn Compressor
+### Dynamics: Compressor / Limiter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Compressor.png" target="_new"><img src = "./img/Compressor.png" title="Compressor patcher" alt="Compressor patcher"></a>
 
@@ -409,7 +409,7 @@ Compressor / limiters are fairly ubiquitous as pedal effects, particularly with 
 
 </details>
 
-### Dyn Gate
+### Dynamics: Noise Gate
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Gate.png" target="_new"><img src = "./img/Gate.png" title="Gate patcher" alt="Gate patcher"></a>
 
@@ -440,7 +440,7 @@ Noise gates are used as pedal effects to help attenuate electrical hum (e.g. fro
 
 [Distortion](https://en.wikipedia.org/wiki/Distortion_(music)) effects are some of the most iconic signal processing techniques used in audio, and some of the earliest effect pedals fall into this category. Like dynamics effects, distortion effects are mathematically adjusting the amplitude of an audio signal; however, unlike dynamics effects, where the objective is to control the sound's dynamic range overall, distortion effects directly alter the sound wave of the input signal through techniques such as [clipping](https://en.wikipedia.org/wiki/Clipping_(audio)), [waveshaping](https://en.wikipedia.org/wiki/Waveshaper), and other mathematical algorithms that simulate the characteristics of amplification equipment being fed a hot signal, pushed beyond their recommended power output, or intentionally damaged. Modern distortion effects depart from the historical categories of fuzz, overdrive, and distortion to create new sounds, all of which shape the input signal in way that its [timbre](https://en.wikipedia.org/wiki/Timbre) is transformed.
 
-### Dist Overdrive
+### Distortion: Overdrive
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Overdrive.png" target="_new"><img src = "./img/Overdrive.png" title="Overdrive patcher" alt="Overdrive patcher"></a>
 
@@ -451,7 +451,7 @@ This pedal implements a simple distortion algorithm called *hard clipping*, wher
 
 </details>
 
-### Dist Fuzz
+### Distortion: Fuzz
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Fuzz.png" target="_new"><img src = "./img/Fuzz.png" title="Fuzz patcher" alt="Fuzz patcher"></a>
 
@@ -462,7 +462,7 @@ This pedal implements a more extreme distortion effect by creating sharper angle
 
 </details>
 
-### Dist Octavia
+### Distortion: Octave Fuzz
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Octavia.png" target="_new"><img src = "./img/Octavia.png" title="Octavia patcher" alt="Octavia patcher"></a>
 
@@ -477,7 +477,7 @@ The second parameter (**knob4_fuzz**) controls the amount of the fuzz effect usi
 
 </details>
 
-### Dist Distortion
+### Distortion: Amp Distortion
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion.png" target="_new"><img src = "./img/Distortion.png" title="Distortion patcher" alt="Distortion patcher"></a>
 
@@ -528,7 +528,7 @@ out1 = b_in;
 
 </details>
 
-### Dist Distortion2
+### Distortion: Multi-Band Distortion
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Distortion2.png" target="_new"><img src = "./img/Distortion2.png" title="Distortion2 patcher" alt="Distortion2 patcher"></a>
 
@@ -566,7 +566,7 @@ This patcher implements a sample-by-sample soft clipping effect using an algorit
 
 </details>
 
-### Dist Waveshaper
+### Distortion: Clipping, Folding, Wrapping
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Waveshaper.png" target="_new"><img src = "./img/Waveshaper.png" title="Waveshaper patcher" alt="Waveshaper patcher"></a>
 
@@ -586,7 +586,7 @@ The pedal implements these three distortions in reverse order, so that the signa
 
 </details>
 
-### Dist Waveshaper2
+### Distortion: Parametric Waveshaper
     
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Waveshaper2.png" target="_new"><img src = "./img/Waveshaper2.png" title="Waveshaper2 patcher" alt="Waveshaper2 patcher"></a>
 
