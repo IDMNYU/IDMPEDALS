@@ -791,7 +791,15 @@ The design of this particular harmonizer algorithm is adapted from the ["jimmies
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal is a variation on a [flanger](https://en.wikipedia.org/wiki/Flanging) effect where the resonant [comb filter](https://en.wikipedia.org/wiki/Comb_filter) caused by the short delay line moves in discrete steps rather than smoothly. To accomplish this, two [sawtooth waves](https://en.wikipedia.org/wiki/Sawtooth_wave) are used as [low frequency oscillators](https://en.wikipedia.org/wiki/Low-frequency_oscillation) with their outputs patched into a [sample and hold](https://en.wikipedia.org/wiki/Sample_and_hold) algorithm - when one sawtooth passes its midpoint, the secodn sawtooth's value is *sampled* and *held*. The result is an [arpeggio](https://en.wikipedia.org/wiki/Arpeggio)-style effect where the resonance of the flanger jumps around to different pitches. A switch allows these pitches to be quantized to a [chromatic scale](https://en.wikipedia.org/wiki/Chromatic_scale).
+	
+Our comb filter has five discrete parameters and a switch:
+* **knob1_res** controls the overall resonance of the comb filter effect by controlling the [feedback](https://en.wikipedia.org/wiki/Feedback) into the **delay** operator in the **gen~** patcher.
+* **knob3_min** and **knob4_max** set the minimum and maximum pitch boundaries of the comb effect by providing scaling parameters to the output of the sample and hold.
+* **knob5_r1** and **knob6_r2** control the rates (frequencies) of two LFO **phasor** operators which input into the **sah** operator. The *r2* sawtooth is the rate at which the **sah** operator will sample; the *r1* sawtooth is the input being sampled. Both sawtooth generators can go up to 10 Hz. A slow *r1* and a fast *r2* will create a rising ladder effect; a fast *r1* and a slow *r2* will cause the comb frequency to jump around, or sometimes fall, as the rate of the oscillator to be sampled is faster than the rate of sampling (similar to a [stroboscopic effect](https://en.wikipedia.org/wiki/Wagon-wheel_effect)).
+* **sw5** causes the output of the scaled sample-and-hold (which is treated as a MIDI pitch) to be quantized by a **round** operator, fixing the comb filter pitches into a chromatic scale.
+
+The actual comb filtering in the patch is accomplished by the **delay** operator, with its delay time calculated to be the [wavelength](https://en.wikipedia.org/wiki/Wavelength) of the desired frequency.
 
 </details>
 
