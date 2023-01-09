@@ -717,6 +717,15 @@ Finally, the phaser affect uses [feedback](https://en.wikipedia.org/wiki/Feedbac
 <details>
 	<summary>More Info...</summary>
 
+This pedal design implements a more complex [phaser](https://en.wikipedia.org/wiki/Phaser_(effect)) by using multiple stages of [allpass](https://en.wikipedia.org/wiki/All-pass_filter) filters to create more complex phasing effects. Like the previous pedal, it uses a single [LFO](https://en.wikipedia.org/wiki/Low-frequency_oscillation) for modulation; in this version, there are four identical allpass filters in parallel.
+	
+This pedal expands on the previous design with the addition of additional parameters. Our pedal has four continuous parameters and a switch:
+* **knob3_depth** controls the *depth* (amplitude) of the modulating LFO, controlling the overall strength of the phase shifting effect.
+* **knob4_rate** controls the *rate* (frequency) of the modulating LFO up to 5 Hz.
+* **knob5_fb** controls the amount of [feedback](https://en.wikipedia.org/wiki/Feedback) in the allpass network. Higher feedback will cause the phaser effect to become more resonant.
+* **knob6_diffusion** controls the phase offset of the parallel allpass filters, controlling how out-of-phase they are to one another. The higher this value, the wider the phasing effect.
+* **sw5** engages an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector) on the input signal to scale the depth amount, so that louder input signals cause a deeper phaser effect. This simulates the behavior of classic amplitude-driven pedal circuits such as the [Uni-Vibe](https://en.wikipedia.org/wiki/Uni-Vibe).
+	
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/LFO-allpass_complex.png" target="_new"><img src = "./img/LFO-allpass_complex.png" title="LFO allpass subpatch" alt="LFO allpass subpatch"></a>
 	
 This subpatch contains the LFO itself (a **cycle** operator) which, when amplified by the depth parameter, is transformed (by the **scale**) operator into a sine wave sweeping a range of MIDI values. When converted back to frequency (by the **mtof**), they go into a subpatch that calculates the coefficients for the allpass filer:
