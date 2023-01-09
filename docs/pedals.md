@@ -865,6 +865,12 @@ words words words
 
 words words words
 
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Allpass.png" target="_new"><img src = "./img/Allpass.png" title="Allpass subpatcher" alt="Allpass subpatcher"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FeedbackCombFilter.png" target="_new"><img src = "./img/FeedbackCombFilter.png" title="Feedback Comb Filter subpatcher" alt="Feedback Comb Filter subpatcher"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/mixer.png" target="_new"><img src = "./img/mixer.png" title="mixer subpatcher" alt="mixer subpatcher"></a>
+
 </details>
 
 ### Delay: Freeverb
@@ -875,6 +881,10 @@ words words words
 	<summary>More Info...</summary>
 
 words words words
+	
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/freeverb_comb.gendsp.png" target="_new"><img src = "./img/freeverb_comb.gendsp.png" title="Freeverb comb filter subpatcher" alt="Freeverb comb filter subpatcher"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/freeverb_allpass.gendsp.png" target="_new"><img src = "./img/freeverb_allpass.gendsp.png" title="Freeverb allpass filter subpatcher" alt="Freeverb allpass filter subpatcher"></a>
 
 </details>
 
@@ -886,6 +896,12 @@ words words words
 	<summary>More Info...</summary>
 
 words words words
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_allpass.png" target="_new"><img src = "./img/creepy_allpass.png" title="Creepy allpass filter subpatcher" alt="Creepy allpass filter subpatcher"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_lengths.png" target="_new"><img src = "./img/creepy_lengths.png" title="Creepy lengths subpatcher" alt="Creepy lengths subpatcher"></a>
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_weights.png" target="_new"><img src = "./img/creepy_weights.png" title="Creepy weights subpatcher" alt="Creepy weights subpatcher"></a>
 
 </details>
 
