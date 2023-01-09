@@ -1,13 +1,13 @@
 # IDM PEDALS
 
 - [EQ](#eq)
-  - [Lowpass Filter](#lowpass-filter)
-  - [Parametric EQ](#eq-parametric)
-  - [Fixed Crossover Filter](#eq-xover)
-  - [Variable Crossover Filter](#eq-xover2)
-  - [Mu-Tron Wah](#eq-wah)
-  - [LFO Auto-Wah](#eq-wah2)
-  - [Formant Filter](#eq-formant)
+  - [Lowpass Filter](#eq-lowpass-filter)
+  - [Parametric Equalizer](#eq-parametric-equalizer)
+  - [Fixed Crossover Filter](#eq-fixed-crossover-filter)
+  - [Variable Crossover Filter](#eq-variable-crossover-filter)
+  - [Envelope Wah](#eq-envelope-wah)
+  - [Auto-Wah](#eq-auto-wah)
+  - [Formant Filter](#eq-formant-filter)
   - [Vocoder](#eq-vocoder)
 - [Dynamics](#dynamics)
   - [Tremolo / Univibe](#dyn-tremolo)
@@ -52,7 +52,7 @@
 
 Equalization effects are audio processors that work by adjusting different frequency bands in the input signal. These effects range from the subtle and utilitarian (e.g. a tone control which rolls off the treble) to more creative uses of equalization such as [wah-wah](https://en.wikipedia.org/wiki/Wah-wah_pedal) pedals. When working with analog or time-domain digital signals, equalization is done using [filters](https://en.wikipedia.org/wiki/Audio_filter).
 
-### Lowpass Filter
+### EQ: Lowpass Filter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
 
@@ -88,7 +88,7 @@ This effect is quite simple, and would be an unlikely candidate on its own for a
 	
 </details>
 
-### EQ Parametric
+### EQ: Parametric Equalizer
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Parametric.png" target="_new"><img src = "./img/Parametric.png" title="Parametric patcher" alt="Parametric patcher"></a>
 
@@ -140,7 +140,7 @@ Parametric equalizers have advantages over fixed-band equalizers (such as found 
 
 </details>
 
-### EQ Xover
+### EQ: Fixed Crossover Filter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Xover.png" target="_new"><img src = "./img/Xover.png" title="Xover patcher" alt="Xover patcher"></a>
 
@@ -157,7 +157,7 @@ The crossover algorithm used in this pedal is a [Linkwitz-Riley crossover](https
 
 </details>
 
-### EQ Xover2
+### EQ: Variable Crossover Filter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Xover2.png" target="_new"><img src = "./img/Xover2.png" title="Xover2 patcher" alt="Xover2 patcher"></a>
 
@@ -172,7 +172,7 @@ This subpatch contains a **codebox** with GenExpr code to calculate and perform 
 
 </details>
 
-### EQ Wah
+### EQ: Envelope Wah
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Wah.png" target="_new"><img src = "./img/Wah.png" title="Wah patcher" alt="Wah patcher"></a>
 
@@ -217,7 +217,7 @@ As with the Mu-Tron III that inspired this design, this pedal will respond the t
 
 </details>
 
-### EQ Wah2
+### EQ: Auto-Wah
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Wah2.png" target="_new"><img src = "./img/Wah2.png" title="Wah2 patcher" alt="Wah2 patcher"></a>
 
@@ -248,7 +248,7 @@ The **ICST_MoogLP24** subpatch implements a digital model of the classic 4-pole 
 
 </details>
 
-### EQ Formant
+### EQ: Formant Filter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Formant.png" target="_new"><img src = "./img/Formant.png" title="Formant patcher" alt="Formant patcher"></a>
 
@@ -297,7 +297,7 @@ The three **reson** filters, when run in parallel, simulate the resonances of th
 
 </details>
 
-### EQ Vocoder
+### EQ: Vocoder
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Vocoder.png" target="_new"><img src = "./img/Vocoder.png" title="Vocoder patcher" alt="Vocoder patcher"></a>
 
