@@ -35,7 +35,7 @@
   - [Multi-tap Delay](#delay-multi-tap-delay) 
   - [Chowning Reverb](#delay-chowning-reverb) 
   - [Freeverb](#delay-freeverb) 
-  - [Creepy Reverb](#delay-creepy-reverb3) 
+  - [Creepy Reverb](#delay-creepy-reverb) 
 - [Special FX](#special-fx)
   - [Subharmonic Oscillator](#special-fx-subharmonic-oscillator) 
   - [Sample-and-Hold Sine](#special-fx-shsine) 
