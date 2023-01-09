@@ -11,7 +11,7 @@
   - [Vocoder](#eq-vocoder)
 - [Dynamics](#dynamics)
   - [Tremolo](#dynamics-tremolo)
-  - [Compressor / Limiter](#dynamics-compressor-limiter)
+  - [Compressor / Limiter](#dynamics-compressor-/-limiter)
   - [Noise Gate](#dynamics-noise-gate)
 - [Distortion](#distortion)
   - [Overdrive](#distortion-overdrive)
