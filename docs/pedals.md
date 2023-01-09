@@ -1,7 +1,7 @@
 # IDM PEDALS
 
 - [EQ](#eq)
-  - [Lowpass Filter](#eq-lowpass)
+  - [Lowpass Filter](#lowpass-filter)
   - [Parametric EQ](#eq-parametric)
   - [Fixed Crossover Filter](#eq-xover)
   - [Variable Crossover Filter](#eq-xover2)
@@ -52,7 +52,7 @@
 
 Equalization effects are audio processors that work by adjusting different frequency bands in the input signal. These effects range from the subtle and utilitarian (e.g. a tone control which rolls off the treble) to more creative uses of equalization such as [wah-wah](https://en.wikipedia.org/wiki/Wah-wah_pedal) pedals. When working with analog or time-domain digital signals, equalization is done using [filters](https://en.wikipedia.org/wiki/Audio_filter).
 
-### EQ Lowpass
+### Lowpass Filter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Lowpass.png" target="_new"><img src = "./img/Lowpass.png" title="Lowpass patcher" alt="Lowpass patcher"></a>
 
