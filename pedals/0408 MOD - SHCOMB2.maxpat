@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
+			"minor" : 5,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -215,7 +215,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 242.5, 692.0, 170.0, 33.0 ],
+					"patching_rect" : [ 242.5, 692.0, 173.0, 33.0 ],
 					"text" : "IDMPEDALS sample and hold comb filter 2 (chords)"
 				}
 
@@ -456,7 +456,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
+							"minor" : 5,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -879,7 +879,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
+											"minor" : 5,
 											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -918,7 +918,7 @@
 												"box" : 												{
 													"code" : "Data ms(12); // majorscale\r\n\r\ninpitch = in1;\r\nkey = in2;\r\n\r\npoke(ms, 0, 0);\r\npoke(ms, 0, 1);\r\npoke(ms, 2, 2);\r\npoke(ms, 4, 3);\r\npoke(ms, 4, 4);\r\npoke(ms, 5, 5);\r\npoke(ms, 7, 6);\r\npoke(ms, 7, 7);\r\npoke(ms, 9, 8);\r\npoke(ms, 9, 9);\r\npoke(ms, 11, 10);\r\npoke(ms, 11, 11);\r\n\r\n\r\noct = floor(inpitch/12);\r\npc = floor((inpitch+key)%12);\r\n\r\npc_grid = peek(ms, pc);\r\n\r\noutpitch = pc_grid + oct*12 - key;\r\n\r\nout1 = outpitch;",
 													"fontface" : 0,
-													"fontname" : "Menlo Regular",
+													"fontname" : "Menlo",
 													"fontsize" : 12.0,
 													"id" : "obj-5",
 													"maxclass" : "codebox",
@@ -1080,7 +1080,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
+											"minor" : 5,
 											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -1119,7 +1119,7 @@
 												"box" : 												{
 													"code" : "Data ms(12); // majorscale\r\n\r\ninpitch = in1;\r\nkey = in2;\r\n\r\npoke(ms, 0, 0);\r\npoke(ms, 0, 1);\r\npoke(ms, 2, 2);\r\npoke(ms, 4, 3);\r\npoke(ms, 4, 4);\r\npoke(ms, 5, 5);\r\npoke(ms, 7, 6);\r\npoke(ms, 7, 7);\r\npoke(ms, 9, 8);\r\npoke(ms, 9, 9);\r\npoke(ms, 11, 10);\r\npoke(ms, 11, 11);\r\n\r\n\r\noct = floor(inpitch/12);\r\npc = floor((inpitch+key)%12);\r\n\r\npc_grid = peek(ms, pc);\r\n\r\noutpitch = pc_grid + oct*12 - key;\r\n\r\nout1 = outpitch;",
 													"fontface" : 0,
-													"fontname" : "Menlo Regular",
+													"fontname" : "Menlo",
 													"fontsize" : 12.0,
 													"id" : "obj-5",
 													"maxclass" : "codebox",
@@ -1281,7 +1281,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
+											"minor" : 5,
 											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -1320,7 +1320,7 @@
 												"box" : 												{
 													"code" : "Data ms(12); // majorscale\r\n\r\ninpitch = in1;\r\nkey = in2;\r\n\r\npoke(ms, 0, 0);\r\npoke(ms, 0, 1);\r\npoke(ms, 2, 2);\r\npoke(ms, 4, 3);\r\npoke(ms, 4, 4);\r\npoke(ms, 5, 5);\r\npoke(ms, 7, 6);\r\npoke(ms, 7, 7);\r\npoke(ms, 9, 8);\r\npoke(ms, 9, 9);\r\npoke(ms, 11, 10);\r\npoke(ms, 11, 11);\r\n\r\n\r\noct = floor(inpitch/12);\r\npc = floor((inpitch+key)%12);\r\n\r\npc_grid = peek(ms, pc);\r\n\r\noutpitch = pc_grid + oct*12 - key;\r\n\r\nout1 = outpitch;",
 													"fontface" : 0,
-													"fontname" : "Menlo Regular",
+													"fontname" : "Menlo",
 													"fontsize" : 12.0,
 													"id" : "obj-5",
 													"maxclass" : "codebox",
@@ -1611,14 +1611,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
+											"minor" : 5,
 											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "dsp.gen",
-										"rect" : [ 356.0, 117.0, 931.0, 742.0 ],
+										"rect" : [ 356.0, 117.0, 424.0, 551.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1650,14 +1650,14 @@
 												"box" : 												{
 													"code" : "Data ms(12); // majorscale\r\n\r\ninpitch = in1;\r\nkey = in2;\r\n\r\npoke(ms, 0, 0);\r\npoke(ms, 0, 1);\r\npoke(ms, 2, 2);\r\npoke(ms, 4, 3);\r\npoke(ms, 4, 4);\r\npoke(ms, 5, 5);\r\npoke(ms, 7, 6);\r\npoke(ms, 7, 7);\r\npoke(ms, 9, 8);\r\npoke(ms, 9, 9);\r\npoke(ms, 11, 10);\r\npoke(ms, 11, 11);\r\n\r\n\r\noct = floor(inpitch/12);\r\npc = floor((inpitch+key)%12);\r\n\r\npc_grid = peek(ms, pc);\r\n\r\noutpitch = pc_grid + oct*12 - key;\r\n\r\nout1 = outpitch;",
 													"fontface" : 0,
-													"fontname" : "Menlo Regular",
+													"fontname" : "Menlo",
 													"fontsize" : 12.0,
 													"id" : "obj-5",
 													"maxclass" : "codebox",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 89.0, 112.0, 607.0, 437.0 ]
+													"patching_rect" : [ 50.0, 53.0, 327.0, 448.0 ]
 												}
 
 											}
@@ -1680,7 +1680,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 305.0, 14.0, 28.0, 22.0 ],
+													"patching_rect" : [ 358.0, 14.0, 28.0, 22.0 ],
 													"text" : "in 2"
 												}
 
@@ -1691,7 +1691,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 142.0, 565.0, 35.0, 22.0 ],
+													"patching_rect" : [ 50.0, 515.0, 35.0, 22.0 ],
 													"text" : "out 1"
 												}
 
@@ -3047,13 +3047,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -3314,13 +3314,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
