@@ -841,7 +841,17 @@ This subpatch uses a **codebox** with GenExpr code to take a continuous MIDI val
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal implements a simple, stereo digital delay with [feedback](https://en.wikipedia.org/wiki/Feedback) and an inline [lowpass filter](https://en.wikipedia.org/wiki/Low-pass_filter). It uses two discrete [delay lines](https://en.wikipedia.org/wiki/Digital_delay_line) so that a "ping-pong" effect can be enabled where subsequent echoes switch between the left and right outputs of a [stereo](https://en.wikipedia.org/wiki/Stereophonic_sound) field.
+	
+The pedal has four continuous parameters and two switches:
+* **knob3_level** controls the overall level of the delay effect.
+* **knob4_fb** controls the amount of regeneration (feedback) in the delay. Higher values will produce more echoes.
+* **knob5_time** controls the delay time in the effect; depending on **sw5**, this control will sweep between 0-250 milliseconds and 250-1000 milliseconds of delay.
+* **knob6_lowpass** controls the cutoff frequency of the one-pole lowpass filter in the feedback loop of the delay. A higher value will attenuate more of the frequency range. This filter equation is the same as used in the Lowpass Filter pedal, above.
+* **sw5** changes the scaling of **knob5_time** between short and long delays.
+* **sw6** engages a *ping-pong* effect at the stereo output of the pedal, routing the two **delay** operators to discrete outputs rather than mixing them.
+
+By manipulating the controls, this digital delay pedal can do everything from [automatic double tracking](https://en.wikipedia.org/wiki/Automatic_double_tracking) to long, regenerative echoes. The lowpass filter inline will progressively roll off high frequencies when engaged, creating an effect similar to analog delay units.
 
 </details>
 
