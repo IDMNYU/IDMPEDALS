@@ -43,7 +43,7 @@
   - [Frequency Shifter](#special-fx-frequency-shifter) 
   - [FM Delay](#special-fx-fm-delay) 
   - [Glitch Sampler](#special-fx-glitch-sampler) 
-  - [Reverse Sampler](#pecial-fx-reverse-sampler) 
+  - [Reverse Sampler](#special-fx-reverse-sampler) 
   - [Yin Synthesizer](#special-fx-yin-synthesizer) 
 
 # Pedals
