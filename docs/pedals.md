@@ -28,7 +28,7 @@
   - [Simple Phaser](#modulation-simple-phaser) 
   - [Multi-stage Phaser](#modulation-multi-stage-phaser) 
   - [Harmonizer](#modulation-harmonizer) 
-  - [S&H Comb](#modulation-s&h-comb) 
+  - [Sample-and-Hold Comb Filter](#modulation-sample-and-hold-comb-filter) 
   - [Harmonic Filters](#modulation-harmonic-filters) 
 - [Delay](#delay)
   - [Digital Delay](#del-digitaldelay) 
@@ -784,7 +784,7 @@ The design of this particular harmonizer algorithm is adapted from the ["jimmies
 
 </details>
 
-### Modulation: S&H Comb
+### Modulation: Sample-and-Hold Comb Filter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHComb.png" target="_new"><img src = "./img/SHComb.png" title="SHComb patcher" alt="SHComb patcher"></a>
 
