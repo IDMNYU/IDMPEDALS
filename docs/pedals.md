@@ -31,20 +31,20 @@
   - [Sample-and-Hold Comb Filter](#modulation-sample-and-hold-comb-filter) 
   - [Harmonic Filters](#modulation-harmonic-filters) 
 - [Delay](#delay)
-  - [Digital Delay](#del-digitaldelay) 
-  - [Multi-tap Delay](#del-digitaldelay2) 
-  - [Chowning Reverb](#del-reverb) 
-  - [Freeverb](#del-reverb2) 
-  - [Creepy Reverb](#del-reverb3) 
-- [Special FX](#special)
-  - [Subharmonic Oscillator](#sfx-subharmonic) 
-  - [Sample-and-Hold Sine](#sfx-shsine) 
-  - [Ring Modulator](#sfx-ringmod) 
-  - [Frequency Shifter](#sfx-freqshift) 
-  - [FM Delay](#sfx-fmdelay) 
-  - [Glitch Sampler](#sfx-glitch) 
-  - [Reverse Sampler](#sfx-glitch2) 
-  - [Yin Synthesizer](#sfx-yin) 
+  - [Digital Delay](#delay-digital-delay) 
+  - [Multi-tap Delay](#delay-multi-tap-delay) 
+  - [Chowning Reverb](#delay-chowning-reverb) 
+  - [Freeverb](#delay-freeverb) 
+  - [Creepy Reverb](#delay-creepy-reverb3) 
+- [Special FX](#special-fx)
+  - [Subharmonic Oscillator](#special-fx-subharmonic-oscillator) 
+  - [Sample-and-Hold Sine](#special-fx-shsine) 
+  - [Ring Modulator](#special-fx-ring-modulator) 
+  - [Frequency Shifter](#special-fx-frequency-shifter) 
+  - [FM Delay](#special-fx-fm-delay) 
+  - [Glitch Sampler](#special-fx-glitch-sampler) 
+  - [Reverse Sampler](#pecial-fx-reverse-sampler) 
+  - [Yin Synthesizer](#special-fx-yin-synthesizer) 
 
 # Pedals
 
@@ -812,7 +812,7 @@ words words words
 
 ## Delay
 
-### Del Digitaldelay
+### Delay: Digital Delay
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/DigitalDelay.png" target="_new"><img src = "./img/DigitalDelay.png" title="DigitalDelay patcher" alt="DigitalDelay patcher"></a>
 
@@ -823,7 +823,7 @@ words words words
 
 </details>
 
-### Del Digitaldelay2
+### Delay: Multi-tap Delay
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/DigitalDelay2.png" target="_new"><img src = "./img/DigitalDelay2.png" title="DigitalDelay2 patcher" alt="DigitalDelay2 patcher"></a>
 
@@ -834,7 +834,7 @@ words words words
 
 </details>
 
-### Del Reverb
+### Delay: Chowning Reverb
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb.png" target="_new"><img src = "./img/Reverb.png" title="Reverb patcher" alt="Reverb patcher"></a>
 
@@ -845,7 +845,7 @@ words words words
 
 </details>
 
-### Del Reverb2
+### Delay: Freeverb
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb2.png" target="_new"><img src = "./img/Reverb2.png" title="Reverb2 patcher" alt="Reverb2 patcher"></a>
 
@@ -856,7 +856,7 @@ words words words
 
 </details>
 
-### Del Reverb3
+### Delay: Creepy Reverb
     
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Reverb3.png" target="_new"><img src = "./img/Reverb3.png" title="Reverb3 patcher" alt="Reverb3 patcher"></a>
 
@@ -871,9 +871,9 @@ words words words
 
 [return to main page](./index.md)
 
-## Special
+## Special FX
 
-### Sfx Subharmonic
+### Special FX: Subharmonic Oscillator
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Subharmonic.png" target="_new"><img src = "./img/Subharmonic.png" title="Subharmonic patcher" alt="Subharmonic patcher"></a>
 
@@ -884,7 +884,7 @@ words words words
 
 </details>
 
-### Sfx Shsine
+### Special FX: Shsine
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHSine.png" target="_new"><img src = "./img/SHSine.png" title="SHSine patcher" alt="SHSine patcher"></a>
 
@@ -895,7 +895,7 @@ words words words
 
 </details>
 
-### Sfx Ringmod
+### Special FX: Ring Modulator
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Ringmod.png" target="_new"><img src = "./img/Ringmod.png" title="Ringmod patcher" alt="Ringmod patcher"></a>
 
@@ -906,7 +906,7 @@ words words words
 
 </details>
 
-### Sfx Freqshift
+### Special FX: Frequency Shifter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FreqShiftRingMod.png" target="_new"><img src = "./img/FreqShiftRingMod.png" title="FreqShiftRingMod patcher" alt="FreqShiftRingMod patcher"></a>
 
@@ -917,7 +917,7 @@ words words words
 
 </details>
 
-### Sfx Fmdelay
+### Special FX: FM Delay
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FMDelay.png" target="_new"><img src = "./img/FMDelay.png" title="FMDelay patcher" alt="FMDelay patcher"></a>
 
@@ -928,7 +928,7 @@ words words words
 
 </details>
 
-### Sfx Glitch
+### Special FX: Glitch Sampler
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Glitch.png" target="_new"><img src = "./img/Glitch.png" title="Glitch patcher" alt="Glitch patcher"></a>
 
@@ -939,7 +939,7 @@ words words words
 
 </details>
 
-### Sfx Glitch2 
+### Special FX: Reverse Sampler 
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Glitch2.png" target="_new"><img src = "./img/Glitch2.png" title="Glitch2 patcher" alt="Glitch2 patcher"></a>
 
@@ -950,7 +950,7 @@ words words words
 
 </details>
 
-### Sfx Yin
+### Special FX: Yin Synthesizer
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Yin.png" target="_new"><img src = "./img/Yin.png" title="Yin patcher" alt="Yin patcher"></a>
 
