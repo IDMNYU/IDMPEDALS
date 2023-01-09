@@ -766,7 +766,9 @@ The output of our four allpass filters is then combined with the dry signal (in 
 <details>
 	<summary>More Info...</summary>
 
-words words words
+A *harmonizer* is a version of a [pitch shifter](https://en.wikipedia.org/wiki/Pitch_shift) effect that transposes the pitch of the input signal and (optionally) mixes it back in with the orginal. The pedal design here implements a [time domain](https://en.wikipedia.org/wiki/Time_domain) harmonizier / pitch shifter that works by leveraging the pitch shift effect caused by a moving delay line. When a delay line is modulated, a decreasing (long to short) delay time will result in the effective sampling rate of the signal to rise, causing the pitch of the signal to go up; when the delay time increases (short to long), the sampling rate drops, causing the pitch to go down. The challenge in this design is that, eventually, the delay line will run out of runway, so to speak, so the pitch shift cannot be maintained - the delay time will eventually reach zero or become so long as to cause the DSP to run out of memory. The solution used by most delay-based pitch shifters, then, is to use multiple delays; a consistent pitch shift can be accomplished by crossfading between the two delay lines which have out-of-phase modulating signals. When the first delay is audible, the second delay is resetting its delay time so that it can ramp again, and vice versa.
+	
+
 
 </details>
 
