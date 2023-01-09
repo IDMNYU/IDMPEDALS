@@ -12,7 +12,7 @@
 - [Dynamics](#dynamics)
   - [Tremolo](#dynamics-tremolo)
   - [Compressor / Limiter](#dynamics-compressor-limiter)
-  - [Gate](#dynamics-noise-gate)
+  - [Noise Gate](#dynamics-noise-gate)
 - [Distortion](#distortion)
   - [Overdrive](#distortion-overdrive)
   - [Fuzz](#distortion-fuzz)
@@ -22,14 +22,14 @@
   - [Clipping, Folding, Wrapping](#distortion-clipping-folding-wrapping) 
   - [Parametric Waveshaper](#distortion-parametric-waveshaper) 
 - [Modulation](#modulation)
-  - [Simple Chorus](#mod-chorus) 
-  - [Chorus Ensemble](#mod-chorus2) 
-  - [Flanger](#mod-flanger) 
-  - [Simple Phaser](#mod-phaser) 
-  - [Multi-stage Phaser](#mod-phaser2) 
-  - [Harmonizer](#mod-harmonizer) 
-  - [S&H Comb](#mod-shcomb) 
-  - [Harmonic Filters](#mod-shcomb2) 
+  - [Simple Chorus](#modulation-simple-chorus) 
+  - [Chorus Ensemble](#modulation-chorus-ensemble) 
+  - [Flanger](#modulation-flanger) 
+  - [Simple Phaser](#modulation-simple-phaser) 
+  - [Multi-stage Phaser](#modulation-multi-stage-phaser) 
+  - [Harmonizer](#modulation-harmonizer) 
+  - [S&H Comb](#modulation-s&h-comb) 
+  - [Harmonic Filters](#modulation-harmonic-filters) 
 - [Delay](#delay)
   - [Digital Delay](#del-digitaldelay) 
   - [Multi-tap Delay](#del-digitaldelay2) 
@@ -609,7 +609,7 @@ In addition to the waveshaping algorithm described above, the pedal has paramete
 	
 Modulation effects use short, shifting time delays to add depth and richness to a signal, by simulating rotary cabinets (*phasers*), generating ensemble-like sounds (*chorus*), or creating moving resonant peaks in the signal (*flangers*). Modulation effects are among the most creative categories of effects processor, with a wide variety of different techniques and approaches.
 
-### Mod Chorus
+### Modulation: Simple Chorus
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Chorus.png" target="_new"><img src = "./img/Chorus.png" title="Chorus patcher" alt="Chorus patcher"></a>
 
@@ -626,7 +626,7 @@ The delayed signal is then mixed back in with the dry signal. Our pedal has a [s
 
 </details>
 
-### Mod Chorus2
+### Modulation: Chorus Ensemble
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Chorus2.png" target="_new"><img src = "./img/Chorus2.png" title="Chorus2 patcher" alt="Chorus2 patcher"></a>
 
@@ -646,7 +646,7 @@ By using multiple delay taps set to non-integer multiples of one another, this p
 
 </details>
 
-### Mod Flanger
+### Modulation: Flanger
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Flanger.png" target="_new"><img src = "./img/Flanger.png" title="Flanger patcher" alt="Flanger patcher"></a>
 
@@ -666,7 +666,7 @@ As with the chorus effects, the **delay** operator does the actual work in the p
 
 </details>
 
-### Mod Phaser
+### Modulation: Simple Phaser
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Phaser.png" target="_new"><img src = "./img/Phaser.png" title="Phaser patcher" alt="Phaser patcher"></a>
 
@@ -710,7 +710,7 @@ Finally, the phaser affect uses [feedback](https://en.wikipedia.org/wiki/Feedbac
 
 </details>
 
-### Mod Phaser2
+### Modulation: Multi-Stage Phaser
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Phaser2.png" target="_new"><img src = "./img/Phaser2.png" title="Phaser2 patcher" alt="Phaser2 patcher"></a>
 
@@ -759,7 +759,7 @@ The output of our four allpass filters is then combined with the dry signal (in 
 	
 </details>
 
-### Mod Harmonizer
+### Modulation: Harmonizer
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Harmonizer.png" target="_new"><img src = "./img/Harmonizer.png" title="Harmonizer patcher" alt="Harmonizer patcher"></a>
 
@@ -784,7 +784,7 @@ The design of this particular harmonizer algorithm is adapted from the ["jimmies
 
 </details>
 
-### Mod Shcomb
+### Modulation: S&H Comb
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHComb.png" target="_new"><img src = "./img/SHComb.png" title="SHComb patcher" alt="SHComb patcher"></a>
 
@@ -795,7 +795,7 @@ words words words
 
 </details>
 
-### Mod Shcomb2
+### Modulation: Harmonic Filters
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/SHComb2.png" target="_new"><img src = "./img/SHComb2.png" title="SHComb2 patcher" alt="SHComb2 patcher"></a>
 
