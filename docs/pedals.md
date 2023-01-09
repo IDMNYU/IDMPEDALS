@@ -383,7 +383,7 @@ Tremolo effects are among the oldest special effects for instruments, with [trem
 
 </details>
 
-### Dynamics: Compressor / Limiter
+### Dynamics: Compressor Limiter
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Compressor.png" target="_new"><img src = "./img/Compressor.png" title="Compressor patcher" alt="Compressor patcher"></a>
 
