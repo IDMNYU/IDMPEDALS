@@ -810,7 +810,9 @@ The actual comb filtering in the patch is accomplished by the **delay** operator
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal expands on the previous 
+
+<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/grid.png" target="_new"><img src = "./img/grid.png" title="grid subpatcher" alt="grid subpatcher"></a>
 
 </details>
 
