@@ -831,6 +831,8 @@ This subpatch uses a **codebox** with GenExpr code to take a continuous MIDI val
 [return to main page](./index.md)
 
 ## Delay
+	
+[Delay effects](https://en.wikipedia.org/wiki/Delay_(audio_effect)) use a variety of techniques to time shift an input signal backwards in time, allowing the creation of [echo](https://en.wikipedia.org/wiki/Echo) and [reverberation](https://en.wikipedia.org/wiki/Reverberation) effects. Analog echo effects were accomplished originally using tape echo units and, later, [bucket brigade devices](https://en.wikipedia.org/wiki/Bucket-brigade_device), while [reverberation](https://en.wikipedia.org/wiki/Reverb_effect) was often accomplished artificially using spring tanks or metal plates. In DSP, [digital delay lines](https://en.wikipedia.org/wiki/Digital_delay_line), sometimes combined with digital filtersing, are used for many of these effects.
 
 ### Delay: Digital Delay
 
