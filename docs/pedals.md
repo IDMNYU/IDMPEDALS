@@ -952,6 +952,8 @@ The three **gen~** subpatchers for the reverb algorithm configure the allpass fi
 [return to main page](./index.md)
 
 ## Special FX
+	
+Special effects pedals include algorithms outside of the traditional categories: these include effects that integrate [synthesis](https://en.wikipedia.org/wiki/Synthesizer) in the signal chain, effects that generate non-musical characteristics, and algorithms that behave idiosynchronously by design.
 
 ### Special FX: Subharmonic Oscillator
 
@@ -960,7 +962,11 @@ The three **gen~** subpatchers for the reverb algorithm configure the allpass fi
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal implements an [octave effect](https://en.wikipedia.org/wiki/Octave_effect) on the input signal, where a synthesized tone tracks both the amplitude and frequency of a [monophonic](https://en.wikipedia.org/wiki/Monophony) input, generating tones one and two octaves *below* the fundamendal of the original signal. Pitch tracking of the input signal is accomplished by a series of steps. First, the input signal is filtered so that frequencies above 1kHz are attenuated using four one-pole [lowpass filters](https://en.wikipedia.org/wiki/Low-pass_filter) in series. The filtered input signal is then run through a *comparator* (a *>* operator) to turn the input into a [square wave](https://en.wikipedia.org/wiki/Square_wave). This square wave then serves as a digital trigger for two [sample-and-hold](https://en.wikipedia.org/wiki/Sample_and_hold) (**sah**) operators which, combined with the **history** operators, simulate a [phase-locked loop](https://en.wikipedia.org/wiki/Phase-locked_loop) to generate two new square waves. These square waves have a base frequency that is exactly 1/2 and 1/4 (one and two octaves below) the input signal. 
+	
+These control signals then drive two additional **sah** operators that serve as full-range subharmonic oscillators. The **slide** operator then smooths these signals based on the **knob6_smooth** parameter, rounding off the signal to make it closer to a [triangle wave](https://en.wikipedia.org/wiki/Triangle_wave). These signals are then multiplied by the output of an [envelope follower](https://en.wikipedia.org/wiki/Envelope_detector) tracking the amplitude of the input signal. These final, synthesized tones can then be mixed together with the dry input using **knob3_dry**, **knob4_oct1**, and **knob5_oct2**.
+	
+Octave pedals work best with clean, monophonic inputs and are an early case of simple, instrument-controlled *synthesizers*.
 
 </details>
 
