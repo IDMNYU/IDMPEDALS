@@ -486,7 +486,7 @@ The second parameter (**knob4_fuzz**) controls the amount of the fuzz effect usi
 
 This pedal simulates classic amp distortion using a DSP algorithm developed by [Randy Stenseth](https://www.musicdsp.org/en/latest/Filters/141-karlsen.html) to model the response of a fast differential amplifier. The two parameters control the "filterdrive" coefficient for the amplifier algorithm (**knob3_drive**) and the overall output gain (**knob4_output**). The bulk of the effect is accomplished by the GenExpr code in the **codebox**, which implements the Stenseth algorithm:
 
-```
+```C++
 // Final version, Stenseth, 17. february, 2006.
 
 // Fast differential amplifier approximation
