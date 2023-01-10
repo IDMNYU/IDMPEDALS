@@ -907,11 +907,17 @@ The outputs of the mixer are crosspatched to create a stereo image by combining 
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal implements [Freeverb](https://github.com/sinshu/freeverb), an open-source reverberation algorithm written by "Jezar at Dreampoint" and widely used in free digital reverbs. The algorithm uses a network of eight parallel [comb filters](https://en.wikipedia.org/wiki/Comb_filter) sent into a stereo network of four series [allpass filters](https://en.wikipedia.org/wiki/All-pass_filter) on either side. Unlike the Chowning reverberator, the Freeverb algorithm incorporates parameters for *damping* (**knob3_damp**) with a one-pole [lowpass filter](https://en.wikipedia.org/wiki/Low-pass_filter) inside each comb filter's feedback stage, as well as two parameters for *feedback* (**knob4_fb** and **knob5_fb2**) which control the amount of regeneration in the comb and allpass filters, respectively. A fourth parameter, **knob6_spread**, spaces out the allpass delays to create a "larger" room as well as a broader stereo field. Finally, **knob1_wetdry** contorls the mix between the input signal and the reverberation.
+	
+The comb filters use the **delay** operator with different values for each instance of the subpatch in the effect, as well as a simple lowpass filter (the **history** operator mixed in with the input signal):
 	
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/freeverb_comb.gendsp.png" target="_new"><img src = "./img/freeverb_comb.gendsp.png" title="Freeverb comb filter subpatcher" alt="Freeverb comb filter subpatcher"></a>
 
+The comb filter also has an inlet for feedback. The allpass filter is similar, with each subpatch having a different value which the reverb's *spread* parameter multiplies:
+
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/freeverb_allpass.gendsp.png" target="_new"><img src = "./img/freeverb_allpass.gendsp.png" title="Freeverb allpass filter subpatcher" alt="Freeverb allpass filter subpatcher"></a>
+
+The Freeverb algorithm is a bit more complex than the Chowning, but it allows for more parametric experimentation and can create long, sustained reverb tails reminiscent of highly reverberant, large spaces.
 
 </details>
 
