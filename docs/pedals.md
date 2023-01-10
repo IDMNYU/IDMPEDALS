@@ -1003,7 +1003,104 @@ Our ring modulator pedal has one parameter - the frequency of the modulating osc
 <details>
 	<summary>More Info...</summary>
 
-words words words
+A *frequency shifter* adds and subtracts a fixed frequency to an input signal - this technique differs from pitch shifting in that the process creates inharmonic outputs - adding to rather than multiplying the frequency content of a signal will easily disrupt the harmonic ratios between partials. Like ring modulation, frequency shifting easily creates metallic or robotic sound effects from instrument inputs; unlike ring modulation, the upper and lower [sideband frequencies](https://en.wikipedia.org/wiki/Sideband) can be independently mixed.
+	
+This pedal uses three continuous parameters and one switch:
+* **knob3_freq** controls the course frequency of the modulating oscillator - this frequency will be added and subtracted to the harmonic content of the input.
+* **knob4_fine** allows you to fine tun the modulating oscillator's frequency.
+* **knob5_mix** blends between the lower (carrier input - modulator frequency) and upper (carrier input + modulator frequency) outputs of the effect.
+* **sw5** changes the mode of calculation for the frequency shifting.
+
+Our effect uses GenExpr code posted on the [Max/MSP forum](https://cycling74.com/forums/hilbert-or-freqshift-in-gen), and offers two techniques for frequency shifting: one technique implements a [hilbert transform](https://en.wikipedia.org/wiki/Hilbert_transform) and the other a complex [IIR filter](https://en.wikipedia.org/wiki/Infinite_impulse_response).
+	
+```
+// hilbert transform / frequency shifter
+// STKR example in Max/MSP forum: 
+// https://cycling74.com/forums/hilbert-or-freqshift-in-gen
+
+// complex sine function
+complexSine(hz) {
+
+	p = phasor(hz);
+
+	real = cos(phasewrap(p * twopi));
+	imaginary = cos(phasewrap((p + -0.25) * twopi));
+
+	return real, imaginary, p; // 'p' is optional sync
+}
+
+// complex ring mod function
+complexRing(r, i, rmod, imod) {
+
+	cosp = r * rmod;
+	sinp = i * imod;
+
+	uppersideband = cosp + sinp;
+	lowersideband = cosp - sinp;
+
+	return uppersideband, lowersideband;
+}
+
+// two-pole, two-zero biquad filter (transposed direct form 2)
+biquadTdf2(x, a0, a1, a2, b1, b2) {
+
+	History x1(0), x2(0);
+
+	y = (x * a0) + x2;
+	x2 = ((x * a1) - (y * b1)) + x1;
+	x1 = (x * a2) - (y * b2);
+
+	return y;
+}
+
+// hilbert quadrature filter
+hilbertBiquad(x0) {
+
+	x1 = biquadTdf2(x0, 0.94657, -1.94632, 1., -1.94632, 0.94657);
+	x2 = biquadTdf2(x1, 0.06338, -0.83774, 1., -0.83774, 0.06338);
+
+	y1 = biquadTdf2(x0, -0.260502, 0.02569, 1., 0.02569, -0.260502);
+	y2 = biquadTdf2(y1, 0.870686, -1.8685, 1., -1.8685, 0.870686);
+
+	return x2, y2; // real, imaginary
+}
+
+// polyphase IIR filter
+polyphaseIIR(y0) {
+	// one sample delay
+	History x0(0);
+	// first phase allpass cascade
+	x1 = biquadTdf2(x0, 0.479401,	0., -1., 0.,	-0.479401);
+	x2 = biquadTdf2(x1, 0.876218,	0., -1., 0.,	-0.876218);
+	x3 = biquadTdf2(x2, 0.976599,	0., -1., 0.,	-0.976599);
+	x4 = biquadTdf2(x3, 0.9975,		0., -1., 0.,	-0.9975);
+	// second phase allpass cascade
+	y1 = biquadTdf2(y0, 0.161758,	0., -1., 0.,	-0.161758);
+	y2 = biquadTdf2(y1, 0.733029,	0., -1., 0.,	-0.733029);
+	y3 = biquadTdf2(y2, 0.94535,	0., -1., 0.,	-0.94535);
+	y4 = biquadTdf2(y3, 0.990598,	0., -1., 0.,	-0.990598);
+	// update
+	x0 = y0;
+	// real, imaginary
+	return x4, y4;
+}
+
+// Param sw5 = use 4-pole hilbert or 8-pole polyphase IIR
+Param sw5(0, min=0, max=1);
+md = int(sw5); // mode
+x = in1;						 // audio in
+
+r, i = hilbertBiquad(x); // 0, hilbert = default
+if (md == 1) r, i = polyphaseIIR(x); // 1, polyphase IIR
+
+rm, ri, sync = complexSine(in2); // modulating frequency (Hz)
+
+out1, out2 = complexRing(r, i, rm, ri);
+out3 = sync;
+
+```
+
+This pedal can be used to create a variety of special effects with an instrument signal.	
 
 </details>
 
