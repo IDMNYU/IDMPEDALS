@@ -928,7 +928,7 @@ The Freeverb algorithm is a bit more complex than the Chowning, but it allows fo
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This reverb implements Shreyas A. Paranjpe's [reverberation algorithm](https://www.aes.org/e-lib/online/browse.cfm?elib=9909) that uses a matrix of delay taps to create a very dense reverb with an efficient amount of delay memory. Additionally, this reverberator allows for modulation-like effects *within* the reverb that allow for some very "creepy" sounds (hence the name). This patch is adapted from the **gen~** example of the same name in Max/MSP.
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_allpass.png" target="_new"><img src = "./img/creepy_allpass.png" title="Creepy allpass filter subpatcher" alt="Creepy allpass filter subpatcher"></a>
 
