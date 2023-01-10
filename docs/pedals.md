@@ -929,12 +929,21 @@ The Freeverb algorithm is a bit more complex than the Chowning, but it allows fo
 	<summary>More Info...</summary>
 
 This reverb implements Shreyas A. Paranjpe's [reverberation algorithm](https://www.aes.org/e-lib/online/browse.cfm?elib=9909) that uses a matrix of delay taps to create a very dense reverb with an efficient amount of delay memory. Additionally, this reverberator allows for modulation-like effects *within* the reverb that allow for some very "creepy" sounds (hence the name). This patch is adapted from the **gen~** example of the same name in Max/MSP.
+	
+The reverb pedal has five parameters:
+* **knob1_wetdry** controls the mix between the reverberation and the dry signal.
+* **knob3_damp** controls the dampening on the reverb using a 1-pole [lowpass filter](https://en.wikipedia.org/wiki/Low-pass_filter) at the output of the comb filters, implemented through **mix** and **history** operators.
+* **knob4_decay** controls the decay time (amount of regeneration) in the reverberation. This maps to the overall size of the virtual space.
+* **knob5_rotate** controls the speed of an LFO controlling rotatation of the mixing matrix. This value causes the reverberation to change its character over time.
+* **knob6_fluctuate** controls the overall delay matrix, changing the character of the space.
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_allpass.png" target="_new"><img src = "./img/creepy_allpass.png" title="Creepy allpass filter subpatcher" alt="Creepy allpass filter subpatcher"></a>
-
+	
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_lengths.png" target="_new"><img src = "./img/creepy_lengths.png" title="Creepy lengths subpatcher" alt="Creepy lengths subpatcher"></a>
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/creepy_weights.png" target="_new"><img src = "./img/creepy_weights.png" title="Creepy weights subpatcher" alt="Creepy weights subpatcher"></a>
+
+The three **gen~** subpatchers for the reverb algorithm configure the allpass filter block, longer delays for the comb filters, and the mixer block for the various weights. Random values are used (entered from **noise** operators through the **latch** operator) to set the delay times and gains for the filters at the outset, so that each instance of the reverb sounds slightly different.	
 
 </details>
 
