@@ -882,13 +882,21 @@ Like in the previous pedal, the **delay** operator allocates the memory and sets
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal implements John Chowning's [reverberation algorithm](https://ccrma.stanford.edu/courses/220a-fall-2001/chowning.pdf), based on M. R. Schroeder's [theories](https://hajim.rochester.edu/ece/sites/zduan/teaching/ece472/reading/Schroeder_1962.pdf) for how to create artificial [reverberation](https://en.wikipedia.org/wiki/Reverberation). The algorithm involves the sound passing through a network of three [allpass filters](https://en.wikipedia.org/wiki/All-pass_filter) in series, then four [comb filters](https://en.wikipedia.org/wiki/Comb_filter) in parallel, before finally being mixed. The two parameters for the reverb are the size (**knob3_size**) which modifies the delay length of the allpass filters and the wet / dry mix (**knob4_wetdry**). The Chowning reverb algorithm has an excelelnt sound for its efficiency.
+	
+The allpass filters for the reverb consist of **delay** operators with varying length (the multiplier in each subpatch is different):
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Allpass.png" target="_new"><img src = "./img/Allpass.png" title="Allpass subpatcher" alt="Allpass subpatcher"></a>
+	
+The delayed signal is inverted and mixed in with the original to create phase cancellations. The comb filters perform a similar effect with longer delays (again, each subpatch has slightly different coefficients):
 
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FeedbackCombFilter.png" target="_new"><img src = "./img/FeedbackCombFilter.png" title="Feedback Comb Filter subpatcher" alt="Feedback Comb Filter subpatcher"></a>
 
+These comb filters create resonances akin to the walls of a physical space. Finally, the comb network is mixed together in a **mixer** subpatch:
+
 <a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/mixer.png" target="_new"><img src = "./img/mixer.png" title="mixer subpatcher" alt="mixer subpatcher"></a>
+
+The outputs of the mixer are crosspatched to create a stereo image by combining in and out of phase copies of the comb filter outputs in the left and right channels. The result is a nice sounding reverberator that uses an economical amount of signal processing to get the job done.
 
 </details>
 
