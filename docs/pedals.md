@@ -1013,7 +1013,7 @@ This pedal uses three continuous parameters and one switch:
 
 Our effect uses GenExpr code posted on the [Max/MSP forum](https://cycling74.com/forums/hilbert-or-freqshift-in-gen), and offers two techniques for frequency shifting: one technique implements a [hilbert transform](https://en.wikipedia.org/wiki/Hilbert_transform) and the other a complex [IIR filter](https://en.wikipedia.org/wiki/Infinite_impulse_response).
 	
-```
+```C++
 // hilbert transform / frequency shifter
 // STKR example in Max/MSP forum: 
 // https://cycling74.com/forums/hilbert-or-freqshift-in-gen
