@@ -862,7 +862,16 @@ By manipulating the controls, this digital delay pedal can do everything from [a
 <details>
 	<summary>More Info...</summary>
 
-words words words
+This pedal implements a *multi-tap* [delay](https://en.wikipedia.org/wiki/Delay_(audio_effect)), where the digital delay signal is read from (or "tapped") at multiple points, allowing for more than one delay time to be used concurrently with one delayed signal. When the different taps are in a temporal multiple of one another, multi-tap delays can be used to create rhythmic echo effects such as a dotted quarter note delay against a half note.
+	
+Our multi-tap delay implementation has four continuous parameters and one switch:
+* **knob3_level** controls the overall level of the delay effect.
+* **knob4_fb** controls the amount of regeneration (feedback) in the delay. Higher values will produce more echoes.
+* **knob5_time** controls the delay time in the effect, up to 1000 milliseconds of delay.
+* **knob6_multitap** determines the subdivision of **knob5_time** to be added to that time as the second tap, ensuring they are in a rhythmic ratio. The value ranges from 1 to 6. A value of 2, for example, will make the second tap 1.5 the duration of the first.
+* **sw5** engages a *ping-pong* effect at the stereo output of the pedal, routing the two **delay** taps to discrete outputs rather than mixing them.
+
+Like in the previous pedal, the **delay** operator allocates the memory and sets up the digital delay line for the signal processing. The patch could easily be modified for more than two taps to create more complex echo effects. 
 
 </details>
 
