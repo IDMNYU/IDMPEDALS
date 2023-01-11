@@ -41,10 +41,6 @@
   - [Sample-and-Hold Sine](#special-fx-shsine) 
   - [Ring Modulator](#special-fx-ring-modulator) 
   - [Frequency Shifter](#special-fx-frequency-shifter) 
-  - [FM Delay](#special-fx-fm-delay) 
-  - [Glitch Sampler](#special-fx-glitch-sampler) 
-  - [Reverse Sampler](#special-fx-reverse-sampler) 
-  - [Yin Synthesizer](#special-fx-yin-synthesizer) 
 
 # Pedals
 
@@ -1101,50 +1097,6 @@ out3 = sync;
 ```
 
 This pedal can be used to create a variety of special effects with an instrument signal.	
-
-</details>
-
-### Special FX: FM Delay
-
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/FMDelay.png" target="_new"><img src = "./img/FMDelay.png" title="FMDelay patcher" alt="FMDelay patcher"></a>
-
-<details>
-	<summary>More Info...</summary>
-
-words words words
-
-</details>
-
-### Special FX: Glitch Sampler
-
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Glitch.png" target="_new"><img src = "./img/Glitch.png" title="Glitch patcher" alt="Glitch patcher"></a>
-
-<details>
-	<summary>More Info...</summary>
-
-words words words
-
-</details>
-
-### Special FX: Reverse Sampler 
-
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Glitch2.png" target="_new"><img src = "./img/Glitch2.png" title="Glitch2 patcher" alt="Glitch2 patcher"></a>
-
-<details>
-	<summary>More Info...</summary>
-
-words words words
-
-</details>
-
-### Special FX: Yin Synthesizer
-
-<a href="https://raw.githubusercontent.com/IDMNYU/IDMPEDALS/main/docs/img/Yin.png" target="_new"><img src = "./img/Yin.png" title="Yin patcher" alt="Yin patcher"></a>
-
-<details>
-	<summary>More Info...</summary>
-
-words words words
 
 </details>
 
