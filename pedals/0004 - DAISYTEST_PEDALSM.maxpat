@@ -41,13 +41,26 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"hidden" : 1,
-					"id" : "obj-16",
+					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 198.0, 40.0, 58.0, 22.0 ],
+					"patching_rect" : [ 198.0, 6.0, 58.0, 22.0 ],
 					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 198.0, 40.0, 67.0, 22.0 ],
+					"text" : "delay 2000"
 				}
 
 			}
@@ -235,7 +248,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1247.0, 282.5, 63.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "scale it up"
 								}
 
@@ -276,11 +288,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-11",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1054.0, 613.0, 81.0, 100.0 ],
+									"patching_rect" : [ 1054.0, 613.0, 84.0, 87.0 ],
 									"text" : "sends out a 1 when there's a rising switch and -1 when there's a falling switch"
 								}
 
@@ -2468,6 +2480,14 @@
 					"destination" : [ "obj-83", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
