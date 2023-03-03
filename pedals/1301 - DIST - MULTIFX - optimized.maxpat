@@ -171,7 +171,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 538.0, 266.0, 83.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "expression $1"
 				}
 

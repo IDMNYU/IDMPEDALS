@@ -846,18 +846,6 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-14",
-									"maxclass" : "newobj",
-									"numinlets" : 7,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 776.0, 557.0, 157.0, 22.0 ],
-									"text" : "gen @file fx_mod_shcomb2"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-61",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -865,6 +853,30 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 775.5, 445.0, 151.0, 22.0 ],
 									"text" : "gen @file fx_mod_chorus2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-60",
+									"maxclass" : "newobj",
+									"numinlets" : 7,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 775.5, 583.0, 157.0, 22.0 ],
+									"text" : "gen @file fx_mod_shcomb2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-59",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 775.5, 546.0, 151.0, 22.0 ],
+									"text" : "gen @file fx_mod_shcomb"
 								}
 
 							}
@@ -901,6 +913,18 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 775.5, 478.0, 145.0, 22.0 ],
 									"text" : "gen @file fx_mod_flanger"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 771.0, 300.0, 115.0, 22.0 ],
+									"text" : "gen @file multiLFO"
 								}
 
 							}
@@ -1839,7 +1863,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "insamp = in1;\r\np1 = in2;\r\np2 = in3;\r\np3 = in4;\r\np4 = in5;\r\np5 = in6;\r\np6 = in7;\r\ns1 = in8;\r\ns2 = in9;\r\ns3 = in10;\r\npgm = in11;\r\noutsamp = in1; // copy in case no proc\r\nlfo = 0;\r\n\r\nif(pgm==1) outsamp, lfo = fx_dyn_tremolo(insamp, p1, p2, p3);\r\nelse if(pgm==2) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 0);\r\nelse if(pgm==3) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 1);\r\nelse if(pgm==4) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, p3, p4, 0);\r\nelse if(pgm==5) outsamp, lfo = fx_mod_flanger(insamp, p1, p2, p3, p4);\r\nelse if(pgm==6) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, 0.5, 0, 3, 0);\r\nelse if(pgm==7) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, p3, p4, p5, 1);\r\nelse if(pgm==8) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, 0);\r\nelse if(pgm==9) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, 1);\r\nelse if(pgm==10) outsamp, lfo = fx_sfx_ringmod(insamp, p1);\r\n\r\nout2 = lfo;\r\nout1 = outsamp;\r\n",
+									"code" : "insamp = in1;\r\np1 = in2;\r\np2 = in3;\r\np3 = in4;\r\np4 = in5;\r\np5 = in6;\r\np6 = in7;\r\ns1 = in8;\r\ns2 = in9;\r\ns3 = in10;\r\npgm = in11;\r\noutsamp = in1; // copy in case no proc\r\nlfo = 0;\r\n\r\nif(pgm==1) outsamp, lfo = fx_dyn_tremolo(insamp, p1, p2, p3);\r\nelse if(pgm==2) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 0);\r\nelse if(pgm==3) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 1);\r\nelse if(pgm==4) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, p3, p4, 0);\r\nelse if(pgm==5) outsamp, lfo = fx_mod_flanger(insamp, p1, p2, p3, p4);\r\nelse if(pgm==6) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, 0.5, 0, 3, 0);\r\nelse if(pgm==7) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, p3, p4, p5, 1);\r\nelse if(pgm==8) outsamp, lfo = fx_mod_shcomb(insamp, p1, p2, p3, p4, p5);\r\nelse if(pgm==9) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, p6);\r\nelse if(pgm==10) outsamp, lfo = fx_sfx_ringmod(insamp, p1);\r\n\r\nout2 = lfo;\r\nout1 = outsamp;\r\n",
 									"fontface" : 0,
 									"fontname" : "Menlo",
 									"fontsize" : 12.0,
@@ -2417,7 +2441,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1157.5, 655.999999999999886, 91.0, 22.0 ],
-									"text" : "out 6 led3_blue"
+									"text" : "out 7 led3_blue"
 								}
 
 							}
@@ -2428,7 +2452,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1343.0, 655.999999999999886, 99.0, 22.0 ],
-									"text" : "out 7 led3_green"
+									"text" : "out 6 led3_green"
 								}
 
 							}
@@ -3738,6 +3762,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "fx_mod_shcomb.gendsp",
+				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "fx_mod_shcomb2.gendsp",
 				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
 				"patcherrelativepath" : ".",
@@ -3746,6 +3777,13 @@
 			}
 , 			{
 				"name" : "fx_sfx_ringmod.gendsp",
+				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multiLFO.gendsp",
 				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
