@@ -875,7 +875,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 775.5, 620.0, 144.0, 22.0 ],
+									"patching_rect" : [ 776.0, 594.0, 144.0, 22.0 ],
 									"text" : "gen @file fx_sfx_ringmod"
 								}
 
@@ -1839,7 +1839,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "insamp = in1;\r\np1 = in2;\r\np2 = in3;\r\np3 = in4;\r\np4 = in5;\r\np5 = in6;\r\np6 = in7;\r\ns1 = in8;\r\ns2 = in9;\r\ns3 = in10;\r\npgm = in11;\r\noutsamp = in1; // copy in case no proc\r\nlfo = 0;\r\n\r\nif(pgm==1) outsamp, lfo = fx_dyn_tremolo(insamp, p1, p2, p3);\r\nelse if(pgm==2) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 0);\r\nelse if(pgm==3) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 1);\r\nelse if(pgm==4) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, p3, p4, 0);\r\nelse if(pgm==5) outsamp, lfo = fx_mod_flanger(insamp, p1, p2, p3, p4);\r\nelse if(pgm==6) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, 0.5, 0, 3, 0);\r\nelse if(pgm==7) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, p3, p4, p5, 1);\r\nelse if(pgm==8) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, 0);\r\nelse if(pgm==9) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, 1);\r\nelse if(pgm==10) outsamp, lfo = fx_sfx_ringmod(insamp, p1);\r\n\r\nout2 = lfo;\r\nout1 = outsamp;\r\n",
+									"code" : "insamp = in1;\r\np1 = in2;\r\np2 = in3;\r\np3 = in4;\r\np4 = in5;\r\np5 = in6;\r\np6 = in7;\r\ns1 = in8;\r\ns2 = in9;\r\ns3 = in10;\r\npgm = in11;\r\noutsamp = in1; // copy in case no proc\r\nlfo = 0;\r\n\r\nif(pgm==1) outsamp, lfo = fx_dyn_tremolo(insamp, p1, p2, p3); // tremolo\r\nelse if(pgm==2) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 0); // CE-2 chorus\r\nelse if(pgm==3) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, 0, 0, 1); // vibrato\r\nelse if(pgm==4) outsamp, lfo = fx_mod_chorus2(insamp, p1, p2, p3, p4, 0); // complex chorus\r\nelse if(pgm==5) outsamp, lfo = fx_mod_flanger(insamp, p1, p2, p3, p4); // flanger\r\nelse if(pgm==6) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, 0.5, 0, 3, 0); // simpler phaser\r\nelse if(pgm==7) outsamp, lfo = fx_mod_phaser2(insamp, p1, p2, p3, p4, p5, 1); // multistage phaser\r\n//else if(pgm==8) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, 0); // S&H comb single\r\n//else if(pgm==9) outsamp, lfo = fx_mod_shcomb2(insamp, p1, p2, p3, p4, p5, 1); // S&H combs chords\r\nelse if(pgm==10) outsamp, lfo = fx_sfx_ringmod(insamp, p1);\r\n\r\nout2 = lfo;\r\nout1 = outsamp;\r\n",
 									"fontface" : 0,
 									"fontname" : "Menlo",
 									"fontsize" : 12.0,
@@ -1848,7 +1848,7 @@
 									"numinlets" : 11,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 28.0, 305.300000000000068, 674.0, 285.600000000000023 ]
+									"patching_rect" : [ 28.0, 305.300000000000068, 674.0, 286.600000000000023 ]
 								}
 
 							}
