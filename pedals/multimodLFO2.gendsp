@@ -1,0 +1,224 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 5,
+			"revision" : 3,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 604.0, 256.0, 879.0, 648.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "newtemplate",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 658.0, 27.0, 74.0, 20.0 ],
+					"text" : "phase offset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 618.0, 25.0, 28.0, 22.0 ],
+					"text" : "in 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 29.0, 120.0, 29.0, 22.0 ],
+					"text" : "% 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 29.0, 84.0, 29.5, 22.0 ],
+					"text" : "+"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 29.0, 52.0, 45.0, 22.0 ],
+					"text" : "phasor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 401.0, 22.0, 28.0, 22.0 ],
+					"text" : "in 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 285.0, 22.0, 28.0, 22.0 ],
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "pink(s)\n{\n\tHistory f0, f1, f2, f3, f4, f5, f6, output;\n\twhite = noise();\n\t\n\tf0 = 0.99886 * f0 + 0.0555179 * white;\n    f1 = 0.99332 * f1 + 0.0750759 * white;\n    f2 = 0.96900 * f2 + 0.1538520 * white;\n    f3 = 0.86650 * f3 + 0.3104856 * white;\n    f4 = 0.55000 * f4 + 0.5329522 * white;\n    f5 = -0.7616 * f5 - 0.0168980 * white;\n    p = f0 + f1 + f2 + f3 + f4 + f5 + f6 + white * 0.5362;\n    p *= 0.144444;\n    f6 = white * 0.115926;\n    outp = p*s + white*(1.0-s);\n\n\treturn outp;\n}\r\n\r\n//\r\n// MAIN CODE HERE:\r\n//\r\n\r\nphase = in1;\r\nshape = in2;\r\nmode = in3;\r\nval = phase; // copy in case proc bypass\r\n\r\nif(mode==0) // sine, clip to square\n{\n\tval = cycle(phase, index=\"phase\");\n\tval *= scale(shape, 0., 1., 1., 10.);\n\tval = clip(val, -1., 1.);\n}\nelse if(mode==1) // sine, waveshape to saw\n{\n\tval = (phase*2.-1.)*shape + cos(phase*TWOPI+PI/2)*(1.0-shape);\n}\nelse if(mode==2) // square, pulse width\n{\n\tshape = clip(shape,0.01, 0.99);\n\tval = (phase>shape)*2.-1.;\n}\nelse if(mode==3) // random steps, noise shape\n{\n\trand = pink(shape);\n\tval = sah(rand, phase, 0.5);\n}\r\nelse if(mode==4) // dust, noise shape\n{\n\tp = rate(phase, 1/16);\n\trand = pink(shape);\n\tclick = change(sah(rand, p, 0.5)>0.5);\n\tval = (click==1)*2-1.;\n\t//val = click;\n}\nelse if(mode==5) // random ramps, noise shape\n{\n\trand = pink(shape);\n\tslope = 1000; // slew\n\tval = slide(sah(rand, phase, 0.5), slope, slope);\n}\nelse if(mode==6) // triangle, exp/lin/log\n{\n\tval = triangle(phase, 0.5);\n\tlogval = sqrt(val);\n\texpval = 1.0-sqrt(1.0-val);\n\tval = shape < 0.5 ? mix(expval, val, shape*2) : mix(val, logval, (shape-0.5)*2);\n\tval = val*2.-1.;\n}\nelse if(mode==7) // rising saw, exp/lin/log\n{\n\tval = triangle(phase, 1.0);\n\tlogval = sqrt(val);\n\texpval = 1.0-sqrt(1.0-val);\n\tval = shape < 0.5 ? mix(expval, val, shape*2) : mix(val, logval, (shape-0.5)*2);\n\tval = val*2.-1.;\n}\nelse if(mode==8) // falling saw, exp/lin/log\n{\n\tval = triangle(phase, 0.);\n\tlogval = sqrt(val);\n\texpval = 1.0-sqrt(1.0-val);\n\tval = shape < 0.5 ? mix(expval, val, shape*2) : mix(val, logval, (shape-0.5)*2);\n\tval = val*2.-1.;\n}\r\n\r\nout1 = val;\r\n\r\n\r\n\r\n",
+					"fontface" : 0,
+					"fontname" : "Menlo",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "codebox",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 29.0, 156.0, 617.0, 410.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 29.0, 24.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 29.0, 580.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 2 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}

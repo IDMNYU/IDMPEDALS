@@ -1,0 +1,18 @@
+pink(s)
+{
+	History f0, f1, f2, f3, f4, f5, f6, output;
+	white = noise();
+	
+	f0 = 0.99886 * f0 + 0.0555179 * white;
+    f1 = 0.99332 * f1 + 0.0750759 * white;
+    f2 = 0.96900 * f2 + 0.1538520 * white;
+    f3 = 0.86650 * f3 + 0.3104856 * white;
+    f4 = 0.55000 * f4 + 0.5329522 * white;
+    f5 = -0.7616 * f5 - 0.0168980 * white;
+    p = f0 + f1 + f2 + f3 + f4 + f5 + f6 + white * 0.5362;
+    p *= 0.144444;
+    f6 = white * 0.115926;
+    outp = p*s + white*(1.0-s);
+
+	return outp;
+}
