@@ -40,6 +40,20 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 816.0, 496.0, 202.0, 142.0 ],
+					"setminmax" : [ 0.0, 1000.0 ],
+					"setstyle" : 5
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -945,12 +959,24 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-83",
+									"maxclass" : "newobj",
+									"numinlets" : 4,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 779.0, 672.0, 141.0, 22.0 ],
+									"text" : "gen @file multimodLFO2"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-81",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 701.0, 602.0, 49.0, 22.0 ],
+									"patching_rect" : [ 713.0, 565.900000000000091, 49.0, 22.0 ],
 									"text" : "r power"
 								}
 
@@ -962,7 +988,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 635.0, 636.0, 29.5, 22.0 ],
+									"patching_rect" : [ 683.0, 610.900000000000091, 29.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -1185,7 +1211,7 @@
 								"box" : 								{
 									"id" : "obj-48",
 									"maxclass" : "newobj",
-									"numinlets" : 7,
+									"numinlets" : 6,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 775.5, 512.0, 152.0, 22.0 ],
@@ -1252,6 +1278,75 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-40",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 143.0, 424.0, 47.0, 22.0 ],
+													"text" : "clip 0 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-32",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 117.0, 457.0, 129.0, 22.0 ],
+													"text" : "expr 1.0-(sqrt(1.0-in1))"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-31",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 207.0, 299.0, 123.0, 20.0 ],
+													"text" : "env -> rate (polymod)"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-29",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 132.5, 509.0, 107.0, 22.0 ],
+													"text" : "scale 0. 1. 0.01 12"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-27",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 197.0, 539.0, 150.0, 20.0 ],
+													"text" : "< max LFO = 12Hz"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-22",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 193.0, 266.0, 65.0, 20.0 ],
+													"text" : "log scaling"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-4",
 													"maxclass" : "newobj",
@@ -1456,7 +1551,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 113.0, 508.0, 29.0, 20.0 ],
+													"patching_rect" : [ 117.0, 594.0, 29.0, 20.0 ],
 													"text" : "rate"
 												}
 
@@ -1467,7 +1562,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 113.0, 473.0, 35.0, 22.0 ],
+													"patching_rect" : [ 117.0, 559.0, 35.0, 22.0 ],
 													"text" : "out 1"
 												}
 
@@ -1478,8 +1573,8 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 308.0, 372.0, 39.0, 20.0 ],
-													"text" : "depth"
+													"patching_rect" : [ 379.5, 415.0, 125.0, 20.0 ],
+													"text" : "env -> depth (univibe)"
 												}
 
 											}
@@ -1489,7 +1584,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 113.0, 317.0, 29.0, 20.0 ],
+													"patching_rect" : [ 55.0, 192.0, 29.0, 20.0 ],
 													"text" : "rate"
 												}
 
@@ -1535,7 +1630,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 113.0, 344.0, 28.0, 22.0 ],
+													"patching_rect" : [ 55.0, 219.0, 28.0, 22.0 ],
 													"text" : "in 2"
 												}
 
@@ -1699,7 +1794,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-9", 0 ],
+													"destination" : [ "obj-40", 0 ],
 													"source" : [ "obj-24", 0 ]
 												}
 
@@ -1713,8 +1808,22 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"source" : [ "obj-29", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-14", 0 ],
 													"source" : [ "obj-3", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-29", 0 ],
+													"source" : [ "obj-32", 0 ]
 												}
 
 											}
@@ -1771,6 +1880,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-16", 1 ],
 													"source" : [ "obj-4", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-32", 0 ],
+													"source" : [ "obj-40", 0 ]
 												}
 
 											}
@@ -1980,7 +2096,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "insamp = in1;\r\nrate = in2;\r\ndepth = in3;\r\np3 = in4;\r\np4 = in5;\r\np5 = in6;\r\npgm = in7;\r\nshape = in8;\r\nmode = in9;\r\noutsamp = insamp; // copy in case no proc\r\nlfo = 0;\r\n\r\nif(pgm==1) outsamp, lfo = fx_dyn_tremolo(insamp, rate, depth, shape); // tremolo\r\nelse if(pgm==2) outsamp, lfo = fx_mod_chorus2(insamp, rate, depth, 0, 0, 0); // CE-2 chorus\r\nelse if(pgm==3) outsamp, lfo = fx_mod_chorus2(insamp, rate, depth, 0, 0, 1); // vibrato\r\nelse if(pgm==4) outsamp, lfo = fx_mod_chorus2(insamp, rate, depth, p3, p4, 0); // complex chorus\r\nelse if(pgm==5) outsamp, lfo = fx_mod_flanger(insamp, rate, depth, p3, p4); // flanger\r\nelse if(pgm==6) outsamp, lfo = fx_mod_phaser2(insamp, rate, depth, 0.5, 0, 3, 0); // simpler phaser\r\nelse if(pgm==7) outsamp, lfo = fx_mod_phaser2(insamp, rate, depth, p3, p4, p5, 1); // multistage phaser\r\nelse if(pgm==8) outsamp, lfo = fx_mod_shcomb2(insamp, rate, depth, p3, p4, p5, 0); // S&H comb single\r\nelse if(pgm==9) outsamp, lfo = fx_mod_shcomb2(insamp, rate, depth, p3, p4, p5, 1); // S&H combs chords\r\nelse if(pgm==10) outsamp, lfo = fx_sfx_ringmod(insamp, rate);\r\n\r\nout2 = lfo;\r\nout1 = outsamp;\r\n",
+									"code" : "insamp = in1;\r\nrate = in2;\r\ndepth = in3;\r\np3 = in4;\r\np4 = in5;\r\np5 = in6;\r\npgm = in7;\r\nshape = in8;\r\nmode = in9;\r\noutsamp = insamp; // copy in case no proc\r\nlfo = 0;\r\n\r\nif(pgm==1) outsamp, lfo = fx_dyn_tremolo(insamp, rate, depth, p3); // tremolo\r\nelse if(pgm==2) outsamp, lfo = fx_mod_chorus2(insamp, rate, depth, p3, p4, p5); // chorus\r\nelse if(pgm==3) outsamp, lfo = fx_mod_flanger(insamp, rate, depth, p3, p4); // flanger\r\nelse if(pgm==4) outsamp, lfo = fx_mod_phaser2(insamp, rate, depth, p3, p4, p5); // phaser\r\nelse if(pgm==5) outsamp, lfo = fx_mod_shcomb2(insamp, rate, depth, p3, p4, p5, 0); // S&H comb single\r\nelse if(pgm==6) outsamp, lfo = fx_mod_shcomb2(insamp, rate, depth, p3, p4, p5, 1); // S&H combs chords\r\nelse if(pgm==7) outsamp, lfo = fx_sfx_ringmod(insamp, rate); // ring modulator\r\n\r\nout2 = lfo;\r\nout1 = outsamp;\r\n",
 									"fontface" : 0,
 									"fontname" : "Menlo",
 									"fontsize" : 12.0,
@@ -2068,7 +2184,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "r = 0;\r\ng = 0;\r\nb = 0;\r\n\r\nif(in1==1) r, g, b = 1, 0, 0;\r\nelse if(in1==2) r, g, b = 1., 0.5, 0;\r\nelse if(in1==3) r, g, b = 0.5, 1, 0;\r\nelse if(in1==4) r, g, b = 0, 1, 0;\r\nelse if(in1==5) r, g, b = 0, 1, 0.5;\r\nelse if(in1==6) r, g, b = 1, 0.5, 1;\r\nelse if(in1==7) r, g, b = 0., 0., 1;\r\nelse if(in1==8) r, g, b = 0.5, 0, 1;\r\nelse if(in1==9) r, g, b = 1, 0, 1;\r\nelse if(in1==10) r, g, b = 1, 0, 0.5;\r\n\r\nif(in2==0) r, g, b = 0, 0, 0;\r\n\r\nout1, out2, out3 = r, g, b;",
+									"code" : "r = 0;\r\ng = 0;\r\nb = 0;\r\n\r\nif(in1==1) r, g, b = 1, 0, 0;\r\nelse if(in1==2) r, g, b = 1., 0.5, 0;\r\nelse if(in1==3) r, g, b = 1, 1, 0;\r\nelse if(in1==4) r, g, b = 0, 1, 0;\r\nelse if(in1==5) r, g, b = 0., 0., 1;\r\nelse if(in1==6) r, g, b = 1, 0, 1;\r\nelse if(in1==7) r, g, b = 1, 0, 0.5;\r\n\r\nif(in2==0) r, g, b = 0, 0, 0;\r\n\r\nout1, out2, out3 = r, g, b;",
 									"fontface" : 0,
 									"fontname" : "Menlo",
 									"fontsize" : 12.0,
@@ -2209,8 +2325,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1322.0, 235.300000000000068, 99.0, 22.0 ],
-									"text" : "accum @max 10"
+									"patching_rect" : [ 1322.0, 235.300000000000068, 92.0, 22.0 ],
+									"text" : "accum @max 7"
 								}
 
 							}
@@ -2680,7 +2796,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 635.0, 684.900000000000091, 91.0, 22.0 ],
+									"patching_rect" : [ 683.0, 672.0, 91.0, 22.0 ],
 									"text" : "out 4 led1_blue"
 								}
 
@@ -4091,6 +4207,13 @@
 			}
 , 			{
 				"name" : "fx_sfx_ringmod.gendsp",
+				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multimodLFO2.gendsp",
 				"bootpath" : "~/Documents/TEACHING/nyu/idm/soundstudio/IDMPEDALS/pedals",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
